@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Luke W. Johnston</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="site_libs/highlight/default.css"
+      type="text/css" />
+<script src="site_libs/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="_includes/style/style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 41px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+
+.section h2 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h3 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h4 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h5 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h6 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="site_libs/navigation-1.0/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">HTML</a>
+</li>
+<li class="dropdown-header">PDF</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Luke W. Johnston</h1>
+
+</div>
+
+
+<p>Updated: June 07, 2016</p>
+<hr />
+<div id="education" class="section level2">
+<h2>Education</h2>
+<div id="degrees" class="section level3">
+<h3>Degrees</h3>
+<dl>
+<dt>Present</dt>
+<dd><p><em>PhD(c)</em>, University of Toronto, Canada</p>
+<p><a href="">Serum Composition of Fatty Acids in Lipid Fractions in the Progression of Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus.</a> Supervisor: Dr. Anthony J. Hanley</p>
+</dd>
+<dt>2013</dt>
+<dd><p><em>MSc</em>, University of Toronto, Canada</p>
+<p><a href="pubs/msc-thesis.pdf">Association of Leg Length with Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus.</a> Supervisor: Dr. Anthony J. Hanley</p>
+</dd>
+<dt>2010</dt>
+<dd><em>Honours BSc in Kinesiology</em>, University of Waterloo, Canada
+</dd>
+</dl>
+</div>
+<div id="certificates" class="section level3">
+<h3>Certificates</h3>
+<dl>
+<dt>2015</dt>
+<dd><p><em>Software Carpentry Instructor Training</em></p>
+<p>Organization: Software Carpentry. (<a href="http://swcarpentry.github.io/training-course/2015/02/luke-johnston/" class="uri">http://swcarpentry.github.io/training-course/2015/02/luke-johnston/</a>)</p>
+</dd>
+<dt>2015</dt>
+<dd><p><em>Advanced University Teaching Preparation</em></p>
+<p>Organization: Teaching Assistants’ Training Program, University of Toronto, Canada.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div id="awards" class="section level2">
+<h2>Awards</h2>
+<dl>
+<dt>2014 - 2017</dt>
+<dd><p><em>Doctoral Student Research Award</em>, Canadian Diabetes Association</p>
+<p>Value: $21000. National competitive award</p>
+</dd>
+<dt>2014 - 2015</dt>
+<dd><p><em>Graduate Novo Nordisk Studentship</em>, Banting and Best Diabetes Centre, University of Toronto, Canada</p>
+<p>Value: $3840.</p>
+</dd>
+<dt>2014 - 2015</dt>
+<dd><p><em>Margaret and Nicholas Fodor Fellowship</em>, School of Graduate Studies, University of Toronto, Canada</p>
+<p>Value: $3000. University-wide awards</p>
+</dd>
+<dt>2014 - 2015</dt>
+<dd><p><em>Ontario Graduate Scholarship</em>, Government of Ontario, Canada</p>
+<p>Value: $15000. Awarded, but declined for the CDA Doctoral Award</p>
+</dd>
+<dt>2015</dt>
+<dd><p><em>Trainee Travel Award</em>, Banting and Best Diabetes Centre, University of Toronto, Canada</p>
+<p>Value: $1000. For attendance to the American Diabetes Association 75rd Scientific Sessions</p>
+</dd>
+<dt>2013 - 2014</dt>
+<dd><p><em>Ontario Graduate Scholarship</em>, Government of Ontario, Canada</p>
+<p>Value: $15000.</p>
+</dd>
+<dt>2014</dt>
+<dd><p><em>Trainee Travel Award</em>, Banting and Best Diabetes Centre, University of Toronto, Canada</p>
+<p>Value: $1000. For attendance to the American Diabetes Association 74rd Scientific Sessions</p>
+</dd>
+<dt>2014</dt>
+<dd><p><em>Conference Travel Grant</em>, School of Graduate Studies, University of Toronto, Canada</p>
+<p>Value: $1120. For attendance to the International Society for the Study of Fatty Acids and Lipids 2014 Biennial Congress</p>
+</dd>
+<dt>2014</dt>
+<dd><p><em>Alumni Travel Award</em>, Department of Nutritional Sciences, University of Toronto, Canada</p>
+<p>Value: $200. For attendance to the International Society for the Study of Fatty Acids and Lipids 2014 Biennial Congress</p>
+</dd>
+<dt>2014</dt>
+<dd><p><em>New Investigator Award</em>, International Society for the Study of Fatty Acids and Lipids</p>
+<p>Given out during the International Society for the Study of Fatty Acids and Lipids 2014 Biennial Congress</p>
+</dd>
+<dt>2012 - 2013</dt>
+<dd><p><em>Ontario Graduate Scholarship</em>, Government of Ontario, Canada</p>
+<p>Value: $15000.</p>
+</dd>
+<dt>2013</dt>
+<dd><p><em>Trainee Travel Award</em>, Banting and Best Diabetes Centre, University of Toronto, Canada</p>
+<p>Value: $1000. For attendance to the American Diabetes Association 73rd Scientific Sessions</p>
+</dd>
+<dt>2009 - 2010</dt>
+<dd><p><em>Ashley Studentship</em>, Ontario Tobacco Research Unit, Canada</p>
+<p>Value: $3600 (stipend), $3600 (research budget). Title: <em>Smoking in Outdoor and Quasi-Outdoor Environments – An Opportunity for Knowledge Transfer.</em> Collaborated with Physicians for Smoke-Free Canada to develop effective communication tools (factsheets, conference presentations) using data from previous outdoor smoking experiments to influence policy development in tobacco control. Supervised by Dr. Geoffrey Fong</p>
+</dd>
+</dl>
+</div>
+<div id="publications" class="section level2">
+<h2>Publications</h2>
+<div id="articles" class="section level3">
+<h3>Articles</h3>
+<ol style="list-style-type: decimal">
+<li><strong>Johnston LW</strong>, Harris SB, Retnakaran R, Zinman B, Giacca A, Liu Z, Bazinet RP, Hanley AJ. Longitudinal associations of phospholipid and cholesteryl ester fatty acids with disorders underlying diabetes. <em>J Clin Endocrinol Metab</em>. May 2016:jc20154267. doi: <a href="https://doi.org/10.1210/jc.2015-4267">10.1210/jc.2015-4267</a>.</li>
+<li><strong>Johnston LW</strong>, Harris SB, Retnakaran R, Gerstein HC, Zinman B, Hamilton J, Hanley AJ. Short leg length, a marker of early childhood deprivation, is associated with metabolic disorders underlying type 2 diabetes mellitus: The PROMISE cohort study. <em>Diabetes Care</em>. 2013;36(11):3599-3606. doi: <a href="https://doi.org/10.2337/dc13-0254">10.2337/dc13-0254</a>.</li>
+<li>Doughty K, Rothman L, <strong>Johnston L</strong>, Le K, Wu J, Howard A. Low-income countries’ orthopaedic information needs: Challenges and opportunities. <em>Clinical Orthopaedics and Related Research</em>. 2010;468:2598-2603. doi: <a href="https://doi.org/10.1007/s11999-010-1365-x">10.1007/s11999-010-1365-x</a>.</li>
+</ol>
+</div>
+<div id="oral-presentations" class="section level3">
+<h3>Oral presentations</h3>
+<ol style="list-style-type: decimal">
+<li><strong>Johnston LW</strong>, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet RP, Hanley AJ. Serum Phospholipid (PL) Fatty Acid Composition Predicts Declines in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-years in the Prospective Metabolism And Islet Cell Evaluation (PROMISE) Cohort. In: <em>International Diabetes Epidemiology Group Scientific Meeting</em>. Vancouver, Canada; 2015. <a href="https://figshare.com/s/1cce7abacad54e48aa0a" class="uri">https://figshare.com/s/1cce7abacad54e48aa0a</a>.</li>
+<li><strong>Johnston L</strong>, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet R, Hanley A. Serum Non-Esterified Fatty Acid (NEFA) Concentrations are Associated with Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort. In: <em>33rd International Symposium on Diabetes &amp; Nutrition in Toronto, Canada</em>.; 2015. doi: <a href="https://doi.org/10.6084/m9.figshare.1545567">10.6084/m9.figshare.1545567</a>.</li>
+<li><strong>Johnston L</strong>, Kayaniyil S, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet R, Hanley A. Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) is Associated with Insulin Resistance in the PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort. In: <em>Biennial Congress of the International Society for the Study of Fatty Acids and Lipids</em>. Stockholm, Sweden; 2014. <a href="https://figshare.com/s/89dbdcb4695f19cbd2b1" class="uri">https://figshare.com/s/89dbdcb4695f19cbd2b1</a>.</li>
+<li>Kennedy R, <strong>Johnston L</strong>. Report of the Smoke-free Policy Scan of YMCAs and YWCAs in Ontario. In: <em>Meeting of the Tobacco-Free Sports and Recreation Community of Practice</em>. University of Waterloo, Canada; 2010.</li>
+</ol>
+</div>
+<div id="poster-presentation" class="section level3">
+<h3>Poster presentation</h3>
+<ol style="list-style-type: decimal">
+<li><strong>Johnston LW</strong>, Retnakaran R, Harris S, Zinman B, Liu Z, Bazinet RP, Hanley AJ. Triglyceride Fatty Acid (TGFA) Composition Longitudinally Associates with Changes in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-yrs in the Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort. In: <em>Poster Presentation (1555-P) at the American Diabetes Association 76th Scientific Sessions in New Orleans</em>.; 2016.</li>
+<li>Santaren ID, Bazinet RP, Liu Z, <strong>Johnston LW</strong>, Retnakaran R, Harris SB, Zinman B, Hanley AJ. Serum Fatty Acids Derived from Dairy Consumption are Associated with Insulin Sensitivity and Beta-cell Function: The PROspective Metabolism and ISlet cell Evaluation (PROMISE) Cohort. <em>Diabetes</em>. 2016.</li>
+<li>Semnani-Azad Z, <strong>Johnston LW</strong>, Harris SB, Retnakaran R, Zinman B, Connelly PW, Hanley. AJ. Multivariate Determinants of Reduced Insulin Clearance in Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort. <em>Diabetes</em>. 2016.</li>
+<li><strong>Johnston L</strong>, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet R, Hanley A. Serum Non-Esterified Fatty Acid (NEFA) Concentration is Associated with Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort. <em>Diabetes</em>. 2015;64(Suppl. 1):A421, 1621-P. doi: <a href="https://doi.org/10.6084/m9.figshare.1545566">10.6084/m9.figshare.1545566</a>.</li>
+<li><strong>Johnston L</strong>, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet R, Hanley A. Serum Non-Esterified Fatty Acid (NEFA) Composition and Longitudinal Associations with Beta-Cell Dysfunction. In: <em>International Diabetes Federation World Diabetes Congress in Vancouver, Canada</em>.; 2015. <a href="https://figshare.com/s/7301482497f6a6349dc8" class="uri">https://figshare.com/s/7301482497f6a6349dc8</a>.</li>
+<li><strong>Johnston L</strong>, Kayaniyil S, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet R, Hanley A. Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) Is Associated with Insulin Resistance: PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort. <em>Diabetes</em>. 2014;63(Suppl. 1):A384, 1463-P. <a href="https://figshare.com/s/a7cf86f77bc4be78ac7f" class="uri">https://figshare.com/s/a7cf86f77bc4be78ac7f</a>.</li>
+<li><strong>Johnston LW</strong>, Harris SB, Retnakaran R, Gerstein HC, Hamilton J, Zinman B, Hanley AJ. The association of leg length with metabolic abnormalities underlying type 2 diabetes mellitus: The PROMISE cohort. <em>Diabetes</em>. 2013;62(Suppl. 1):A912, 1578-P. <a href="https://figshare.com/s/271bfd6c988efcdb5921" class="uri">https://figshare.com/s/271bfd6c988efcdb5921</a>.</li>
+<li>Kennedy R, <strong>Johnston L</strong>, Munhall C, Filsinger S. Secondhand Smoke in Common Spaces of Public Housing – Findings from Waterloo Region. 2011.</li>
+<li>Munhall C, Kennedy R, <strong>Johnston L</strong>, Steibelt E, Trusler A. An Environmental Scan of Tobacco-free Policies of YMCA &amp; YWCA Locations in Ontario, Canada. 2011.</li>
+<li>Howard A, <strong>Johnston L</strong>, Rothman L. Probability of Multiple Fractures in Childhood Session. 2010.</li>
+<li>Kennedy R, <strong>Johnston L</strong>, Fong G, Hyland A, Travers M. Experimental Evaluation of Outdoor and Adjacent Indoor Tobacco Smoke Pollution in Doorways. 2009.</li>
+<li><strong>Johnston L</strong>, Kennedy R, Fong G. An Environmental Scan of Tobacco Control Policies on University Campuses in Ontario. 2008.</li>
+<li>Kennedy R, Fong G, Travers M, Hyland A, <strong>Johnston L</strong>, Mutti S. Experimental Evaluation of Tobacco Control Policies in Outdoor Environments. 2008.</li>
+</ol>
+</div>
+</div>
+<div id="teaching" class="section level2">
+<h2>Teaching</h2>
+<dl>
+<dt>Jun, 2015 – present</dt>
+<dd><p><em>Instructor</em>, Programming code-alongs, UofT Coders, University of Toronto, Canada</p>
+<p>Various coding sessions (Git, R). Website: <a href="http://uoftcoders.github.io" class="uri">http://uoftcoders.github.io</a>.</p>
+</dd>
+<dt>Oct, 2014 – present</dt>
+<dd><p><em>Instructor and founder</em>, Code as Manuscript: Data wrangling, visualization, and reproducibility in R, Graduate Professional Skills Program, University of Toronto, Canada</p>
+<p>I started this workshop series in the Department of Nutritional Sciences and eventually got it approved for teaching in the GPS program. Initially I taught with colleague Dr. Daiva Nielsen and we taught graduate students SAS coding and computing skills. I now teach R and Git, having co-instructed with Sarah Meister. We teach version control, beginner and advanced coding techniques, and how to structure research projects around the idea of reproducibility. Consistent with our mission statement, our material is publicly available online at <a href="http://github.com/codeasmanuscript/workshops" class="uri">http://github.com/codeasmanuscript/workshops</a>. Website: <a href="http://codeasmanuscript.org" class="uri">http://codeasmanuscript.org</a>.</p>
+</dd>
+<dt>May, 2016</dt>
+<dd><p><em>Instructor</em>, Software Carpentry workshops (Python), <a href="http://software-carpentry.org">Software Carpentry</a></p>
+<p>Taught the Git session to novice learners at a two-day workshop on introducing computing to researchers and students at the University of Toronto, as well as acted as helper during the Shell and Python sessions. Website: <a href="http://uoftcoders.github.io/2016-05-09-utoronto/" class="uri">http://uoftcoders.github.io/2016-05-09-utoronto/</a>.</p>
+</dd>
+<dt>Apr, 2016</dt>
+<dd><p><em>Helper</em>, Software Carpentry workshops (R), <a href="http://software-carpentry.org">Software Carpentry</a></p>
+<p>Acted as helper to the instructors at a two-day workshop introducing computing to researchers and students at the University of Toronto. Duties were to answer any questions and fix any problems that novice learners encountered during the R sessions. Website: <a href="http://uoftcoders.github.io/2016-04-25-utoronto/" class="uri">http://uoftcoders.github.io/2016-04-25-utoronto/</a>.</p>
+</dd>
+<dt>Sep – Dec, 2015</dt>
+<dd><p><em>Teaching Assistant</em>, Public Health Nutrition (NFS1201), Department of Nutritional Sciences, University of Toronto, Canada</p>
+<p>Gave <a href="https://github.com/lwjohnst86/nfs1201-lectures">two lectures</a> during the course and developed and marked the <a href="https://github.com/lwjohnst86/nfs1201-assignment">final (third) assignment</a>.</p>
+</dd>
+<dt>Jul, 2015</dt>
+<dd><p><em>Instructor</em>, Software Carpentry Workshop (R), <a href="http://software-carpentry.org">Software Carpentry</a></p>
+<p>Coding workshop hosted at the Hospital for Sick Children, Toronto. I taught version control using Git and acted as helper for the Shell and R sessions. Website: <a href="http://blog.tomwright.ca/2015-07-16-sickkids/" class="uri">http://blog.tomwright.ca/2015-07-16-sickkids/</a>.</p>
+</dd>
+<dt>Jan, 2015</dt>
+<dd><p><em>Teaching Helper</em>, Software Carpentry Workshop (R), <a href="http://software-carpentry.org">Software Carpentry</a></p>
+<p>Coding workshop hosted at the Hospital for Sick Children, Toronto. I provided technical support, worked through students’ problems and issues with them, and answered any questions. Website: <a href="http://tomwright01.github.io/2015-01-29-sickkids/" class="uri">http://tomwright01.github.io/2015-01-29-sickkids/</a>.</p>
+</dd>
+<dt>Sep – Dec, 2014</dt>
+<dd><p><em>Teaching Assistant</em>, Advanced Nutrition (NFS484-1484), Department of Nutritional Sciences, University of Toronto, Canada</p>
+<p>Developed and lead <a href="https://github.com/lwjohnst86/nfs484-1484-tutorials">tutorials</a> for graduate students. Developed and marked the <a href="https://github.com/lwjohnst86/nfs484-1484-exams">final exam</a>. Answered any student questions.</p>
+</dd>
+<dt>Oct, 2014</dt>
+<dd><p><em>Teaching Helper</em>, Software Carpentry Workshop (Python), <a href="http://software-carpentry.org">Software Carpentry</a></p>
+<p>Coding workshop hosted at the Gerstein Library, University of Toronto. I provided technical support, assisted students’ with problems and issues, and answered student questions. Website: <a href="http://swcarpentry.github.io/2014-10-30-utoronto/" class="uri">http://swcarpentry.github.io/2014-10-30-utoronto/</a>.</p>
+</dd>
+<dt>Sep – Dec, 2013</dt>
+<dd><p><em>Teaching Assistant</em>, Advanced Nutrition (NFS484-1484), Department of Nutritional Sciences, University of Toronto, Canada</p>
+<p>Lead <a href="https://github.com/lwjohnst86/nfs484-1484-tutorials">tutorials</a> for undergraduate students. Developed and marked the <a href="https://github.com/lwjohnst86/nfs484-1484-exams">midterm exam</a>. Answered any student questions.</p>
+</dd>
+<dt>Jan – Apr, 2013</dt>
+<dd><p><em>Teaching Assistant</em>, Nutritional Microbiology (NFS485), Department of Nutritional Sciences, University of Toronto, Canada</p>
+<p>Answer student emails and questions. Mark midterm exam, assignment and final exam. Invigilate midterm and final exam.</p>
+</dd>
+</dl>
+</div>
+<div id="affiliations" class="section level2">
+<h2>Affiliations</h2>
+<dl>
+<dt>May, 2015 – present</dt>
+<dd><em>Instructor and member</em>, <a href="http://software-carpentry.org/">Software Carpentry</a>
+</dd>
+<dt>Jan, 2016 – present</dt>
+<dd><p><em>Treasurer</em>, <a href="https://uoftcoders.github.io">UofT Scientific Coders</a>, University of Toronto &amp; Mozilla Science Lab</p>
+<p>Responsible for managing the finances, identifying potential sources of funding and applying to them as applicable, reimbursing students for expenses, and buying the snacks for the coding sessions. Other communal duties include maintaining the GitHub repository and dealing with Issues and Pull Requests (via GitHub) that may arise. Website: <a href="https://github.com/UofTCoders/council/tree/master/treasurer" class="uri">https://github.com/UofTCoders/council/tree/master/treasurer</a>.</p>
+</dd>
+<dt>Sep, 2014 – present</dt>
+<dd><p><em>Treasurer</em>, <a href="http://nsgsa.sa.utoronto.ca/">Nutritional Sciences Graduate Student Association</a>, University of Toronto, Canada</p>
+<p>Responsible for the accounting of the NSGSA finances, reimbursing students for expenses, applying for the Graduate Student Union Head Grant to secure funding, and dealing with any finance related issues that may come up.</p>
+</dd>
+</dl>
+</div>
+<div id="miscellaneous" class="section level2">
+<h2>Miscellaneous</h2>
+<div id="cran-packages" class="section level3">
+<h3>CRAN packages</h3>
+<dl>
+<dt><a href="https://cran.rstudio.com/web/packages/prodigenr/index.html">prodigenr</a></dt>
+<dd>Create a project directory structure, along with typical files for that project. This allows projects to be quickly and easily created, as well as for them to be standardized. Designed specifically with scientists in mind (mainly bio-medical researchers, but likely applies to other fields).
+</dd>
+</dl>
+</div>
+<div id="github-r-packages" class="section level3">
+<h3>GitHub R packages</h3>
+<dl>
+<dt><a href="https://github.com/lwjohnst86/mason">mason</a></dt>
+<dd>Use a consistent syntax to create data structures of common statistical techniques that can be continued in a magrittr pipe chain. Design the analysis, add settings and variables, construct the results, and polish the final structure. Rinse and repeat for any number of statistical techniques.
+</dd>
+<dt><a href="https://github.com/lwjohnst86/seer">seer</a></dt>
+<dd>Become a seer of data to gain insights into the structure of your results. Use a common syntax to quickly create commonly used plots from analyses. Uses the output from the mason package.
+</dd>
+<dt><a href="https://github.com/lwjohnst86/carpenter">carpenter</a></dt>
+<dd>Easily create tables commonly used in scientific papers.
+</dd>
+</dl>
+</div>
+<div id="r-packages-contributed-to" class="section level3">
+<h3>R packages contributed to</h3>
+<dl>
+<dt><a href="https://cran.r-project.org/web/packages/broom/index.html">broom</a></dt>
+<dd>Convert statistical analysis objects from R into tidy data frames, so that they can more easily be combined, reshaped and otherwise processed with tools like ‘dplyr’, ‘tidyr’ and ‘ggplot2’. The package provides three S3 generics: tidy, which summarizes a model’s statistical findings such as coefficients of a regression; augment, which adds columns to the original data such as predictions, residuals and cluster assignments; and glance, which provides a one-row summary of model-level statistics.
+</dd>
+</dl>
+</div>
+<div id="programming-languages" class="section level3">
+<h3>Programming languages</h3>
+<dl>
+<dt>Competent</dt>
+<dd><ul>
+<li>R (ggplot2, knitr, rmarkdown, dplyr, tidyr, devtools, testthat, roxygen2)</li>
+<li>SAS (macros, ODS system)</li>
+<li>LaTeX (beamer, beamerposter)</li>
+<li>Web (HTML, CSS, Jekyll, Github Pages)</li>
+<li>Makefiles</li>
+<li>Bash</li>
+<li>Linux OS</li>
+<li>Git</li>
+<li>Pandoc</li>
+<li>Markdown</li>
+<li>YAML</li>
+</ul>
+</dd>
+<dt>Familiar</dt>
+<dd><ul>
+<li>Python</li>
+<li>SQLite</li>
+<li>Elisp</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="statistical-techniques" class="section level3">
+<h3>Statistical techniques</h3>
+<dl>
+<dt>Competent</dt>
+<dd><ul>
+<li>Basic statistics (mean, sd, t-test, etc)</li>
+<li>ANOVA, ANCOVA</li>
+<li>Correlation</li>
+<li>Linear regression</li>
+<li>Logistic regression</li>
+<li>Generalized estimating equations</li>
+<li>Principal component analysis</li>
+<li>Latent class mixed models</li>
+<li>Partial least squares regression</li>
+<li>Partial least squares discriminant analysis</li>
+</ul>
+</dd>
+<dt>Familiar</dt>
+<dd><ul>
+<li>Linear discriminant analysis</li>
+<li>Mixed effects models</li>
+<li>Factor analysis</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div id="mentoring" class="section level2">
+<h2>Mentoring</h2>
+<dl>
+<dt>Sep, 2014 – Apr, 2015</dt>
+<dd><p><strong>Windy Wang</strong>. Project: <em>Validating a bioelectric impedance instrument against the gold standard dual-energy x-ray absorptiometry on measures of adiposity. </em></p>
+<p>For the Research Projects (NFS394) in Nutritional Sciences. Co-mentored with Dr. Anthony Hanley. Supervision consisted of helping guide the development of the research question and teaching Windy coding in SAS and using statistical techniques to analyze the data.</p>
+</dd>
+</dl>
+</div>
+<div id="employment" class="section level2">
+<h2>Employment</h2>
+<dl>
+<dt>Jan – Jul, 2011</dt>
+<dd><p><em>Research Assistant</em>, Propel Center for Population Health Impact, University of Waterloo, Canada</p>
+<p>Collected air quality samples from Region of Waterloo-owned social housing. Analyzed the air quality data using MS Excel. Produced and tested a survey for Program Training and Consultation Centre on SurveyMonkey. Wrote three reports on data collected from the survey results. Organized and scheduled interviews and data collection dates for a study in the Waterloo Region evaluating the School Food and Beverage Policy PPM150. Managed a team of 4 researchers to collect survey and interview data from primary and secondary schools in the Waterloo Region. Managed the storing and organizing of data collected from the surveys and interviews. Supervisor: Karen Pieters, Dr. Ryan David Kennedy, and Dr. Rhona Hanning</p>
+</dd>
+<dt>Aug, 2010</dt>
+<dd><p><em>Research Assistant</em>, Health Psychology Lab, University of Waterloo, Canada</p>
+<p>Analyzed data from previous cigarette smoking experiments done in 2008 using MS Excel. Conducted a smoke-free policy scan of YMCAs and YWCAs in Ontario and presented findings to the Tobacco-free Sports and Recreation Community of Practice. Supervisor: Dr. Ryan David Kennedy</p>
+</dd>
+<dt>Sep – Dec, 2009</dt>
+<dd><p><em>Research Assistant</em>, Child Health Evaluative Sciences, Hospital for Sick Children, Canada</p>
+<p>Analyzed data from the WHO and PLoS Medicine using MS Excel. Developed a method for interpreting fracture data from the National Ambulatory Care Reporting System using statistical probability equations. Supervisor: Dr. Andrew Howard</p>
+</dd>
+<dt>Jan – Apr, 2009</dt>
+<dd><p><em>Research Assistant</em>, Toronto Rehabilitation Institute, Canada</p>
+<p>Examined balance in clinical populations, including individuals with dementia, using pressure plates. Used EMG electrodes, VICON markers and other monitoring equipment to obverse and collect data from research participants. Analyzed data from various experiments and studies using LabView and MATLAB software. Evaluated the reliability of using Bluetooth technology in the foot switch device (industry gold standard) and analyzed the relationship with an accelerometer. Supervisor: Dr. Avril Mansfield and Dr. William McIlroy</p>
+</dd>
+<dt>Sep – Dec, 2008</dt>
+<dd><p><em>Research Assistant</em>, Health Psychology Lab, University of Toronto</p>
+<p>Used MS Excel and SPSS 17.0 to organize and analyze data from experiments and prepare the data for presentations at provincial and international tobacco control conferences. Independently conducted a phone survey of Ontario’s university campuses’ outdoor smoking policies and prepared a poster to be presented at a tobacco control conference. Supervisor: PhD(c) Ryan David Kennedy</p>
+</dd>
+<dt>May – Aug, 2008</dt>
+<dd><p><em>Project Manager</em>, Health Psychology Lab, University of Toronto</p>
+<p>Managed 3 projects aimed at measuring tobacco smoke pollution in outdoor and quasi-outdoor environments. Organized and analyzed data using MS Excel and SPSS 17.0. Supervised and scheduled a team of 10 Research Assistants. Supervisor: PhD(c) Ryan David Kennedy</p>
+</dd>
+</dl>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

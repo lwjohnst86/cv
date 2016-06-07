@@ -1,0 +1,14 @@
+name: "Luke W. Johnston's CV"
+output_dir: "."
+#navbar:
+#    left:
+#    - text: "HTML"
+#      href: index.html
+#    - text: "PDF"
+exclude: ["R"]
+output:
+    html_document:
+        css: _includes/style/style.css
+        theme: simplex
+        #include:
+        #    before_body: _includes/header.html

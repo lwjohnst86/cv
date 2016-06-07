@@ -1,0 +1,21 @@
+---
+title: Luke W. Johnston
+---
+
+Updated: `r format(Sys.Date(), '%B %d, %Y')`
+
+-----
+
+```{r, echo=FALSE, results='asis'}
+library(yaml)
+knitr::opts_chunk$set(echo = FALSE, results = 'asis')
+sections <- yaml.load_file('_outline.yaml')$sections
+```
+
+```{r}
+for (s in sections) {
+    cat('\n\n## ', s$title, '\n\n')
+    source(s$source)
+}
+```
+

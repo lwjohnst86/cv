@@ -1,0 +1,21 @@
+affiliations:
+  - start: 2015-05-26
+    status: Instructor and member
+    org: "[Software Carpentry](http://software-carpentry.org/)"
+  - start: 2016-01-14
+    status: Treasurer
+    org: "[UofT Scientific Coders](https://uoftcoders.github.io), University of Toronto & Mozilla Science Lab"
+    details: >
+        Responsible for managing the finances, identifying potential sources of
+        funding and applying to them as applicable, reimbursing students for expenses,
+        and buying the snacks for the coding sessions. Other communal duties include
+        maintaining the GitHub repository and dealing with Issues and Pull Requests
+        (via GitHub) that may arise.
+    website: "https://github.com/UofTCoders/council/tree/master/treasurer"
+  - start: 2014-09-01
+    status: Treasurer
+    org: "[Nutritional Sciences Graduate Student Association](http://nsgsa.sa.utoronto.ca/), University of Toronto, Canada"
+    details: >
+        Responsible for the accounting of the NSGSA finances, reimbursing students for expenses,
+        applying for the Graduate Student Union Head Grant to secure funding, and dealing with
+        any finance related issues that may come up.

@@ -1,0 +1,116 @@
+teaching:
+  - start: 2016-04-25
+    end: 2016-04-26
+    role: Helper
+    title: Software Carpentry workshops (R)
+    org: "[Software Carpentry](http://software-carpentry.org)"
+    details: >
+        Acted as helper to the instructors at a two-day workshop introducing
+        computing to researchers and students at the University of Toronto.
+        Duties were to answer any questions and fix any problems that novice
+        learners encountered during the R sessions.
+    website: "http://uoftcoders.github.io/2016-04-25-utoronto/"
+  - start: 2016-05-09
+    end: 2016-05-10
+    role: Instructor
+    title: Software Carpentry workshops (Python)
+    org: "[Software Carpentry](http://software-carpentry.org)"
+    details: >
+        Taught the Git session to novice learners at a two-day workshop on introducing
+        computing to researchers and students at the University of Toronto, as
+        well as acted as helper during the Shell and Python sessions.
+    website: "http://uoftcoders.github.io/2016-05-09-utoronto/"
+  - start: 2015-06-11
+    role: Instructor
+    title: Programming code-alongs
+    org: UofT Coders, University of Toronto, Canada
+    details: Various coding sessions (Git, R).
+    website: "http://uoftcoders.github.io"
+  - start: 2014-10-01
+    role: Instructor and founder
+    title: "Code as Manuscript: Data wrangling, visualization, and reproducibility in R"
+    org: Graduate Professional Skills Program, University of Toronto, Canada
+    details: >
+        I started this workshop series in the Department of Nutritional Sciences and eventually
+        got it approved for teaching in the GPS program. Initially I taught with
+        colleague Dr. Daiva Nielsen and we taught graduate
+        students SAS coding and computing skills. I now teach R and Git,
+        having co-instructed with Sarah Meister.
+        We teach version control, beginner and advanced coding techniques, and
+        how to structure research projects around the idea of reproducibility.
+        Consistent with our mission statement, our material is publicly available online
+        at http://github.com/codeasmanuscript/workshops.
+    website: "http://codeasmanuscript.org"
+  - start: 2015-09-01
+    end: 2015-12-31
+    role: Teaching Assistant
+    title: Public Health Nutrition (NFS1201)
+    org: Department of Nutritional Sciences, University of Toronto, Canada
+    details: >
+        Gave [two lectures](https://github.com/lwjohnst86/nfs1201-lectures)
+        during the course and developed and marked the
+        [final (third) assignment](https://github.com/lwjohnst86/nfs1201-assignment).
+    supervisor: Dr. Sarah Orr
+  - start: 2015-07-16
+    end: 2015-07-17
+    role: Instructor
+    title: Software Carpentry Workshop (R)
+    org: "[Software Carpentry](http://software-carpentry.org)"
+    details: >
+        Coding workshop hosted at the Hospital for Sick Children, Toronto. I
+        taught version control using Git and acted as helper for
+        the Shell and R sessions.
+    website: "http://blog.tomwright.ca/2015-07-16-sickkids/"
+  - start: 2015-01-29
+    end: 2015-01-30
+    role: Teaching Helper
+    title: Software Carpentry Workshop (R)
+    org: "[Software Carpentry](http://software-carpentry.org)"
+    details: >
+        Coding workshop hosted at the Hospital for Sick Children, Toronto.
+        I provided technical support, worked through students' problems and
+        issues with them, and answered any questions.
+    website: "http://tomwright01.github.io/2015-01-29-sickkids/"
+    supervisor: Tom Wright
+  - start: 2014-10-30
+    end: 2014-10-31
+    role: Teaching Helper
+    title: Software Carpentry Workshop (Python)
+    org: "[Software Carpentry](http://software-carpentry.org)"
+    details: >
+        Coding workshop hosted at the Gerstein Library, University of Toronto. I
+        provided technical support, assisted students' with problems and
+        issues, and answered student questions.
+    website: "http://swcarpentry.github.io/2014-10-30-utoronto/"
+    supervisor: Dr. Greg Wilson
+  - start: 2014-09-01
+    end: 2014-12-31
+    role: Teaching Assistant
+    title: Advanced Nutrition (NFS484-1484)
+    org: Department of Nutritional Sciences, University of Toronto, Canada
+    details: >
+        Developed and lead [tutorials](https://github.com/lwjohnst86/nfs484-1484-tutorials) for
+        graduate students. Developed and marked the
+        [final exam](https://github.com/lwjohnst86/nfs484-1484-exams). Answered any
+        student questions.
+    supervisor: Dr. Carol Greenwood
+  - start: 2013-09-01
+    end: 2013-12-31
+    role: Teaching Assistant
+    title: Advanced Nutrition (NFS484-1484)
+    org: Department of Nutritional Sciences, University of Toronto, Canada
+    details: >
+        Lead [tutorials](https://github.com/lwjohnst86/nfs484-1484-tutorials) for
+        undergraduate students. Developed and marked the
+        [midterm exam](https://github.com/lwjohnst86/nfs484-1484-exams). Answered any
+        student questions.
+    supervisor: Dr. Carol Greenwood
+  - start: 2013-01-01
+    end: 2013-04-30
+    role: Teaching Assistant
+    title: Nutritional Microbiology (NFS485)
+    org: Department of Nutritional Sciences, University of Toronto, Canada
+    details: >
+        Answer student emails and questions. Mark midterm exam, assignment and final
+        exam. Invigilate midterm and final exam.
+    supervisor: Dr. Elena Comelli

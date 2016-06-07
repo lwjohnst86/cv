@@ -1,0 +1,37 @@
+degrees:
+  - degree: PhD(c)
+    end: Present
+    university: University of Toronto, Canada
+    thesis: >
+        Serum Composition of Fatty Acids in Lipid Fractions in the
+        Progression of Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus.
+    supervisor: Dr. Anthony J. Hanley
+  - degree: MSc
+    end: 2013
+    university: University of Toronto, Canada
+    thesis: >
+        Association of Leg Length with Metabolic Abnormalities Underlying
+        Type 2 Diabetes Mellitus.
+    supervisor: Dr. Anthony J. Hanley
+    link: pubs/msc-thesis.pdf
+  - degree: Honours BSc in Kinesiology
+    end: 2010
+    university: University of Waterloo, Canada
+certificates:
+  - title: Software Carpentry Instructor Training
+    end: 2015
+    # Feb to May
+    org: Software Carpentry
+    website: http://swcarpentry.github.io/training-course/2015/02/luke-johnston/
+#    Taking instructor training from Software Carpentry, an organization that is
+#    aimed at providing training in the form of workshops for researchers and
+#    scientists to teach computing and programming skills. These skills are
+#    increasingly becoming important as our society and science in general enter
+#    in the digital age, where datasets are becoming larger and reproducible
+#    analyses are being required to maintain scientific rigor. My profile on the
+#    training website is found at:
+#    http://swcarpentry.github.io/training-course/2015/02/luke-johnston/
+  - title: Advanced University Teaching Preparation
+    end: 2015
+    # from 2013 to 2015
+    org: "Teaching Assistants' Training Program, University of Toronto, Canada"

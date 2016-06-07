@@ -1,0 +1,26 @@
+source: R/functions.R
+sections:
+    - title: Education
+      file: _includes/education.yaml
+      source: R/education.R
+    - title: Awards
+      file: _includes/awards.yaml
+      source: R/awards.R
+    - title: Publications
+      file: _includes/publications.yaml
+      source: R/publications.R
+    - title: Teaching
+      file: _includes/teaching.yaml
+      source: R/teaching.R
+    - title: Affiliations
+      file: _includes/affiliations.yaml
+      source: R/affiliations.R
+    - title: Miscellaneous
+      file: _includes/misc.yaml
+      source: R/misc.R
+    - title: Mentoring
+      file: _includes/students.yaml
+      source: R/students.R
+    - title: Employment
+      file: _includes/employment.yaml
+      source: R/employment.R
