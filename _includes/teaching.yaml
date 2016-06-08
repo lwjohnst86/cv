@@ -1,4 +1,17 @@
 teaching:
+  - start: 2016-05-26
+    role: Instructor
+    title: Departmental R workshops
+    org: "[Code As Manuscript](http://codeasmanuscript.org)"
+    details: >
+        I wanted to increase the computing capacity of my graduate department and
+        to start to promote a culture of code-sharing and code reviews. Since how
+        analyses are conducted and what the code is to create the scientific results
+        is increasingly becoming more important, I wanted to start teaching students
+        how to use R efficiently and productively. I've also set up a code review
+        with my lab, so it was efficient for me to wrap these workshops up with the
+        code reviews.
+    website: "http://codeasmanuscript.github.io/code-along"
   - start: 2016-04-25
     end: 2016-04-26
     role: Helper
