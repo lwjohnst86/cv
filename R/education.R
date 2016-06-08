@@ -1,5 +1,5 @@
 source('R/functions.R')
-output <- yaml::yaml.load_file('_includes/education.yaml')
+output <- yaml.load_file('_includes/education.yaml')
 n <- names(output)
 N <- gsub('^([a-z])', '\\U\\1', n, perl = TRUE)
 
@@ -8,9 +8,12 @@ ordered_output <- order_by_year(output)
 cat('\n### ', N[1], '\n\n')
 for (i in ordered_output[[n[1]]]) {
     thesis <- ''
-    if (!is.null(i$thesis))
+    if (!is.null(i$thesis) & !is.null(i$link)) {
         thesis <- paste0('[', i$thesis,
                          '](', i$link, ') Supervisor: ', i$supervisor)
+    } else if (is.null(i$link)) {
+        thesis <- paste0(i$thesis,' Supervisor: ', i$supervisor)
+    }
     cat(i$end, '\n: *',
         i$degree, '*, ', i$university, '\n\n\t',
         thesis, '\n\n', sep = '')
