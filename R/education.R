@@ -11,7 +11,7 @@ for (i in ordered_output[[n[1]]]) {
     if (!is.null(i$thesis) & !is.null(i$link)) {
         thesis <- paste0('[', i$thesis,
                          '](', i$link, ') Supervisor: ', i$supervisor)
-    } else if (is.null(i$link)) {
+    } else if (!is.null(i$thesis) & is.null(i$link)) {
         thesis <- paste0(i$thesis,' Supervisor: ', i$supervisor)
     }
     cat(i$end, '\n: *',
