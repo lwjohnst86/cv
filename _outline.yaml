@@ -15,6 +15,9 @@ sections:
     - title: Affiliations
       file: _includes/affiliations.yaml
       source: R/affiliations.R
+    - title: R packages
+      file: _includes/rpackages.yaml
+      source: R/rpackages.R
     - title: Miscellaneous
       file: _includes/misc.yaml
       source: R/misc.R

@@ -1,37 +1,3 @@
-rpackages:
-    cran:
-        - pkg: "[prodigenr](https://cran.rstudio.com/web/packages/prodigenr/index.html)"
-          details: >
-            Create a project directory structure, along with typical files
-            for that project.  This allows projects to be quickly and easily created,
-            as well as for them to be standardized. Designed specifically with scientists
-            in mind (mainly bio-medical researchers, but likely applies to other fields).
-    github:
-        - pkg: "[mason](https://github.com/lwjohnst86/mason)"
-          details: >
-            Use a consistent syntax to create data structures of common
-            statistical techniques that can be continued in a magrittr pipe chain.
-            Design the analysis, add settings and variables, construct the results, and
-            polish the final structure. Rinse and repeat for any number of statistical
-            techniques.
-        - pkg: "[seer](https://github.com/lwjohnst86/seer)"
-          details: >
-            Become a seer of data to gain insights into the structure of
-            your results. Use a common syntax to quickly create commonly used plots
-            from analyses. Uses the output from the mason package.
-        - pkg: "[carpenter](https://github.com/lwjohnst86/carpenter)"
-          details: >
-            Easily create tables commonly used in scientific papers.
-    contributed:
-        - pkg: "[broom](https://cran.r-project.org/web/packages/broom/index.html)"
-          details: >
-            Convert statistical analysis objects from R into tidy data frames,
-            so that they can more easily be combined, reshaped and otherwise processed
-            with tools like 'dplyr', 'tidyr' and 'ggplot2'. The package provides
-            three S3 generics: tidy, which summarizes a model's statistical findings
-            such as coefficients of a regression; augment, which adds columns to the
-            original data such as predictions, residuals and cluster assignments; and glance,
-            which provides a one-row summary of model-level statistics.
 skills:
     languages: Spanish
     programming:
