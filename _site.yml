@@ -10,5 +10,10 @@ output:
     html_document:
         css: _includes/style/style.css
         theme: simplex
+        toc: true
+        toc_depth: 2
+        toc_float:
+            collapsed: false
+            smooth_scroll: false
         #include:
         #    before_body: _includes/header.html
