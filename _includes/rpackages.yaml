@@ -1,27 +1,29 @@
 rpackages:
     cran:
-        - pkg: "[prodigenr](https://cran.rstudio.com/web/packages/prodigenr/index.html)"
+        - pkg: "[prodigenr](https://cran.r-project.org/package=prodigenr)"
           details: >
             Create a project directory structure, along with typical files
             for that project.  This allows projects to be quickly and easily created,
             as well as for them to be standardized. Designed specifically with scientists
             in mind (mainly bio-medical researchers, but likely applies to other fields).
-        - pkg: "[mason](https://github.com/lwjohnst86/mason)"
+        - pkg: "[mason](https://cran.r-project.org/package=mason)"
           details: >
             Use a consistent syntax to create data structures of common
             statistical techniques that can be continued in a magrittr pipe chain.
             Design the analysis, add settings and variables, construct the results, and
             polish the final structure. Rinse and repeat for any number of statistical
             techniques.
+        - pkg: "[carpenter](https://cran.r-project.org/package=carpenter)"
+          details: >
+            Easily create tables commonly used in scientific papers that can be
+            reproduced and automatically updated whenever new data is included or
+            from suggestions by reviewers.
     github:
         - pkg: "[seer](https://github.com/lwjohnst86/seer)"
           details: >
             Become a seer of data to gain insights into the structure of
             your results. Use a common syntax to quickly create commonly used plots
-            from analyses. Uses the output from the mason package.
-        - pkg: "[carpenter](https://github.com/lwjohnst86/carpenter)"
-          details: >
-            Easily create tables commonly used in scientific papers.
+            from analyses.
     contributed:
         - pkg: "[broom](https://cran.r-project.org/web/packages/broom/index.html)"
           details: >
