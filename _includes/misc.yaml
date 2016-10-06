@@ -13,6 +13,7 @@ skills:
             - Pandoc
             - Markdown
             - YAML
+            - Unit testing, code coverage, continuous integration
         familiar:
             - Python
             - SQLite
@@ -29,7 +30,11 @@ skills:
             - Latent class mixed models
             - Partial least squares regression
             - Partial least squares discriminant analysis
+            - Cross-validation
+            - Directed Acyclic Graphs (covariate selection)
+            - Information Criterion (AIC, QIC)
         familiar:
             - Linear discriminant analysis
             - Mixed effects models
             - Factor analysis
+            - Structural Equation Modeling
