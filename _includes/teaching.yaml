@@ -1,4 +1,25 @@
 teaching:
+  - start: 2016-09-14
+    end: 2016-09-14
+    role: Instructor
+    title: Software Carpentry workshops (R)
+    org: "[Software Carpentry](http://software-carpentry.org)"
+    details: >
+        Taught the first R session to novice learners at a two-day workshop on introducing
+        computing to researchers and students at York University.
+    website: "https://gvwilson.github.io/2016-09-14-yorku/""
+  - start: 2016-07-27
+    end: 2016-08-10
+    role: Helper
+    title: CUPE3902 Post-doc Python workshops
+    org: "[CUPE3902 Unit 5](http://cupe3902.org/postdocs/)"
+    details: >
+        The [UofTCoders](https://uoftcoders.github.io/studyGroup/) members were hired
+        by CUPE3902 Unit 5 to teach Python to post-doctoral fellows. As a core
+        member of the UofTCoders, I acted as a helper to the instructors at the
+        three-part workshop series introducing the Python programming language.
+        Duties were to answer any questions and fix any problems that novice
+        learners encountered during the Python sessions.
   - start: 2016-05-26
     role: Instructor
     title: Departmental R workshops
