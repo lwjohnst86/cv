@@ -25,7 +25,7 @@ rpackages:
             your results. Use a common syntax to quickly create commonly used plots
             from analyses.
     contributed:
-        - pkg: "[broom](https://cran.r-project.org/web/packages/broom/index.html)"
+        - pkg: "[broom](https://cran.r-project.org/package=broom)"
           details: >
             Convert statistical analysis objects from R into tidy data frames,
             so that they can more easily be combined, reshaped and otherwise processed
@@ -33,4 +33,5 @@ rpackages:
             three S3 generics: tidy, which summarizes a model's statistical findings
             such as coefficients of a regression; augment, which adds columns to the
             original data such as predictions, residuals and cluster assignments; and glance,
-            which provides a one-row summary of model-level statistics.
+            which provides a one-row summary of model-level statistics. I added S3 methods
+            to the functions for generalized estimating equation results.
