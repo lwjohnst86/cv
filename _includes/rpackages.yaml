@@ -1,23 +1,29 @@
 rpackages:
     cran:
         - pkg: "[prodigenr](https://cran.r-project.org/package=prodigenr)"
+          title: "Research Project Directory Generator"
           details: >
             Create a project directory structure, along with typical files
             for that project.  This allows projects to be quickly and easily created,
             as well as for them to be standardized. Designed specifically with scientists
             in mind (mainly bio-medical researchers, but likely applies to other fields).
+          first_published: 2016-04-30
         - pkg: "[mason](https://cran.r-project.org/package=mason)"
+          title: "Build Data Structures for Common Statistical Analysis"
           details: >
             Use a consistent syntax to create data structures of common
             statistical techniques that can be continued in a magrittr pipe chain.
             Design the analysis, add settings and variables, construct the results, and
             polish the final structure. Rinse and repeat for any number of statistical
             techniques.
+          first_published: 2016-07-15
         - pkg: "[carpenter](https://cran.r-project.org/package=carpenter)"
+          title: "Build Common Tables of Summary Statistics for Reports"
           details: >
             Easily create tables commonly used in scientific papers that can be
             reproduced and automatically updated whenever new data is included or
             from suggestions by reviewers.
+          first_published: 2016-07-29
     github:
         - pkg: "[seer](https://github.com/lwjohnst86/seer)"
           details: >
