@@ -22,12 +22,11 @@
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/default.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -103,7 +102,6 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -129,7 +127,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
@@ -188,8 +186,9 @@ div.tocify {
 }
 
 .tocify-subheader .tocify-item {
-  font-size: 0.9em;
-  padding-left: 5px;
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -201,7 +200,6 @@ div.tocify {
 }
 .tocify-subheader .tocify-item {
   font-size: 0.95em;
-  padding-left: 10px;
 }
 
 </style>
@@ -227,7 +225,7 @@ div.tocify {
 </div>
 
 
-<p>Updated: October 06, 2016</p>
+<p>Updated: January 16, 2017</p>
 <hr />
 <div id="education" class="section level2">
 <h2>Education</h2>
@@ -236,7 +234,7 @@ div.tocify {
 <dl>
 <dt>Present</dt>
 <dd><p><em>PhD(c)</em>, University of Toronto, Canada</p>
-<p>Serum Composition of Fatty Acids in Lipid Fractions in the Progression of Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus. Supervisor: Dr. Anthony J. Hanley</p>
+<p>Serum Composition of Fatty Acids in Lipid Fractions in the Progression of Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus. Supervisor: Dr. Anthony J. Hanley. Co-supervisor: Dr. Richard Bazinet</p>
 </dd>
 <dt>2013</dt>
 <dd><p><em>MSc</em>, University of Toronto, Canada</p>
@@ -331,6 +329,7 @@ div.tocify {
 <div id="oral-presentations" class="section level3">
 <h3>Oral presentations</h3>
 <ol style="list-style-type: decimal">
+<li>Bonsma M, Tran L, Coome L, <strong>Johnston L</strong>. Study Groups - Crossing the Boundaries of Discipline. In: <em>Mozilla Festival</em>.; 2016. <a href="https://app.mozillafestival.org/#_session-552" class="uri">https://app.mozillafestival.org/#_session-552</a>.</li>
 <li>Santaren ID, Bazinet RP, Liu Z, <strong>Johnston LW</strong>, Retnakaran R, Harris SB, Zinman B, Hanley AJ. Serum Fatty Acids Derived from Dairy Consumption are Associated with Insulin Sensitivity and Beta-cell Function: The PROspective Metabolism and ISlet cell Evaluation (PROMISE) Cohort. <em>Diabetes</em>. 2016;65(Supplement 1):A95. <a href="http://dx.doi.org/10.2337/db16-1-381" class="uri">http://dx.doi.org/10.2337/db16-1-381</a>.</li>
 <li><strong>Johnston LW</strong>, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet RP, Hanley AJ. Serum Phospholipid (PL) Fatty Acid Composition Predicts Declines in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-years in the Prospective Metabolism And Islet Cell Evaluation (PROMISE) Cohort. In: <em>International Diabetes Epidemiology Group Scientific Meeting</em>. Vancouver, Canada; 2015. <a href="https://figshare.com/s/1cce7abacad54e48aa0a" class="uri">https://figshare.com/s/1cce7abacad54e48aa0a</a>.</li>
 <li><strong>Johnston L</strong>, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet R, Hanley A. Serum Non-Esterified Fatty Acid (NEFA) Concentrations are Associated with Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort. In: <em>33rd International Symposium on Diabetes &amp; Nutrition in Toronto, Canada</em>.; 2015. doi: <a href="https://doi.org/10.6084/m9.figshare.1545567">10.6084/m9.figshare.1545567</a>.</li>
@@ -347,12 +346,12 @@ div.tocify {
 <li><strong>Johnston L</strong>, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet R, Hanley A. Serum Non-Esterified Fatty Acid (NEFA) Composition and Longitudinal Associations with Beta-Cell Dysfunction. In: <em>International Diabetes Federation World Diabetes Congress in Vancouver, Canada</em>.; 2015. <a href="https://figshare.com/s/7301482497f6a6349dc8" class="uri">https://figshare.com/s/7301482497f6a6349dc8</a>.</li>
 <li><strong>Johnston L</strong>, Kayaniyil S, Lee C, Harris S, Retnakaran R, Zinman B, Bazinet R, Hanley A. Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) Is Associated with Insulin Resistance: PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort. <em>Diabetes</em>. 2014;63(Suppl. 1):A384, 1463-P. <a href="https://figshare.com/s/a7cf86f77bc4be78ac7f" class="uri">https://figshare.com/s/a7cf86f77bc4be78ac7f</a>.</li>
 <li><strong>Johnston LW</strong>, Harris SB, Retnakaran R, Gerstein HC, Hamilton J, Zinman B, Hanley AJ. The association of leg length with metabolic abnormalities underlying type 2 diabetes mellitus: The PROMISE cohort. <em>Diabetes</em>. 2013;62(Suppl. 1):A912, 1578-P. <a href="https://figshare.com/s/271bfd6c988efcdb5921" class="uri">https://figshare.com/s/271bfd6c988efcdb5921</a>.</li>
-<li>Kennedy R, <strong>Johnston L</strong>, Munhall C, Filsinger S. Secondhand Smoke in Common Spaces of Public Housing – Findings from Waterloo Region. 2011.</li>
-<li>Munhall C, Kennedy R, <strong>Johnston L</strong>, Steibelt E, Trusler A. An Environmental Scan of Tobacco-free Policies of YMCA &amp; YWCA Locations in Ontario, Canada. 2011.</li>
-<li>Howard A, <strong>Johnston L</strong>, Rothman L. Probability of Multiple Fractures in Childhood Session. 2010.</li>
-<li>Kennedy R, <strong>Johnston L</strong>, Fong G, Hyland A, Travers M. Experimental Evaluation of Outdoor and Adjacent Indoor Tobacco Smoke Pollution in Doorways. 2009.</li>
-<li><strong>Johnston L</strong>, Kennedy R, Fong G. An Environmental Scan of Tobacco Control Policies on University Campuses in Ontario. 2008.</li>
-<li>Kennedy R, Fong G, Travers M, Hyland A, <strong>Johnston L</strong>, Mutti S. Experimental Evaluation of Tobacco Control Policies in Outdoor Environments. 2008.</li>
+<li>Kennedy R, <strong>Johnston L</strong>, Munhall C, Filsinger S. Secondhand Smoke in Common Spaces of Public Housing – Findings from Waterloo Region. In: <em>7th National Conference on Tobacco or Health, Making the Connection: Knowledge Transforming Health</em>. Canadian Council on Tobacco Control; 2011.</li>
+<li>Munhall C, Kennedy R, <strong>Johnston L</strong>, Steibelt E, Trusler A. An Environmental Scan of Tobacco-free Policies of YMCA &amp; YWCA Locations in Ontario, Canada. In: <em>17th Annual Meeting of the Society on Research on Nicotine and Tobacco</em>.; 2011.</li>
+<li>Howard A, <strong>Johnston L</strong>, Rothman L. Probability of Multiple Fractures in Childhood Session. In: <em>Safety 2010 World Conference</em>.; 2010.</li>
+<li>Kennedy R, <strong>Johnston L</strong>, Fong G, Hyland A, Travers M. Experimental Evaluation of Outdoor and Adjacent Indoor Tobacco Smoke Pollution in Doorways. In: <em>14th World Conference on Tobacco or Health</em>.; 2009.</li>
+<li><strong>Johnston L</strong>, Kennedy R, Fong G. An Environmental Scan of Tobacco Control Policies on University Campuses in Ontario. In: <em>Tobacco Control for the 21st Century</em>. Ontario Tobacco Research Unit; 2008.</li>
+<li>Kennedy R, Fong G, Travers M, Hyland A, <strong>Johnston L</strong>, Mutti S. Experimental Evaluation of Tobacco Control Policies in Outdoor Environments. In: <em>Tobacco Control for the 21st Century</em>. Ontario Tobacco Research Unit; 2008.</li>
 </ol>
 </div>
 </div>
@@ -439,13 +438,13 @@ div.tocify {
 <h3>CRAN</h3>
 <dl>
 <dt><a href="https://cran.r-project.org/package=prodigenr">prodigenr</a></dt>
-<dd>Create a project directory structure, along with typical files for that project. This allows projects to be quickly and easily created, as well as for them to be standardized. Designed specifically with scientists in mind (mainly bio-medical researchers, but likely applies to other fields).
+<dd><em>Research Project Directory Generator</em>: Create a project directory structure, along with typical files for that project. This allows projects to be quickly and easily created, as well as for them to be standardized. Designed specifically with scientists in mind (mainly bio-medical researchers, but likely applies to other fields). <em>First published</em>: Apr, 2016
 </dd>
 <dt><a href="https://cran.r-project.org/package=mason">mason</a></dt>
-<dd>Use a consistent syntax to create data structures of common statistical techniques that can be continued in a magrittr pipe chain. Design the analysis, add settings and variables, construct the results, and polish the final structure. Rinse and repeat for any number of statistical techniques.
+<dd><em>Build Data Structures for Common Statistical Analysis</em>: Use a consistent syntax to create data structures of common statistical techniques that can be continued in a magrittr pipe chain. Design the analysis, add settings and variables, construct the results, and polish the final structure. Rinse and repeat for any number of statistical techniques. <em>First published</em>: Jul, 2016
 </dd>
 <dt><a href="https://cran.r-project.org/package=carpenter">carpenter</a></dt>
-<dd>Easily create tables commonly used in scientific papers that can be reproduced and automatically updated whenever new data is included or from suggestions by reviewers.
+<dd><em>Build Common Tables of Summary Statistics for Reports</em>: Easily create tables commonly used in scientific papers that can be reproduced and automatically updated whenever new data is included or from suggestions by reviewers. <em>First published</em>: Jul, 2016
 </dd>
 </dl>
 </div>
@@ -576,8 +575,11 @@ div.tocify {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 
