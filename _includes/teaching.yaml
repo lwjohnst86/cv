@@ -1,4 +1,15 @@
 teaching:
+  - start: 2017-02-03
+    end: 2017-02-04
+    role: Helper
+    title: Software Carpentry workshops (Python)
+    org: "[Software Carpentry](http://software-carpentry.org)"
+    details: >
+        Acted as helper to the instructors at a two-day workshop introducing
+        computing to researchers and students at the University of Toronto.
+        Duties were to answer any questions and fix any problems that novice
+        learners encountered during the two day workshop.
+    website: "http://uoftcoders.github.io/2017-02-03-utoronto/"
   - start: 2016-09-14
     end: 2016-09-14
     role: Instructor
