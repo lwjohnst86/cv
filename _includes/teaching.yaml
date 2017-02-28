@@ -10,6 +10,16 @@ teaching:
         Duties were to answer any questions and fix any problems that novice
         learners encountered during the two day workshop.
     website: "http://uoftcoders.github.io/2017-02-03-utoronto/"
+  - start: 2016-09-01
+    end: 2016-12-21
+    role: Teaching Assistant
+    title: Advanced Nutrition (NFS484-1484)
+    org: Department of Nutritional Sciences, University of Toronto, Canada
+    details: >
+        Marked exams. Developed and marked a
+        [short assignment](https://github.com/lwjohnst86/nfs484-1484-assignment-2016). Answered any
+        student questions.
+    supervisor: Dr. Carol Greenwood
   - start: 2016-09-14
     end: 2016-09-14
     role: Instructor
