@@ -14,8 +14,8 @@ sections <- yaml.load_file('_outline.yaml')$sections
 
 ```{r}
 for (s in sections) {
+    options(restrict_to_year = NULL)
     cat('\n\n## ', s$title, '\n\n')
     source(s$source)
 }
 ```
-

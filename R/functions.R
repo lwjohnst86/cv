@@ -68,6 +68,12 @@ convert_date <- function(start, end = NULL) {
 publication_list <- function(publications, type = c('posters', 'orals', 'articles')) {
     type <- match.arg(type)
     output_file <- paste0('R/', type, '.Rmd')
+    years_to_keep <- getOption("restrict_to_year")
+    if (!is.null(years_to_keep)) {
+        years_to_keep <- year(Sys.Date()):years_to_keep
+        years_to_keep <- paste0(years_to_keep, collapse = "|")
+        publications <- grep(years_to_keep, publications, value = TRUE)
+    }
     file_contents <- paste(
         '---',
         'bibliography: ../_includes/work.bib',
@@ -86,3 +92,34 @@ publication_list <- function(publications, type = c('posters', 'orals', 'article
     pub_list <- paste(gsub('^$', '\n', pub_list), collapse = ' ')
     cat('\n\n', pub_list, '\n\n', sep = '\n')
 }
+
+#' Limit the CV entries to a certain number of years from the past
+#'
+#' @param cv_entry The CV section list
+#'
+#' @return Outputs TRUE to exclude the entry, FALSE to include
+restricted_entry <- function(cv_entry) {
+    restricted_year <- getOption("restrict_to_year")
+    start <- cv_entry$start
+    end <- cv_entry$end
+
+    if (is.null(restricted_year))
+        return(FALSE)
+
+    if (!is.null(start) & is.null(end)) {
+        if (nchar(start) == 4) {
+            start <- as_date(paste0(start, '-01-01'))
+        } else {
+            start <- as_date(start)
+        }
+        year(start) < restricted_year
+    } else if (!is.null(end)) {
+        if (nchar(end) == 4) {
+            end <- as_date(paste0(end, '-01-01'))
+        } else {
+            end <- as_date(end)
+        }
+        year(end) < restricted_year
+    }
+}
+

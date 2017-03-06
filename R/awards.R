@@ -3,6 +3,7 @@ output <- yaml::yaml.load_file('_includes/awards.yaml')[[1]]
 ordered_output <- order_by_year(output)
 
 for (i in ordered_output) {
+    if (restricted_entry(i)) next
     timeline <- paste0(substr(i$start, 0, 4))
     if (i$start != i$end)
         timeline <- paste0(substr(i$start, 0, 4),' - ', substr(i$end, 0, 4))
