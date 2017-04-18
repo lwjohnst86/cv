@@ -10,9 +10,12 @@ Updated: `r format(Sys.Date(), '%B %d, %Y')`
 library(yaml)
 knitr::opts_chunk$set(echo = FALSE, results = 'asis')
 sections <- yaml.load_file('_outline.yaml')$sections
+names(sections) <- sapply(sections, function(x) x$title)
 ```
 
 ```{r}
+# Choose which sections to include
+# sections <- sections[c('Publications', 'Awards')]
 for (s in sections) {
     options(restrict_to_year = NULL)
     cat('\n\n## ', s$title, '\n\n')
