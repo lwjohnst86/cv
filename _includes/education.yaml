@@ -1,6 +1,6 @@
 degrees:
-  - degree: PhD(c)
-    end: Present
+  - degree: "PhD(c)"
+    start: 2013
     university: University of Toronto, Canada
     thesis: >
         Serum Composition of Fatty Acids in Lipid Fractions in the
@@ -8,6 +8,7 @@ degrees:
     supervisor: Dr. Anthony J. Hanley
     co_supervisor: Dr. Richard Bazinet
   - degree: MSc
+    start: 2011
     end: 2013
     university: University of Toronto, Canada
     thesis: >
@@ -36,3 +37,9 @@ certificates:
     end: 2015
     # from 2013 to 2015
     org: "Teaching Assistants' Training Program, University of Toronto, Canada"
+  - title: Graduate Professional Skills
+    end: 2017
+    org: "Graduate Professional Skills Program, School of Graduate Studies, University of Toronto, Canada"
+  - title: Data Carpentry Instructor Training
+    end: 2017
+    org: "Data Carpentry"
