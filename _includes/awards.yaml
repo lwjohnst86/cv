@@ -1,6 +1,14 @@
 awards:
   - start: 2017
     end: 2017
+    title: Working Open Workshop Travel Scholarship
+    source: Mozilla Science Lab
+    other: >
+        For attendance to a workshop hosted by the Mozilla Science Lab to train
+        on using open source and processes for research projects.
+    value: "USD 300"
+  - start: 2017
+    end: 2017
     title: Gordon Cressy Student Leadership Award
     source: University of Toronto
     other: >
