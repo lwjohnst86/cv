@@ -1,4 +1,11 @@
 teaching:
+  - start: 2017-01-02
+    end: 2017-04-28
+    role: Teaching Assistant
+    title: Basic Human Nutrition (NFS284)
+    org: Department of Nutritional Sciences, University of Toronto, Canada
+    details: Marked assignments and exams.
+    supervisor: Dr. Debbie Gurfinkel
   - start: 2017-02-03
     end: 2017-02-04
     role: Helper
