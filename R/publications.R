@@ -7,3 +7,6 @@ cat('\n\n### Oral presentations\n\n')
 publication_list(output$orals, 'orals')
 cat('\n\n### Poster presentation\n\n')
 publication_list(output$posters, 'posters')
+cat('\n\n### Panel member\n\n')
+publication_list(output$panel, 'panel')
+
