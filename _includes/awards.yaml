@@ -1,6 +1,8 @@
 awards:
-  - start: 2017-05-16
-    end: 2017-05-18
+  - start: 2017
+    end: 2017
+    #start: 2017-05-16
+    #end: 2017-05-18
     # Should this be here as well as in a 'training' section?
     title: Marie Skłodowska-Curie Master Class and Travel Fund
     source: Aarhus University, Denmark
@@ -9,6 +11,8 @@ awards:
         Fellowship, with travel expenses and accommodations paid.
   - start: 2017
     end: 2017
+    #start: 2017-03-10
+    #end: 2017-03-11
     # Should this be here as well as a 'training' section?
     title: Working Open Workshop and Travel Scholarship
     source: Mozilla Science Lab
