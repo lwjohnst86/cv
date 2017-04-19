@@ -2,17 +2,18 @@ awards:
   - start: 2017-05-16
     end: 2017-05-18
     # Should this be here as well as in a 'training' section?
-    title: Marie Skłodowska-Curie Master Class and Travel
+    title: Marie Skłodowska-Curie Master Class and Travel Fund
     source: Aarhus University, Denmark
     other: >
         Participation in a workshop aimed at applying for the Marie Curie
         Fellowship, with travel expenses and accommodations paid.
   - start: 2017
     end: 2017
-    title: Working Open Workshop Travel Scholarship
+    # Should this be here as well as a 'training' section?
+    title: Working Open Workshop and Travel Scholarship
     source: Mozilla Science Lab
     other: >
-        For attendance to a workshop hosted by the Mozilla Science Lab to train
+        Attendance to a workshop hosted by the Mozilla Science Lab to train
         on using open source and processes for research projects.
     value: "USD 300"
   - start: 2017
