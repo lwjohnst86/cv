@@ -33,8 +33,8 @@ awards:
         skill sharing of coding and programming for science and research, and
         for running short, twice-monthly coding sessions in the Department of
         Nutritional Sciences.
-    - misc: Website with picture
-        - link: https://alumni.utoronto.ca/events-and-programs/awards/cressy/recipients/2017
+    #misc: Website with picture
+        #- link: https://alumni.utoronto.ca/events-and-programs/awards/cressy/recipients/2017
   - start: 2009
     end: 2010
     title: Ashley Studentship
