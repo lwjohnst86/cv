@@ -8,6 +8,7 @@ output_dir: "."
 exclude: ["R"]
 output:
     html_document:
+        keep_md: true
         css: _includes/style/style.css
         theme: simplex
         toc: true
