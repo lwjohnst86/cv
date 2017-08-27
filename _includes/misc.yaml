@@ -7,12 +7,12 @@ skills:
             - LaTeX (beamer, beamerposter)
             - Web (HTML, CSS, Jekyll, Github Pages)
             - Makefiles
-            - Bash
-            - Linux OS
+            - Bash/Linux OS
             - Git
             - Pandoc
             - Markdown
             - YAML
+            - GraphViz
             - Unit testing, code coverage, continuous integration
         familiar:
             - Python
@@ -33,6 +33,7 @@ skills:
             - Cross-validation
             - Directed Acyclic Graphs (covariate selection)
             - Information Criterion (AIC, QIC)
+            - Resampling (bootstrap)
         familiar:
             - Linear discriminant analysis
             - Mixed effects models
