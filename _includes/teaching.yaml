@@ -1,4 +1,12 @@
 teaching:
+  - start: 2017-05-08
+    end: 2017-05-09
+    role: Instructor
+    title: Software Carpentry workshops (R)
+    org: "[Software Carpentry](http://software-carpentry.org)"
+    details: >
+        Instructed the second day of the two-day workshop at Ryserson University
+        on advanced uses of R.
   - start: 2017-01-02
     end: 2017-04-28
     role: Teaching Assistant
