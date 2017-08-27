@@ -1,4 +1,16 @@
 teaching:
+  - start: 2017-09-07
+    role: Teaching Assistant
+    title: Reproducible Quantitative Methods and Theoretical Ecology (EEB430)
+    org: Department of Ecology and Evolutionary Biology, University of Toronto, Canada
+    details: Taught three lectures, created and marked assignments.
+    supervisor: Dr. Martin Krkosek
+  - start: 2017-09-07
+    role: Teaching Assistant
+    title: Public Health Nutrition (NFS1201)
+    org: Department of Nutritional Sciences, University of Toronto, Canada
+    details: Marked assignments and exams.
+    supervisor: Dr. Valerie Tarasuk
   - start: 2017-05-08
     end: 2017-05-09
     role: Instructor
