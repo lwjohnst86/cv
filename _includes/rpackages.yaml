@@ -30,6 +30,30 @@ rpackages:
             Become a seer of data to gain insights into the structure of
             your results. Use a common syntax to quickly create commonly used plots
             from analyses.
+        - pkg: "[fost](https://github.com/lwjohnst86/fost)"
+          details: >
+            Formatting and style templates for (biomedical) journal submission.
+            These templates convert reproducible R Markdown documents into
+            Word documents ready for journal submission.
+        - pkg: "[PROMISE.scrub](https://github.com/lwjohnst86/PROMISE.scrub)"
+          details: >
+            Scrub the PROMISE dataset. Functions to take the raw PROMISE datasets
+            and scrub, clean, and organize them into a 'tidy', single dataset.
+        - pkg: "[PROMISE.methods](https://github.com/lwjohnst86/PROMISE.methods)"
+          details: >
+            Programmatically construct data dictionaries of the PROMISE datasets.
+            Any additions or changes to the data will be automatically updated
+            and reflected in the data dictionary.
+        - pkg: "[ggepi](https://github.com/lwjohnst86/ggepi)"
+          details: >
+            ggplot2 extensions for visualizing epidemiological analyses. This
+            package expands on my seer package by developing underlying ggplot2
+            geom layers. This allows the epi graphs to be easily customized and
+            extensible.
+        - pkg: "[aide](https://github.com/lwjohnst86/aide)"
+          details: >
+            Aiding with common and simple utility functions. More of a helper
+            package to the other packages.
     contributed:
         - pkg: "[broom](https://cran.r-project.org/package=broom)"
           details: >
