@@ -1,4 +1,6 @@
 _ignore/
 .Rproj.user
 *.bak
+index.md
+recent.md
 
