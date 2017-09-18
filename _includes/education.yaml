@@ -1,6 +1,7 @@
 degrees:
-  - degree: "PhD(c)"
+  - degree: "PhD"
     start: 2013
+    end: 2017
     university: University of Toronto, Canada
     thesis: >
         Serum Composition of Fatty Acids in Lipid Fractions in the
