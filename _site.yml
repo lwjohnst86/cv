@@ -1,20 +1,49 @@
 name: "Luke W. Johnston's CV"
 output_dir: "."
-#navbar:
-#    left:
-#    - text: "HTML"
-#      href: index.html
-#    - text: "PDF"
+navbar:
+    left:
+    - text: "Full CV"
+      href: index.html
+    - text: "Past 5 years"
+      href: recent.html
+    - text: "PDF"
+      menu:
+      - text: "Full CV"
+        href: index.pdf
+      - text: "Past 5 years"
+        href: recent.pdf
+    right:
+    - text: CV repo
+      href: https://github.com/lwjohnst86/cv
+      icon: fa-github
+    - icon: fa-bars
+      menu:
+        - text: GitHub
+          href: https://github.com/lwjohnst86/
+          icon: fa-github-square
+        - text: GitLab
+          href: https://gitlab.com/lwjohnst/
+          icon: fa fa-git
+        - text: Stack Exchange
+          href: https://stackexchange.com/users/1992995
+          icon: fa-stack-exchange
+        - text: Stack Overflow
+          href: http://stackoverflow.com/users/2632184
+          icon: fa-stack-overflow
+        - text: Twitter
+          href: https://twitter.com/lwjohnst
+          icon: fa-twitter-square
+        - text: LinkedIn
+          href: https://www.linkedin.com/in/luke-johnston-480365101/
+          icon: fa-linkedin-square
 exclude: ["R"]
 output:
     html_document:
         keep_md: true
         css: _includes/style/style.css
-        theme: simplex
+        theme: lumen
         toc: true
         toc_depth: 2
         toc_float:
             collapsed: false
             smooth_scroll: false
-        #include:
-        #    before_body: _includes/header.html
