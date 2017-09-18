@@ -1,10 +1,13 @@
 teaching:
   - start: 2017-09-07
     role: Teaching Assistant
-    title: Reproducible Quantitative Methods and Theoretical Ecology (EEB430)
+    title: Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)
     org: Department of Ecology and Evolutionary Biology, University of Toronto, Canada
-    details: Taught three lectures, created and marked assignments.
+    details: >
+        Created the curriculum (along with five other members). Taught three
+        lectures, created and marked assignments.
     supervisor: Dr. Martin Krkosek
+    website: "https://uoftcoders.github.io/rcourse"
   - start: 2017-09-07
     role: Teaching Assistant
     title: Public Health Nutrition (NFS1201)
@@ -69,6 +72,7 @@ teaching:
         Duties were to answer any questions and fix any problems that novice
         learners encountered during the Python sessions.
   - start: 2016-05-26
+    end: 2017-04-12
     role: Instructor
     title: Departmental R workshops
     org: "[Code As Manuscript](http://codeasmanuscript.org)"
@@ -109,6 +113,7 @@ teaching:
     details: Various coding sessions (Git, R).
     website: "http://uoftcoders.github.io"
   - start: 2014-10-01
+    end: 2015-11-23
     role: Instructor and founder
     title: "Code as Manuscript: Data wrangling, visualization, and reproducibility in R"
     org: Graduate Professional Skills Program, University of Toronto, Canada
