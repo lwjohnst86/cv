@@ -6,12 +6,12 @@ navbar:
       href: index.html
     - text: "Past 5 years"
       href: recent.html
-#    - text: "PDF"
-#      menu:
-#      - text: "Full CV"
-#        href: index.pdf
-#      - text: "Past 5 years"
-#        href: recent.pdf
+    - text: "PDF"
+      menu:
+      - text: "Full CV"
+        href: cv-full-lukewjohnston.pdf
+      - text: "Past 5 years"
+        href: cv-recent-lukewjohnston.pdf
     right:
     - text: CV repo
       href: https://github.com/lwjohnst86/cv
