@@ -40,7 +40,9 @@ exclude: ["R"]
 output:
     html_document:
         keep_md: true
-        css: _includes/style/style.css
+        includes:
+            in_header:
+                - _includes/style/style.html
         theme: lumen
         toc: true
         toc_depth: 2
