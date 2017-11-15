@@ -1,4 +1,4 @@
-phd:
+undergraduate:
   - start: 2014-09-01
     end: 2015-04-30
     name: Windy Wang
@@ -6,8 +6,17 @@ phd:
         Validating a bioelectric impedance instrument against the gold standard
         dual-energy x-ray absorptiometry on measures of adiposity.
     details: >
-        For the Research Projects (NFS394) in Nutritional Sciences.
+        For the Research Projects course (NFS394) in Nutritional Sciences.
         Co-mentored with Dr. Anthony Hanley. Supervision consisted of helping guide the
         development of the research question and teaching Windy coding in SAS and
         using statistical techniques to analyze the data.
+masters:
+  - start: 2017-09-01
+    name: Shahen Yashpal
+    title: >
+        Metabolomic Profiling of the DASH Diet: Novel Insights for the Nutritional Epidemiology of Type 2 Diabetes Mellitus
+    details: >
+        Master's Student in Nutritional Sciences. Co-mentored with Dr. Anthony
+        Hanley. Currently training Shahen in R and statistics,
+        helping to guide the research project and analysis.
 
