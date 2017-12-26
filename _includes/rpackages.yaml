@@ -35,6 +35,12 @@ rpackages:
             Formatting and style templates for (biomedical) journal submission.
             These templates convert reproducible R Markdown documents into
             Word documents ready for journal submission.
+        - pkg: "[PROMISE.audit](https://github.com/lwjohnst86/PROMISE.audit)"
+          details: >
+            Checks given values of a dataset for 'wrong' values (e.g. a DaysPerWeek
+            column should only contain integers 1 to 7 since there are 7 days in a week).
+            Adds these 'flaws' to the data so that a 'flaw' report can be created to
+            look into the violations in the raw data source.
         - pkg: "[PROMISE.scrub](https://github.com/lwjohnst86/PROMISE.scrub)"
           details: >
             Scrub the PROMISE dataset. Functions to take the raw PROMISE datasets
