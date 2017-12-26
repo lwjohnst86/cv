@@ -12,7 +12,9 @@ teaching:
     role: Teaching Assistant
     title: Public Health Nutrition (NFS1201)
     org: Department of Nutritional Sciences, University of Toronto, Canada
-    details: Marked assignments and exams.
+    details: >
+        Gave a lecture and created the assignment (see website). Marked the assignment.
+    website: "https://gitlab.com/lwjohnst/nfs1201-2017"
     supervisor: Dr. Valerie Tarasuk
   - start: 2017-05-08
     end: 2017-05-09
