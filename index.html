@@ -77,11 +77,11 @@ h2:before {
 dt {
     float: left;
     clear: left;
-    width: 17%;
+    width: 18%;
     font-weight: bold;
 }
 dd {
-    margin-left: 17%;
+    margin-left: 19%;
 }
 p {
     margin-top:0;
@@ -128,7 +128,7 @@ if (window.hljs) {
   hljs.configure({languages: []});
   hljs.initHighlightingOnLoad();
   if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlightingOnLoad(); }, 0);
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
   }
 }
 </script>
@@ -468,7 +468,7 @@ div.tocify {
 </div>
 
 
-<p>Updated: November 15, 2017</p>
+<p>Updated: December 26, 2017</p>
 <hr />
 <div id="education" class="section level2">
 <h2>Education</h2>
@@ -515,7 +515,7 @@ div.tocify {
 <div id="articles" class="section level3">
 <h3>Articles</h3>
 <ol style="list-style-type: decimal">
-<li><strong>Johnston LW</strong>, Harris SB, Retnakaran R, Giacca A, Liu Z, Bazinet RP, Hanley AJ. Association of non-esterified fatty acid composition with insulin sensitivity and beta cell function in the Prospective Metabolism and Islet Cell Evaluation (PROMISE) cohort. <em>Diabetologia</em>. 2017 (In press).</li>
+<li><strong>Johnston LW</strong>, Harris SB, Retnakaran R, Giacca A, Liu Z, Bazinet RP, Hanley AJ. Association of non-esterified fatty acid composition with insulin sensitivity and beta cell function in the Prospective Metabolism and Islet Cell Evaluation (PROMISE) cohort. <em>Diabetologia</em>. 2017;Online ahead of print. doi: <a href="https://doi.org/10.1007/s00125-017-4534-6">10.1007/s00125-017-4534-6</a>.</li>
 <li><strong>Johnston LW</strong>, Harris SB, Retnakaran R, Zinman B, Giacca A, Liu Z, Bazinet RP, Hanley AJ. Longitudinal associations of phospholipid and cholesteryl ester fatty acids with disorders underlying diabetes. <em>J Clin Endocrinol Metab</em>. 2016;101(6):2536-2544. doi: <a href="https://doi.org/10.1210/jc.2015-4267">10.1210/jc.2015-4267</a>.</li>
 <li><strong>Johnston LW</strong>, Harris SB, Retnakaran R, Gerstein HC, Zinman B, Hamilton J, Hanley AJ. Short leg length, a marker of early childhood deprivation, is associated with metabolic disorders underlying type 2 diabetes mellitus: The PROMISE cohort study. <em>Diabetes Care</em>. 2013;36(11):3599-3606. doi: <a href="https://doi.org/10.2337/dc13-0254">10.2337/dc13-0254</a>.</li>
 <li>Doughty K, Rothman L, <strong>Johnston L</strong>, Le K, Wu J, Howard A. Low-income countries’ orthopaedic information needs: Challenges and opportunities. <em>Clinical Orthopaedics and Related Research</em>. 2010;468:2598-2603. doi: <a href="https://doi.org/10.1007/s11999-010-1365-x">10.1007/s11999-010-1365-x</a>.</li>
@@ -587,6 +587,9 @@ div.tocify {
 <dt><a href="https://github.com/lwjohnst86/fost">fost</a></dt>
 <dd>Formatting and style templates for (biomedical) journal submission. These templates convert reproducible R Markdown documents into Word documents ready for journal submission.
 </dd>
+<dt><a href="https://github.com/lwjohnst86/PROMISE.audit">PROMISE.audit</a></dt>
+<dd>Checks given values of a dataset for ‘wrong’ values (e.g. a DaysPerWeek column should only contain integers 1 to 7 since there are 7 days in a week). Adds these ‘flaws’ to the data so that a ‘flaw’ report can be created to look into the violations in the raw data source.
+</dd>
 <dt><a href="https://github.com/lwjohnst86/PROMISE.scrub">PROMISE.scrub</a></dt>
 <dd>Scrub the PROMISE dataset. Functions to take the raw PROMISE datasets and scrub, clean, and organize them into a ‘tidy’, single dataset.
 </dd>
@@ -613,6 +616,10 @@ div.tocify {
 <div id="awards" class="section level2">
 <h2>Awards</h2>
 <dl>
+<dt>2017</dt>
+<dd><p><em>Michael C. Archer Research Excellence Award</em>, University of Toronto, Canada</p>
+<p>Recognition for the best research article published in 2016 by a graduate student in the Department of Nutritional Sciences.</p>
+</dd>
 <dt>2017</dt>
 <dd><p><em>Marie Skłodowska-Curie Master Class and Travel Fund</em>, Aarhus University, Denmark</p>
 <p>Participation in a workshop aimed at applying for the Marie Curie Fellowship, with travel expenses and accommodations paid.</p>
@@ -688,7 +695,7 @@ div.tocify {
 </dd>
 <dt>Sep, 2017 – present</dt>
 <dd><p><em>Teaching Assistant</em>, Public Health Nutrition (NFS1201), Department of Nutritional Sciences, University of Toronto, Canada</p>
-<p>Marked assignments and exams.</p>
+<p>Gave a lecture and created the assignment (see website). Marked the assignment. Website: <a href="https://gitlab.com/lwjohnst/nfs1201-2017" class="uri">https://gitlab.com/lwjohnst/nfs1201-2017</a>.</p>
 </dd>
 <dt>Jun, 2015 – present</dt>
 <dd><p><em>Instructor</em>, Programming code-alongs, UofT Coders, University of Toronto, Canada</p>
@@ -761,6 +768,15 @@ div.tocify {
 <dt>Jan – Apr, 2013</dt>
 <dd><p><em>Teaching Assistant</em>, Nutritional Microbiology (NFS485), Department of Nutritional Sciences, University of Toronto, Canada</p>
 <p>Answer student emails and questions. Mark midterm exam, assignment and final exam. Invigilate midterm and final exam.</p>
+</dd>
+</dl>
+</div>
+<div id="curriculum" class="section level2">
+<h2>Curriculum</h2>
+<dl>
+<dt>Sep, 2017 – Dec, 2016</dt>
+<dd><p><em>Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)</em>, Department of Ecology and Evolutionary Biology, University of Toronto, Canada</p>
+<p>Pilot course to teach computational and quantative analyses in R for ecology and evolutionary biology undergraduate students. Website: <a href="https://github.com/uoftcoders/rcourse" class="uri">https://github.com/uoftcoders/rcourse</a>. DOI: <a href="https://doi.org/10.5281/zenodo.1117432">10.5281/zenodo.1117432</a>.</p>
 </dd>
 </dl>
 </div>
@@ -858,6 +874,14 @@ div.tocify {
 <div id="employment" class="section level2">
 <h2>Employment</h2>
 <dl>
+<dt>Dec, 2017 – present</dt>
+<dd><p><em>Course developer</em>, <a href="https://www.datacamp.com/">DataCamp</a></p>
+<p>Developing an online course on analyzing cohort studies using R. Supervisor:</p>
+</dd>
+<dt>Sep, 2017 – present</dt>
+<dd><p><em>Postdoctoral researcher</em>, Department of Nutritional Sciences, University of Toronto, Canada</p>
+<p>Finishing up PhD research projects, maintaining and developing a website for the PROMISE data dictionary and description (<a href="https://promise-cohort.gitlab.io/PROMISE" class="uri">https://promise-cohort.gitlab.io/PROMISE</a>), and training new graduate students on data analysis using R. Supervisor: Dr. Anthony Hanley</p>
+</dd>
 <dt>Jan – Jul, 2011</dt>
 <dd><p><em>Research Assistant</em>, Propel Center for Population Health Impact, University of Waterloo, Canada</p>
 <p>Collected air quality samples from Region of Waterloo-owned social housing. Analyzed the air quality data using MS Excel. Produced and tested a survey for Program Training and Consultation Centre on SurveyMonkey. Wrote three reports on data collected from the survey results. Organized and scheduled interviews and data collection dates for a study in the Waterloo Region evaluating the School Food and Beverage Policy PPM150. Managed a team of 4 researchers to collect survey and interview data from primary and secondary schools in the Waterloo Region. Managed the storing and organizing of data collected from the surveys and interviews. Supervisor: Karen Pieters, Dr. Ryan David Kennedy, and Dr. Rhona Hanning</p>
