@@ -1,0 +1,10 @@
+courses:
+    - start: 2017-09-01
+      end: 2016-12-22
+      title: "Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)"
+      org: Department of Ecology and Evolutionary Biology, University of Toronto, Canada
+      details: >
+            Pilot course to teach computational and quantative analyses in R for
+            ecology and evolutionary biology undergraduate students.
+      website: "https://github.com/uoftcoders/rcourse"
+      doi: "https://doi.org/10.5281/zenodo.1117432"
