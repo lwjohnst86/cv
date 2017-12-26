@@ -15,6 +15,9 @@ sections:
     - title: Teaching
       file: _includes/teaching.yaml
       source: R/teaching.R
+    - title: Curriculum development
+      file: _includes/curriculum.yaml
+      source: R/curriculum.R
     - title: Mentoring
       file: _includes/students.yaml
       source: R/students.R
