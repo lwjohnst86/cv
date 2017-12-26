@@ -1,6 +1,13 @@
 awards:
   - start: 2017
     end: 2017
+    title: Michael C. Archer Research Excellence Award
+    source: University of Toronto, Canada
+    other: >
+        Recognition for the best research article published in 2016 by a graduate
+        student in the Department of Nutritional Sciences.
+  - start: 2017
+    end: 2017
     #start: 2017-05-16
     #end: 2017-05-18
     # Should this be here as well as in a 'training' section?
