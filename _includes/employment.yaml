@@ -1,12 +1,24 @@
 employment:
+  - start: 2018-02-01
+    #end: 2019-01-31
+    role: Postdoctoral researcher
+    org: Department of Public Health, Aarhus University, Aarhus, Denmark
+    details: >
+        Doing research in diabetes epidemiology, specifically on identifying:
+        patterns of accelerometry-derived physical activity with metabolic status;
+        the metabolic mediation between early childhood biomarkers and adult diabetes
+        status; and, developing a simulation method for incorporating multiple
+        epidemiological results into a single framework. Also, assisting a PhD student's
+        social network analysis on the programming aspects of work.
+    supervisor: Dr. Daniel Witte
   - start: 2017-12-19
     role: Course developer
     org: "[DataCamp](https://www.datacamp.com/)"
     details: >
         Developing an online course on analyzing cohort studies using R.
   - start: 2017-09-20
-    #end: 2018-01-31
-    role: Postdoctoral researcher
+    end: 2018-01-31
+    role: Postdoctoral fellow
     org: Department of Nutritional Sciences, University of Toronto, Canada
     details: >
         Finishing up PhD research projects, maintaining and developing a website for the
