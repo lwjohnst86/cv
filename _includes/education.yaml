@@ -51,3 +51,8 @@ courses:
     start: 2018-02-21
     org: Mozilla
     website: "https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif"
+  - title: "'OMICS and Epidemiology"
+    start: 2016-05-25
+    end: 2016-05-26
+    org: McMaster University Health Sciences
+    certificate: "certificates/omics-epi-attendance.pdf"
