@@ -3,6 +3,7 @@ affiliations:
     status: Instructor and member
     org: "[Software Carpentry](http://software-carpentry.org/)"
   - start: 2016-01-14
+    end: 2018-01-31
     status: Treasurer
     org: "[UofT Coders](https://uoftcoders.github.io), University of Toronto & Mozilla Science Lab"
     details: >
