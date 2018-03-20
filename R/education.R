@@ -5,6 +5,7 @@ N <- gsub('^([a-z])', '\\U\\1', n, perl = TRUE)
 
 ordered_degrees <- order_by_year(output$degrees)
 ordered_certificates <- order_by_year(output$certificates)
+ordered_courses <- order_by_year(output$courses)
 
 cat('\n### ', N[1], '\n\n')
 for (i in ordered_degrees) {
@@ -32,6 +33,20 @@ for (i in ordered_certificates) {
     website <- ''
     if (!is.null(i$website))
         website <- paste0('(',i$website,')')
+    cat(i$end, '\n: *',
+        i$title, '*\n\n\t',
+        'Organization: ', i$org, '. ', website, '\n\n',
+        sep = '')
+}
+
+cat('\n### ', N[3], '\n\n')
+for (i in ordered_courses) {
+    website <- ''
+    if (!is.null(i$website))
+        website <- paste0('(',i$website,')')
+
+    if (is.null(i$end))
+        i$end <- "Present"
     cat(i$end, '\n: *',
         i$title, '*\n\n\t',
         'Organization: ', i$org, '. ', website, '\n\n',

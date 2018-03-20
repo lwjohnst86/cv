@@ -45,3 +45,9 @@ certificates:
   - title: Data Carpentry Instructor Training
     end: 2017
     org: "Data Carpentry"
+courses:
+  - title: Mozilla Open Project Leaders Training
+    # project: "An R software toolkit to simplify an open, collaborative scientific workflow"
+    start: 2018-02-21
+    org: Mozilla
+    website: "https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif"
