@@ -1,5 +1,14 @@
 teaching:
+  - start: 2017-01-19
+    end: 2017-01-19
+    role: Helper
+    title: Software Carpentry workshops (R)
+    org: "[Software Carpentry](http://software-carpentry.org) and [UofTCoders](https://uoftcoders.github.io)"
+    details: >
+        Helped learners during the Git session of the two day workshop.
+    website: "https://uoftcoders.github.io/2018-01-18-utoronto/"
   - start: 2017-09-07
+    end: 2017-12-21
     role: Teaching Assistant
     title: Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)
     org: Department of Ecology and Evolutionary Biology, University of Toronto, Canada
@@ -9,6 +18,7 @@ teaching:
     supervisor: Dr. Martin Krkosek
     website: "https://uoftcoders.github.io/rcourse"
   - start: 2017-09-07
+    end: 2017-12-21
     role: Teaching Assistant
     title: Public Health Nutrition (NFS1201)
     org: Department of Nutritional Sciences, University of Toronto, Canada
