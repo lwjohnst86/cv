@@ -24,9 +24,9 @@ sections:
     - title: Affiliations
       file: _includes/affiliations.yaml
       source: R/affiliations.R
-    - title: Miscellaneous
-      file: _includes/misc.yaml
-      source: R/misc.R
     - title: Employment
       file: _includes/employment.yaml
       source: R/employment.R
+    - title: Miscellaneous
+      file: _includes/misc.yaml
+      source: R/misc.R
