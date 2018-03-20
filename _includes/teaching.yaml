@@ -119,6 +119,7 @@ teaching:
         well as acted as helper during the Shell and Python sessions.
     website: "http://uoftcoders.github.io/2016-05-09-utoronto/"
   - start: 2015-06-11
+    end: 2018-01-31
     role: Instructor
     title: Programming code-alongs
     org: UofT Coders, University of Toronto, Canada
