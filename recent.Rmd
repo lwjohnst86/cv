@@ -2,7 +2,8 @@
 title: Luke W. Johnston
 ---
 
-Updated: `r format(Sys.Date(), '%B %d, %Y')`
+```{r summary, child="_includes/summary.Rmd"}
+```
 
 -----
 
