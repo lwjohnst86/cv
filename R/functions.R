@@ -65,7 +65,7 @@ convert_date <- function(start, end = NULL) {
 #' @param type Publication type, e.g. poster, articles
 #'
 #' @return Creates a list of references for each publication type.
-publication_list <- function(publications, type = c('posters', 'orals', 'articles', 'panel')) {
+publication_list <- function(publications, type = c('posters', 'orals', 'articles', 'panel', "otherconf", "posterpres")) {
     type <- match.arg(type)
     output_file <- paste0('R/', type, '.Rmd')
     years_to_keep <- getOption("restrict_to_year")
