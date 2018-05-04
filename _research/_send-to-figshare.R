@@ -6,7 +6,7 @@ id <- fs_new_article("Triglyceride Fatty Acid (TGFA) Composition Longitudinally 
           Full citation:
           ",
           type = "poster",
-          links = "http://dx.doi.org/10.2337/db16-1-381",
+          links = "https://doi.org/10.2337/db16-1-381",
           authors = c("Luke W. Johnston", "Stewart Harris", "Ravi Retnakaran",
                            "Bernard Zinman", "Zhen Liu", "Richard P. Bazinet",
                            "Anthony J. Hanley"),
