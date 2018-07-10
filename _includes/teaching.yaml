@@ -128,18 +128,15 @@ teaching:
   - start: 2014-10-01
     end: 2015-11-23
     role: Instructor and founder
-    title: "Code as Manuscript: Data wrangling, visualization, and reproducibility in R"
+    title: "Code as Manuscript; R and SAS coding workshops"
     org: Graduate Professional Skills Program, University of Toronto, Canada
     details: >
-        I started this workshop series in the Department of Nutritional Sciences and eventually
-        got it approved for teaching in the GPS program. Initially I taught with
-        colleague Dr. Daiva Nielsen and we taught graduate
-        students SAS coding and computing skills. I now teach R and Git,
-        having co-instructed with Sarah Meister.
-        We teach version control, beginner and advanced coding techniques, and
+        Taught three workshops on SAS and R. SAS workshops were co-instructed and
+        co-developed with Dr. Daiva Nielsen. R workshops were co-instructed with
+        Sarah Meister. We taught version control, beginner and advanced coding techniques, and
         how to structure research projects around the idea of reproducibility.
         Consistent with our mission statement, our material is publicly available online
-        at http://github.com/codeasmanuscript/workshops.
+        at https://github.com/codeasmanuscript.
     website: "http://codeasmanuscript.org"
   - start: 2015-09-01
     end: 2015-12-31

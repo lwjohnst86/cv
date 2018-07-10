@@ -8,3 +8,16 @@ courses:
             ecology and evolutionary biology undergraduate students.
       website: "https://github.com/uoftcoders/rcourse"
       doi: "https://doi.org/10.5281/zenodo.1117432"
+    - start: 2014-10-01
+      end: 2015-11-23
+      title: "Code as Manuscript: Data wrangling, visualization, and reproducibility in R"
+      org: Graduate Professional Skills Program, University of Toronto, Canada
+      details: >
+            Developed a multi-day workshop series on initially SAS with colleague
+            Dr. Daiva Nielsen and later I developed a series on R. These workshops
+            aimed to teach scientific coding skills to graduate students, such
+            as using version control, structuring research projects, using
+            reproducibility concepts, and "software development" concepts in
+            a scientific coding context. The material is publicly available online
+            at https://github.com/codeasmanuscript.
+      website: "http://codeasmanuscript.org"
