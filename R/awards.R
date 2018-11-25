@@ -4,9 +4,10 @@ ordered_output <- order_by_year(output)
 
 for (i in ordered_output) {
     if (restricted_entry(i)) next
-    timeline <- paste0(substr(i$start, 0, 4))
-    if (i$start != i$end)
-        timeline <- paste0(substr(i$start, 0, 4),' - ', substr(i$end, 0, 4))
+    timeline <- convert_date(i$end)
+    if (all(!is.null(i$start), i$start != i$end)) {
+        timeline <- convert_date(i$start, i$end)
+    }
 
     amount <- ''
     if (!is.null(i$value))
