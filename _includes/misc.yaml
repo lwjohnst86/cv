@@ -1,9 +1,11 @@
 skills:
-    languages: Spanish
+    languages:
+        familiar:
+            - Spanish
+            - Danish
     programming:
         competent:
             - R (ggplot2, knitr, rmarkdown, dplyr, tidyr, devtools, testthat, roxygen2)
-            - SAS (macros, ODS system)
             - LaTeX (beamer, beamerposter)
             - Web (HTML, CSS, Jekyll, Github Pages)
             - Makefiles
@@ -15,27 +17,26 @@ skills:
             - GraphViz
             - Unit testing, code coverage, continuous integration
         familiar:
+            - SAS (macros, ODS system)
             - Python
             - SQLite
             - Elisp
     statistics:
         competent:
-            - Basic statistics (mean, sd, t-test, etc)
-            - ANOVA, ANCOVA
-            - Correlation
-            - Linear regression
-            - Logistic regression
+            - Basic statistics (mean, sd, t-test, ANOVA, correlation, etc)
+            - Linear and logistic regression
             - Generalized estimating equations
             - Principal component analysis
             - Latent class mixed models
             - Partial least squares regression
             - Partial least squares discriminant analysis
             - Cross-validation
+            - Cluster analysis (hierarchical, partitioning around medoids, k-means)
             - Directed Acyclic Graphs (covariate selection)
             - Information Criterion (AIC, QIC)
             - Resampling (bootstrap)
-        familiar:
-            - Linear discriminant analysis
             - Mixed effects models
             - Factor analysis
+        familiar:
+            - Linear discriminant analysis
             - Structural Equation Modeling
