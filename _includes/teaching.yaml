@@ -1,4 +1,13 @@
 teaching:
+  - start: 2018-06-01
+    role: Instructor and founder
+    title: Peer-led, participatory live coding R training sessions
+    org: Aarhus University Open Coders
+    details: >
+        Founded a group dedicated to skill sharing of data analysis in the statistical
+        programming language R. Organize and instruct several sessions on using
+        R, in a participatory live coding format.
+    website: "https://au-oc.github.io"
   - start: 2018-07-09
     end: 2018-07-13
     role: Instructor
