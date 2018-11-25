@@ -1,25 +1,20 @@
 awards:
-  - start: 2017
-    end: 2017
+  - end: 2017-11-23
     title: Michael C. Archer Research Excellence Award
     source: University of Toronto, Canada
     other: >
         Recognition for the best research article published in 2016 by a graduate
         student in the Department of Nutritional Sciences.
-  - start: 2017
-    end: 2017
-    #start: 2017-05-16
-    #end: 2017-05-18
+  - start: 2017-05-16
+    end: 2017-05-18
     # Should this be here as well as in a 'training' section?
     title: Marie Skłodowska-Curie Master Class and Travel Fund
     source: Aarhus University, Denmark
     other: >
         Participation in a workshop aimed at applying for the Marie Curie
         Fellowship, with travel expenses and accommodations paid.
-  - start: 2017
-    end: 2017
-    #start: 2017-03-10
-    #end: 2017-03-11
+  - start: 2017-03-10
+    end: 2017-03-11
     # Should this be here as well as a 'training' section?
     title: Working Open Workshop and Travel Scholarship
     source: Mozilla Science Lab
@@ -27,8 +22,7 @@ awards:
         Attendance to a workshop hosted by the Mozilla Science Lab to train
         on using open source and processes for research projects.
     value: "USD 300"
-  - start: 2017
-    end: 2017
+  - end: 2017-04-25
     title: Gordon Cressy Student Leadership Award
     source: University of Toronto
     other: >
