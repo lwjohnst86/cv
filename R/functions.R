@@ -40,12 +40,14 @@ order_by_year <- function(yaml_data) {
 #'
 #' @return Outputs a string with month as abbrev and year
 convert_date <- function(start, end = NULL) {
-    start <- as_date(start)
+    start <- as_date(start, tz = "UTC", format = "%F")
+    # start_form <- as.character(start)
     start_form <- paste0(month(start, label = TRUE), ', ', year(start))
     if (is.null(end)) {
             start_form
     } else if (!is.null(end)) {
-        end <- as_date(end)
+        end <- as_date(end, tz = "UTC", format = "%F")
+        # end_form <- as.character(end)
         end_form <- paste0(month(end, TRUE), ', ', year(end))
         start_form <- month(start, TRUE)
         if (month(start) == month(end) & year(start) == year(end)) {
