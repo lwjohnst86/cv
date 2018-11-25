@@ -1,4 +1,13 @@
 courses:
+    - start: 2018-07-09
+      end: 2018-07-13
+      title: "FAIR Data and Software"
+      org: TIB Leibniz Information Centre for Science and Technology and University Library, Hannover, Germany
+      details: >
+            Week long [Carpentries'](https://carpentries.org/)-based workshop aimed
+            at teaching FAIR principles for research data and for software management
+            and development. Contributed to and taught the workshop material.
+      website: "https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/"
     - start: 2017-09-01
       end: 2016-12-22
       title: "Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)"
