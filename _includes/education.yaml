@@ -1,7 +1,7 @@
 degrees:
   - degree: "PhD"
-    start: 2013
-    end: 2017
+    start: 2013-09-01
+    end: 2017-11-09
     university: University of Toronto, Canada
     thesis: >
         Serum Composition of Fatty Acids in Lipid Fractions in the
@@ -10,8 +10,8 @@ degrees:
     co_supervisor: Dr. Richard Bazinet
     link: "http://hdl.handle.net/1807/80893"
   - degree: MSc
-    start: 2011
-    end: 2013
+    start: 2011-09-01
+    end: 2013-11-16
     university: University of Toronto, Canada
     thesis: >
         Association of Leg Length with Metabolic Abnormalities Underlying
@@ -19,12 +19,12 @@ degrees:
     supervisor: Dr. Anthony J. Hanley
     link: "http://hdl.handle.net/1807/42975"
   - degree: Honours BSc in Kinesiology
-    end: 2010
+    start: 2005-09-01
+    end: 2010-06-16
     university: University of Waterloo, Canada
 certificates:
   - title: Software Carpentry Instructor Training
-    end: 2015
-    # Feb to May
+    end: 2015-05-26
     org: Software Carpentry
     website: http://swcarpentry.github.io/training-course/2015/02/luke-johnston/
 #    Taking instructor training from Software Carpentry, an organization that is
@@ -36,14 +36,14 @@ certificates:
 #    training website is found at:
 #    http://swcarpentry.github.io/training-course/2015/02/luke-johnston/
   - title: Advanced University Teaching Preparation
-    end: 2015
+    end: 2015-08-01 # I submitted my final requirement, the Dossier on 07-02
     # from 2013 to 2015
     org: "Teaching Assistants' Training Program, University of Toronto, Canada"
   - title: Graduate Professional Skills
-    end: 2017
+    end: 2017-11-09 # No idea if this is the correct date I finished it.
     org: "Graduate Professional Skills Program, School of Graduate Studies, University of Toronto, Canada"
   - title: Data Carpentry Instructor Training
-    end: 2017
+    end: 2016-11-15
     org: "Data Carpentry"
 courses:
   - title: Mozilla Open Project Leaders Training
