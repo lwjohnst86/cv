@@ -16,7 +16,7 @@ names(sections) <- sapply(sections, function(x) x$title)
 
 ```{r}
 # Choose which sections to include
-# sections <- sections[c('Publications', 'Awards')]
+# sections <- sections[c("Education", "Employment")]
 for (s in sections) {
     options(restrict_to_year = NULL)
     cat('\n\n## ', s$title, '\n\n')
