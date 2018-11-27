@@ -1,5 +1,6 @@
 suppressPackageStartupMessages(library(lubridate))
 suppressPackageStartupMessages(library(yaml))
+suppressPackageStartupMessages(library(glue))
 
 #' Order the data in the list by the end and start year.
 #'
@@ -49,10 +50,10 @@ convert_date <- function(start, end = NULL) {
         end <- as_date(end, tz = "UTC", format = "%F")
         # end_form <- as.character(end)
         end_form <- paste0(month(end, TRUE), ', ', year(end))
-        start_form <- month(start, TRUE)
         if (month(start) == month(end) & year(start) == year(end)) {
             end_form
         } else if (year(start) == year(end)) {
+            start_form <- month(start, TRUE)
             paste0(start_form, ' -- ', end_form)
         } else {
             start_form <- paste0(month(start, label = TRUE), ', ', year(start))
