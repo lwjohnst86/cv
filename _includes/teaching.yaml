@@ -1,4 +1,20 @@
 teaching:
+  - start: 2019-03-04
+    end: 2019-03-19
+    title: "Reproducible Quantitative Methods: Data analysis workflow using R"
+    org: Danish Diabetes Academy
+    details: >
+          Four day workshop teaching an introduction to using R for reproducible
+          data analysis to PhD students and postdoctoral researchers.
+    website: "https://dda-rcourse.lwjohnst.com/"
+  - start: 2019-05-21
+    end: 2019-03-19
+    title: "Reproducible Quantitative Analyses and Workflows using R"
+    org: German Institute of Human Nutrition Potsdam-Rehbrueke
+    details: >
+          Three day workshop teaching an introduction to using R for reproducible
+          data analysis to PhD students and postdoctoral researchers.
+    website: "https://rqawr-course.lwjohnst.com/"
   - start: 2019-10-22
     end: 2019-10-23
     role: Lead instructor
