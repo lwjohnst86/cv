@@ -1,27 +1,3 @@
-degrees:
-  - degree: "PhD"
-    start: 2013-09-01
-    end: 2017-11-09
-    university: University of Toronto, Canada
-    thesis: >
-        Serum Composition of Fatty Acids in Lipid Fractions in the
-        Progression of Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus.
-    supervisor: Dr. Anthony J. Hanley
-    co_supervisor: Dr. Richard Bazinet
-    link: "http://hdl.handle.net/1807/80893"
-  - degree: MSc
-    start: 2011-09-01
-    end: 2013-11-16
-    university: University of Toronto, Canada
-    thesis: >
-        Association of Leg Length with Metabolic Abnormalities Underlying
-        Type 2 Diabetes Mellitus.
-    supervisor: Dr. Anthony J. Hanley
-    link: "http://hdl.handle.net/1807/42975"
-  - degree: Honours BSc in Kinesiology
-    start: 2005-09-01
-    end: 2010-06-16
-    university: University of Waterloo, Canada
 certificates:
   - title: Software Carpentry Instructor Training
     end: 2015-05-26

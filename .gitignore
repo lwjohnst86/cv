@@ -3,4 +3,4 @@ _ignore/
 *.bak
 index.md
 recent.md
-
+.httr-oauth
