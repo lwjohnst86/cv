@@ -33,3 +33,7 @@ courses:
     end: 2016-05-26
     org: McMaster University Health Sciences
     certificate: "certificates/omics-epi-attendance.pdf"
+  - title: "Foundations of Project Management I"
+    start: 2016-11-23
+    end: 2016-11-24
+    org: Mitacs
