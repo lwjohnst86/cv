@@ -1,6 +1,17 @@
 employment:
+  - start: 2019-12-01
+    role: DDA postdoctoral researcher
+    org: Steno Diabetes Center Aarhus, Aarhus, Denmark
+    details: >
+        Working on a project funded by the Danish Diabetes Academy.
+        Doing research in diabetes epidemiology, specifically on identifying:
+        the metabolic mediation between early childhood biomarkers and adult diabetes
+        status; developing causal structure learning methods; and, creating a
+        framework (as text and as software) for conducting reproducible and open
+        scientific research.
+    supervisor: Dr. Daniel Witte
   - start: 2018-02-01
-    #end: 2019-01-31
+    end: 2019-11-30
     role: Postdoctoral researcher
     org: Department of Public Health, Aarhus University, Aarhus, Denmark
     details: >

@@ -1,4 +1,7 @@
 affiliations:
+  - start: 2019-12-01
+    status: Researcher
+    org: Department of Public Health, Aarhus University, Aarhus, Denmark
   - start: 2015-05-26
     status: Instructor and member
     org: "[Software Carpentry](http://software-carpentry.org/)"
