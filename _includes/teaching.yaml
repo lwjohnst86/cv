@@ -1,13 +1,22 @@
 teaching:
+  - start: 2019-10-22
+    end: 2019-10-23
+    role: Lead instructor
+    title: Software Carpentry Workshop
+    org: Aarhus University
+    details: >
+        Coordinate and instruct a 2-day Software Carpentry workshop to any member
+        of Aarhus University.
+    website: "https://github.com/au-cru/2019-10-22-aarhus"
   - start: 2018-06-01
     role: Instructor and founder
     title: Peer-led, participatory live coding R training sessions
-    org: Aarhus University Open Coders
+    org: Aarhus University Community of Research Software Users
     details: >
         Founded a group dedicated to skill sharing of data analysis in the statistical
-        programming language R. Organize and instruct several sessions on using
+        programming language R (and others). Organize and instruct several sessions on using
         R, in a participatory live coding format.
-    website: "https://au-oc.github.io"
+    website: "https://au-cru.github.io"
   - start: 2018-07-09
     end: 2018-07-13
     role: Instructor
