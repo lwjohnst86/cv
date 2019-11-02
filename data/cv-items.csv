@@ -1,0 +1,18 @@
+start,status,org,section,title,source,other,value,end,details,website,role,supervisor,name
+2019-12-01,Researcher,"Department of Public Health, Aarhus University, Aarhus, Denmark",affiliations,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2019-12-01,NA,NA,awards,Danish Diabetes Academy Postdoctoral Fellowship,"Danish Diabetes Academy, Denmark","Nationally competitive 3-year fellowship.
+",DKK 1.8 million,NA,NA,NA,NA,NA,NA
+2018-07-09,NA,"TIB Leibniz Information Centre for Science and Technology and University Library, Hannover, Germany",courses,FAIR Data and Software,NA,NA,NA,2018-07-13,"Week long [Carpentries'](https://carpentries.org/)-based workshop aimed at teaching FAIR principles for research data and for software management and development. Contributed to and taught the workshop material.
+",https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/,NA,NA,NA
+NA,NA,Software Carpentry,certificates,Software Carpentry Instructor Training,NA,NA,NA,2015-05-26,NA,http://swcarpentry.github.io/training-course/2015/02/luke-johnston/,NA,NA,NA
+2018-02-21,NA,Mozilla,courses,Mozilla Open Project Leaders Training,NA,NA,NA,2018-06-11,NA,https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif,NA,NA,NA
+2019-12-01,NA,"Steno Diabetes Center Aarhus, Aarhus, Denmark",employment,NA,NA,NA,NA,NA,"Working on a project funded by the Danish Diabetes Academy. Doing research in diabetes epidemiology, specifically on identifying: the metabolic mediation between early childhood biomarkers and adult diabetes status; developing causal structure learning methods; and, creating a framework (as text and as software) for conducting reproducible and open scientific research.
+",NA,DDA postdoctoral researcher,Dr. Daniel Witte,NA
+2014-09-01,NA,NA,undergraduate,"Validating a bioelectric impedance instrument against the gold standard dual-energy x-ray absorptiometry on measures of adiposity.
+",NA,NA,NA,2015-04-30,"For the Research Projects course (NFS394) in Nutritional Sciences. Co-mentored with Dr. Anthony Hanley. Supervision consisted of helping guide the development of the research question and teaching Windy coding in SAS and using statistical techniques to analyze the data.
+",NA,NA,NA,Windy Wang
+2017-09-01,NA,NA,masters,"Metabolomic Profiling of the DASH Diet: Novel Insights for the Nutritional Epidemiology of Type 2 Diabetes Mellitus
+",NA,NA,NA,2018-01-31,"Master's Student in Nutritional Sciences. Co-mentored with Dr. Anthony Hanley. Trained Shahen in R and statistics, assisted in guiding the research project and analysis.
+",NA,NA,NA,Shahen Yashpal
+2019-03-04,NA,Danish Diabetes Academy,teaching,Reproducible Quantitative Methods: Data analysis workflow using R,NA,NA,NA,2019-03-19,"Four day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
+",https://dda-rcourse.lwjohnst.com/,NA,NA,NA
