@@ -1,18 +1,118 @@
-start,status,org,section,title,source,other,value,end,details,website,role,supervisor,name
-2019-12-01,Researcher,"Department of Public Health, Aarhus University, Aarhus, Denmark",affiliations,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-2019-12-01,NA,NA,awards,Danish Diabetes Academy Postdoctoral Fellowship,"Danish Diabetes Academy, Denmark","Nationally competitive 3-year fellowship.
+start,status,org,end,details,website,section,title,source,other,value,misc,doi,certificate,role,supervisor,name
+2019-12-01,Researcher,"Department of Public Health, Aarhus University, Aarhus, Denmark",NA,NA,NA,affiliations,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2018-07-05,Member,Danish Diabetes Academy,NA,NA,NA,affiliations,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2015-05-26,Instructor and member,[Software Carpentry](http://software-carpentry.org/),NA,NA,NA,affiliations,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2016-01-14,Treasurer,"[UofT Coders](https://uoftcoders.github.io), University of Toronto & Mozilla Science Lab",2018-01-31,"Responsible for managing the finances, identifying potential sources of funding and applying to them as applicable, reimbursing students for expenses, and buying the snacks for the coding sessions. Other communal duties include maintaining the GitHub repository and dealing with Issues and Pull Requests (via GitHub) that may arise.
+",https://github.com/UofTCoders/council/tree/master/treasurer,affiliations,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2014-09-01,Treasurer,"[Nutritional Sciences Graduate Student Association](http://nsgsa.sa.utoronto.ca/), University of Toronto, Canada",2017-08-31,"Responsible for the accounting of the NSGSA finances, reimbursing students for expenses, applying for the Graduate Student Union Head Grant to secure funding, and dealing with any finance related issues that may come up.",NA,affiliations,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2019-12-01,NA,NA,NA,NA,NA,awards,Danish Diabetes Academy Postdoctoral Fellowship,"Danish Diabetes Academy, Denmark","Nationally competitive 3-year fellowship.
 ",DKK 1.8 million,NA,NA,NA,NA,NA,NA
-2018-07-09,NA,"TIB Leibniz Information Centre for Science and Technology and University Library, Hannover, Germany",courses,FAIR Data and Software,NA,NA,NA,2018-07-13,"Week long [Carpentries'](https://carpentries.org/)-based workshop aimed at teaching FAIR principles for research data and for software management and development. Contributed to and taught the workshop material.
-",https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/,NA,NA,NA
-NA,NA,Software Carpentry,certificates,Software Carpentry Instructor Training,NA,NA,NA,2015-05-26,NA,http://swcarpentry.github.io/training-course/2015/02/luke-johnston/,NA,NA,NA
-2018-02-21,NA,Mozilla,courses,Mozilla Open Project Leaders Training,NA,NA,NA,2018-06-11,NA,https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif,NA,NA,NA
-2019-12-01,NA,"Steno Diabetes Center Aarhus, Aarhus, Denmark",employment,NA,NA,NA,NA,NA,"Working on a project funded by the Danish Diabetes Academy. Doing research in diabetes epidemiology, specifically on identifying: the metabolic mediation between early childhood biomarkers and adult diabetes status; developing causal structure learning methods; and, creating a framework (as text and as software) for conducting reproducible and open scientific research.
-",NA,DDA postdoctoral researcher,Dr. Daniel Witte,NA
-2014-09-01,NA,NA,undergraduate,"Validating a bioelectric impedance instrument against the gold standard dual-energy x-ray absorptiometry on measures of adiposity.
-",NA,NA,NA,2015-04-30,"For the Research Projects course (NFS394) in Nutritional Sciences. Co-mentored with Dr. Anthony Hanley. Supervision consisted of helping guide the development of the research question and teaching Windy coding in SAS and using statistical techniques to analyze the data.
-",NA,NA,NA,Windy Wang
-2017-09-01,NA,NA,masters,"Metabolomic Profiling of the DASH Diet: Novel Insights for the Nutritional Epidemiology of Type 2 Diabetes Mellitus
-",NA,NA,NA,2018-01-31,"Master's Student in Nutritional Sciences. Co-mentored with Dr. Anthony Hanley. Trained Shahen in R and statistics, assisted in guiding the research project and analysis.
-",NA,NA,NA,Shahen Yashpal
-2019-03-04,NA,Danish Diabetes Academy,teaching,Reproducible Quantitative Methods: Data analysis workflow using R,NA,NA,NA,2019-03-19,"Four day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
-",https://dda-rcourse.lwjohnst.com/,NA,NA,NA
+NA,NA,NA,2017-11-23,NA,NA,awards,Michael C. Archer Research Excellence Award,"University of Toronto, Canada","Recognition for the best research article published in 2016 by a graduate student in the Department of Nutritional Sciences.
+",NA,NA,NA,NA,NA,NA,NA
+2017-05-16,NA,NA,2017-05-18,NA,NA,awards,Marie Skłodowska-Curie Master Class and Travel Fund,"Aarhus University, Denmark","Participation in a workshop aimed at applying for the Marie Curie Fellowship, with travel expenses and accommodations paid.
+",NA,NA,NA,NA,NA,NA,NA
+2017-03-10,NA,NA,2017-03-11,NA,NA,awards,Working Open Workshop and Travel Scholarship,Mozilla Science Lab,"Attendance to a workshop hosted by the Mozilla Science Lab to train on using open source and processes for research projects.
+",USD 300,NA,NA,NA,NA,NA,NA
+NA,NA,NA,2017-04-25,NA,NA,awards,Gordon Cressy Student Leadership Award,University of Toronto,"For recognition of outstanding extra-curricular contributions to the faculty and the university as a whole. Contributions include creating a workshop series (offered in the Graduate Professional Skills program) to teach coding to graduate students, playing an instrumental role in starting a student group (UofTCoders) to allow for peer-level skill sharing of coding and programming for science and research, and for running short, twice-monthly coding sessions in the Department of Nutritional Sciences.
+",NA,NA,NA,NA,NA,NA,NA
+2012-09-01,NA,NA,2013-08-31,NA,NA,awards,Ontario Graduate Scholarship,"Government of Ontario, Canada",NA,$15000,NA,NA,NA,NA,NA,NA
+NA,NA,NA,2013-05-08,NA,NA,awards,Trainee Travel Award,"Banting and Best Diabetes Centre, University of Toronto, Canada",For attendance to the American Diabetes Association 73rd Scientific Sessions,$1000,NA,NA,NA,NA,NA,NA
+2013-09-01,NA,NA,2014-08-31,NA,NA,awards,Ontario Graduate Scholarship,"Government of Ontario, Canada",NA,$15000,NA,NA,NA,NA,NA,NA
+NA,NA,NA,2014-06-01,NA,NA,awards,Trainee Travel Award,"Banting and Best Diabetes Centre, University of Toronto, Canada",For attendance to the American Diabetes Association 74rd Scientific Sessions,$1000,NA,NA,NA,NA,NA,NA
+NA,NA,NA,2014-05-22,NA,NA,awards,Conference Travel Grant,"School of Graduate Studies, University of Toronto, Canada",For attendance to the International Society for the Study of Fatty Acids and Lipids 2014 Biennial Congress,$1120,NA,NA,NA,NA,NA,NA
+NA,NA,NA,2014-04-22,NA,NA,awards,Alumni Travel Award,"Department of Nutritional Sciences, University of Toronto, Canada",For attendance to the International Society for the Study of Fatty Acids and Lipids 2014 Biennial Congress,$200,NA,NA,NA,NA,NA,NA
+NA,NA,NA,2014-06-28,NA,NA,awards,New Investigator Award,International Society for the Study of Fatty Acids and Lipids,Given out during the International Society for the Study of Fatty Acids and Lipids 2014 Biennial Congress,NA,Received on 06-28.,NA,NA,NA,NA,NA
+2014-09-01,NA,NA,2017-08-31,NA,NA,awards,Doctoral Student Research Award,Canadian Diabetes Association,National competitive award,$21000,NA,NA,NA,NA,NA,NA
+2014-09-01,NA,NA,2015-08-31,NA,NA,awards,Graduate Novo Nordisk Studentship,"Banting and Best Diabetes Centre, University of Toronto, Canada",NA,$3840,NA,NA,NA,NA,NA,NA
+2014-09-01,NA,NA,2015-08-31,NA,NA,awards,Margaret and Nicholas Fodor Fellowship,"School of Graduate Studies, University of Toronto, Canada",University-wide awards,$3000,NA,NA,NA,NA,NA,NA
+2014-09-01,NA,NA,2015-08-31,NA,NA,awards,Ontario Graduate Scholarship,"Government of Ontario, Canada","Awarded, but declined for the CDA Doctoral Award",$15000,NA,NA,NA,NA,NA,NA
+NA,NA,NA,2015-06-08,NA,NA,awards,Trainee Travel Award,"Banting and Best Diabetes Centre, University of Toronto, Canada",For attendance to the American Diabetes Association 75rd Scientific Sessions,$1000,NA,NA,NA,NA,NA,NA
+2018-07-09,NA,"TIB Leibniz Information Centre for Science and Technology and University Library, Hannover, Germany",2018-07-13,"Week long [Carpentries'](https://carpentries.org/)-based workshop aimed at teaching FAIR principles for research data and for software management and development. Contributed to and taught the workshop material.
+",https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/,courses,FAIR Data and Software,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2017-09-01,NA,"Department of Ecology and Evolutionary Biology, University of Toronto, Canada",2016-12-22,"Pilot course to teach computational and quantative analyses in R for ecology and evolutionary biology undergraduate students.
+",https://github.com/uoftcoders/rcourse,courses,Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430),NA,NA,NA,NA,https://doi.org/10.5281/zenodo.1117432,NA,NA,NA,NA
+2014-10-01,NA,"Graduate Professional Skills Program, University of Toronto, Canada",2015-11-23,"Developed a multi-day workshop series on initially SAS with colleague Dr. Daiva Nielsen and later I developed a series on R. These workshops aimed to teach scientific coding skills to graduate students, such as using version control, structuring research projects, using reproducibility concepts, and ""software development"" concepts in a scientific coding context. The material is publicly available online at https://github.com/codeasmanuscript.
+",http://codeasmanuscript.org,courses,"Code as Manuscript: Data wrangling, visualization, and reproducibility in R",NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,Software Carpentry,2015-05-26,NA,http://swcarpentry.github.io/training-course/2015/02/luke-johnston/,certificates,Software Carpentry Instructor Training,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,"Teaching Assistants' Training Program, University of Toronto, Canada",2015-08-01,NA,NA,certificates,Advanced University Teaching Preparation,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,"Graduate Professional Skills Program, School of Graduate Studies, University of Toronto, Canada",2017-11-09,NA,NA,certificates,Graduate Professional Skills,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,Data Carpentry,2016-11-15,NA,NA,certificates,Data Carpentry Instructor Training,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2018-02-21,NA,Mozilla,2018-06-11,NA,https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif,courses,Mozilla Open Project Leaders Training,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2016-05-25,NA,McMaster University Health Sciences,2016-05-26,NA,NA,courses,'OMICS and Epidemiology,NA,NA,NA,NA,NA,certificates/omics-epi-attendance.pdf,NA,NA,NA
+2016-11-23,NA,Mitacs,2016-11-24,NA,NA,courses,Foundations of Project Management I,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2019-12-01,NA,"Steno Diabetes Center Aarhus, Aarhus, Denmark",NA,"Working on a project funded by the Danish Diabetes Academy. Doing research in diabetes epidemiology, specifically on identifying: the metabolic mediation between early childhood biomarkers and adult diabetes status; developing causal structure learning methods; and, creating a framework (as text and as software) for conducting reproducible and open scientific research.
+",NA,employment,NA,NA,NA,NA,NA,NA,NA,DDA postdoctoral researcher,Dr. Daniel Witte,NA
+2018-02-01,NA,"Department of Public Health, Aarhus University, Aarhus, Denmark",2019-11-30,"Doing research in diabetes epidemiology, specifically on identifying: patterns of accelerometry-derived physical activity with metabolic status; the metabolic mediation between early childhood biomarkers and adult diabetes status; and, developing a simulation method for incorporating multiple epidemiological results into a single framework. Also, assisting a PhD student's social network analysis on the programming aspects of work.
+",NA,employment,NA,NA,NA,NA,NA,NA,NA,Postdoctoral researcher,Dr. Daniel Witte,NA
+2017-09-20,NA,"Department of Nutritional Sciences, University of Toronto, Canada",2018-01-31,"Finishing up PhD research projects, maintaining and developing a website for the PROMISE data dictionary and description (<https://promise-cohort.gitlab.io/PROMISE>), and training new graduate students on data analysis using R.
+",NA,employment,NA,NA,NA,NA,NA,NA,NA,Postdoctoral fellow,Dr. Anthony Hanley,NA
+2011-01-01,NA,"Propel Center for Population Health Impact, University of Waterloo, Canada",2011-07-30,"Collected air quality samples from Region of Waterloo-owned social housing. Analyzed the air quality data using MS Excel.
+Produced and tested a survey for Program Training and Consultation Centre on SurveyMonkey. Wrote three reports on data collected from the survey results.
+Organized and scheduled interviews and data collection dates for a study in the Waterloo Region evaluating the School Food and Beverage Policy PPM150. Managed a team of 4 researchers to collect survey and interview data from primary and secondary schools in the Waterloo Region. Managed the storing and organizing of data collected from the surveys and interviews.
+",NA,employment,NA,NA,NA,NA,NA,NA,NA,Research Assistant,"Karen Pieters, Dr. Ryan David Kennedy, and Dr. Rhona Hanning",NA
+2010-08-01,NA,"Health Psychology Lab, University of Waterloo, Canada",2010-08-30,"Analyzed data from previous cigarette smoking experiments done in 2008 using MS Excel. Conducted a smoke-free policy scan of YMCAs and YWCAs in Ontario and presented findings to the Tobacco-free Sports and Recreation Community of Practice.
+",NA,employment,NA,NA,NA,NA,NA,NA,NA,Research Assistant,Dr. Ryan David Kennedy,NA
+2009-09-01,NA,"Child Health Evaluative Sciences, Hospital for Sick Children, Canada",2009-12-20,"Analyzed data from the WHO and PLoS Medicine using MS Excel. Developed a method for interpreting fracture data from the National Ambulatory Care Reporting System using statistical probability equations.
+",NA,employment,NA,NA,NA,NA,NA,NA,NA,Research Assistant,Dr. Andrew Howard,NA
+2009-01-01,NA,"Toronto Rehabilitation Institute, Canada",2009-04-30,"Examined balance in clinical populations, including individuals with dementia, using pressure plates. Used EMG electrodes, VICON markers and other monitoring equipment to obverse and collect data from research participants. Analyzed data from various experiments and studies using LabView and MATLAB software. Evaluated the reliability of using Bluetooth technology in the foot switch device (industry gold standard) and analyzed the relationship with an accelerometer.
+",NA,employment,NA,NA,NA,NA,NA,NA,NA,Research Assistant,Dr. Avril Mansfield and Dr. William McIlroy,NA
+2008-09-01,NA,"Health Psychology Lab, University of Toronto",2008-12-20,"Used MS Excel and SPSS 17.0 to organize and analyze data from experiments and prepare the data for presentations at provincial and international tobacco control conferences. Independently conducted a phone survey of Ontario’s university campuses’ outdoor smoking policies and prepared a poster to be presented at a tobacco control conference.
+",NA,employment,NA,NA,NA,NA,NA,NA,NA,Research Assistant,PhD(c) Ryan David Kennedy,NA
+2008-05-01,NA,"Health Psychology Lab, University of Toronto",2008-08-30,"Managed 3 projects aimed at measuring tobacco smoke pollution in outdoor and quasi-outdoor environments. Organized and analyzed data using MS Excel and SPSS 17.0. Supervised and scheduled a team of 10 Research Assistants.
+",NA,employment,NA,NA,NA,NA,NA,NA,NA,Project Manager,PhD(c) Ryan David Kennedy,NA
+2014-09-01,NA,NA,2015-04-30,"For the Research Projects course (NFS394) in Nutritional Sciences. Co-mentored with Dr. Anthony Hanley. Supervision consisted of helping guide the development of the research question and teaching Windy coding in SAS and using statistical techniques to analyze the data.
+",NA,undergraduate,"Validating a bioelectric impedance instrument against the gold standard dual-energy x-ray absorptiometry on measures of adiposity.
+",NA,NA,NA,NA,NA,NA,NA,NA,Windy Wang
+2017-09-01,NA,NA,2018-01-31,"Master's Student in Nutritional Sciences. Co-mentored with Dr. Anthony Hanley. Trained Shahen in R and statistics, assisted in guiding the research project and analysis.
+",NA,masters,"Metabolomic Profiling of the DASH Diet: Novel Insights for the Nutritional Epidemiology of Type 2 Diabetes Mellitus
+",NA,NA,NA,NA,NA,NA,NA,NA,Shahen Yashpal
+2019-03-04,NA,Danish Diabetes Academy,2019-03-19,"Four day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
+",https://dda-rcourse.lwjohnst.com/,teaching,Reproducible Quantitative Methods: Data analysis workflow using R,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2019-05-21,NA,German Institute of Human Nutrition Potsdam-Rehbrueke,2019-03-19,"Three day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
+",https://rqawr-course.lwjohnst.com/,teaching,Reproducible Quantitative Analyses and Workflows using R,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2019-10-22,NA,Aarhus University,2019-10-23,"Coordinate and instruct a 2-day Software Carpentry workshop to any member of Aarhus University.
+",https://github.com/au-cru/2019-10-22-aarhus,teaching,Software Carpentry Workshop,NA,NA,NA,NA,NA,NA,Lead instructor,NA,NA
+2018-06-01,NA,Aarhus University Community of Research Software Users,NA,"Founded a group dedicated to skill sharing of data analysis in the statistical programming language R (and others). Organize and instruct several sessions on using R, in a participatory live coding format.
+",https://au-cru.github.io,teaching,"Peer-led, participatory live coding R training sessions",NA,NA,NA,NA,NA,NA,Instructor and founder,NA,NA
+2018-07-09,NA,"TIB Leibniz Information Centre for Science and Technology and University Library, Hannover, Germany",2018-07-13,"Taught and contributed to workshop material on building FAIR (findable, accessible, interoperable, and reusable) data and software.
+",https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/,teaching,FAIR Data and Software workshop,NA,NA,NA,NA,NA,NA,Instructor,NA,NA
+2017-01-19,NA,[Software Carpentry](http://software-carpentry.org) and [UofTCoders](https://uoftcoders.github.io),2017-01-19,"Helped learners during the Git session of the two day workshop.
+",https://uoftcoders.github.io/2018-01-18-utoronto/,teaching,Software Carpentry workshops (R),NA,NA,NA,NA,NA,NA,Helper,NA,NA
+2017-09-07,NA,"Department of Ecology and Evolutionary Biology, University of Toronto, Canada",2017-12-21,"Created the curriculum (along with five other members). Taught three lectures, created and marked assignments.
+",https://uoftcoders.github.io/rcourse,teaching,Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430),NA,NA,NA,NA,NA,NA,Teaching Assistant,Dr. Martin Krkosek,NA
+2017-09-07,NA,"Department of Nutritional Sciences, University of Toronto, Canada",2017-12-21,"Gave a lecture and created the assignment (see website). Marked the assignment.
+",https://gitlab.com/lwjohnst/nfs1201-2017,teaching,Public Health Nutrition (NFS1201),NA,NA,NA,NA,NA,NA,Teaching Assistant,Dr. Valerie Tarasuk,NA
+2017-05-08,NA,[Software Carpentry](http://software-carpentry.org),2017-05-09,"Instructed the second day of the two-day workshop at Ryserson University on advanced uses of R.
+",NA,teaching,Software Carpentry workshops (R),NA,NA,NA,NA,NA,NA,Instructor,NA,NA
+2017-01-02,NA,"Department of Nutritional Sciences, University of Toronto, Canada",2017-04-28,Marked assignments and exams.,NA,teaching,Basic Human Nutrition (NFS284),NA,NA,NA,NA,NA,NA,Teaching Assistant,Dr. Debbie Gurfinkel,NA
+2017-02-03,NA,[Software Carpentry](http://software-carpentry.org),2017-02-04,"Acted as helper to the instructors at a two-day workshop introducing computing to researchers and students at the University of Toronto. Duties were to answer any questions and fix any problems that novice learners encountered during the two day workshop.
+",http://uoftcoders.github.io/2017-02-03-utoronto/,teaching,Software Carpentry workshops (Python),NA,NA,NA,NA,NA,NA,Helper,NA,NA
+2016-09-01,NA,"Department of Nutritional Sciences, University of Toronto, Canada",2016-12-21,"Marked exams. Developed and marked a [short assignment](https://github.com/lwjohnst86/nfs484-1484-assignment-2016). Answered any student questions.
+",NA,teaching,Advanced Nutrition (NFS484-1484),NA,NA,NA,NA,NA,NA,Teaching Assistant,Dr. Carol Greenwood,NA
+2016-09-14,NA,[Software Carpentry](http://software-carpentry.org),2016-09-14,"Taught the first R session to novice learners at a two-day workshop on introducing computing to researchers and students at York University.
+",https://gvwilson.github.io/2016-09-14-yorku/,teaching,Software Carpentry workshops (R),NA,NA,NA,NA,NA,NA,Instructor,NA,NA
+2016-07-27,NA,[CUPE3902 Unit 5](http://cupe3902.org/postdocs/),2016-08-10,"The [UofTCoders](https://uoftcoders.github.io/studyGroup/) members were hired by CUPE3902 Unit 5 to teach Python to post-doctoral fellows. As a core member of the UofTCoders, I acted as a helper to the instructors at the three-part workshop series introducing the Python programming language. Duties were to answer any questions and fix any problems that novice learners encountered during the Python sessions.
+",NA,teaching,CUPE3902 Post-doc Python workshops,NA,NA,NA,NA,NA,NA,Helper,NA,NA
+2016-05-26,NA,[Code As Manuscript](http://codeasmanuscript.org),2017-04-12,"I wanted to increase the computing capacity of my graduate department and to start to promote a culture of code-sharing and code reviews. Since how analyses are conducted and what the code is to create the scientific results is increasingly becoming more important, I wanted to start teaching students how to use R efficiently and productively. I've also set up a code review with my lab, so it was efficient for me to wrap these workshops up with the code reviews.
+",http://codeasmanuscript.github.io/code-along,teaching,Departmental R workshops,NA,NA,NA,NA,NA,NA,Instructor,NA,NA
+2016-04-25,NA,[Software Carpentry](http://software-carpentry.org),2016-04-26,"Acted as helper to the instructors at a two-day workshop introducing computing to researchers and students at the University of Toronto. Duties were to answer any questions and fix any problems that novice learners encountered during the R sessions.
+",http://uoftcoders.github.io/2016-04-25-utoronto/,teaching,Software Carpentry workshops (R),NA,NA,NA,NA,NA,NA,Helper,NA,NA
+2016-05-09,NA,[Software Carpentry](http://software-carpentry.org),2016-05-10,"Taught the Git session to novice learners at a two-day workshop on introducing computing to researchers and students at the University of Toronto, as well as acted as helper during the Shell and Python sessions.
+",http://uoftcoders.github.io/2016-05-09-utoronto/,teaching,Software Carpentry workshops (Python),NA,NA,NA,NA,NA,NA,Instructor,NA,NA
+2015-06-11,NA,"UofT Coders, University of Toronto, Canada",2018-01-31,"Various coding sessions (Git, R).",http://uoftcoders.github.io,teaching,Programming code-alongs,NA,NA,NA,NA,NA,NA,Instructor,NA,NA
+2014-10-01,NA,"Graduate Professional Skills Program, University of Toronto, Canada",2015-11-23,"Taught three workshops on SAS and R. SAS workshops were co-instructed and co-developed with Dr. Daiva Nielsen. R workshops were co-instructed with Sarah Meister. We taught version control, beginner and advanced coding techniques, and how to structure research projects around the idea of reproducibility. Consistent with our mission statement, our material is publicly available online at https://github.com/codeasmanuscript.
+",http://codeasmanuscript.org,teaching,Code as Manuscript; R and SAS coding workshops,NA,NA,NA,NA,NA,NA,Instructor and founder,NA,NA
+2015-09-01,NA,"Department of Nutritional Sciences, University of Toronto, Canada",2015-12-31,"Gave [two lectures](https://github.com/lwjohnst86/nfs1201-lectures) during the course and developed and marked the [final (third) assignment](https://github.com/lwjohnst86/nfs1201-assignment).
+",NA,teaching,Public Health Nutrition (NFS1201),NA,NA,NA,NA,NA,NA,Teaching Assistant,Dr. Sarah Orr,NA
+2015-07-16,NA,[Software Carpentry](http://software-carpentry.org),2015-07-17,"Coding workshop hosted at the Hospital for Sick Children, Toronto. I taught version control using Git and acted as helper for the Shell and R sessions.
+",http://blog.tomwright.ca/2015-07-16-sickkids/,teaching,Software Carpentry Workshop (R),NA,NA,NA,NA,NA,NA,Instructor,NA,NA
+2015-01-29,NA,[Software Carpentry](http://software-carpentry.org),2015-01-30,"Coding workshop hosted at the Hospital for Sick Children, Toronto. I provided technical support, worked through students' problems and issues with them, and answered any questions.
+",http://tomwright01.github.io/2015-01-29-sickkids/,teaching,Software Carpentry Workshop (R),NA,NA,NA,NA,NA,NA,Teaching Helper,Tom Wright,NA
+2014-10-30,NA,[Software Carpentry](http://software-carpentry.org),2014-10-31,"Coding workshop hosted at the Gerstein Library, University of Toronto. I provided technical support, assisted students' with problems and issues, and answered student questions.
+",http://swcarpentry.github.io/2014-10-30-utoronto/,teaching,Software Carpentry Workshop (Python),NA,NA,NA,NA,NA,NA,Teaching Helper,Dr. Greg Wilson,NA
+2014-09-01,NA,"Department of Nutritional Sciences, University of Toronto, Canada",2014-12-31,"Developed and lead [tutorials](https://github.com/lwjohnst86/nfs484-1484-tutorials) for graduate students. Developed and marked the [final exam](https://github.com/lwjohnst86/nfs484-1484-exams). Answered any student questions.
+",NA,teaching,Advanced Nutrition (NFS484-1484),NA,NA,NA,NA,NA,NA,Teaching Assistant,Dr. Carol Greenwood,NA
+2013-09-01,NA,"Department of Nutritional Sciences, University of Toronto, Canada",2013-12-31,"Lead [tutorials](https://github.com/lwjohnst86/nfs484-1484-tutorials) for undergraduate students. Developed and marked the [midterm exam](https://github.com/lwjohnst86/nfs484-1484-exams). Answered any student questions.
+",NA,teaching,Advanced Nutrition (NFS484-1484),NA,NA,NA,NA,NA,NA,Teaching Assistant,Dr. Carol Greenwood,NA
+2013-01-01,NA,"Department of Nutritional Sciences, University of Toronto, Canada",2013-04-30,"Answer student emails and questions. Mark midterm exam, assignment and final exam. Invigilate midterm and final exam.
+",NA,teaching,Nutritional Microbiology (NFS485),NA,NA,NA,NA,NA,NA,Teaching Assistant,Dr. Elena Comelli,NA

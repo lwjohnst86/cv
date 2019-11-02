@@ -8,6 +8,6 @@ yaml_files %>%
     na.omit() %>%
     map(yaml::read_yaml) %>%
     flatten() %>%
-    imap_dfr(~ as_tibble(.x[[1]]) %>%
+    imap_dfr(~ imap_dfr(.x, as_tibble) %>%
              mutate(section = .y)) %>%
     write_csv(here::here("data/cv-items.csv"))
