@@ -202,5 +202,62 @@ Sheng Z, **Yu L**, Zhang T, Pei X, Li X, Zhang Z and Du W.
 vitae::bibliography_entries("_includes/work.bib") %>% 
     View()
 
+# doi <- paste0("DOI: [", sub("^.*\\.org/", "", i$doi), "](", i$doi, ").")
+```
+
+
+```{r, eval=FALSE}
+rorcid::orcid_educations("0000-0003-4169-2616")[[1]]$`affiliation-group`$summaries %>%
+    bind_rows() %>%
+    rename_all( ~ str_remove(., "education-summary\\.")) %>%
+    as_tibble(.name_repair = "universal") %>%
+    select(department.name, role.title, matches("start.date"), matches("end.date"),
+           matches("organization"), url.value) %>%
+    vitae::detailed_entries(
+        what = glue("{role.title} in {department.name}"),
+        when = glue("{start.date.year.value} -- {end.date.year.value}"),
+        with = organization.name,
+        where = str_c(organization.address.city, organization.address.country, sep = ", "),
+        why = url.value
+    ) %>%
+    as.tibble()
+
+```
+
+```{r, eval=FALSE}
+
+extract_first_published <- function(pkgs) {
+    pkgs %>%
+        map(~ glue::glue("https://crandb.r-pkg.org/{.x}/all")) %>%
+        map_chr(~ jsonlite::fromJSON(as.character(.x))$versions[[1]]$Date)
+}
+
+my_pkgs <- pkgsearch::ps("Luke Johnston")
+my_pkgs %>%
+    mutate(authorship = map_chr(
+        package_data,
+        ~ str_extract(.x$Author, "Luke Johnston.*\\[(aut|ctb)(,|\\])")
+    )) %>%
+    as_tibble() %>%
+    select(package, title, description, date, url, authorship) %>%
+    arrange(desc(date)) %>%
+    mutate(
+        authorship = case_when(
+            str_detect(authorship, "\\[ctb") ~ "contributor",
+            str_detect(authorship, "\\[aut") ~ "creator",
+            TRUE ~ NA_character_
+        )
+    ) %>%
+    filter(!is.na(authorship)) %>%
+    mutate(first_published = package %>%
+               extract_first_published() %>%
+               lubridate::year()) %>%
+    detailed_entries(what = glue::glue("{package}: {title} ({authorship})"),
+                     when = glue::glue("{first_published} (updated: {lubridate::year(date)})"),
+                     with = description,
+                     # TODO: Might need to fix this depending on number of url
+                     where = url) %>%
+    as_tibble() %>%
+    View()
 ```
 
