@@ -199,7 +199,7 @@ Sheng Z, **Yu L**, Zhang T, Pei X, Li X, Zhang Z and Du W.
 
 
 ```{r, include=FALSE, eval=FALSE}
-vitae::bibliography_entries("_includes/work.bib") %>% 
+vitae::bibliography_entries("data/work.bib") %>% 
     View()
 
 # doi <- paste0("DOI: [", sub("^.*\\.org/", "", i$doi), "](", i$doi, ").")
