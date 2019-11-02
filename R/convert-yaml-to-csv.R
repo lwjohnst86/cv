@@ -1,4 +1,4 @@
-library(tidyverse)
+library(tidyverse, quietly = TRUE)
 
 yaml_files <- fs::dir_ls(here::here("_includes/"), glob = "*.yaml")
 
