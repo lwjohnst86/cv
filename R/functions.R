@@ -1,6 +1,7 @@
 suppressPackageStartupMessages(library(lubridate))
 suppressPackageStartupMessages(library(yaml))
 suppressPackageStartupMessages(library(glue))
+suppressPackageStartupMessages(library(magrittr))
 
 #' Order the data in the list by the end and start year.
 #'
@@ -126,33 +127,39 @@ restricted_entry <- function(cv_entry) {
     }
 }
 
-list_education <- function() {
+save_education <- function() {
     orcid <- "0000-0003-4169-2616"
     orcid_education_data <- rorcid::orcid_educations(orcid)[[1]]
     education <- orcid_education_data$`affiliation-group`$summaries %>%
-        bind_rows() %>%
-        rename_all(~ str_remove(., "education-summary\\.")) %>%
-        as_tibble(.name_repair = "universal") %>%
-        select(
+        dplyr::bind_rows() %>%
+        dplyr::rename_all(~ stringr::str_remove(., "education-summary\\.")) %>%
+        dplyr::as_tibble(.name_repair = "universal") %>%
+        dplyr::select(
             department.name,
             role.title,
-            matches("start.date"),
-            matches("end.date"),
-            matches("organization"),
+            dplyr::matches("start.date"),
+            dplyr::matches("end.date"),
+            dplyr::matches("organization"),
             url.value
         ) %>%
         vitae::detailed_entries(
-            what = glue("{role.title} in {department.name}"),
-            when = glue("{start.date.year.value} -- {end.date.year.value}"),
+            what = glue::glue("{role.title} in {department.name}"),
+            when = glue::glue("{start.date.year.value} -- {end.date.year.value}"),
             with = organization.name,
-            where = str_c(
+            where = stringr::str_c(
                 organization.address.city,
                 organization.address.country,
                 sep = ", "
             ),
             why = url.value
         )
+    saveRDS(education, here::here("data/education.Rds"))
+    return(invisible())
+}
 
+list_education <- function() {
+
+    education <- readRDS(here::here("data/education.Rds"))
     if (interactive()) {
         education <- education %>%
             as_tibble()
@@ -176,3 +183,65 @@ list_education <- function() {
     education
 }
 
+extract_first_published <- function(pkgs) {
+    pkgs %>%
+        purrr::map( ~ glue::glue("https://crandb.r-pkg.org/{.x}/all")) %>%
+        purrr::map_chr( ~ jsonlite::fromJSON(as.character(.x))$versions[[1]]$Date)
+}
+
+save_rpkgs <- function() {
+    my_pkgs <- pkgsearch::ps("Luke Johnston")
+    my_pkgs <- my_pkgs %>%
+        dplyr::mutate(authorship = purrr::map_chr(
+            package_data,
+            ~ stringr::str_extract(.x$Author, "Luke Johnston.*\\[(aut|ctb)(,|\\])")
+        )) %>%
+        dplyr::as_tibble() %>%
+        dplyr::select(package, title, description, date, url, authorship) %>%
+        dplyr::arrange(dplyr::desc(date)) %>%
+        dplyr::mutate(
+            authorship = dplyr::case_when(
+                stringr::str_detect(authorship, "\\[ctb") ~ "contributor",
+                stringr::str_detect(authorship, "\\[aut") ~ "creator",
+                TRUE ~ NA_character_
+            )
+        ) %>%
+        dplyr::filter(!is.na(authorship)) %>%
+        dplyr::mutate(first_published = package %>%
+                   extract_first_published() %>%
+                   lubridate::year()) %>%
+        vitae::brief_entries(
+            what = glue::glue("{package}: {title} ({authorship})"),
+            when = first_published,
+            # TODO: Might need to fix this depending on number of url
+            with = "CRAN"
+        )
+    saveRDS(my_pkgs, here::here("data/rpackages.Rds"))
+    return(invisible())
+}
+
+list_rpackages <- function() {
+    rpkgs <- readRDS(here::here("data/rpackages.Rds"))
+    if (interactive()) {
+        rpkgs <- rpkgs %>%
+            as_tibble()
+    }
+
+    if (knitr::is_html_output()) {
+        stop("Fix rpkgs gluing.")
+        rpkgs <- rpkgs %>%
+            as_tibble() %>%
+            glue_data("
+            ### {with}
+
+            {what}
+
+            {where}
+
+            {when}
+
+            ")
+    }
+
+    rpkgs
+}
