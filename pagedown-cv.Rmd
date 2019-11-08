@@ -1,13 +1,51 @@
 ---
-author: "CV"
+title: "CV"
 author: "Luke W. Johnston"
+name: Luke
+surname: Johnston
+position: Postdoctoral researcher
+address: Aarhus, Denmark
 date: "`r Sys.Date()`"
+# profilepic: A local file path to an image
+www: lukewjohnston.com
+email: lwjohnst@ph.au.dk
+twitter: lwjohnst
+github: lwjohnst86
+aboutme: I am a diabetes epidemiologist, R user and programmer, teacher of modern data analysis skills, and open science advocate.
+headcolor: "324ea8"
+docname: "curriculum vitae"
 output:
-  pagedown::html_resume:
-    # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: false
+    vitae::awesomecv:
+        keep_tex: true
+    pagedown::html_resume:
+        # set it to true for a self-contained HTML page but it'll take longer to render
+        self_contained: false
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+    echo = FALSE,
+    warning = FALSE,
+    message = FALSE,
+    results = "asis",
+    comment = ""
+)
+source(here::here("R/functions.R"))
+library(tidyverse)
+cv_data <- read_csv(here::here("data/cv-items.csv"))
+
+convert_to_cvhonors <- function(.tbl) {
+    .tbl %>% 
+        as_tibble() %>% 
+        glue_data("
+        
+        \\cvhonors{{{what}}}{{{with}}}{{{where}}}{{{when}}}
+        
+                  ")
+}
+```
+
+<!--
 Aside
 ================================================================================
 
@@ -22,242 +60,165 @@ Contact Info {#contact}
 - <i class="fa fa-twitter"></i> [twitter.com/lwjohnst](https://twitter.com/lwjohnst)
 - <i class="fa fa-github"></i> [github.com/lwjohnst86](https://github.com/lwjohnst86)
 - <i class="fa fa-gitlab"></i> [gitlab.com/lwjohnst](https://gitlab.com/lwjohnst)
+- <i class="fa fa-stack-overflow"></i> [StackOverflow](http://stackoverflow.com/users/2632184)
 - <i class="fa fa-stack-exchange"></i> [Stack Exchange](https://stackexchange.com/users/1992995)
 - <i class="fa fa-linkedin-square"></i> [LinkedIn](https://www.linkedin.com/in/luke-johnston-480365101/)
 - For more information, please contact me via email.
 
+# Skills {#skills}
 
-Skills {#skills}
---------------------------------------------------------------------------------
+- Languages: English (fluent), Spanish (competent)
+- Programming: Fluent in R, LaTeX, HTML, CSS, Bash, Git; familiar with 
+SAS, Python.
+- Statistical techniques: Basic (t-test, ANOVA, correlation), regression
+modeling (linear, logistic), mixed effect modeling, generalized estimating
+equations, principal component analysis, partial least squares regression, cross
+validation, cluster analysis (hierarchical, k-means), information criterion
+(AIC, QIC), bootstrapping, factor analysis.
+-->
 
-- Experienced in statistical analysis, statistical learning models, and optimization methods.
-
-- Full experience with next generation sequencing data analysis.
-
-- Highly skilled in R, Bash, Perl, Python, LaTeX
-
-
+<!--
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
-
 Last updated on `r Sys.Date()`.
-
 
 
 Main
 ================================================================================
 
-Lijia Yu {#title}
+Luke W. Johnston {#title}
 --------------------------------------------------------------------------------
+-->
 
-### Currently searching for a PhD student position
+# Education {data-icon=graduation-cap data-concise=true}
 
-Please note that this is a *real* resume, and I'm really looking for a PhD
-student position at the moment. I made this resume because Yihui asked me
-if I'd like to test the **pagedown** package with my resume. If you are
-interested in my background and skills, please feel free to contact me.
+```{r list-education}
+list_education()
+```
 
+# Publications and Posters {data-icon=file}
 
-Education {data-icon=graduation-cap data-concise=true}
---------------------------------------------------------------------------------
+## Publications
 
-### Beijing University of Chemical Technology
-
-B.S. in Information and Computing Sciences
-
-Beijing, China
-
-2010
-
-Thesis: Dyadic wavelet and its application in edge detection
-
-### University of Chinese Academy of Sciences
-
-M.S. in Bioinformatics
-
-Beijing, China
-
-2014
-
-Thesis: A multi-omics study for intra-individual divergence of the distributions between mRNA isoforms in mammals
-
-
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-### Graduate Research Assistant
-
-Beijing Institute of Genomics, Chinese Academy of Sciences
-
-Beijing, China
-
-2011 - 2014
-
-- Performed computational biology research towards understanding regulation of alternative splicing in human and mouse transcriptome.
-- Found EGFR pathway related mutations, aimed to understand the impacts of cancer mutations on EGFR signaling pathway.
-
-### Bioinformatican
-
-My Health Gene Technology Co., Ltd.
-
-Beijing, China
-
-2015 - 2016
-
-- Investigated how cancer cells spread to other parts of the body at the single cell level.
-
-### Visiting Scientist
-
-University of Alabama at Birmingham
-
-AL, USA
-
-2016 - 2018
-
-- Investigated the role of mitochondria in development of cancer.
-- Investigated the evolution of genome architecture and its role in important evolutionary events.
-- Detected thrombotic thrombocytopenic purpura related mutations in mutiple patients' blood genome.
-  
-
-Professional Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-### Data Scientist, intern
-
-SupStat Inc.
-
-Beijing, China
-
-2014
-
-::: concise
-- Taught R language to beginners. 
-- Wrote Shiny app demos.
-- Converted statistical tutorials from SPSS to R language.
-:::
-
-### Bioinformatician
-
-My Health Gene Technology Co., Ltd.
-
-Beijing, China
-
-2015 - 2016
-
-::: concise
-- Analyzed whole-exome sequencing data. 
-- Wrote analysis pipelines of ChIP-seq, single cell DNA-seq and single cell RNA-seq.
-- Studied tumor metastasis and wrote research reports. 
-- Also did case studies to identify the genetic defect causing rare disease.
-:::
-
-
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-### Introduction to R Language for Beginners.
-
-Instructor of R and Data Mining Training Courses at SupStat Inc.
-
-Beijing, China
-
-2014
-
-### Computational Biology and Bioinformatics.
-
-Teaching assistant of GBS CB2-201 courses at UAB
-
-AL, USA
-
-2016 - 2017
-
-
-Selected Publications and Posters {data-icon=file}
---------------------------------------------------------------------------------
-
-### Genetic and epigenetic signals are found predictive to the distribution of intra-individual divergence of alternative splicing.
-
-Poster for 2013 International Conference of Genomics
-
-Qingdao, China
-
-2014
-
-**Yu L**, Chen B, Zhang Z.
-
-### ESCRT-0 complex modulates Rbf mutant cell survival by regulating Rhomboid endosomal trafficking and EGFR signaling.
-
-J Cell Sci. 2016 May 15;129(10):2075-84.
-
-N/A
-
-2016 
-
-Sheng Z, **Yu L**, Zhang T, Pei X, Li X, Zhang Z and Du W. 
-
-
-```{r, include=FALSE, eval=FALSE}
+```{r list-publications}
 vitae::bibliography_entries("data/work.bib") %>% 
-    View()
+    filter(str_detect(groups, "articles")) %>% 
+    arrange(desc(year))
 
 # doi <- paste0("DOI: [", sub("^.*\\.org/", "", i$doi), "](", i$doi, ").")
+# ### title
+# journal or poster location
+# location or N/A
+# year
+# authors
 ```
 
+## Oral presentations
 
-```{r, eval=FALSE}
-rorcid::orcid_educations("0000-0003-4169-2616")[[1]]$`affiliation-group`$summaries %>%
-    bind_rows() %>%
-    rename_all( ~ str_remove(., "education-summary\\.")) %>%
-    as_tibble(.name_repair = "universal") %>%
-    select(department.name, role.title, matches("start.date"), matches("end.date"),
-           matches("organization"), url.value) %>%
-    vitae::detailed_entries(
-        what = glue("{role.title} in {department.name}"),
-        when = glue("{start.date.year.value} -- {end.date.year.value}"),
-        with = organization.name,
-        where = str_c(organization.address.city, organization.address.country, sep = ", "),
-        why = url.value
-    ) %>%
-    as.tibble()
-
+```{r list-orals}
+vitae::bibliography_entries("data/work.bib") %>% 
+    filter(str_detect(groups, "Oral presentations")) %>% 
+    arrange(desc(year))
 ```
 
-```{r, eval=FALSE}
+## Poster presentations
 
-extract_first_published <- function(pkgs) {
-    pkgs %>%
-        map(~ glue::glue("https://crandb.r-pkg.org/{.x}/all")) %>%
-        map_chr(~ jsonlite::fromJSON(as.character(.x))$versions[[1]]$Date)
-}
+```{r list-posters}
+vitae::bibliography_entries("data/work.bib") %>% 
+    filter(str_detect(groups, "poster presentation")) %>% 
+    arrange(desc(year))
+```
 
-my_pkgs <- pkgsearch::ps("Luke Johnston")
-my_pkgs %>%
-    mutate(authorship = map_chr(
-        package_data,
-        ~ str_extract(.x$Author, "Luke Johnston.*\\[(aut|ctb)(,|\\])")
-    )) %>%
-    as_tibble() %>%
-    select(package, title, description, date, url, authorship) %>%
-    arrange(desc(date)) %>%
+# Published R packages {data-icon=cube}
+
+```{r list-r-packages}
+list_rpackages() 
+```
+
+# Teaching Experience {data-icon=chalkboard-teacher}
+
+```{r list-teaching}
+cv_data %>% 
+    filter(section == "teaching") %>% 
+    arrange(desc(start)) %>% 
     mutate(
-        authorship = case_when(
-            str_detect(authorship, "\\[ctb") ~ "contributor",
-            str_detect(authorship, "\\[aut") ~ "creator",
-            TRUE ~ NA_character_
-        )
-    ) %>%
-    filter(!is.na(authorship)) %>%
-    mutate(first_published = package %>%
-               extract_first_published() %>%
-               lubridate::year()) %>%
-    detailed_entries(what = glue::glue("{package}: {title} ({authorship})"),
-                     when = glue::glue("{first_published} (updated: {lubridate::year(date)})"),
-                     with = description,
-                     # TODO: Might need to fix this depending on number of url
-                     where = url) %>%
-    as_tibble() %>%
-    View()
+        start = lubridate::year(start),
+        end = lubridate::year(end),
+        end = if_else(is.na(end), "present", as.character(end)),
+        organization = organization %>% 
+            str_replace_all("\\[(.+?)\\]\\(.+?\\)", "\\1")
+    ) %>% 
+    vitae::detailed_entries(
+        what = glue("{str_to_sentence(role)} for {title}"),
+        when = glue("{start}-{end}"),
+        with = organization,
+        where = location
+    ) 
+
+# ### {what}
+# {with}
+# {when}
+# {where}
 ```
 
+# Curriculum Development {data-icon=chalkboard-teacher}
+
+```{r list-curriculum}
+cv_data %>% 
+    filter(section == "curriculum") %>% 
+    arrange(desc(start)) %>% 
+    mutate(
+        start = lubridate::year(start),
+        end = lubridate::year(end),
+        end = if_else(is.na(end), "present", as.character(end))
+    ) %>% 
+    vitae::brief_entries(
+        what = glue("{title} (link: {website})"),
+        when = glue("{start}-{end}"),
+        with = "",
+    ) 
+
+# ### {what}
+# {with}
+# {when}
+# {where}
+```
+
+# Awards
+
+```{r list-awards}
+cv_data %>% 
+    filter(section == "awards") %>% 
+    mutate(start = if_else(is.na(start), end, start),
+           year = lubridate::year(start)) %>% 
+    vitae::brief_entries(
+        what = glue("{title} from {organization}"),
+        when = year,
+        with = location
+    ) 
+```
+
+# Employment {data-icon=suitcase}
+
+```{r list-employment}
+cv_data %>% 
+    filter(section == "employment") %>% 
+    arrange(desc(start)) %>% 
+    mutate(
+        start = lubridate::year(start),
+        end = lubridate::year(end),
+        end = if_else(is.na(end), "present", as.character(end))
+    ) %>% 
+    vitae::detailed_entries(
+        what = role,
+        when = glue("{start} -- {end}"),
+        with = organization,
+        where = location
+    )
+# ### what (role)
+# organization
+# location
+# date range
+# optional descriptions
+```
