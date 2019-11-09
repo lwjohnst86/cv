@@ -1,4 +1,6 @@
-library(tidyverse, quietly = TRUE)
+
+# From old files to new csv format.
+convert_yaml_to_csv <- function() {
 
 yaml_files <- fs::dir_ls(here::here("_includes/"), glob = "*.yaml")
 
@@ -34,3 +36,4 @@ cv_data %>%
     select(-status, -certificate, -org, -source,
            -supervisor, -name, -other) %>%
     write_csv("data/cv-data-2.csv")
+}
