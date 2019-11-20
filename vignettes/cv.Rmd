@@ -30,19 +30,10 @@ knitr::opts_chunk$set(
     results = "asis",
     comment = ""
 )
-source(here::here("R/functions.R"))
+# library(cv)
+devtools::load_all()
 library(tidyverse)
-cv_data <- read_csv(here::here("data/cv-items.csv"))
-
-convert_to_cvhonors <- function(.tbl) {
-    .tbl %>% 
-        as_tibble() %>% 
-        glue_data("
-        
-        \\cvhonors{{{what}}}{{{with}}}{{{where}}}{{{when}}}
-        
-                  ")
-}
+cv_data <- read_cv_items()
 ```
 
 <!--
@@ -101,33 +92,38 @@ list_education()
 
 ## Publications
 
-```{r list-publications}
-vitae::bibliography_entries("data/work.bib") %>% 
-    filter(str_detect(groups, "articles")) %>% 
-    arrange(desc(year))
-
-# doi <- paste0("DOI: [", sub("^.*\\.org/", "", i$doi), "](", i$doi, ").")
-# ### title
-# journal or poster location
-# location or N/A
-# year
-# authors
+```{r list-articles}
+list_publications("Journal articles")
 ```
 
 ## Oral presentations
 
 ```{r list-orals}
-vitae::bibliography_entries("data/work.bib") %>% 
-    filter(str_detect(groups, "Oral presentations")) %>% 
-    arrange(desc(year))
+list_publications("^Oral presentations")
+```
+
+## Oral poster presentations
+
+```{r list-oral-posters}
+list_publications("^Oral poster presentations")
 ```
 
 ## Poster presentations
 
 ```{r list-posters}
-vitae::bibliography_entries("data/work.bib") %>% 
-    filter(str_detect(groups, "poster presentation")) %>% 
-    arrange(desc(year))
+list_publications("Poster presentations")
+```
+
+## Other conference presentations
+
+```{r}
+list_publications("Other conference presentations")
+```
+
+## Panel member
+
+```{r}
+list_publications("Panel member")
 ```
 
 # Published R packages {data-icon=cube}
@@ -179,6 +175,7 @@ cv_data %>%
         with = "",
     ) 
 
+list_publications("Curriculum development")
 # ### {what}
 # {with}
 # {when}
@@ -188,37 +185,11 @@ cv_data %>%
 # Awards
 
 ```{r list-awards}
-cv_data %>% 
-    filter(section == "awards") %>% 
-    mutate(start = if_else(is.na(start), end, start),
-           year = lubridate::year(start)) %>% 
-    vitae::brief_entries(
-        what = glue("{title} from {organization}"),
-        when = year,
-        with = location
-    ) 
+list_awards(cv_data)
 ```
 
 # Employment {data-icon=suitcase}
 
 ```{r list-employment}
-cv_data %>% 
-    filter(section == "employment") %>% 
-    arrange(desc(start)) %>% 
-    mutate(
-        start = lubridate::year(start),
-        end = lubridate::year(end),
-        end = if_else(is.na(end), "present", as.character(end))
-    ) %>% 
-    vitae::detailed_entries(
-        what = role,
-        when = glue("{start} -- {end}"),
-        with = organization,
-        where = location
-    )
-# ### what (role)
-# organization
-# location
-# date range
-# optional descriptions
+list_employment(cv_data)
 ```
