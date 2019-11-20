@@ -1,16 +1,14 @@
-source('R/functions.R')
-output <- yaml::yaml.load_file('_includes/publications.yaml')[[1]]
+list_publications <- function(type) {
+    bib_file <- fs::path_package("cv", "data", "work.bib")
+    vitae::bibliography_entries(bib_file) %>%
+        dplyr::filter(stringr::str_detect(groups, type)) %>%
+        dplyr::arrange(dplyr::desc(year)) %>%
+        output()
+}
 
-cat('\n\n### Articles\n\n')
-publication_list(output$articles, 'articles')
-cat('\n\n### Oral presentations\n\n')
-publication_list(output$orals, 'orals')
-cat('\n\n### Oral poster presentations\n\n')
-publication_list(output$posterpres, 'posterpres')
-cat('\n\n### Conference posters\n\n')
-publication_list(output$posters, 'posters')
-cat('\n\n### Panel member\n\n')
-publication_list(output$panel, 'panel')
-cat('\n\n### Other conference works\n\n')
-publication_list(output$otherconf, 'otherconf')
-
+# doi <- paste0("DOI: [", sub("^.*\\.org/", "", i$doi), "](", i$doi, ").")
+# ### title
+# journal or poster location
+# location or N/A
+# year
+# authors
