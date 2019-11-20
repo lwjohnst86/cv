@@ -21,4 +21,14 @@ Imports:
     yaml,
     purrr,
     stringr,
-    pkgsearch
+    pkgsearch,
+    magrittr,
+    rfigshare,
+    fs,
+    usethis,
+    jsonlite,
+    readr
+Suggests: 
+    rmarkdown
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.0
