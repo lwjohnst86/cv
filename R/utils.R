@@ -35,7 +35,7 @@ output <- function(.object, compact = FALSE) {
 
 tidy_dates <- function(.tbl) {
     .tbl %>%
-        dplyr::arrange(dplyr::desc(start)) %>%
+        dplyr::arrange(dplyr::desc(is.na(end)), dplyr::desc(start)) %>%
         dplyr::mutate(
             start = lubridate::year(start),
             end = lubridate::year(end),
