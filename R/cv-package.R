@@ -1,5 +1,6 @@
 #' @keywords internal
 #' @importFrom here here
+#' @importFrom glue glue glue_data
 "_PACKAGE"
 
 # The following block is used by usethis to automatically manage
