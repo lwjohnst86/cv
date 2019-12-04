@@ -19,10 +19,12 @@ list_curriculum_development <- function(.tbl) {
     .tbl %>%
         dplyr::filter(section == "curriculum") %>%
         tidy_dates() %>%
-        vitae::brief_entries(
+        vitae::detailed_entries(
             what = glue("{title} ({website})"),
             when = date_range,
             with = organization,
+            where = location,
+            why = website
         ) %>%
         output()
 }
@@ -31,10 +33,11 @@ list_supervision <- function(.tbl) {
     .tbl %>%
         dplyr::filter(section == "supervision") %>%
         tidy_dates() %>%
-        vitae::brief_entries(
-            what = teaching_level,
+        vitae::detailed_entries(
+            what = glue("{teaching_level} student"),
             when = date_range,
             with = organization,
+            where = location
         ) %>%
         output()
 }
