@@ -1,6 +1,6 @@
 convert_to_cvhonors <- function(.tbl) {
     .tbl %>%
-        as_tibble() %>%
+        tibble::as_tibble() %>%
         glue_data("
 
         \\cvhonors{{{what}}}{{{with}}}{{{where}}}{{{when}}}
@@ -8,15 +8,15 @@ convert_to_cvhonors <- function(.tbl) {
                   ")
 }
 
-
-output <- function(.object) {
+output <- function(.object, compact = FALSE) {
     if (interactive()) {
         .object %>%
-            as_tibble()
+            tibble::as_tibble()
     } else if (knitr::is_html_output()) {
         .object %>%
-            as_tibble() %>%
-            mutate_all(~ if_else(is.na(.), "N/A", .)) %>%
+            tibble::as_tibble() %>%
+            dplyr::mutate(where = dplyr::if_else(! "where" %in% names(.), "N/A", where)) %>%
+            dplyr::mutate_all(~ dplyr::if_else(is.na(.), "N/A", .)) %>%
             glue_data("
 
             ### {with}
@@ -33,3 +33,13 @@ output <- function(.object) {
     }
 }
 
+tidy_dates <- function(.tbl) {
+    .tbl %>%
+        dplyr::arrange(dplyr::desc(start)) %>%
+        dplyr::mutate(
+            start = lubridate::year(start),
+            end = lubridate::year(end),
+            end = dplyr::if_else(is.na(end), "present", as.character(end)),
+            date_range = dplyr::if_else(start == end, glue("{start}"), glue("{start} -- {end}"))
+        )
+}
