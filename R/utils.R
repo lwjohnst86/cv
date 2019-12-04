@@ -15,7 +15,7 @@ output <- function(.object, compact = FALSE) {
     } else if (knitr::is_html_output()) {
         .object %>%
             tibble::as_tibble() %>%
-            dplyr::mutate(where = dplyr::if_else(! "where" %in% names(.), "N/A", where)) %>%
+            dplyr::mutate(where = dplyr::if_else(!"where" %in% names(.), "N/A", where)) %>%
             dplyr::mutate_all(~ dplyr::if_else(is.na(.), "N/A", .)) %>%
             glue_data("
 
