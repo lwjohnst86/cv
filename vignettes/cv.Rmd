@@ -14,9 +14,9 @@ github: lwjohnst86
 aboutme: I am a diabetes epidemiologist, R user and programmer, teacher of modern data analysis skills, and open science advocate.
 headcolor: "324ea8"
 docname: "curriculum vitae"
+csl: vancouver.csl
 output:
-    vitae::awesomecv:
-        keep_tex: true
+    vitae::awesomecv: default
     pagedown::html_resume:
         # set it to true for a self-contained HTML page but it'll take longer to render
         self_contained: false
@@ -36,13 +36,13 @@ library(tidyverse)
 cv_data <- read_cv_items()
 ```
 
-```{r add-aside, child=if (knitr::is_html_output()) here::here("vignette/rmdchunks/aside.Rmd")}
+```{r add-aside, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/aside.Rmd")}
 ```
 
-```{r add-disclaimer, child=if (knitr::is_html_output()) here::here("vignette/rmdchunks/disclaimer.Rmd")}
+```{r add-disclaimer, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/disclaimer.Rmd")}
 ```
 
-```{r add-main-header, child=if (knitr::is_html_output()) here::here("vignette/rmdchunks/resume-main-header.Rmd")}
+```{r add-main-header, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/resume-main-header.Rmd")}
 ```
 
 # Education {data-icon=graduation-cap data-concise=true}
@@ -109,9 +109,17 @@ list_supervision(cv_data)
 
 # Curriculum Development {data-icon=university}
 
+## Published in archive (DOI)
+
+```{r list-curriculum-archived}
+list_publications("Curriculum development") %>%
+    select(-note)
+```
+
+## Developed (non-DOI)
+
 ```{r list-curriculum}
 list_curriculum_development(cv_data)
-list_publications("Curriculum development")
 ```
 
 # Awards {data-icon=trophy}
