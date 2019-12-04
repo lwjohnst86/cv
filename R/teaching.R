@@ -1,0 +1,40 @@
+list_teaching <- function(.tbl) {
+    .tbl %>%
+        dplyr::filter(section == "teaching") %>%
+        tidy_dates() %>%
+        dplyr::mutate(
+            organization = organization %>%
+                stringr::str_replace_all("\\[(.+?)\\]\\(.+?\\)", "\\1")
+        ) %>%
+        vitae::detailed_entries(
+            what = glue("{str_to_sentence(role)} for {title} ({teaching_level})"),
+            when = date_range,
+            with = organization,
+            where = location
+        ) %>%
+        output()
+}
+
+list_curriculum_development <- function(.tbl) {
+    .tbl %>%
+        dplyr::filter(section == "curriculum") %>%
+        tidy_dates() %>%
+        vitae::brief_entries(
+            what = glue("{title} ({website})"),
+            when = date_range,
+            with = organization,
+        ) %>%
+        output()
+}
+
+list_supervision <- function(.tbl) {
+    .tbl %>%
+        dplyr::filter(section == "supervision") %>%
+        tidy_dates() %>%
+        vitae::brief_entries(
+            what = teaching_level,
+            when = date_range,
+            with = organization,
+        ) %>%
+        output()
+}

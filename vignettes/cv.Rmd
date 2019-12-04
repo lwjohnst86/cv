@@ -126,7 +126,7 @@ list_publications("Other conference presentations")
 list_publications("Panel member")
 ```
 
-# Published R packages {data-icon=cube}
+# Published R packages {data-icon=laptop-code}
 
 ```{r list-r-packages}
 list_rpackages() 
@@ -135,54 +135,23 @@ list_rpackages()
 # Teaching Experience {data-icon=chalkboard-teacher}
 
 ```{r list-teaching}
-cv_data %>% 
-    filter(section == "teaching") %>% 
-    arrange(desc(start)) %>% 
-    mutate(
-        start = lubridate::year(start),
-        end = lubridate::year(end),
-        end = if_else(is.na(end), "present", as.character(end)),
-        organization = organization %>% 
-            str_replace_all("\\[(.+?)\\]\\(.+?\\)", "\\1")
-    ) %>% 
-    vitae::detailed_entries(
-        what = glue("{str_to_sentence(role)} for {title}"),
-        when = glue("{start}-{end}"),
-        with = organization,
-        where = location
-    ) 
-
-# ### {what}
-# {with}
-# {when}
-# {where}
+list_teaching(cv_data)
 ```
 
-# Curriculum Development {data-icon=chalkboard-teacher}
+# Supervision Experience {data-icon=hands-helping}
+
+```{r list-supervision}
+list_supervision(cv_data)
+```
+
+# Curriculum Development {data-icon=university}
 
 ```{r list-curriculum}
-cv_data %>% 
-    filter(section == "curriculum") %>% 
-    arrange(desc(start)) %>% 
-    mutate(
-        start = lubridate::year(start),
-        end = lubridate::year(end),
-        end = if_else(is.na(end), "present", as.character(end))
-    ) %>% 
-    vitae::brief_entries(
-        what = glue("{title} (link: {website})"),
-        when = glue("{start}-{end}"),
-        with = "",
-    ) 
-
+list_curriculum_development(cv_data)
 list_publications("Curriculum development")
-# ### {what}
-# {with}
-# {when}
-# {where}
 ```
 
-# Awards
+# Awards {data-icon=trophy}
 
 ```{r list-awards}
 list_awards(cv_data)
