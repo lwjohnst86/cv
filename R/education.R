@@ -1,7 +1,6 @@
 list_education <- function() {
     data("education", package = "cv")
     output(education)
-
 }
 
 save_education <- function() {
