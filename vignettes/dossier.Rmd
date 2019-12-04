@@ -1,17 +1,28 @@
 ---
-title: Teaching Dossier
-author: Luke W. Johnston
-date: 2015-07-02
+title: "Teaching Dossier"
+author: Luke Johnston
 geometry: margin=1in
 fontsize: 10pt
-fontfamily: "DejaVu Serif"
+#fontfamily: "DejaVu Serif"
 papersize: letterpaper
-toc: true
-numbersections: true
-
+#numbersections: true
+output: 
+    pdf_document:
+        toc: true
 ---
 
-\newpage\newpage
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+devtools::load_all()
+library(cv)
+cv_data <- cv:::read_cv_items()
+```
 
 # Statement of teaching philosophy #
 
@@ -478,4 +489,3 @@ daiva.nielsen@mail.utoronto.ca
 Midterm 2013 and final exam 2014 for NFS1484.
 
 \newpage\newpage
-
