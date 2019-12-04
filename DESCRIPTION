@@ -27,8 +27,7 @@ Imports:
     fs,
     usethis,
     jsonlite,
-    readr
-Suggests: 
+    readr,
     rmarkdown
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2
