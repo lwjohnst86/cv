@@ -3,3 +3,5 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^data-raw$
+^vignettes/dossier\.Rmd$
+^vignettes/rmdchunks/aside\.Rmd$
