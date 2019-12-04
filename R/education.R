@@ -1,5 +1,6 @@
 list_education <- function() {
     data("education", package = "cv")
+    output(education)
 
 }
 
@@ -19,8 +20,8 @@ save_education <- function() {
             url.value
         ) %>%
         vitae::detailed_entries(
-            what = glue::glue("{role.title} in {department.name}"),
-            when = glue::glue("{start.date.year.value} -- {end.date.year.value}"),
+            what = glue("{role.title} in {department.name}"),
+            when = glue("{start.date.year.value} -- {end.date.year.value}"),
             with = organization.name,
             where = stringr::str_c(
                 organization.address.city,

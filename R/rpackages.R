@@ -1,7 +1,7 @@
 
 extract_first_published <- function(pkgs) {
     pkgs %>%
-        purrr::map( ~ glue::glue("https://crandb.r-pkg.org/{.x}/all")) %>%
+        purrr::map( ~ glue("https://crandb.r-pkg.org/{.x}/all")) %>%
         purrr::map_chr( ~ jsonlite::fromJSON(as.character(.x))$versions[[1]]$Date)
 }
 
@@ -27,7 +27,7 @@ save_rpackages <- function() {
                    extract_first_published() %>%
                    lubridate::year()) %>%
         vitae::brief_entries(
-            what = glue::glue("{package}: {title} ({authorship})"),
+            what = glue("{package}: {title} ({authorship})"),
             when = first_published,
             # TODO: Might need to fix this depending on number of url
             with = "CRAN"
@@ -38,27 +38,5 @@ save_rpackages <- function() {
 
 list_rpackages <- function() {
     data("rpackages", package = "cv")
-
-    if (interactive()) {
-        rpackages <- rpackages %>%
-            as_tibble()
-    }
-
-    if (knitr::is_html_output()) {
-        stop("Fix rpackages gluing.")
-        rpackages <- rpackages %>%
-            as_tibble() %>%
-            glue_data("
-            ### {with}
-
-            {what}
-
-            {where}
-
-            {when}
-
-            ")
-    }
-
-    rpackages
+    output(rpackages)
 }
