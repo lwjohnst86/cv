@@ -36,51 +36,14 @@ library(tidyverse)
 cv_data <- read_cv_items()
 ```
 
-<!--
-Aside
-================================================================================
+```{r add-aside, child=if (knitr::is_html_output()) here::here("vignette/rmdchunks/aside.Rmd")}
+```
 
+```{r add-disclaimer, child=if (knitr::is_html_output()) here::here("vignette/rmdchunks/disclaimer.Rmd")}
+```
 
-![Luke W. Johnston](https://avatars0.githubusercontent.com/u/6662983?s=460&v=4){width=80%}
-
-
-Contact Info {#contact}
---------------------------------------------------------------------------------
-
-- <i class="fa fa-envelope"></i> lwjohnst@gmail.com
-- <i class="fa fa-twitter"></i> [twitter.com/lwjohnst](https://twitter.com/lwjohnst)
-- <i class="fa fa-github"></i> [github.com/lwjohnst86](https://github.com/lwjohnst86)
-- <i class="fa fa-gitlab"></i> [gitlab.com/lwjohnst](https://gitlab.com/lwjohnst)
-- <i class="fa fa-stack-overflow"></i> [StackOverflow](http://stackoverflow.com/users/2632184)
-- <i class="fa fa-stack-exchange"></i> [Stack Exchange](https://stackexchange.com/users/1992995)
-- <i class="fa fa-linkedin-square"></i> [LinkedIn](https://www.linkedin.com/in/luke-johnston-480365101/)
-- For more information, please contact me via email.
-
-# Skills {#skills}
-
-- Languages: English (fluent), Spanish (competent)
-- Programming: Fluent in R, LaTeX, HTML, CSS, Bash, Git; familiar with 
-SAS, Python.
-- Statistical techniques: Basic (t-test, ANOVA, correlation), regression
-modeling (linear, logistic), mixed effect modeling, generalized estimating
-equations, principal component analysis, partial least squares regression, cross
-validation, cluster analysis (hierarchical, k-means), information criterion
-(AIC, QIC), bootstrapping, factor analysis.
--->
-
-<!--
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
-
-Last updated on `r Sys.Date()`.
-
-
-Main
-================================================================================
-
-Luke W. Johnston {#title}
---------------------------------------------------------------------------------
--->
+```{r add-main-header, child=if (knitr::is_html_output()) here::here("vignette/rmdchunks/resume-main-header.Rmd")}
+```
 
 # Education {data-icon=graduation-cap data-concise=true}
 
@@ -88,7 +51,7 @@ Luke W. Johnston {#title}
 list_education()
 ```
 
-# Publications and Posters {data-icon=file}
+# Publications and Posters {data-icon=file-alt}
 
 ## Publications
 
