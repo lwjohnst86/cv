@@ -24,7 +24,11 @@ Imports:
     pkgsearch,
     magrittr,
     tibble,
-    jsonlite
-RoxygenNote: 6.1.1
-Suggests: 
+    rfigshare,
+    fs,
+    usethis,
+    jsonlite,
+    readr,
     rmarkdown
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.2

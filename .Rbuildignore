@@ -1,4 +1,7 @@
-^LICENSE\.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
+^data-raw$
 ^vignettes/cv\.Rmd$
+^vignettes/dossier\.Rmd$
+^vignettes/rmdchunks/aside\.Rmd$

@@ -1,0 +1,135 @@
+---
+title: "CV"
+author: "Luke W. Johnston"
+name: Luke
+surname: Johnston
+position: Postdoctoral researcher
+address: Aarhus, Denmark
+date: "`r Sys.Date()`"
+# profilepic: A local file path to an image
+www: lukewjohnston.com
+email: lwjohnst@ph.au.dk
+twitter: lwjohnst
+github: lwjohnst86
+aboutme: I am a diabetes epidemiologist, R user and programmer, teacher of modern data analysis skills, and open science advocate.
+headcolor: "324ea8"
+docname: "curriculum vitae"
+csl: vancouver.csl
+output:
+    vitae::awesomecv: default
+    pagedown::html_resume:
+        # set it to true for a self-contained HTML page but it'll take longer to render
+        self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+    echo = FALSE,
+    warning = FALSE,
+    message = FALSE,
+    results = "asis",
+    comment = ""
+)
+# library(cv)
+devtools::load_all()
+library(tidyverse)
+cv_data <- read_cv_items()
+```
+
+```{r add-aside, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/aside.Rmd")}
+```
+
+```{r add-disclaimer, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/disclaimer.Rmd")}
+```
+
+```{r add-main-header, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/resume-main-header.Rmd")}
+```
+
+# Education {data-icon=graduation-cap data-concise=true}
+
+```{r list-education}
+list_education()
+```
+
+# Publications and Posters {data-icon=file-alt}
+
+## Publications
+
+```{r list-articles}
+list_publications("Journal articles")
+```
+
+## Oral presentations
+
+```{r list-orals}
+list_publications("^Oral presentations")
+```
+
+## Oral poster presentations
+
+```{r list-oral-posters}
+list_publications("^Oral poster presentations")
+```
+
+## Poster presentations
+
+```{r list-posters}
+list_publications("Poster presentations")
+```
+
+## Other conference presentations
+
+```{r}
+list_publications("Other conference presentations")
+```
+
+## Panel member
+
+```{r}
+list_publications("Panel member")
+```
+
+# Published R packages {data-icon=laptop-code}
+
+```{r list-r-packages}
+list_rpackages() 
+```
+
+# Teaching Experience {data-icon=chalkboard-teacher}
+
+```{r list-teaching}
+list_teaching(cv_data)
+```
+
+# Supervision Experience {data-icon=hands-helping}
+
+```{r list-supervision}
+list_supervision(cv_data)
+```
+
+# Curriculum Development {data-icon=university}
+
+## Published in archive (DOI)
+
+```{r list-curriculum-archived}
+list_publications("Curriculum development") %>%
+    select(-note)
+```
+
+## Developed (non-DOI)
+
+```{r list-curriculum}
+list_curriculum_development(cv_data)
+```
+
+# Awards {data-icon=trophy}
+
+```{r list-awards}
+list_awards(cv_data)
+```
+
+# Employment {data-icon=suitcase}
+
+```{r list-employment}
+list_employment(cv_data)
+```

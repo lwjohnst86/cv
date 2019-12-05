@@ -4,3 +4,4 @@ _ignore/
 index.md
 recent.md
 .httr-oauth
+*.sav
