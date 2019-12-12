@@ -9,8 +9,3 @@ list_publications <- function(type) {
 }
 
 # doi <- paste0("DOI: [", sub("^.*\\.org/", "", i$doi), "](", i$doi, ").")
-# ### title
-# journal or poster location
-# location or N/A
-# year
-# authors

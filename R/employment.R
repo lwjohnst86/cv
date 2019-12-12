@@ -12,8 +12,3 @@ list_employment <- function(.tbl) {
         ) %>%
         output()
 }
-# ### what (role)
-# organization
-# location
-# date range
-# optional descriptions
