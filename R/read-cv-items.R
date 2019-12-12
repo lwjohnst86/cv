@@ -1,3 +1,8 @@
+#' Read in the CV dataset.
+#'
+#' @return A [tibble::tibble()] of all CV items.
+#' @export
+#'
 read_cv_items <- function() {
     readr::read_csv(
         fs::path_package("cv", "data", "cv-items.csv"),
@@ -19,6 +24,11 @@ read_cv_items <- function() {
         ))
 }
 
+#' Read in the `.bib` file of publications and research output.
+#'
+#' @return A [tibble::tibble()] of the research outputs and publications.
+#' @export
+#'
 read_bib_items <- function() {
     vitae::bibliography_entries(fs::path_package("cv", "data", "work.bib"))
 }

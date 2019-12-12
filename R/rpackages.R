@@ -1,3 +1,9 @@
+#' @describeIn list_sections List all R packages developed (from CRAN).
+#' @export
+list_rpackages <- function() {
+    data("rpackages", package = "cv")
+    output(rpackages)
+}
 
 extract_first_published <- function(pkgs) {
     pkgs %>%
@@ -32,11 +38,8 @@ save_rpackages <- function() {
             # TODO: Might need to fix this depending on number of url
             with = "CRAN"
         )
+
     usethis::use_data(rpackages, overwrite = TRUE)
     return(invisible())
 }
 
-list_rpackages <- function() {
-    data("rpackages", package = "cv")
-    output(rpackages)
-}

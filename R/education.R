@@ -1,3 +1,5 @@
+#' @describeIn list_sections List all education taken or obtained.
+#' @export
 list_education <- function() {
     data("education", package = "cv")
     output(education)

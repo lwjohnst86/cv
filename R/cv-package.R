@@ -11,3 +11,18 @@
 #' @importFrom tibble tibble
 ## usethis namespace: end
 NULL
+
+#' @title List sections for a CV.
+#'
+#' @name list_sections
+#' @param .tbl CV data.
+#'
+#' @return Depending on output type, returns:
+#'
+#'   - a [tibble::tibble()] if used interactively
+#'   - a TeX listing of the section items if used when the output document is a
+#'   PDF from the [vitae] package
+#'   - a markdown listing of the section items if used when the output document
+#'   is a HTML file from the [pagedown] package
+#'
+NULL
