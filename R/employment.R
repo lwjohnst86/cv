@@ -1,3 +1,5 @@
+#' @describeIn list_sections List all employment activities.
+#' @export
 list_employment <- function(.tbl) {
     .tbl %>%
         dplyr::filter(section == "employment") %>%
@@ -10,8 +12,3 @@ list_employment <- function(.tbl) {
         ) %>%
         output()
 }
-# ### what (role)
-# organization
-# location
-# date range
-# optional descriptions

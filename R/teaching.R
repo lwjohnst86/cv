@@ -1,3 +1,5 @@
+#' @describeIn list_sections List all teaching activities.
+#' @export
 list_teaching <- function(.tbl) {
     .tbl %>%
         dplyr::filter(section == "teaching") %>%
@@ -15,6 +17,8 @@ list_teaching <- function(.tbl) {
         output()
 }
 
+#' @describeIn list_sections List curriculum developed.
+#' @export
 list_curriculum_development <- function(.tbl) {
     .tbl %>%
         dplyr::filter(section == "curriculum") %>%
@@ -29,6 +33,8 @@ list_curriculum_development <- function(.tbl) {
         output()
 }
 
+#' @describeIn list_sections List supervisory activities.
+#' @export
 list_supervision <- function(.tbl) {
     .tbl %>%
         dplyr::filter(section == "supervision") %>%
