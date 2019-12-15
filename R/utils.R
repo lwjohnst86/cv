@@ -8,28 +8,44 @@ convert_to_cvhonors <- function(.tbl) {
                   ")
 }
 
-output <- function(.object, compact = FALSE) {
-    if (interactive()) {
+output <- function(.object, compact = FALSE, from_bib = FALSE) {
+    if (knitr::is_html_output()) {
+        cat("HTML\n\n")
+        .object <- .object %>%
+            tibble::as_tibble() %>%
+            dplyr::mutate_all( ~ dplyr::if_else(is.na(.), "N/A", as.character(.)))
+
+
+
+        if (!"where" %in% names(.object)) {
+            .object <- .object %>%
+                dplyr::mutate(where = "N/A")
+        }
+
+        if (from_bib) {
+            .object
+        } else {
+            .object %>%
+                glue_data("
+
+                ### {with}
+
+                {what}
+
+                {where}
+
+                {when}
+
+                ")
+        }
+
+    } else if (knitr::is_latex_output()) {
+        cat("PDF\n\n")
+        .object
+    } else if (interactive()) {
+        cat("INTERACTIVE\n\n")
         .object %>%
             tibble::as_tibble()
-    } else if (knitr::is_html_output()) {
-        .object %>%
-            tibble::as_tibble() %>%
-            dplyr::mutate(where = dplyr::if_else(!"where" %in% names(.), "N/A", where)) %>%
-            dplyr::mutate_all(~ dplyr::if_else(is.na(.), "N/A", .)) %>%
-            glue_data("
-
-            ### {with}
-
-            {what}
-
-            {where}
-
-            {when}
-
-            ")
-    } else if (knitr::is_latex_output()) {
-        .object
     }
 }
 
