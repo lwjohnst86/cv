@@ -80,13 +80,13 @@ list_publications("Poster presentations")
 
 ## Other conference presentations
 
-```{r}
+```{r list-other-conferences}
 list_publications("Other conference presentations")
 ```
 
 ## Panel member
 
-```{r}
+```{r list-panel-member}
 list_publications("Panel member")
 ```
 
