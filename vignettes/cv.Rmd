@@ -16,11 +16,13 @@ headcolor: "324ea8"
 docname: "curriculum vitae"
 csl: vancouver.csl
 output:
-    vitae::awesomecv: default
     pagedown::html_resume:
         # set it to true for a self-contained HTML page 
         # but it'll take longer to render
+        keep_md: yes
         self_contained: false
+    vitae::awesomecv: 
+        keep_tex: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -32,6 +34,7 @@ knitr::opts_chunk$set(
     comment = ""
 )
 # library(cv)
+library(here)
 devtools::load_all()
 library(tidyverse)
 cv_data <- read_cv_items()
