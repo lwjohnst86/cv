@@ -5,7 +5,7 @@ list_publications <- function(type) {
     vitae::bibliography_entries(bib_file) %>%
         dplyr::filter(stringr::str_detect(groups, type)) %>%
         dplyr::arrange(dplyr::desc(year)) %>%
-        output()
+        output(from_bib = TRUE)
 }
 
 # doi <- paste0("DOI: [", sub("^.*\\.org/", "", i$doi), "](", i$doi, ").")
