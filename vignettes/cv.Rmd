@@ -113,8 +113,7 @@ list_supervision(cv_data)
 ## Published in archive (DOI)
 
 ```{r list-curriculum-archived}
-list_publications("Curriculum development") %>%
-    select(-note)
+list_publications("Curriculum development")
 ```
 
 ## Developed (non-DOI)
