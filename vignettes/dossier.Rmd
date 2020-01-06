@@ -5,8 +5,10 @@ geometry: margin=1in
 fontsize: 10pt
 #fontfamily: "DejaVu Serif"
 papersize: letterpaper
-#numbersections: true
+numbersections: true
 output: 
+    pagedown::html_page:
+        toc: true
     pdf_document:
         toc: true
 ---
