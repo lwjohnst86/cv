@@ -32,3 +32,10 @@ read_cv_items <- function() {
 read_bib_items <- function() {
     vitae::bibliography_entries(fs::path_package("cv", "data", "work.bib"))
 }
+
+read_bib <- function() {
+    fs::path_package("cv", "data", "work.bib") %>%
+        RefManageR::ReadBib() %>%
+        print()
+        # RefManageR::PrintBibliography()
+}
