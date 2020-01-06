@@ -1,0 +1,552 @@
+---
+title: "Teaching Portfolio"
+author: Luke W. Johnston
+date: "`r cv::today_timestamp()`"
+geometry: margin=2cm
+fontsize: 11pt
+papersize: a4
+mainfont: "Bitstream Charter"
+output: 
+    pagedown::html_paged:
+        toc: true
+        number_sections: yes
+    pdf_document:
+        toc: true
+        number_sections: yes
+---
+
+```{r setup, include=FALSE}
+devtools::load_all()
+library(tidyverse)
+library(pander)
+conflicted::conflict_prefer("filter", "dplyr")
+cv_data <- read_cv_items() %>% 
+    filter(section %in% c("curriculum", "certificates", "courses taken", 
+                          "teaching", "supervision")) %>% 
+    tidy_dates() %>% 
+    mutate(
+        Title = if_else(!is.na(website), glue::glue("{title} ({website})"), title),
+        teaching_level = str_replace(teaching_level, "[Uu]ndergraduate", "Undergrad")
+    ) %>% 
+    rename(Years = date_range, Role = role, Level = teaching_level,
+           Organization = organization, Location = location)
+    
+pubs <- read_bib_items()
+
+# Function to make pdf table size smaller.
+knitr::knit_hooks$set(
+    table.small.fontsize =
+        function(before, options, envir) {
+            if (before) {
+                knitr::asis_output("\\footnotesize\n")
+            } else {
+                knitr::asis_output("\\normalsize\n")
+            }
+        }
+)
+
+knitr::opts_chunk$set(echo = FALSE, comment = "", results = "asis",
+                      table.small.fontsize = TRUE)
+
+# Function to generate tables.
+output_table <- function(.tbl, caption) {
+    if (knitr::is_html_output()) {
+        knitr::kable(
+            .tbl,
+            caption = caption
+        )
+    } else {
+        pander::pandoc.table(
+            t = .tbl,
+            caption = caption,
+            split.tables = Inf,
+            justify = "left"
+        )
+    }
+}
+```
+
+<!--
+# Overview/abstract
+
+Optionally give a quick statement summarizing the portfolio. What makes it/you
+special?
+-->
+
+# Teaching philosophy
+
+<!--
+The teaching philosophy serves a number of functions, including:
+
+1. clarifying your conceptualization of good teaching,
+2. providing a rationale for your teaching behaviour, and
+3. offering a thesis or conceptual framework for your portfolio, thus providing a focus
+
+In addition, it can function as a tool for your own personal and professional
+development as a teacher by helping you become more aware of your values,
+strategies, objectives and teaching goals.
+
+We therefore recommend that you introduce the commented examples in the section
+below with a teaching philosophy statement that helps align your view of
+teaching and rationale with your didactic choices. Remember to stay focused on
+how you enhance student learning.
+-->
+
+## Why do you teach the way you do? 
+
+What is good teaching? To me, good teaching is the *facilitation* of skill and
+knowledge development in learners, conducted in a safe and supportive
+environment where learning encompasses, as much as possible, what will be
+encountered in real world settings and conditions. Good teaching will result in
+gaining skills and knowledge that persist over time and that are used in
+settings outside of the teaching environment.
+
+Ultimately, I believe that good teaching should be about helping to create a
+better society.
+
+My definition of good teaching shapes and informs why I teach the way I do. For 
+the majority of my teaching activities, I primarily teach scientific data
+analysis skills and knowledge to current and future researchers (ranging from
+undergraduate to postdoc and even some professors). How I teach these topics
+comes from what I believe is good teaching. For these teaching sessions, I
+generally use a participatory live coding[^livecoding] style interspersed
+with hands-on exercises and occasional lectures with slides. If I can, I include
+group work as a project assignment.
+
+[^livecoding]: Participatory live coding is where the instructor types out the
+programming language code and describes what it is doing, while the learners
+also follow along and type out the code as well. I use this style because so far
+it has been shown to be an effective method for teaching/learning
+coding/programming concepts and is used by coding teaching organizations like 
+[The Carpentries](https://carpentries.org/).
+
+I use these techniques for several reasons. Firstly, humans evolved to use
+tools, we rely heavily on our visual system, and we intuitively grasp "tangible"
+concepts than more abstract ones. Because of this, my teaching style tends
+toward being more practical and based around using tools, tools that I use in
+front of the learners that they then use along with me, so they *see exactly*
+how to do some task or apply some knowledge, rather than abstractly think how
+they would use the knowledge and skills. We humans also remember by doing and,
+because we evolved as social animals, work best with others. For these reasons,
+I incorporate real-world datasets to practice on and when possible include group
+work activities.
+
+Other benefits of using this live coding style are that instructors are forced
+to slow down with their instruction because it takes time to type for both the
+instructor and the learners, and learners get hands-on practice working with the
+concepts being taught. Because it slows down the pace of the course, it
+really forces the instructor/curriculum developer to think about how much code
+and related concepts can be taught in a given time. So in many ways, it leads to
+less total content covered and narrows the focus of the content on the minimum
+content that instructors actually want the learners to learn. Plus, with the
+interspersed exercises, curriculum is generally developed from the point of view
+of "what should the learners actually accomplish", and then creates the content
+around that.
+
+Essentially, my role as a teacher is simple: To facilitate the learning of
+skills and knowledge in the learner. I don't come from a "higher/superior" place
+of "expertise", but rather help them to learn what they came to the course to
+learn. My role as a teacher is also to bring awareness to learners on better
+practices in doing data analysis and on criticisms of current/common practices.
+
+## How do I approach teaching?
+
+To effectively be a good teacher and to create good teaching activities/content, I need
+to approach teaching as I approach my research: as a scientific endeavour that 
+requires experimentation, critical evaluation, and refining. To do this, I must
+stay informed and updated on the research and science of learning; be aware of
+society's current needs and demands to stay relevant in an ever-changing world;
+continually seek peer and learner feedback, as well as my own self-reflection;
+and, to use these sources of information to improve the teaching material and
+content. At any given time, I know that my teaching and content will never be
+perfect. But at least through these actions, I can work towards making it better
+and that it has its intended learning effect and facilitates learning as best as
+possible.
+
+I'm a firm advocate of anything open: open source, open data, open science, and
+open education. Because of this belief, all of my educational material is easily
+accessible online and usually has its own website. This has several advantages:
+learners can very easily find the course details and content, they can easily
+reuse the material even after the course, I can very easily update the material
+and all learners will instantly have access to the most up-to-date material, and
+it provides a role model for learners to see that being open (as researchers) is
+possible and that it is not as difficult as it may seem.
+
+# Description and documentation
+
+<!-- 
+In this part, you present your teaching experience and qualifications. Give an
+overview of what you have done. We also recommend that you briefly introduce and
+summarize these descriptive elements, stating what they indicate about your
+current teaching experience, so that they do not just stand alone without
+interpretation.
+-->
+
+## Teaching completed
+<!-- Required -->
+
+As can be seen in the table below, I've taught a large number of courses, workshops,
+short teaching sessions as well as helped with many others. Much of my experience
+has been on teaching computing skills to researchers of all levels. Likewise,
+most of these teaching activities are volunteer based or initiated and developed
+by myself and other colleagues. For instance, all the Software Carpentry workshops
+were instructed by volunteers and not part of most of the instructors "official
+duties". Only for the Teaching Assistant roles were my experiences officially
+part of any academic programme. The reason I've mostly done volunteered/unofficial
+academic teaching activities is due to the fact that most universities do not
+place much value on any teaching that focuses on tools (e.g. learning to use the
+R statistical programming language) but rather aim to teach concepts instead.
+I personally believe this does a huge disservice to students and any who may 
+continue on to do research. I quite passionately believe that learning of
+concepts and tools go hand-in-hand, hence why I spend a large portion of time 
+teaching and developing "non-official" content.
+
+```{r teaching-completed}
+cv_data %>% 
+    filter(section == "teaching") %>% 
+    select(Years, Title, Role, Level, Organization, Location) %>% 
+    output_table("Teaching completed to date.")
+```
+
+## Experience with course management/responsibility 
+<!-- Required -->
+
+As I described more above, I believe strongly in the need to teach tools in
+combination with concepts. Given that official academic programmes favour concepts
+and discourage teaching specific tools, most of my teaching time ends up going
+to developing teaching material (since it doesn't exist) and initiating and
+coordinating courses and workshops on these topics. For instance, at the University
+of Toronto during my PhD, myself and a group of similar minded PhD students
+developed an idea for a course teaching the R statistical language to undergraduate
+students. We initiated a conversation with several departments across the
+University about the idea and only the Department of Ecology and Evolutionary
+Biology was interested in having the course as part of their official curriculum.
+They loved the idea and agreed to try the course as a pilot. So we developed the
+course, taught it, and managed all aspects of the course, including grading and
+developing the assignments and final project. It was such a success the Department
+created a new course code for it and it has been taught three years in a row.
+
+Another course I've developed and managed is a 3-day intensive course for the
+Danish Diabetes Academy. This course was based on some teaching material I've
+slowly developed over the years and based on a dream I've had for running a
+course like this for PhD and Postdocs. I have been the primary coordinator,
+curriculum developer, and lead instructor of the course. The course was first
+offered last year and I've also taught a version of it for the German Diabetes
+Center in Potsdam. The course was a huge success and got really great feedback
+from the participants that the Danish Diabetes Academy wants me to run the course
+again every year for as long as I can. They also requested I develop and teach 
+a more advanced version to be also taught every year.
+
+
+```{r course-management}
+cv_data %>% 
+    filter(section == "teaching" &
+                (str_detect(Role, "Lead instructor|founder") |
+                str_detect(Title, "Reproducible"))) %>% 
+    select(Years, Title, Role, Level, Organization, Location) %>% 
+    output_table("Experience with teaching session management and higher responsibility.")
+```
+
+## Experience with supervision
+<!-- Required -->
+
+Unlike my experiences teaching courses and workshops, I have not yet had much
+opportunity to supervise students. I have so far co-mentored two students while
+I was a PhD students at the University of Toronto and I have plans to supervise
+a PhD student during my current position.
+
+```{r supervision}
+cv_data %>% 
+    filter(section == "supervision") %>% 
+    mutate(Role = "Co-mentor") %>% 
+    select(Years, Level, Role, Organization, Location) %>% 
+    output_table("Students supervised.")
+```
+
+## Courses completed in university or other pedagogical courses
+<!-- Required -->
+
+I strongly believe in staying up-to-date on best practices in being an effective
+teacher. I've taken a formal teaching training course at the University of Toronto
+while I was doing my PhD studies (which was very similar to the AU Teachers
+Training program). I've also been participated in teacher training courses with
+the Software and Data Carpentry organizations and been certified as official 
+instructors for them. Both are global, not-for-profit organizations dedicated
+to teaching researchers computing skills. Given my focus on teaching research
+computing skills and knowledge, these were both valuable training courses that
+ensure I am applying the best tools necessary when teaching these skills.
+
+```{r teachers-training-taken}
+cv_data %>% 
+    filter(section == "certificates" &
+               str_detect(title, "Graduate Professional", negate = TRUE)) %>% 
+    select(Years, Title, Organization, Location) %>% 
+    output_table("Courses and certificates for improving my pedagogical skills and knowledge.")
+```
+
+## Experience with working in teams of teachers
+<!-- Optional -->
+
+Generally, most of my teaching is done with other teachers as the workshops tend
+to be multi-day events and require multiple instructors teaching different sessions.
+However, I have and had two particular teaching experiences I want to highlight
+that exemplify, to me, a truly team-based environment:
+
+1. A project creating several teaching books called Merely Useful
+(https://merely-useful.github.io/), which is not listed in any of the tables yet
+as it is still ongoing. This project has a team of 10-12 teachers from across
+the global to develop four semester-long teaching material books for introduction and
+advanced courses for R and Python (programming languages) aimed at non-computer
+science learners. We work collaboratively by using tools like Zoom for bi-weekly
+video meetings, Slack for text-based communication, and GitHub for developing
+the teaching material.
+1. The previously mentioned semester long course on R for Ecology and Evolutionary 
+Biology (https://uoftcoders.github.io/rcourse/) at the University of Toronto
+(UofT) with the UofTCoders. During a conference in London where three other members
+of the UofTCoders were showcasing how we developed our community, we got inspired 
+by some of the other talks and brainstormed a semester-long course on teaching
+R to undergraduate students. Afterwards, we expanded our team to 6 members
+(all who were part of the UofTCoders) and started developing the course structure
+and contacted multiple departments at UofT to see who would be interested in
+incorporating the course into their curriculum. The Department of Ecology and
+Evolutionary Biology was very interested and from there we fully developed the
+course (all through GitHub) and taught it to upper-year undergraduate students.
+
+```{r working-in-teams}
+cv_data %>% 
+    filter(section == "teaching" &
+                str_detect(Title, "Reproducible|Theoretical|Code as Manuscript|Peer-led")) %>% 
+    select(Years, Title, Role, Level, Organization, Location) %>% 
+    output_table("Experience working with a team of teachers")
+```
+
+## Contributions to textbooks or teaching material
+<!-- Optional -->
+
+I have developed or contributed to developing three sources of teaching material
+that have been publicly archived (obtained a DOI). I am presently working with
+a team of teachers on four books of teaching material, collectively called
+Merely Useful, which I described more in the section above.
+
+```{r teaching-material, table.small.fontsize = FALSE}
+pubs %>%
+    filter(groups == "Curriculum development") %>%
+    select(author, title, year, doi, url) %>%
+    mutate(author = str_replace_all(author, " and ", ", "),
+           doi = str_to_lower(doi)) %>%
+    glue::glue_data("1. {author}. {title} ({year}). DOI: {doi}. URL: {url}")
+```
+
+# Reasons for your didactic choices
+
+<!-- 
+Here you should demonstrate how and why you have taught in a particular way
+through evidence and reflection. The portfolio should contain one or two
+commented examples of your teaching. Keep in mind that your comments on the
+example are the most important aspect and that there is a page limit.
+
+Use a course or teaching you are proud of. Briefly describe your teaching
+development work, linking to any documents as necessary.
+It is important that this section of your portfolio contains:
+
+1. A short, informative description of the course. Ensure the reader/assessor
+has a clear picture of the context around the course. It is often useful if all
+five elements of the didactic pentagon (content, intended learning outcomes,
+examination form, teaching and learning activities, media) are described, and
+the subject, course level, ECTS, class size, etc. are included.
+
+2. Your reasons for your didactic choices and your reflections
+will revolve around how and why you made those choices. The point is to link
+your choices in the teaching example with your reflections on what you consider
+important in teaching and learning. Describe the example concisely and show who
+you are as a teacher. 
+
+After working on the draft of the commented examples, you can continue with the
+results.
+-->
+
+As I've briefly described in my teaching philosophy, I use a participatory live
+coding style of teaching, interspersed with short independent and group
+exercises and, if the course format allows it, all linked together with a group
+project. The best demonstration of this style is with my 3-day workshop. I'm
+particularly proud of this material, because it largely reflects how I believe
+data analysis should be done (in health research anyway), how it should be taught,
+and informed by my years of teaching experiences and training. It's also a course
+that I've largely developed and structured on my own. All the development is
+publicly visible (https://gitlab.com/lwjohnst/dda-rcourse) and following
+principles of good open source practices for contributorship. After teaching it 
+twice, in two different settings, I decided to separate the content from the
+specific course level information (e.g. where the course will be taught, who is
+teaching, exact schedule). So I now develop the content in a different location
+(https://gitlab.com/rostools/r-cubed).
+
+## Example: 3-day course introducing reproducible research in R
+
+- *Title*: Reproducible Research in R: An introductory course on modern data
+analyses and workflows
+- *Basic description*: Reproducibility and open scientific practices are
+increasingly demanded of scientists and researchers. Training on how to apply
+these practices in data analysis has not kept up with demand. With this course,
+we hope to begin meeting that demand. Course has about 25-30 PhD students and
+postdoctoral researchers (sometimes including some professors). No ECTS credits
+are officially assigned (the course so far is hosted by the Danish Diabetes
+Academy).
+- *Content*: Because this is an introductory course on data analysis, I've structured
+the course to cover the basics of using R (a programming language) and RStudio
+(an interface to R), how to work with data, how to visualize data, how to setup
+a data analysis project, how to write reproducible reports, and how to track changes
+to files and work collaboratively. Example datasets used in the course are
+openly accessible health-related datasets.
+- *Learning outcomes*:
+    - Explain what an open and reproducible data analysis workflow is, what it
+    looks like, and why it is important.
+    - Explain and demonstrate why R is rapidly becoming the standard program of
+    choice for doing modern data analysis in science.
+    - Demonstrate and apply collaborative tools and techniques when working in
+    team settings (including working with your future self).
+    - Show and apply the fundamental tools and skills for conducting a
+    reproducible and modern analysis for a research project.
+    - Show where to go to get help and to continue learning modern data analysis
+    skills.
+- *Examination form*: No grades are officially needed (it isn't a university course).
+However, to assess if they have learned the content, I have the learners complete
+a group project. They must create a report showing all the skills they learned
+during the course and give a short presentation on the report on the last day.
+- *Teaching and learning activities*: Participatory live coding (instructor types and
+explains what is happening, while learners type along too), hands-on exercises
+(individually and also in groups), short lectures covering basic concepts of
+some of the material, and group project. Learners must complete a short
+pre-course assignment to get introduced to some of the main topics, to make sure
+everything is installed correctly, and to be ready for the course.
+- *Media*: Live demonstrations of skills on instructor's computer that is shown on
+a projector; material, instructions, and exercises are online; slides for the short
+lectures; and, Mentimeter/Google Forms for getting feedback.
+
+This course in particular really shows off what I belief is good teaching. My 
+teaching activities are practical, hands-on, interactive, and collaborative.
+I incorporate open principles throughout the course: open education as the content
+is freely and openly available online; open source for the coding; and open data
+since activities use openly available datasets. Because the instructors (myself
+included) code in R live, there is always the chance that the instructor makes
+mistakes. This is actually an ideal situation since learners can see the
+instructors, not as "perfect users" of R, but as humans like them who make
+mistakes. Hopefully this motivates rather than demotivates them to keep trying
+to learn and use R even when they encounter problems, thus *facilitating
+learning* further. To mimic real-world settings, I get the learners to work in
+teams, to write a report that would mimic what they would do in their daily
+work, and to use real (and open) datasets. I constantly improve the course based
+on the feedback I receive after getting them to complete a survey.
+
+# Results
+
+<!-- 
+Demonstrate what you've achieved in your teaching, in the form of student
+evaluations, references, or other indicators of teaching quality, as well as
+your interpretive comments.
+
+- Student evaluations with the lecturer’s own comments and considerations (from
+two different classes)
+- References from, for example, the director of studies, the head of department,
+course managers or co-instructors in connection with pedagogical development.
+- Other indicators of teaching quality, e.g. level of activity, completion
+rates, absence, average marks etc.
+-->
+
+Because much of my teaching experience has been in volunteer and non-official
+academic settings, I don't have much "formal" student evaluations and references.
+However, I always collect feedback from the learners of my courses.
+
+Most often the feedback I get is full of praise and joy at having attended the
+course. A large portion of feedback emphasize how much they loved the live coding
+("code along") and how they loved the material being accessible on a website.
+
+> "Luke's disposition to explain and good environment. Always willing to stop
+the class to help the ones who were behind. The detail webpage with the contents
+was very nice, in general, the organization of the course was very good. THANK
+YOU! :)"
+> 
+> "Final [session] exercises are quite complicated and required to remember the
+stuff from the whole day and sometimes from previous days. That's good, because
+shows gaps which have to be filled/repeated using course materials."
+>
+> "The course atmosphere is very nice and friendly with constantly supporting by
+Luke. Totally, I'm very happy with a course!"
+> 
+> "It is super to have the github website with EVERYTHING on it. I think it
+works very well with the write along sessions. Also that the exercises are not
+too long, so the momentum keeps going."
+> 
+> "The coding along was very good. And it has been great that there has been so
+many helpers. Good with both lecturers and coding along and good to refresh what
+was thaught the day before. Very cool that everything is on the homepage..."
+
+I of course get feedback on things to improve. Almost always, I get comments
+that the lesson was too fast or too slow. It is a constant balancing act to get 
+the right speed. I often struggle with communicating and demonstrating version 
+control and Git to the learners, since it is such a foreign and complex (but
+important) topic for most beginners, and this is shown in the feedback I get.
+
+> "The ... session, that was not completely well structured, was the session
+about Git. You could explain a little more about the basic principles and how it
+works before doing examples in R."
+>
+> "sometimes it was hard to follow and to really understand everything because I
+was not fast enough in writing the code. so I just copied it from the material.
+So there should be some more time to write the code and understand what you
+actually write."
+> 
+> "For the version control section, please slow down a bit."
+> 
+> "Maybe have more time for exercises."
+
+Aside from the feedback, learners of the course were generally very engaged,
+motivated, and highly interested in participating. Registration for the course
+always has a wait list and with many more people that want to attend than we
+can provide for.
+
+<!--
+# Appendices
+
+## Appendix: Course evaluations
+
+<!--
+The AU guidelines indicate that the portfolio must contain evaluations from two
+different classes. Since you will most likely use your teaching portfolio to
+apply for an associate professorship (or another teaching position), you should,
+of course, present yourself in the best possible light.
+
+Course evaluations of courses to which you have contributed, but are not
+responsible for, are quite acceptable as evidence of student evaluations. The
+evaluation need not be specifically about you. However, if you have completed
+your own evaluations of your teaching, these are clearly more relevant.
+
+Finally, do not attach the evaluation forms for each student or minutes of
+meetings. Make a summary of the evaluations and attach it - and explain what you
+think the evaluations say about your teaching and what conclusions you make
+about your teaching, the students’ learning, and your further development from
+the evaluations. How will you use the evaluations to improve your teaching?
+Remember, numbers never interpret themselves.
+-->
+
+<!--
+## Appendix: Other results
+
+<!--
+Other observations made at the end of a course can also be important indicators
+of the results you have achieved: high levels of activity face to face and/or on
+Blackboard, large numbers of submitted assignments, high grades, a high level of
+student performance on oral presentations, etc.
+
+In addition, you may attach statements / recommendations from the supervisor,
+department head, or course coordinator. This element in the portfolio is highly
+bound to the traditions of the individual departments. At some departments, this
+will be common, while at others this will not be done. Follow the tradition at
+the department. Please note, however, that many Anglo-Saxon universities
+appreciate the opinions of the dean and directors of studies, etc.
+
+The university guidelines indicate that the assessment committees must be aware
+of the inherent limitations of evaluations and statements / recommendations by
+students, colleagues, supervisors or directors of studies. We therefore
+recommend that you
+-->
+
