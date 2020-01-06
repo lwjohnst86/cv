@@ -37,7 +37,18 @@ knitr::opts_chunk$set(
 library(here)
 devtools::load_all()
 library(tidyverse)
-cv_data <- read_cv_items()
+library(RefManageR)
+RefManageR::BibOptions(
+    bib.style = "authoryear",
+    first.inits = TRUE,
+    style = "markdown",
+    max.names = Inf,
+    sorting = "ydnt"
+    # no.print.fields = NULL
+)
+cv_data <- read_cv_items() 
+bib_items <- read_bib_items() 
+rpkgs <- cv::rpackages
 ```
 
 ```{r add-aside, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/aside.Rmd")}
@@ -49,89 +60,85 @@ cv_data <- read_cv_items()
 ```{r add-main-header, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/resume-main-header.Rmd")}
 ```
 
-# Education {data-icon=graduation-cap data-concise=true}
+## Education {data-icon=graduation-cap data-concise=true}
 
 ```{r list-education}
 list_education()
 ```
 
-# Publications and Posters {data-icon=file-alt}
-
-## Publications
+## Publications {data-icon=file-alt}
 
 ```{r list-articles}
-list_publications("Journal articles")
+list_publications(bib_items, "Journal articles")
 ```
 
 ## Oral presentations
 
 ```{r list-orals}
-list_publications("^Oral presentations")
+list_publications(bib_items, "^Oral presentations")
 ```
 
 ## Oral poster presentations
 
 ```{r list-oral-posters}
-list_publications("^Oral poster presentations")
+list_publications(bib_items, "^Oral poster presentations")
 ```
 
 ## Poster presentations
 
 ```{r list-posters}
-list_publications("Poster presentations")
+list_publications(bib_items, "Poster presentations")
 ```
 
 ## Other conference presentations
 
 ```{r list-other-conferences}
-list_publications("Other conference presentations")
+list_publications(bib_items, "Other conference presentations")
 ```
 
 ## Panel member
 
 ```{r list-panel-member}
-list_publications("Panel member")
+list_publications(bib_items, "Panel member")
 ```
 
-# Published R packages {data-icon=laptop-code}
+## Published R packages {data-icon=laptop-code}
 
 ```{r list-r-packages}
-list_rpackages() 
+list_rpackages(rpkgs) 
 ```
 
-# Teaching Experience {data-icon=chalkboard-teacher}
+## Teaching Experience {data-icon=chalkboard-teacher}
 
 ```{r list-teaching}
 list_teaching(cv_data)
 ```
 
-# Supervision Experience {data-icon=hands-helping}
+## Supervision Experience {data-icon=hands-helping}
 
 ```{r list-supervision}
 list_supervision(cv_data)
 ```
 
-# Curriculum Development {data-icon=university}
-
-## Published in archive (DOI)
+## Curriculum Development (archived with DOI) {data-icon=university}
 
 ```{r list-curriculum-archived}
-list_publications("Curriculum development")
+list_publications(bib_items, "Curriculum development")
 ```
 
-## Developed (non-DOI)
+## Other Curriculum Development {data-icon=university}
 
 ```{r list-curriculum}
 list_curriculum_development(cv_data)
 ```
 
-# Awards {data-icon=trophy}
+## Awards {data-icon=trophy}
 
 ```{r list-awards}
 list_awards(cv_data)
 ```
 
-# Employment {data-icon=suitcase}
+## Employment {data-icon=suitcase}
 
 ```{r list-employment}
 list_employment(cv_data)
