@@ -5,7 +5,7 @@ name: Luke
 surname: Johnston
 position: Postdoctoral researcher
 address: Aarhus, Denmark
-date: "`r Sys.Date()`"
+date: "`r cv::today_timestamp()`"
 # profilepic: A local file path to an image
 www: lukewjohnston.com
 email: lwjohnst@ph.au.dk
