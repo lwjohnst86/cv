@@ -29,6 +29,9 @@ Imports:
     usethis,
     jsonlite,
     readr,
-    rmarkdown
+    rmarkdown,
+    conflicted,
+    pander,
+    RefManageR
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2
