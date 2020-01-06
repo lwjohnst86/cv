@@ -1,8 +1,7 @@
 #' @describeIn list_sections List all R packages developed (from CRAN).
 #' @export
-list_rpackages <- function() {
-    data("rpackages", package = "cv")
-    output(rpackages)
+list_rpackages <- function(.tbl) {
+    output(.tbl)
 }
 
 extract_first_published <- function(pkgs) {
