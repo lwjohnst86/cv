@@ -2,7 +2,9 @@ Aside
 ================================================================================
 
 
-![Luke W. Johnston](https://avatars0.githubusercontent.com/u/6662983?s=460&v=4){width=80%}
+Luke W. Johnston
+
+<!-- ![Luke W. Johnston](https://avatars0.githubusercontent.com/u/6662983?s=460&v=4){width=80%} -->
 
 
 Contact Info {#contact}
@@ -16,14 +18,3 @@ Contact Info {#contact}
 - <i class="fa fa-stack-exchange"></i> [Stack Exchange](https://stackexchange.com/users/1992995)
 - <i class="fa fa-linkedin-square"></i> [LinkedIn](https://www.linkedin.com/in/luke-johnston-480365101/)
 - For more information, please contact me via email.
-
-# Skills {#skills}
-
-- Languages: English (fluent), Spanish (competent)
-- Programming: Fluent in R, LaTeX, HTML, CSS, Bash, Git; familiar with 
-SAS, Python.
-- Statistical techniques: Basic (t-test, ANOVA, correlation), regression
-modeling (linear, logistic), mixed effect modeling, generalized estimating
-equations, principal component analysis, partial least squares regression, cross
-validation, cluster analysis (hierarchical, k-means), information criterion
-(AIC, QIC), bootstrapping, factor analysis.
