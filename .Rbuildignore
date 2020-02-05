@@ -5,3 +5,4 @@
 ^vignettes/cv\.Rmd$
 ^vignettes/dossier\.Rmd$
 ^vignettes/rmdchunks/aside\.Rmd$
+^vignettes/index\.Rmd$
