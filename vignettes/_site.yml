@@ -1,0 +1,17 @@
+name: cv
+output_dir: ../docs
+exclude: ["portfolio.*", "dossier.*", "fonts/*.ttf", "*.cls", "*.csl"]
+navbar:
+  title: "Luke Johnston's CV"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "PDF" # icon
+      href: cv.pdf
+output:
+  html_document:
+    theme: null
+    toc: true
+    toc_float:
+        collapsed: false
+        smooth_scroll: false

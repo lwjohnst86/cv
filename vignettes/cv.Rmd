@@ -51,15 +51,6 @@ bib_items <- read_bib_items()
 rpkgs <- cv::rpackages
 ```
 
-```{r add-aside, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/aside.Rmd")}
-```
-
-```{r add-disclaimer, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/disclaimer.Rmd")}
-```
-
-```{r add-main-header, child=if (knitr::is_html_output()) here("vignettes/rmdchunks/resume-main-header.Rmd")}
-```
-
 ## Education {data-icon=graduation-cap data-concise=true}
 
 ```{r list-education}
@@ -87,7 +78,8 @@ list_publications(bib_items, "^Oral poster presentations")
 ## Poster presentations
 
 ```{r list-posters}
-list_publications(bib_items, "Poster presentations")
+list_publications(bib_items, "Poster presentations") %>% 
+    print(style = )
 ```
 
 ## Other conference presentations

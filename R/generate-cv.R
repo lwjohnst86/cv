@@ -15,12 +15,11 @@ generate_cv_pdf <- function() {
 }
 
 generate_cv_html <- function() {
-    rmarkdown::render(
-        input = here("vignettes", "cv.Rmd"),
-        output_format = "pagedown::html_resume",
+    rmarkdown::render_site(
+        input = here("vignettes"),
+        output_format = "html_document",
         encoding = "UTF-8",
-        knit_root_dir = here(),
-        output_dir = here("docs"),
         quiet = TRUE
     )
+    fs::file_delete(here("docs/cv.html"))
 }

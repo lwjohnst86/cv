@@ -10,21 +10,18 @@ convert_to_cvhonors <- function(.tbl) {
 
 output <- function(.object, compact = FALSE, from_bib = FALSE) {
     if (knitr::is_html_output()) {
-        .object <- .object %>%
-            tibble::as_tibble() %>%
-            dplyr::mutate_all( ~ dplyr::if_else(is.na(.), "N/A", as.character(.)))
-
-
-
-        if (!"where" %in% names(.object)) {
-            .object <- .object %>%
-                dplyr::mutate(where = "N/A")
-        }
-
         if (from_bib) {
             .output_html_resume_bib(.object)
         } else {
-            .output_html_resume_item(.object)
+            # .object <- .object %>%
+            #     tibble::as_tibble() %>%
+            #     dplyr::mutate_all(~ dplyr::if_else(is.na(.), "N/A", as.character(.)))
+            #
+            # if (!"where" %in% names(.object)) {
+            #     .object <- .object %>%
+            #         dplyr::mutate(where = "N/A")
+            # }
+            .output_html_item(.object)
         }
 
     } else if (knitr::is_latex_output()) {
@@ -41,6 +38,15 @@ output <- function(.object, compact = FALSE, from_bib = FALSE) {
         tibble::remove_rownames() %>%
         tibble::column_to_rownames("key") %>%
         RefManageR::as.BibEntry()
+}
+
+.output_html_item <- function(.tbl) {
+    .tbl %>%
+        glue_data("
+        {when}
+        : {what}, {with} in {where}
+
+        ")
 }
 
 .output_html_resume_item <- function(.tbl) {
