@@ -78,8 +78,7 @@ list_publications(bib_items, "^Oral poster presentations")
 ## Poster presentations
 
 ```{r list-posters}
-list_publications(bib_items, "Poster presentations") %>% 
-    print(style = )
+list_publications(bib_items, "Poster presentations")
 ```
 
 ## Other conference presentations
