@@ -4,13 +4,29 @@ exclude: ["portfolio.*", "dossier.*", "fonts/*.ttf", "*.cls", "*.csl"]
 navbar:
   title: "Luke Johnston's CV"
   left:
-    - text: "Home"
+    - icon: "fas fa-home"
       href: index.html
-    - text: "PDF" # icon
+    - icon: "far fa-file-pdf"
       href: cv.pdf
+  right:
+    - icon: "far fa-envelope"
+      href: "lwjohnst@gmail.com"
+    - icon: "fab fa-twitter"
+      href: "https://twitter.com/lwjohnst"
+    - icon: "fab fa-github"
+      href: "https://github.com/lwjohnst86"
+    - icon: "fab fa-gitlab"
+      href: "https://gitlab.com/lwjohnst"
+    - icon: "fab fa-stack-overflow"
+      href: "https://stackoverflow.com/users/2632184"
+    - icon: "fab fa-stack-exchange"
+      href: "https://stackexchange.com/users/1992995"
+    - icon: "fab fa-linkedin"
+      href: "https://www.linkedin.com/in/luke-johnston-480365101/"
 output:
   html_document:
-    theme: null
+    theme: flatly
+    css: style.css
     toc: true
     toc_float:
         collapsed: false
