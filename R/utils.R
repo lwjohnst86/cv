@@ -21,6 +21,17 @@ output <- function(.object, compact = FALSE, from_bib = FALSE) {
             #     .object <- .object %>%
             #         dplyr::mutate(where = "N/A")
             # }
+            .object <- .object %>%
+                ungroup()
+
+            if (!"where" %in% names(.object)) {
+                .object <- .object %>%
+                    dplyr::mutate(where = "")
+            } else {
+                .object <- .object %>%
+                    dplyr::mutate(where = if_else(is.na(where), "",
+                                                  as.character(glue::glue("in {where}"))))
+            }
             .output_html_item(.object)
         }
 
@@ -34,17 +45,33 @@ output <- function(.object, compact = FALSE, from_bib = FALSE) {
 }
 
 .output_html_resume_bib <- function(.tbl) {
-    .tbl %>%
+    .bib <- .tbl %>%
         tibble::remove_rownames() %>%
         tibble::column_to_rownames("key") %>%
         RefManageR::as.BibEntry()
+
+    .bib <-
+        capture.output(print(
+            .bib,
+            .opts = list(
+                style = "markdown",
+                bib.style = "numeric",
+                first.inits = FALSE
+            )
+        )) %>%
+        stringr::str_replace("^\\[([0-9]+)\\]", "\\1\\.") %>%
+        stringr::str_replace("(L(uke|\\.)?( ?W\\.?)? Johnston)", "**\\1**") %>%
+        stringr::str_remove("In: ") %>%
+        stringr::str_replace("^$", "\n") %>%
+        cat()
+    .bib
 }
 
 .output_html_item <- function(.tbl) {
     .tbl %>%
         glue_data("
         {when}
-        : {what}, {with} in {where}
+        : {what}, {with} {where}
 
         ")
 }
