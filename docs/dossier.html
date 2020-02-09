@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Luke Johnston" />
+
+
+<title>Teaching Dossier</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Luke Johnston's CV</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="cv.pdf">
+    <span class="fa fa-file-pdf"></span>
+     
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="lwjohnst@gmail.com">
+    <span class="fa fa-envelope"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/lwjohnst">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/lwjohnst86">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://gitlab.com/lwjohnst">
+    <span class="fa fa-gitlab"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://stackoverflow.com/users/2632184">
+    <span class="fa fa-stack-overflow"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://stackexchange.com/users/1992995">
+    <span class="fa fa-stack-exchange"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/luke-johnston-480365101/">
+    <span class="fa fa-linkedin"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Teaching Dossier</h1>
+<h4 class="author">Luke Johnston</h4>
+
+</div>
+
+
+<pre class="r"><code>devtools::load_all()
+#&gt; Loading cv
+library(cv)
+cv_data &lt;- cv:::read_cv_items()</code></pre>
+<div id="statement-of-teaching-philosophy" class="section level1">
+<h1>Statement of teaching philosophy</h1>
+<div id="what-is-teaching-and-why-bother-teaching" class="section level2">
+<h2>What is teaching? And why bother teaching?</h2>
+<p><strong>Synopsis</strong>:</p>
+<ul>
+<li>Foster learning <em>how</em> to learn</li>
+<li>Knowing how to <em>apply</em> tools and knowledge</li>
+<li>Skills and knowledge should be useful <em>outside</em> of the classroom</li>
+<li>By teaching, I improve many minds and eventually the collective is improved</li>
+</ul>
+<p><strong>Specifically</strong>, teaching is the act of <em>facilitating</em> the development of skills and knowledge in learners, such that it is persistent and reuse-able. As a learner, I have always been more interested in understanding the course material than in the grades. As a result, I often did not get excellent grades, and only when I wanted to learn and understand the material, <em>and</em> the teacher was good, did my grades improve. What bothered me the most was when I wanted to learn, but the teacher was not good. These experiences have shaped how I see what teaching should be like.</p>
+<p>What good teaching really comes down to for me is <em>efficiency</em> in time and effort. My time is precious. I have maybe 90 years in this life and I am already a third way through. If I teach, I don’t want to waste my time <em>nor</em> the learners, whose time is just as precious as mine. Any method that makes learning easier, more persistant, and more enjoyable, I will use it. Likewise, if I can make the material more meaningful, useful, and understandable, I will. I also recognize that I am merely a facilitator to the learning process: I can encourage or I can block it. To be effective, I need to learn and get feedback from the learners on how I can improve this process.</p>
+<p>The <em>reasons</em> I teach are because I want to improve society in general and to expose learners to concepts and tools they may not have been exposed to. I teach to prepare students and learners for life and as future productive members and shapers of society. I teach to develop scientific literacy and scientific thinking, as these skills are vital in modern societies. But most importantly, I teach to improve the collective competence of society. One mind may help direct a community or city, but multiple minds can change a nation or the world. We are all interconnected, and so by improving more minds, I can improve the collective, the same collective that will shape the direction of humankind’s and our planet’s future.</p>
+</div>
+<div id="teaching-methods" class="section level2">
+<h2>Teaching methods</h2>
+<p><strong>Synopsis</strong>:</p>
+<ul>
+<li>Incorporate real world, tangible examples and analogies</li>
+<li>Knowledge and application go hand-in-hand</li>
+<li>Getting feedback frequently to assess learning</li>
+</ul>
+<p><strong>Specifically</strong>, I use methods that fit with how I see teaching to be and how humans are. We as humans evolved to use <em>tools</em>, to optimize on <em>visual</em> information, and to be aware of <em>tangible</em> things in our environment and how to move in it. So the methods I use incorporate how we evolved. I use graphics or images as much as possible, for instance using a comic about “final”.doc as a way to introduce the usefulness of version control. I use real-world, concrete examples and analogies to describe abstract concepts, for example by describing R variable assignment as jars to store things or that version control is like stacking books. When I teach a concept or lesson, I include a practice component to it, for instance when learning about how to critique a scientific study, I get the learners to do think-pair-share exercises or getting into groups to practice the concepts.</p>
+<p>But I also know that I cannot read my learners’ minds. I need to <em>assess myself</em> as a teacher and the lesson content to make sure I am actually teaching. I do this by frequently getting feedback from the learners by using ‘ticket out the door’ techniques, by asking co-instructors for their thoughts, by assessing completed assignments for understanding, and by self-reflecting on the lesson afterward.</p>
+</div>
+<div id="evaluation-and-assessment" class="section level2">
+<h2>Evaluation and assessment</h2>
+<p><strong>Synopsis</strong>:</p>
+<ul>
+<li>Use ‘ticket out the door’</li>
+<li>Assignment and exam questions that show thought process</li>
+<li>Assignments demonstrate the application</li>
+<li>Frequently seek feedback</li>
+<li>Include feedback as part of the assignment</li>
+</ul>
+<p><strong>Specifically</strong>, because whether learners are grasping the concepts is dependent on how well I teach, most of the evaluation involves how my teaching and content can improve, rather than on how well the learner understands what I am teaching. So, for instance, I use tickets out the door to get feedback on how well the students learned concepts in the lesson and how well I did. Based on that feedback, I can address misunderstanding or confusion in the next class. I also actively seek feedback from other co-instructors to see how I can improve my teaching style and content, as well as reflect afterward on how the lesson went. Lastly, I also try to incorporate ways to get more feedback in assignments I create, such as including a question on how the course went and any potential confusions. To assess the students understanding, I develop assignments specifically to demonstrate that they understand the concepts or tools taught and how to apply them. For example, one assignment would be to push a file to the course repository on GitHub, which demonstrates the student knows how to use Git and GitHub.</p>
+</div>
+<div id="teaching-and-learning-goals" class="section level2">
+<h2>Teaching and learning goals</h2>
+<p><strong>Synposis</strong>:</p>
+<ul>
+<li>Know where to find resources</li>
+<li>Not be afraid to try new things</li>
+<li>Use scientific thinking</li>
+<li>Apply tools and knowledge</li>
+<li>Be competent and be understanding</li>
+</ul>
+<p><strong>Specifically</strong>, my goal is to develop a thought process that allows learners to be independent, resourceful, confident, critical, and <em>competent</em>. By teaching skills and tools, by getting learners to <em>practice</em> what they learn, by challenging students with unfamiliar problems but tools to solve those problems, and by showing learners that teaching and learning are an iterative, mutual process, I will be able to achieve my goal. And, as a result, learners will go on to be better able to help society and tackle global issues that we currently and may potentially face.</p>
+</div>
+</div>
+<div id="highlights-of-teaching-experience" class="section level1">
+<h1>Highlights of Teaching Experience</h1>
+<table>
+<caption>List of courses, tutorials, or workshops taught. ‘R’ is the level of responsibility (1 being the highest), ‘Size’ is the number of learners in the course, and ‘Freq’ is the frequency of the tutorials or workshops.</caption>
+<thead>
+<tr class="header">
+<th>R</th>
+<th>Course</th>
+<th>Year</th>
+<th>Size</th>
+<th>Freq.</th>
+<th>Duties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>GPS: Code As</td>
+<td>June</td>
+<td>7–11</td>
+<td>2-hrs,</td>
+<td>Developed the material, slides,</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Manuscript</td>
+<td>2015</td>
+<td></td>
+<td>1/wk</td>
+<td>lesson plan, and assignments.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>workshops</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Co-instructed with partner for</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Code As Manuscript.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Coding</td>
+<td>2014 to</td>
+<td>4–6</td>
+<td>3-hrs,</td>
+<td>Same as above.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>workshops</td>
+<td>2015</td>
+<td></td>
+<td>1/mth</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>NFS484-1484:</td>
+<td>Fall</td>
+<td>19</td>
+<td>1-hr,</td>
+<td>Lead the graduate tutorials,</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Advanced Nutr.</td>
+<td>2014</td>
+<td></td>
+<td>1-wk</td>
+<td>develop the final exam and mark</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>it</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>NFS484-1484:</td>
+<td>Fall</td>
+<td>6–12</td>
+<td>1-hr,</td>
+<td>Lead the undergraduate tutorials,</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Advanced Nutr.</td>
+<td>2013</td>
+<td></td>
+<td>1/wk</td>
+<td>develop the midterm exam and mark</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>it</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>NFS394: Res.</td>
+<td>2014 to</td>
+<td>1</td>
+<td>Varied</td>
+<td>Co-mentored an undergraduate</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Project</td>
+<td>2015</td>
+<td></td>
+<td></td>
+<td>through a research project with</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>my supervisor. Helped develop</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>idea, taught SAS, and provided</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>guidance on analysis and writing</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>up report.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>UofT Coders:</td>
+<td>June</td>
+<td>~12</td>
+<td>1-hr,</td>
+<td>Prepared and taught a lesson on</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Git workshop</td>
+<td>2015</td>
+<td></td>
+<td>once</td>
+<td>git and GitHub.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Data Lit:</td>
+<td>June</td>
+<td>~15</td>
+<td>2-hrs,</td>
+<td>Prepared and taught a lesson on</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>R workshop</td>
+<td>2015</td>
+<td></td>
+<td>once</td>
+<td>data wrangling in R using dplyr</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>and tidyr.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>SWC: Helper</td>
+<td>2015</td>
+<td>25</td>
+<td>2 days</td>
+<td>Assist learners in learning</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>programming and computing</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>skills in a Software Carpentry</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>(SWC) workshop at the Hospital</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>for Sick Children</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>SWC: Helper</td>
+<td>2014</td>
+<td>20</td>
+<td>2 days</td>
+<td>Same as above, but at the Gerstein</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>library at the U of T.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>NFS485: Nutr.</td>
+<td>Winter</td>
+<td>NA</td>
+<td>NA</td>
+<td>Mark the midterm, final, and</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Microbio.</td>
+<td>2013</td>
+<td></td>
+<td></td>
+<td>assignment</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="evidence-of-teaching-effectiveness-and-development" class="section level1">
+<h1>Evidence of Teaching Effectiveness and Development</h1>
+<p>Much of my evaluations and feedback I store on my GitHub account, for example for my “Code As Manuscript” workshop series, feedback and evaluations are found at <a href="https://github.com/codeasmanuscript/workshops/tree/master/evals" class="uri">https://github.com/codeasmanuscript/workshops/tree/master/evals</a>. Below are some excerpts of some feedback I received. Collecting feedback has allowed me to incorporate as much of it as I can into improving my teaching, how I present the content, and what content I should actually be teaching.</p>
+<div id="student-evaluation" class="section level2">
+<h2>Student evaluation</h2>
+<p>Bahar Davoudi:</p>
+<blockquote>
+<p>Dedicated instructors. Worked one-on-one to teach us and make us understand the concepts. It was really useful when Luke used a physical example to teach us “add” and “commit” with a stack of markers! A great method to make coding instructions clear and less abstract.</p>
+</blockquote>
+<p>Renata Musa:</p>
+<blockquote>
+<p>… as a participant, I feel that both Luke and Daiva truly want to make it useful.</p>
+</blockquote>
+<p>Shawn Smith:</p>
+<blockquote>
+<p>Great to have hands-on guidance through data munging in R. Would have given 5 stars if the lesson was a bit more structured (with notes to follow online or something similar), and if the pace was a tiny bit slower (felt a little too fast for an intro lesson, but I’m also a beginner R user). All in all, a great workshop led by friendly and knowledgeable experts!</p>
+</blockquote>
+<p>Anonymous:</p>
+<blockquote>
+<p>Good use of analogies, clearly explained. It was helpful that you were both very flexible and willing to address questions.</p>
+</blockquote>
+<blockquote>
+<p>Focus on what can be accomplished in specific amount of time.</p>
+</blockquote>
+<blockquote>
+<p>Thank you for donating your time to teach us these important techniques. <span class="math display">\[To improve\]</span> … spending more time to practice…</p>
+</blockquote>
+</div>
+<div id="peer-evaluation" class="section level2">
+<h2>Peer evaluation</h2>
+<p>Daiva Nielsen (co-instructor for the “Code As Manuscript” series):</p>
+<blockquote>
+<p>Good explanation and interpretation of techniques, why they were useful. Some students were falling behind on keeping up with code, may need to go slower.</p>
+</blockquote>
+<blockquote>
+<p>Clarify that this <span class="math display">\[command-line tool\]</span> is what they will be using throughout the workshop series, why this is useful, acknowledge that the majority of people have practically no experience with it, and assure them that they can learn how to perform some basic tasks with it comfortably. Lots of positive reinforcement because this is so new to so many people.</p>
+</blockquote>
+<p>Xu Fei (organizer of the Data Literacy Meetup workshops):</p>
+<blockquote>
+<p>(Note: This is in response to me trying to answer a question I wasn’t fully prepared for) … I think if we know that we are going into unknown water by trying a question, we may want to make it clear from the beginning instead of jumping right on it and not getting an answer. Sometimes it’s better to ask the person to come ask it again later on, so that we can keep the pace. … when someone asks things out of the prepared curriculum, we go further to explain it, but if for some reason the output is not what we expected, we had to troubleshoot on the spot. Even if we don’t manage to get the desired output, we still need to move on, but that leaves the question unanswered. I think this may add to the “unstructured impression”.</p>
+</blockquote>
+</div>
+<div id="professional-development" class="section level2">
+<h2>Professional development</h2>
+<ul>
+<li>Software Carpentry Instructor Training program (Feb.–Apr. 2015)</li>
+<li>Advanced University Teaching Preparation program (Sept. 2013–present)</li>
+</ul>
+</div>
+</div>
+<div id="course-and-curriculum-development" class="section level1">
+<h1>Course and Curriculum Development</h1>
+<div id="graduate-professional-skills-code-as-manuscript-workshops-june-2015" class="section level2">
+<h2>Graduate Professional Skills: Code As Manuscript workshops (June 2015)</h2>
+<p>Given that datasets are increasingly getting larger, that computing skills are increasingly needed to analyze data, and that scientists and researchers are often not provided training in best practices on computing and programming (even statistics), I started developing a series of workshops that were aimed to fill that training void (including a bit on statistical techniques). Discussions with colleague Daiva Nielsen on this issue revealed her equal desire to provide training on this matter, and as a results we began collaborating together to put together a series of workshop, which we initially started for our graduate students in our home department of Nutritional Sciences at the University of Toronto (see subsection below). Since collaborating, we’ve named our workshop series “Code As Manuscript”.</p>
+<p>Our workshop series was approved and advertised by Liam O’Leary, GPS coordinator. The syllabus for our GPS workshop series is found at <a href="http://codeasmanuscript.github.io/workshops/gps/sas-syllabus/" class="uri">http://codeasmanuscript.github.io/workshops/gps/sas-syllabus/</a>, as well as a hard-copy found in <a href="#appendix-a">Appendix A</a>.</p>
+<p>In line with our mission statement and focus on reproducibility and openness, we’ve kept all our lesson material in a public format:</p>
+<ul>
+<li>Our material is found on GitHub at <a href="https://github.com/codeasmanuscript/workshops" class="uri">https://github.com/codeasmanuscript/workshops</a></li>
+<li>Our website showing our material is at <a href="http://codeasmanuscript.github.io/workshops/" class="uri">http://codeasmanuscript.github.io/workshops/</a></li>
+</ul>
+</div>
+<div id="departmental-workshops-on-coding-20142015" class="section level2">
+<h2>Departmental workshops on coding (2014–2015)</h2>
+<p>These were the initial workshops we (myself and Daiva Nielsen) started developing for our Department of Nutritional Sciences, explained in more detail above. The table below lists the workshops we taught to the department.</p>
+<table>
+<caption>List of workshops taught to the graduate students in the Department of Nutritional Sciences.</caption>
+<colgroup>
+<col width="37%" />
+<col width="62%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Workshop</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Let’s ‘Git’ started! An</td>
+<td>This workshop introduces the concept of</td>
+</tr>
+<tr class="even">
+<td>introduction to version</td>
+<td>versions, managing them, keeping a record</td>
+</tr>
+<tr class="odd">
+<td>control</td>
+<td>of changes to files and folders, and working</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>toward a solution for the reproducibility</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>problem. We teach the most common and fairly</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>basic commands in Git that will help jump start</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>learners to incorporating Git in their everyday</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>research workflow</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>‘Git’-ing better: Collaborating</td>
+<td>This workshop expands on some commands in Git</td>
+</tr>
+<tr class="odd">
+<td>on your research with version</td>
+<td>and introduces efficient methods for collaborating</td>
+</tr>
+<tr class="even">
+<td>control and GitHub</td>
+<td>on research projects or on code using Git and</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>GitHub. GitHub (github.com) is a powerful and</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>very popular online platform for sharing and</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>collaborating on code and research projects. It</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>can also be used as a form of a secure and stable</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>backup.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>From codes to tables: Reducing</td>
+<td>This workshop goes through the SAS ODS commands</td>
+</tr>
+<tr class="even">
+<td>the number of steps in your</td>
+<td>that allow results from analyses to be output and</td>
+</tr>
+<tr class="odd">
+<td>analysis using SAS ODS</td>
+<td>customized to be close to or exactly how a table</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>in a manuscript will look like. This allows the</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>researcher/graduate student to make their manuscript</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>more reproducible and reduces the amount of work</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>needed to create a table, rather than with copying</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>and pasting.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Know your data and how to handle</td>
+<td>Through this workshop, we focus on the analysis</td>
+</tr>
+<tr class="odd">
+<td>it correctly: Statistical</td>
+<td>itself rather than the medium of analysis (the code).</td>
+</tr>
+<tr class="even">
+<td>assumptions</td>
+<td>We introduce common assumptions for linear regression</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>and ANOVA, how to diagnose problems, and how to fix</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>them. Throughout the workshop, we use live coding</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>of the SAS commands so that learners see it in action.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="nfs484-1484-advanced-nutrition-20132014" class="section level2">
+<h2>NFS484-1484: Advanced Nutrition (2013–2014)</h2>
+<p>I’ve led hour-long, weekly tutorial sessions for two terms (once per year), both times in the Fall term. The first year I taught one of the undergraduate sections, and for the second year I taught the graduate section. In the first year, a fellow TA and I developed the slides for both undergraduate and graduate sections. With the guidance of the course professor, I developed the midterm was well. In the following year that I was a TA, I refined and expanded on the slides, converting them into text-based files that can be converted into pdf files (using pandoc, <a href="http://pandoc.org/" class="uri">http://pandoc.org/</a>) and stored all 10 tutorials on GitHub at so that future TAs can all easily access the material. Lastly, I also developed the final exam.</p>
+<p>In a list, here are the materials I developed for this course:</p>
+<ul>
+<li>Midterm 2013, see <a href="#appendix-b">Appendix B</a></li>
+<li>Final 2014, see <a href="#appendix-b">Appendix B</a></li>
+<li>Slides and material for tutorials at <a href="https://github.com/lwjohnst86/nfs484-1484-tutorials" class="uri">https://github.com/lwjohnst86/nfs484-1484-tutorials</a></li>
+</ul>
+</div>
+</div>
+<div id="appendices" class="section level1">
+<h1>Appendices</h1>
+<div id="appendix-a" class="section level2">
+<h2>Appendix A:</h2>
+<p>Syllabus for the Graduate Professional Skills program <em>Code As Manuscript</em> workshop series.</p>
+<hr />
+<p><strong>Code as Manuscript: Practices for Reproducibility and Efficiency in SAS</strong></p>
+<p><strong>Course description</strong>:</p>
+<p>This series of workshops aims to introduce students to the concept of research reproducibility and to get the students practicing with using version control systems and with using techniques in SAS that make the analysis more efficient, less error prone, and less stressful. Techniques for using version control systems to faciliate greater collaboration among peers will also be presented. The ultimate goal of the workshops is to demonstrate how to reduce the total number of steps required to produce a manuscript from the data analysis stage (hence the name <em>Code As Manuscript</em>). Given the applied nature of the concepts in these workshops, hands-on activities and <a href="http://en.wikipedia.org/wiki/Live_coding">live coding</a> will be integrated into each workshop.</p>
+<p><strong>Goal</strong>:</p>
+<p>The expected goal of the workshops is that you will be able to:</p>
+<ul>
+<li>Put your research under version control using Git.</li>
+<li>Push and pull your git research repository to either <a href="https://github.com/">GitHub</a> or <a href="https://bitbucket.org/">BitBucket</a>.</li>
+<li>Simplify your SAS code by using macros and ODS facilities in a way that allows code to output results into a file that can be easily incorporated into a manuscript or report.</li>
+<li>To put the macros into either a macro file or as a SAS autocall library so that the macros are useable in all your SAS files.</li>
+</ul>
+<p>Attaining these goals will the first steps in making an efficient and highly productive workflow, that is also scientifically rigorous and transparent, which you can take with you for the rest of your career.</p>
+<p><strong>Schedule</strong>:</p>
+<p>Lesson content can be found <a href="%7B%7B%20site.baseurl%20%7D%7D/lessons/">here</a>. The workshop will follow the following sequence of topics:</p>
+<ol style="list-style-type: decimal">
+<li>Git: June 16th, 3:00-5:00pm</li>
+<li>GitHub: June 23rd, 3:00-5:00pm</li>
+<li>Macros: June 30th, 3:00-5:00pm</li>
+<li>ODS: July 7th, 3:00-5:00pm</li>
+</ol>
+<p><strong>Intended audience:</strong></p>
+<p>Graduate students or post-docs whose research involves a fair amount of data analysis using SAS.</p>
+<p><strong>Pre-requisites:</strong></p>
+<ul>
+<li>Bring a fully charged laptop</li>
+<li>Install the appropriate software (see our <a href="%7B%7B%20site.baseurl%20%7D%7D/lessons/instructions/">instructions page</a>)</li>
+<li>Fairly competent in coding SAS commands. <em>We are not here to teach an introduction to SAS</em>, we assume you are fairly competent with using SAS. If you are a novice, recognize that you may not understand everything that is going on… <em>However</em>, you will still likely learn a lot!!</li>
+<li>Some familiarity with the command-line or with computing is desirable, but not necessary.</li>
+</ul>
+<p><strong>Assignment</strong>:</p>
+<p>Because of the hands-on nature of the workshops, in order to obtain a GPS credit for the workshops you need to:</p>
+<ol style="list-style-type: decimal">
+<li>Come to all the workshops</li>
+<li>Complete each workshop assignment</li>
+</ol>
+<p>To hand in the assignment, you will need to:</p>
+<ol style="list-style-type: decimal">
+<li>Fork our shared workshop repository</li>
+<li>Clone it to your computer</li>
+<li>Create a new folder with your name</li>
+<li>Put the assignments for each workshop in your new folder</li>
+<li>Commit and push the assignments to your fork</li>
+<li>Submit a pull request to the main shared repository</li>
+</ol>
+<p>Don’t worry if this doesn’t make sense yet. We will go over all these details over the workshop series.</p>
+<p><strong>Instructors</strong></p>
+<p>Luke Johnston, MSc, PhD (c)<br />
+<a href="mailto:luke.johnston@mail.utoronto.ca" class="email">luke.johnston@mail.utoronto.ca</a></p>
+<p>Daiva Nielsen, PhD<br />
+<a href="mailto:daiva.nielsen@mail.utoronto.ca" class="email">daiva.nielsen@mail.utoronto.ca</a></p>
+<hr />
+
+</div>
+<div id="appendix-b" class="section level2">
+<h2>Appendix B:</h2>
+<p>Midterm 2013 and final exam 2014 for NFS1484.</p>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
