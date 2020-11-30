@@ -9,7 +9,7 @@ generate_cv_pdf <- function() {
         output_format = "vitae::awesomecv",
         encoding = "UTF-8",
         knit_root_dir = here(),
-        output_dir = here("docs"),
+        output_dir = here("public"),
         quiet = TRUE
     )
 }
@@ -21,5 +21,5 @@ generate_cv_html <- function() {
         encoding = "UTF-8",
         quiet = TRUE
     )
-    fs::file_delete(here("docs/cv.html"))
+    fs::file_delete(here("public/cv.html"))
 }
