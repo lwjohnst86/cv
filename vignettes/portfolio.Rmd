@@ -46,7 +46,7 @@ knitr::knit_hooks$set(
 )
 
 knitr::opts_chunk$set(echo = FALSE, comment = "", results = "asis",
-                      table.small.fontsize = TRUE)
+                      table.small.fontsize = TRUE, eval = FALSE)
 
 # Function to generate tables.
 output_table <- function(.tbl, caption) {
