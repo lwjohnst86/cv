@@ -8,8 +8,8 @@ address: Aarhus, Denmark
 date: "`r cv::today_timestamp()`"
 # profilepic: A local file path to an image
 www: lukewjohnston.com
-email: lwjohnst@ph.au.dk
-twitter: lwjohnst
+email: lwjohnst@gmail.com
+#twitter: lwjohnst
 github: lwjohnst86
 aboutme: I am a diabetes epidemiologist, R user and programmer, teacher of modern data analysis skills, and open science advocate.
 headcolor: "324ea8"
@@ -66,13 +66,13 @@ list_publications(bib_items, "Journal articles")
 ## Oral presentations
 
 ```{r list-orals}
-list_publications(bib_items, "^Oral presentations")
+list_publications(bib_items, "Oral presentations")
 ```
 
 ## Oral poster presentations
 
 ```{r list-oral-posters}
-list_publications(bib_items, "^Oral poster presentations")
+list_publications(bib_items, "Oral poster presentations")
 ```
 
 ## Poster presentations

@@ -2,7 +2,7 @@ name: cv
 output_dir: ../docs
 exclude: ["portfolio.*", "dossier.*", "fonts/*.ttf", "*.cls", "*.csl"]
 navbar:
-  title: "Luke Johnston's CV"
+  title: "Luke W. Johnston's CV"
   left:
     - icon: "fa-home"
       href: index.html
@@ -24,10 +24,5 @@ navbar:
     - icon: "fa-linkedin"
       href: "https://www.linkedin.com/in/luke-johnston-480365101/"
 output:
-  html_document:
-    theme: flatly
-    css: style.css
+  distill::distill_article:
     toc: true
-    toc_float:
-        collapsed: false
-        smooth_scroll: false
