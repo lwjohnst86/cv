@@ -11,7 +11,7 @@ convert_to_cvhonors <- function(.tbl) {
 output <- function(.object, compact = FALSE, from_bib = FALSE) {
     if (knitr::is_html_output()) {
         if (from_bib) {
-            .output_html_resume_bib(.object)
+            cat(.object, sep = "\n")
         } else {
             # .object <- .object %>%
             #     tibble::as_tibble() %>%
@@ -36,41 +36,20 @@ output <- function(.object, compact = FALSE, from_bib = FALSE) {
         }
 
     } else if (knitr::is_latex_output()) {
-        .object
+        if (from_bib) {
+            cat(.object, sep = "\n")
+        } else {
+            .object
+        }
     } else if (interactive()) {
-        .object %>%
-            .output_html_resume_bib()
-            # tibble::as_tibble()
+        .object
     }
-}
-
-.output_html_resume_bib <- function(.tbl) {
-    .bib <- .tbl %>%
-        tibble::remove_rownames() %>%
-        tibble::column_to_rownames("key") %>%
-        RefManageR::as.BibEntry()
-
-    .bib <-
-        capture.output(print(
-            .bib,
-            .opts = list(
-                style = "markdown",
-                bib.style = "numeric",
-                first.inits = FALSE
-            )
-        )) %>%
-        stringr::str_replace("^\\[([0-9]+)\\]", "\\1\\.") %>%
-        stringr::str_replace("(L(uke|\\.)?( ?W\\.?)? Johnston)", "**\\1**") %>%
-        stringr::str_remove("In: ") %>%
-        stringr::str_replace("^$", "\n") %>%
-        cat()
-    .bib
 }
 
 .output_html_item <- function(.tbl) {
     .tbl %>%
-        transmute(when = when,
-                  what = glue("{what}, {with} {where}")) %>%
+        dplyr::transmute(when = when,
+                         what = glue::glue("{what}, {with} {where}")) %>%
         knitr::kable(col.names = NULL, align = "ll") %>%
         kableExtra::kable_styling(c("condensed", "striped"),
                                   full_width = TRUE) %>%

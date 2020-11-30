@@ -30,7 +30,10 @@ read_cv_items <- function() {
 #' @export
 #'
 read_bib_items <- function() {
-    vitae::bibliography_entries(fs::path_package("cv", "data", "work.bib"))
+    fs::path_package("cv", "data", "work.bib") %>%
+        bib2df::bib2df(separate_names = TRUE) %>%
+        dplyr::rename_with(snakecase::to_snake_case) %>%
+        dplyr::filter(category != "COMMENT")
 }
 
 read_bib <- function() {
