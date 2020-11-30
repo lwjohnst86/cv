@@ -17,7 +17,7 @@ generate_cv_pdf <- function() {
 generate_cv_html <- function() {
     rmarkdown::render_site(
         input = here("vignettes"),
-        output_format = "html_document",
+        output_format = "distill::distill_article",
         encoding = "UTF-8",
         quiet = TRUE
     )
