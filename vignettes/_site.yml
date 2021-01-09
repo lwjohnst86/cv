@@ -8,6 +8,14 @@ navbar:
       href: index.html
     - icon: "fa-file-pdf"
       href: cv.pdf
+    - text: Sites
+      menu:
+        - text: Main
+          href: https://lukewjohnston.com
+        - text: Slides
+          href: https://slides.lwjohnst.com
+        - text: Posters
+          href: https://posters.lwjohnst.com
   right:
     - icon: "fa-envelope"
       href: "lwjohnst@gmail.com"
