@@ -53,7 +53,7 @@ output <- function(.object, compact = FALSE, from_bib = FALSE) {
         knitr::kable(col.names = NULL, align = "ll") %>%
         kableExtra::kable_styling(c("condensed", "striped"),
                                   full_width = TRUE) %>%
-        kableExtra::column_spec(1, width = "15%", bold = TRUE)
+        kableExtra::column_spec(1, width = "20%", bold = TRUE)
 }
 
 .output_html_resume_item <- function(.tbl) {
