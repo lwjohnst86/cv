@@ -97,3 +97,13 @@ tidy_dates <- function(.tbl) {
 today_timestamp <- function() {
     lubridate::stamp('March 1, 1999', quiet = TRUE)(lubridate::today())
 }
+
+website_theme_color <- "#006064"
+fa <- function(icon) {
+    output <- ""
+    if (knitr::is_html_output() | interactive()) {
+        output <- fontawesome::fa(name = icon, fill = website_theme_color)
+    }
+    output
+}
+
