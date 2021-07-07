@@ -36,7 +36,8 @@ Imports:
     bibtex (>= 0.4.3),
     bib2df (>= 1.1.2),
     snakecase,
-    distill
+    distill,
+    fontawesome (>= 0.2.1)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2
 Remotes: 
