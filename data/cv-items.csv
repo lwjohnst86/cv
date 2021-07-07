@@ -1,5 +1,8 @@
 start,end,title,details,website,section,value,doi,role,organization,person_name,location,teaching_level,teaching_number_students
-2019-12-01,NA,NA,NA,NA,affiliations,NA,NA,Researcher,"Department of Public Health, Aarhus University",NA,"Aarhus, Denmark",,
+2021-01-18,NA,NA,NA,NA,affiliations,NA,NA,Instructor,[RStudio Certified Instructor](https://education.rstudio.com/trainers/people/johnston+luke/),NA,"Boston, USA",,
+2020-07-10,NA,NA,NA,NA,affiliations,NA,NA,Member,European Association for the Study of Diabetes,NA,"Düsseldorf, Germany",,
+2021-02-10,NA,NA,NA,NA,affiliations,NA,NA,Researcher,"Department of Clinical Medicine, Aarhus University",NA,"Aarhus, Denmark",,
+2019-12-01,2021-02-10,NA,NA,NA,affiliations,NA,NA,Researcher,"Department of Public Health, Aarhus University",NA,"Aarhus, Denmark",,
 2018-07-05,NA,NA,NA,NA,affiliations,NA,NA,Member,Danish Diabetes Academy,NA,Denmark,,
 2015-05-26,NA,NA,NA,NA,affiliations,NA,NA,Instructor and member,[Software Carpentry](http://software-carpentry.org/),NA,Global,,
 2016-01-14,2018-01-31,NA,"Responsible for managing the finances, identifying potential sources of funding and applying to them as applicable, reimbursing students for expenses, and buying the snacks for the coding sessions. Other communal duties include maintaining the GitHub repository and dealing with Issues and Pull Requests (via GitHub) that may arise.
@@ -33,10 +36,12 @@ start,end,title,details,website,section,value,doi,role,organization,person_name,
 ",https://uoftcoders.github.io/rcourse/,curriculum,NA,https://doi.org/10.5281/zenodo.1117432,NA,"Department of Ecology and Evolutionary Biology, University of Toronto, Canada",NA,"Toronto, Canada",,
 2014-10-01,2015-11-23,"Code as Manuscript: Data wrangling, visualization, and reproducibility in R","Developed a multi-day workshop series on initially SAS with colleague Dr. Daiva Nielsen and later I developed a series on R. These workshops aimed to teach scientific coding skills to graduate students, such as using version control, structuring research projects, using reproducibility concepts, and ""software development"" concepts in a scientific coding context. The material is publicly available online at https://github.com/codeasmanuscript.
 ",http://codeasmanuscript.org,curriculum,NA,NA,NA,"Graduate Professional Skills Program, University of Toronto",NA,"Toronto, Canada",,
+2020-08-06,2020-08-06,RStudio Instructor Training and Certification Program,NA,https://education.rstudio.com/trainers/people/johnston+luke/,certificates,NA,NA,NA,RStudio,NA,"Boston, USA",,
 2015-05-26,2015-05-26,Software Carpentry Instructor Training,NA,http://swcarpentry.github.io/training-course/2015/02/luke-johnston/,certificates,NA,NA,NA,Software Carpentry,NA,Online,,
 2015-08-01,2015-08-01,Advanced University Teaching Preparation,NA,NA,certificates,NA,NA,NA,"Teaching Assistants' Training Program, University of Toronto",NA,"Toronto, Canada",,
 2017-11-09,2017-11-09,Graduate Professional Skills,NA,NA,certificates,NA,NA,NA,"Graduate Professional Skills Program, School of Graduate Studies, University of Toronto",NA,"Toronto, Canada",,
 2016-11-15,2016-11-15,Data Carpentry Instructor Training,NA,NA,certificates,NA,NA,NA,Data Carpentry,NA,Online,,
+2019-08-21,2019-12-19,Aarhus University Teachers Training Programme,NA,NA,courses taken,NA,NA,NA,Aarhus University,NA,"Aarhus, Denmark",,
 2019-11-03,2019-11-08,Postdoctoral Winter School,NA,NA,courses taken,NA,NA,NA,Danish Diabetes Academy,NA,"Malaga, Spain",,
 2018-02-21,2018-06-11,Mozilla Open Project Leaders Training,NA,https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif,courses taken,NA,NA,NA,Mozilla,NA,Online,,
 2016-05-25,2016-05-26,'OMICS and Epidemiology,NA,NA,courses taken,NA,NA,NA,McMaster University Health Sciences,NA,"Toronto, Canada",,
@@ -67,9 +72,9 @@ Organized and scheduled interviews and data collection dates for a study in the 
 2017-09-01,2018-01-31,"Metabolomic Profiling of the DASH Diet: Novel Insights for the Nutritional Epidemiology of Type 2 Diabetes Mellitus
 ","Master's Student in Nutritional Sciences. Co-mentored with Dr. Anthony Hanley. Trained Shahen in R and statistics, assisted in guiding the research project and analysis.
 ",NA,supervision,NA,NA,NA,"Department of Nutritional Sciences, University of Toronto",Shahen Yashpal,"Toronto, Canada",Master’s,
-2020-09-08,2020-09-09,Reproducible Research in R: An intermediate workshop on modern approaches and workflows to processing data,"Two day workshop teaching on using R for reproducible workflows and approaches to data processing to PhD students and postdoctoral researchers.
-",https://r-cubed.rostools.org-intermediate,teaching,NA,NA,Lead instructor,Danish Diabetes Academy,NA,Denmark,PhD and Postdocs,
-2020-06-22,2020-06-24,Reproducible Research in R: An introductory workshop on modern data analyses and workflows,"Three day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
+2020-09-08,NA,Reproducible Research in R: An intermediate workshop on modern approaches and workflows to processing data,"Two day workshop teaching on using R for reproducible workflows and approaches to data processing to PhD students and postdoctoral researchers.
+",https://r-cubed-intermediate.rostools.org,teaching,NA,NA,Lead instructor,Danish Diabetes Academy,NA,Denmark,PhD and Postdocs,
+2020-06-22,NA,Reproducible Research in R: An introductory workshop on modern data analyses and workflows,"Three day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
 ",https://r-cubed.rostools.org,teaching,NA,NA,Lead instructor,Danish Diabetes Academy,NA,Denmark,PhD and Postdocs,
 2019-03-04,2019-03-19,Reproducible Quantitative Methods: Data analysis workflow using R,"Four day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
 ",https://dda-rcourse.lwjohnst.com/,teaching,NA,NA,Lead instructor,Danish Diabetes Academy,NA,Denmark,PhD and Postdocs,
