@@ -12,8 +12,9 @@ knitr::opts_chunk$set(
 library(cv)
 ```
 
-> I am a diabetes epidemiologist, R user and programmer, teacher of modern data analysis skills, and open science advocate.
+> I am a diabetes epidemiologist, R user and developer, teacher of modern data science and analysis skills, and open science advocate.
 
+<!--
 ## Skills
 
 - Languages: English (fluent), Spanish (competent)
@@ -24,6 +25,7 @@ modeling (linear, logistic), mixed effect modeling, generalized estimating
 equations, principal component analysis, partial least squares regression, cross
 validation, cluster analysis (hierarchical, k-means), information criterion
 (AIC, QIC), bootstrapping, factor analysis.
+-->
 
 ```{r insert-cv, child="cv.Rmd"}
 ```

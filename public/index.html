@@ -20,19 +20,19 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -52,7 +52,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
@@ -87,39 +87,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--radix_placeholder_meta_tags-->
   <title>Luke W. Johnston's CV: Luke W. Johnston</title>
-  
-  
-  
+
+
+
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2021-01-08"/>
-  <meta property="article:created" itemprop="dateCreated" content="2021-01-08"/>
-  
+  <meta property="article:published" itemprop="datePublished" content="2021-07-07"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-07-07"/>
+
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Luke W. Johnston&#39;s CV: Luke W. Johnston"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Luke W. Johnston&#39;s CV"/>
-  
+
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Luke W. Johnston&#39;s CV: Luke W. Johnston"/>
-  
+
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
-  
+
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","pagetitle","date"]}},"value":[{"type":"character","attributes":{},"value":["Luke W. Johnston"]},{"type":"character","attributes":{},"value":["Luke's CV"]},{"type":"character","attributes":{},"value":["January 08, 2021"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","pagetitle","date"]}},"value":[{"type":"character","attributes":{},"value":["Luke W. Johnston"]},{"type":"character","attributes":{},"value":["Luke's CV"]},{"type":"character","attributes":{},"value":["July 07, 2021"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
   <meta name="distill:offset" content=""/>
-  
+
   <script type="application/javascript">
-  
+
     window.headroom_prevent_pin = false;
-  
+
     window.document.addEventListener("DOMContentLoaded", function (event) {
-  
+
       // initialize headroom for banner
       var header = $('header').get(0);
       var headerHeight = header.offsetHeight;
@@ -136,13 +136,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       if(window.location.hash)
         headroom.unpin();
       $(header).addClass('headroom--transition');
-  
+
       // offset scroll location for banner on hash change
       // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
       window.addEventListener("hashchange", function(event) {
         window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
       });
-  
+
       // responsive menu
       $('.distill-site-header').each(function(i, val) {
         var topnav = $(this);
@@ -151,7 +151,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           topnav.toggleClass('responsive');
         });
       });
-  
+
       // nav dropdowns
       $('.nav-dropbtn').click(function(e) {
         $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
@@ -166,99 +166,99 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       });
     });
   </script>
-  
+
   <style type="text/css">
-  
+
   /* Theme (user-documented overrideables for nav appearance) */
-  
+
   .distill-site-nav {
     color: rgba(255, 255, 255, 0.8);
     background-color: #0F2E3D;
     font-size: 15px;
     font-weight: 300;
   }
-  
+
   .distill-site-nav a {
     color: inherit;
     text-decoration: none;
   }
-  
+
   .distill-site-nav a:hover {
     color: white;
   }
-  
+
   @media print {
     .distill-site-nav {
       display: none;
     }
   }
-  
+
   .distill-site-header {
-  
+
   }
-  
+
   .distill-site-footer {
-  
+
   }
-  
-  
+
+
   /* Site Header */
-  
+
   .distill-site-header {
     width: 100%;
     box-sizing: border-box;
     z-index: 3;
   }
-  
+
   .distill-site-header .nav-left {
     display: inline-block;
     margin-left: 8px;
   }
-  
+
   @media screen and (max-width: 768px) {
     .distill-site-header .nav-left {
       margin-left: 0;
     }
   }
-  
-  
+
+
   .distill-site-header .nav-right {
     float: right;
     margin-right: 8px;
   }
-  
+
   .distill-site-header a,
   .distill-site-header .title {
     display: inline-block;
     text-align: center;
     padding: 14px 10px 14px 10px;
   }
-  
+
   .distill-site-header .title {
     font-size: 18px;
     min-width: 150px;
   }
-  
+
   .distill-site-header .logo {
     padding: 0;
   }
-  
+
   .distill-site-header .logo img {
     display: none;
     max-height: 20px;
     width: auto;
     margin-bottom: -4px;
   }
-  
+
   .distill-site-header .nav-image img {
     max-height: 18px;
     width: auto;
     display: inline-block;
     margin-bottom: -3px;
   }
-  
-  
-  
+
+
+
   @media screen and (min-width: 1000px) {
     .distill-site-header .logo img {
       display: inline-block;
@@ -273,17 +273,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       padding-left: 12px;
     }
   }
-  
-  
+
+
   .distill-site-header .nav-toggle {
     display: none;
   }
-  
+
   .nav-dropdown {
     display: inline-block;
     position: relative;
   }
-  
+
   .nav-dropdown .nav-dropbtn {
     border: none;
     outline: none;
@@ -297,7 +297,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 1px;
     z-index: 2;
   }
-  
+
   .nav-dropdown-content {
     display: none;
     position: absolute;
@@ -312,18 +312,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-top: 4px;
     padding-bottom: 4px;
   }
-  
+
   .nav-dropdown-content hr {
     margin-top: 4px;
     margin-bottom: 4px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
   .nav-dropdown-active {
     display: block;
   }
-  
+
   .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
     color: black;
     padding: 6px 24px;
@@ -331,7 +331,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display: block;
     text-align: left;
   }
-  
+
   .nav-dropdown-content .nav-dropdown-header {
     display: block;
     padding: 5px 24px;
@@ -341,21 +341,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: #999999;
     white-space: nowrap;
   }
-  
+
   .nav-dropdown:hover .nav-dropbtn {
     color: white;
   }
-  
+
   .nav-dropdown-content a:hover {
     background-color: #ddd;
     color: black;
   }
-  
+
   .nav-right .nav-dropdown-content {
     margin-left: -45%;
     right: 0;
   }
-  
+
   @media screen and (max-width: 768px) {
     .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
     .distill-site-header a.nav-toggle {
@@ -375,8 +375,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       margin-left: 0;
     }
   }
-  
-  
+
+
   @media screen and (max-width: 768px) {
     .distill-site-header.responsive {position: relative; min-height: 500px; }
     .distill-site-header.responsive a.nav-toggle {
@@ -401,9 +401,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       text-align: left;
     }
   }
-  
+
   /* Site Footer */
-  
+
   .distill-site-footer {
     width: 100%;
     overflow: hidden;
@@ -414,19 +414,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-bottom: 30px;
     text-align: center;
   }
-  
+
   /* Headroom */
-  
+
   d-title {
     padding-top: 6rem;
   }
-  
+
   @media print {
     d-title {
       padding-top: 4rem;
     }
   }
-  
+
   .headroom {
     z-index: 1000;
     position: fixed;
@@ -434,36 +434,36 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     left: 0;
     right: 0;
   }
-  
+
   .headroom--transition {
     transition: all .4s ease-in-out;
   }
-  
+
   .headroom--unpinned {
     top: -100px;
   }
-  
+
   .headroom--pinned {
     top: 0;
   }
-  
+
   /* adjust viewport for navbar height */
   /* helps vertically center bootstrap (non-distill) content */
   .min-vh-100 {
     min-height: calc(100vh - 100px) !important;
   }
-  
+
   </style>
-  
+
   <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-  
+
   <script type="application/javascript">
-  
+
   function getMeta(metaName) {
     var metas = document.getElementsByTagName('meta');
     for (let i = 0; i < metas.length; i++) {
@@ -473,14 +473,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
     return '';
   }
-  
+
   function offsetURL(url) {
     var offset = getMeta('distill:offset');
     return offset ? offset + '/' + url : url;
   }
-  
+
   function createFuseIndex() {
-  
+
     // create fuse index
     var options = {
       keys: [
@@ -493,7 +493,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       threshold: 0
     };
     var fuse = new window.Fuse([], options);
-  
+
     // fetch the main search.json
     return fetch(offsetURL('search.json'))
       .then(function(response) {
@@ -523,7 +523,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
               return fuse;
             });
           });
-  
+
         } else {
           return Promise.reject(
             new Error('Unexpected status from search index request: ' +
@@ -532,20 +532,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
         }
       });
   }
-  
+
   window.document.addEventListener("DOMContentLoaded", function (event) {
-  
+
     // get search element (bail if we don't have one)
     var searchEl = window.document.getElementById('distill-search');
     if (!searchEl)
       return;
-  
+
     createFuseIndex()
       .then(function(fuse) {
-  
+
         // make search box visible
         searchEl.classList.remove('hidden');
-  
+
         // initialize autocomplete
         var options = {
           autoselect: true,
@@ -594,19 +594,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       .catch(function(error) {
         console.log(error);
       });
-  
+
   });
-  
+
   </script>
-  
+
   <style type="text/css">
-  
+
   .nav-search {
     font-size: x-small;
   }
-  
+
   /* Algolioa Autocomplete */
-  
+
   .algolia-autocomplete {
     display: inline-block;
     margin-left: 10px;
@@ -620,8 +620,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     border: 1px #0F2E3D solid;
     width: 180px;
   }
-  
-  
+
+
   @media screen and (max-width: 768px) {
     .distill-site-nav .algolia-autocomplete {
       display: none;
@@ -637,13 +637,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       max-height: 400px;
     }
   }
-  
+
   .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
     width: 90%;
     outline: none;
     border: none;
   }
-  
+
   .algolia-autocomplete .aa-hint {
     color: #999;
   }
@@ -660,30 +660,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     border: 1px solid #999;
     border-top: none;
   }
-  
+
   .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
     cursor: pointer;
     padding: 5px 4px;
     border-bottom: 1px solid #eee;
   }
-  
+
   .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
     border-bottom: none;
     margin-bottom: 2px;
   }
-  
+
   .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
     overflow: hidden;
     font-size: 0.8em;
     line-height: 1.4em;
   }
-  
+
   .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
     font-size: 1rem;
     margin-block-start: 0;
     margin-block-end: 5px;
   }
-  
+
   .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
     display: inline-block;
     overflow: hidden;
@@ -691,22 +691,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     width: 80%;
     margin-right: 4%;
   }
-  
+
   .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
     display: inline-block;
     width: 15%;
   }
-  
+
   .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
     height: 3em;
     width: auto;
     display: none;
   }
-  
+
   .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
     display: initial;
   }
-  
+
   .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
     background-color: #eee;
   }
@@ -714,47 +714,47 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: bold;
     font-style: normal;
   }
-  
+
   </style>
-  
-  
+
+
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
-  
+
   <style type="text/css">
-  
+
   body {
     background-color: white;
   }
-  
+
   .pandoc-table {
     width: 100%;
   }
-  
+
   .pandoc-table>caption {
     margin-bottom: 10px;
   }
-  
+
   .pandoc-table th:not([align]) {
     text-align: left;
   }
-  
+
   .pagedtable-footer {
     font-size: 15px;
   }
-  
+
   d-byline .byline {
     grid-template-columns: 2fr 2fr;
   }
-  
+
   d-byline .byline h3 {
     margin-block-start: 1.5em;
   }
-  
+
   d-byline .byline .authors-affiliations h3 {
     margin-block-start: 0.5em;
   }
-  
+
   .authors-affiliations .orcid-id {
     width: 16px;
     height:16px;
@@ -763,12 +763,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     vertical-align: middle;
     padding-bottom: 2px;
   }
-  
+
   d-title .dt-tags {
     margin-top: 1em;
     grid-column: text;
   }
-  
+
   .dt-tags .dt-tag {
     text-decoration: none;
     display: inline-block;
@@ -782,24 +782,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     text-transform: uppercase;
     font-weight: 500;
   }
-  
+
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
   }
-  
+
   .html-widget {
     margin-bottom: 2.0em;
   }
-  
+
   .l-screen-inset {
     padding-right: 16px;
   }
-  
+
   .l-screen .caption {
     margin-left: 10px;
   }
-  
+
   .shaded {
     background: rgb(247, 247, 247);
     padding-top: 20px;
@@ -807,75 +807,75 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
   .shaded .html-widget {
     margin-bottom: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
   .shaded .shaded-content {
     background: white;
   }
-  
+
   .text-output {
     margin-top: 0;
     line-height: 1.5em;
   }
-  
+
   .hidden {
     display: none !important;
   }
-  
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
   }
-  
+
   d-appendix {
     padding-top: 30px;
   }
-  
+
   d-article>p>img {
     width: 100%;
   }
-  
+
   d-article h2 {
     margin: 1rem 0 1.5rem 0;
   }
-  
+
   d-article h3 {
     margin-top: 1.5rem;
   }
-  
+
   d-article iframe {
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 2.0em;
     width: 100%;
   }
-  
+
   /* Tweak code blocks */
-  
+
   d-article div.sourceCode code,
   d-article pre code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   }
-  
+
   d-article pre,
   d-article div.sourceCode,
   d-article div.sourceCode pre {
     overflow: auto;
   }
-  
+
   d-article div.sourceCode {
     background-color: white;
   }
-  
+
   d-article div.sourceCode pre {
     padding-left: 10px;
     font-size: 12px;
     border-left: 2px solid rgba(0,0,0,0.1);
   }
-  
+
   d-article pre {
     font-size: 12px;
     color: black;
@@ -887,50 +887,50 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-  
+
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
-  
+
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
   }
-  
+
   d-article pre a {
     border-bottom: none;
   }
-  
+
   d-article pre a:hover {
     border-bottom: none;
     text-decoration: underline;
   }
-  
+
   d-article details {
     grid-column: text;
     margin-bottom: 0.8em;
   }
-  
+
   @media(min-width: 768px) {
-  
+
   d-article pre,
   d-article div.sourceCode,
   d-article div.sourceCode pre {
     overflow: visible !important;
   }
-  
+
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
   }
-  
+
   d-article pre {
     font-size: 14px;
   }
-  
+
   }
-  
+
   figure img.external {
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -938,9 +938,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding: 18px;
     box-sizing: border-box;
   }
-  
+
   /* CSS for d-contents */
-  
+
   .d-contents {
     grid-column: text;
     color: rgba(0,0,0,0.8);
@@ -952,7 +952,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-left: 0.25em;
     justify-self: start;
   }
-  
+
   @media(min-width: 1000px) {
     .d-contents.d-contents-float {
       height: 0;
@@ -963,82 +963,82 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       padding-left: 2em;
     }
   }
-  
+
   .d-contents nav h3 {
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 1em;
   }
-  
+
   .d-contents li {
     list-style-type: none
   }
-  
+
   .d-contents nav > ul {
     padding-left: 0;
   }
-  
+
   .d-contents ul {
     padding-left: 1em
   }
-  
+
   .d-contents nav ul li {
     margin-top: 0.6em;
     margin-bottom: 0.2em;
   }
-  
+
   .d-contents nav a {
     font-size: 13px;
     border-bottom: none;
     text-decoration: none
     color: rgba(0, 0, 0, 0.8);
   }
-  
+
   .d-contents nav a:hover {
     text-decoration: underline solid rgba(0, 0, 0, 0.6)
   }
-  
+
   .d-contents nav > ul > li > a {
     font-weight: 600;
   }
-  
+
   .d-contents nav > ul > li > ul {
     font-weight: inherit;
   }
-  
+
   .d-contents nav > ul > li > ul > li {
     margin-top: 0.2em;
   }
-  
-  
+
+
   .d-contents nav ul {
     margin-top: 0;
     margin-bottom: 0.25em;
   }
-  
+
   .d-article-with-toc h2:nth-child(2) {
     margin-top: 0;
   }
-  
-  
+
+
   /* Figure */
-  
+
   .figure {
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
   }
-  
+
   .figure img {
     width: 100%;
   }
-  
+
   .figure .caption {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
     line-height: 1.5em;
   }
-  
+
   .figure img.external {
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1046,42 +1046,42 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding: 18px;
     box-sizing: border-box;
   }
-  
+
   .figure .caption a {
     color: rgba(0, 0, 0, 0.6);
   }
-  
+
   .figure .caption b,
   .figure .caption strong, {
     font-weight: 600;
     color: rgba(0, 0, 0, 1.0);
   }
-  
+
   /* Citations */
-  
+
   d-article .citation {
     color: inherit;
     cursor: inherit;
   }
-  
+
   div.hanging-indent{
     margin-left: 1em; text-indent: -1em;
   }
-  
+
   /* Citation hover box */
-  
+
   .tippy-box[data-theme~=light-border] {
     background-color: rgba(250, 250, 250, 0.95);
   }
-  
+
   .tippy-content > p {
     margin-bottom: 0;
     padding: 2px;
   }
-  
-  
+
+
   /* Tweak 1000px media break to show more text */
-  
+
   @media(min-width: 1000px) {
     .base-grid,
     distill-header,
@@ -1097,11 +1097,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
       grid-column-gap: 16px;
     }
-  
+
     .grid {
       grid-column-gap: 16px;
     }
-  
+
     d-article {
       font-size: 1.06rem;
       line-height: 1.7em;
@@ -1110,7 +1110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       font-size: 13px;
     }
   }
-  
+
   @media(min-width: 1180px) {
     .base-grid,
     distill-header,
@@ -1126,16 +1126,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
       grid-column-gap: 32px;
     }
-  
+
     .grid {
       grid-column-gap: 32px;
     }
   }
-  
-  
+
+
   /* Get the citation styles for the appendix (not auto-injected on render since
      we do our own rendering of the citation appendix) */
-  
+
   d-appendix .citation-appendix,
   .d-appendix .citation-appendix {
     font-size: 11px;
@@ -1152,9 +1152,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     white-space: pre-wrap;
     word-wrap: break-word;
   }
-  
+
   /* Include appendix styles here so they can be overridden */
-  
+
   d-appendix {
     contain: layout style;
     font-size: 0.8em;
@@ -1166,7 +1166,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-top: 60px;
     padding-bottom: 48px;
   }
-  
+
   d-appendix h3 {
     grid-column: page-start / text-start;
     font-size: 15px;
@@ -1175,59 +1175,59 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-bottom: 0;
     color: rgba(0,0,0,0.65);
   }
-  
+
   d-appendix h3 + * {
     margin-top: 1em;
   }
-  
+
   d-appendix ol {
     padding: 0 0 0 15px;
   }
-  
+
   @media (min-width: 768px) {
     d-appendix ol {
       padding: 0 0 0 30px;
       margin-left: -30px;
     }
   }
-  
+
   d-appendix li {
     margin-bottom: 1em;
   }
-  
+
   d-appendix a {
     color: rgba(0, 0, 0, 0.6);
   }
-  
+
   d-appendix > * {
     grid-column: text;
   }
-  
+
   d-appendix > d-footnote-list,
   d-appendix > d-citation-list,
   d-appendix > distill-appendix {
     grid-column: screen;
   }
-  
+
   /* Include footnote styles here so they can be overridden */
-  
+
   d-footnote-list {
     contain: layout style;
   }
-  
+
   d-footnote-list > * {
     grid-column: text;
   }
-  
+
   d-footnote-list a.footnote-backlink {
     color: rgba(0,0,0,0.3);
     padding-left: 0.5em;
   }
-  
-  
-  
+
+
+
   /* Anchor.js */
-  
+
   .anchorjs-link {
     /*transition: all .25s linear; */
     text-decoration: none;
@@ -1238,86 +1238,86 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     text-decoration: none;
     border-bottom: none;
   }
-  
+
   /* Social footer */
-  
+
   .social_footer {
     margin-top: 30px;
     margin-bottom: 0;
     color: rgba(0,0,0,0.67);
   }
-  
+
   .disqus-comments {
     margin-right: 30px;
   }
-  
+
   .disqus-comment-count {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     cursor: pointer;
   }
-  
+
   #disqus_thread {
     margin-top: 30px;
   }
-  
+
   .article-sharing a {
     border-bottom: none;
     margin-right: 8px;
   }
-  
+
   .article-sharing a:hover {
     border-bottom: none;
   }
-  
+
   .sidebar-section.subscribe {
     font-size: 12px;
     line-height: 1.6em;
   }
-  
+
   .subscribe p {
     margin-bottom: 0.5em;
   }
-  
-  
+
+
   .article-footer .subscribe {
     font-size: 15px;
     margin-top: 45px;
   }
-  
-  
+
+
   .sidebar-section.custom {
     font-size: 12px;
     line-height: 1.6em;
   }
-  
+
   .custom p {
     margin-bottom: 0.5em;
   }
-  
+
   /* Styles for listing layout (hide title) */
   .layout-listing d-title, .layout-listing .d-title {
     display: none;
   }
-  
+
   /* Styles for posts lists (not auto-injected) */
-  
-  
+
+
   .posts-with-sidebar {
     padding-left: 45px;
     padding-right: 45px;
   }
-  
+
   .posts-list .description h2,
   .posts-list .description p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   }
-  
+
   .posts-list .description h2 {
     font-weight: 700;
     border-bottom: none;
     padding-bottom: 0;
   }
-  
+
   .posts-list h2.post-tag {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 12px;
@@ -1326,7 +1326,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 60px;
     margin-bottom: 24px;
   }
-  
+
   .posts-list .post-preview {
     text-decoration: none;
     overflow: hidden;
@@ -1334,29 +1334,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 24px 0;
   }
-  
+
   .post-preview-last {
     border-bottom: none !important;
   }
-  
+
   .posts-list .posts-list-caption {
     grid-column: screen;
     font-weight: 400;
   }
-  
+
   .posts-list .post-preview h2 {
     margin: 0 0 6px 0;
     line-height: 1.2em;
     font-style: normal;
     font-size: 24px;
   }
-  
+
   .posts-list .post-preview p {
     margin: 0 0 12px 0;
     line-height: 1.4em;
     font-size: 16px;
   }
-  
+
   .posts-list .post-preview .thumbnail {
     box-sizing: border-box;
     margin-bottom: 24px;
@@ -1367,32 +1367,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     width: 100%;
     display: block;
   }
-  
+
   .posts-list .metadata {
     font-size: 12px;
     line-height: 1.4em;
     margin-bottom: 18px;
   }
-  
+
   .posts-list .metadata > * {
     display: inline-block;
   }
-  
+
   .posts-list .metadata .publishedDate {
     margin-right: 2em;
   }
-  
+
   .posts-list .metadata .dt-authors {
     display: block;
     margin-top: 0.3em;
     margin-right: 2em;
   }
-  
+
   .posts-list .dt-tags {
     display: block;
     line-height: 1em;
   }
-  
+
   .posts-list .dt-tags .dt-tag {
     display: inline-block;
     color: rgba(0,0,0,0.6);
@@ -1405,24 +1405,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     text-transform: uppercase;
     font-weight: 500;
   }
-  
+
   .posts-list img {
     opacity: 1;
   }
-  
+
   .posts-list img[data-src] {
     opacity: 0;
   }
-  
+
   .posts-more {
     clear: both;
   }
-  
-  
+
+
   .posts-sidebar {
     font-size: 16px;
   }
-  
+
   .posts-sidebar h3 {
     font-size: 16px;
     margin-top: 0;
@@ -1430,39 +1430,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: 400;
     text-transform: uppercase;
   }
-  
+
   .sidebar-section {
     margin-bottom: 30px;
   }
-  
+
   .categories ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  
+
   .categories li {
     color: rgba(0, 0, 0, 0.8);
     margin-bottom: 0;
   }
-  
+
   .categories li>a {
     border-bottom: none;
   }
-  
+
   .categories li>a:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   }
-  
+
   .categories .active {
     font-weight: 600;
   }
-  
+
   .categories .category-count {
     color: rgba(0, 0, 0, 0.4);
   }
-  
-  
+
+
   @media(min-width: 768px) {
     .posts-list .post-preview h2 {
       font-size: 26px;
@@ -1498,55 +1498,55 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       padding-bottom: 24px;
     }
   }
-  
-  
+
+
   /* Improve display for browsers without grid (IE/Edge <= 15) */
-  
+
   .downlevel {
     line-height: 1.6em;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
     margin: 0;
   }
-  
+
   .downlevel .d-title {
     padding-top: 6rem;
     padding-bottom: 1.5rem;
   }
-  
+
   .downlevel .d-title h1 {
     font-size: 50px;
     font-weight: 700;
     line-height: 1.1em;
     margin: 0 0 0.5rem;
   }
-  
+
   .downlevel .d-title p {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.55em;
     margin-top: 0;
   }
-  
+
   .downlevel .d-byline {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
     font-size: 0.8rem;
     line-height: 1.8em;
   }
-  
+
   .downlevel .section-separator {
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
   .downlevel .d-article {
     font-size: 1.06rem;
     line-height: 1.7em;
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
-  
-  
+
+
   .downlevel .d-appendix {
     padding-left: 0;
     padding-right: 0;
@@ -1558,11 +1558,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-top: 40px;
     padding-bottom: 48px;
   }
-  
+
   .downlevel .footnotes ol {
     padding-left: 13px;
   }
-  
+
   .downlevel .base-grid,
   .downlevel .distill-header,
   .downlevel .d-title,
@@ -1579,7 +1579,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-left: 40px;
     padding-right: 40px;
   }
-  
+
   @media(min-width: 768px) {
     .downlevel .base-grid,
     .downlevel .distill-header,
@@ -1599,14 +1599,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     max-width: 900px;
   }
   }
-  
+
   .downlevel pre code {
     display: block;
     border-left: 2px solid rgba(0, 0, 0, .1);
     padding: 0 0 0 20px;
     font-size: 14px;
   }
-  
+
   .downlevel code, .downlevel pre {
     color: black;
     background: none;
@@ -1617,27 +1617,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-  
+
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
-  
+
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
   }
-  
+
   .downlevel .posts-list .post-preview {
     color: inherit;
   }
-  
-  
-  
+
+
+
   </style>
-  
+
   <script type="application/javascript">
-  
+
   function is_downlevel_browser() {
     if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
                                    window.navigator.userAgent)) {
@@ -1646,20 +1646,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       return window.load_distill_framework === undefined;
     }
   }
-  
+
   // show body when load is complete
   function on_load_complete() {
-  
+
     // add anchors
     if (window.anchors) {
       window.anchors.options.placement = 'left';
       window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
     }
-  
-  
+
+
     // set body to visible
     document.body.style.visibility = 'visible';
-  
+
     // force redraw for leaflet widgets
     if (window.HTMLWidgets) {
       var maps = window.HTMLWidgets.findAll(".leaflet");
@@ -1672,39 +1672,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
         });
       });
     }
-  
+
     // trigger 'shown' so htmlwidgets resize
     $('d-article').trigger('shown');
   }
-  
+
   function init_distill() {
-  
+
     init_common();
-  
+
     // create front matter
     var front_matter = $('<d-front-matter></d-front-matter>');
     $('#distill-front-matter').wrap(front_matter);
-  
+
     // create d-title
     $('.d-title').changeElementType('d-title');
-  
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
-  
+
     // create d-article
     var article = $('<d-article></d-article>');
     $('.d-article').wrap(article).children().unwrap();
-  
+
     // move posts container into article
     $('.posts-container').appendTo($('d-article'));
-  
+
     // create d-appendix
     $('.d-appendix').changeElementType('d-appendix');
-  
+
     // flag indicating that we have appendix items
     var appendix = $('.appendix-bottom').children('h3').length > 0;
-  
+
     // replace footnotes with <d-footnote>
     $('.footnote-ref').each(function(i, val) {
       appendix = true;
@@ -1720,10 +1720,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     });
     // remove footnotes
     $('.footnotes').remove();
-  
+
     // move refs into #references-listing
     $('#references-listing').replaceWith($('#refs'));
-  
+
     $('h1.appendix, h2.appendix').each(function(i, val) {
       $(this).changeElementType('h3');
     });
@@ -1733,16 +1733,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       appendix = true;
       $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
     });
-  
+
     // show d-appendix if we have appendix content
     $("d-appendix").css('display', appendix ? 'grid' : 'none');
-  
+
     // localize layout chunks to just output
     $('.layout-chunk').each(function(i, val) {
-  
+
       // capture layout
       var layout = $(this).attr('data-layout');
-  
+
       // apply layout to markdown level block elements
       var elements = $(this).children().not('details, div.sourceCode, pre, script');
       elements.each(function(i, el) {
@@ -1755,40 +1755,40 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           $(this).wrap(layout_div);
         }
       });
-  
-  
+
+
       // unwrap the layout-chunk div
       $(this).children().unwrap();
     });
-  
+
     // remove code block used to force  highlighting css
     $('.distill-force-highlighting-css').parent().remove();
-  
+
     // remove empty line numbers inserted by pandoc when using a
     // custom syntax highlighting theme
     $('code.sourceCode a:empty').remove();
-  
+
     // load distill framework
     load_distill_framework();
-  
+
     // wait for window.distillRunlevel == 4 to do post processing
     function distill_post_process() {
-  
+
       if (!window.distillRunlevel || window.distillRunlevel < 4)
         return;
-  
+
       // hide author/affiliations entirely if we have no authors
       var front_matter = JSON.parse($("#distill-front-matter").html());
       var have_authors = front_matter.authors && front_matter.authors.length > 0;
       if (!have_authors)
         $('d-byline').addClass('hidden');
-  
+
       // article with toc class
       $('.d-contents').parent().addClass('d-article-with-toc');
-  
+
       // strip links that point to #
       $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
-  
+
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
@@ -1803,12 +1803,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           $(this).append(a);
         }
       });
-  
+
       // hide elements of author/affiliations grid that have no value
       function hide_byline_column(caption) {
         $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
       }
-  
+
       // affiliations
       var have_affiliations = false;
       for (var i = 0; i<front_matter.authors.length; ++i) {
@@ -1820,11 +1820,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       }
       if (!have_affiliations)
         $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
-  
+
       // published date
       if (!front_matter.publishedDate)
         hide_byline_column("Published");
-  
+
       // document object identifier
       var doi = $('d-byline').find('h3:contains("DOI")');
       var doi_p = doi.next().empty();
@@ -1844,22 +1844,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
            .html(front_matter.doi)
            .appendTo(doi_p);
       }
-  
+
        // change plural form of authors/affiliations
       if (front_matter.authors.length === 1) {
         var grid = $('.authors-affiliations');
         grid.children('h3:contains("Authors")').text('Author');
         grid.children('h3:contains("Affiliations")').text('Affiliation');
       }
-  
+
       // remove d-appendix and d-footnote-list local styles
       $('d-appendix > style:first-child').remove();
       $('d-footnote-list > style:first-child').remove();
-  
+
       // move appendix-bottom entries to the bottom
       $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
       $('.appendix-bottom').remove();
-  
+
       // hoverable references
       $('span.citation[data-cites]').each(function() {
         var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
@@ -1873,39 +1873,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
-  
+
       // clear polling timer
       clearInterval(tid);
-  
+
       // show body now that everything is ready
       on_load_complete();
     }
-  
+
     var tid = setInterval(distill_post_process, 50);
     distill_post_process();
-  
+
   }
-  
+
   function init_downlevel() {
-  
+
     init_common();
-  
+
      // insert hr after d-title
     $('.d-title').after($('<hr class="section-separator"/>'));
-  
+
     // check if we have authors
     var front_matter = JSON.parse($("#distill-front-matter").html());
     var have_authors = front_matter.authors && front_matter.authors.length > 0;
-  
+
     // manage byline/border
     if (!have_authors)
       $('.d-byline').remove();
     $('.d-byline').after($('<hr class="section-separator"/>'));
     $('.d-byline a').remove();
-  
+
     // remove toc
     $('.d-contents').remove();
-  
+
     // move appendix elements
     $('h1.appendix, h2.appendix').each(function(i, val) {
       $(this).changeElementType('h3');
@@ -1913,62 +1913,62 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('h3.appendix').each(function(i, val) {
       $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
     });
-  
-  
+
+
     // inject headers into references and footnotes
     var refs_header = $('<h3></h3>');
     refs_header.text('References');
     $('#refs').prepend(refs_header);
-  
+
     var footnotes_header = $('<h3></h3');
     footnotes_header.text('Footnotes');
     $('.footnotes').children('hr').first().replaceWith(footnotes_header);
-  
+
     // move appendix-bottom entries to the bottom
     $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
     $('.appendix-bottom').remove();
-  
+
     // remove appendix if it's empty
     if ($('.d-appendix').children().length === 0)
       $('.d-appendix').remove();
-  
+
     // prepend separator above appendix
     $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
-  
+
     // trim code
     $('pre>code').each(function(i, val) {
       $(this).html($.trim($(this).html()));
     });
-  
+
     // move posts-container right before article
     $('.posts-container').insertBefore($('.d-article'));
-  
+
     $('body').addClass('downlevel');
-  
+
     on_load_complete();
   }
-  
-  
+
+
   function init_common() {
-  
+
     // jquery plugin to change element types
     (function($) {
       $.fn.changeElementType = function(newType) {
         var attrs = {};
-  
+
         $.each(this[0].attributes, function(idx, attr) {
           attrs[attr.nodeName] = attr.nodeValue;
         });
-  
+
         this.replaceWith(function() {
           return $("<" + newType + "/>", attrs).append($(this).contents());
         });
       };
     })(jQuery);
-  
+
     // prevent underline for linked images
     $('a > img').parent().css({'border-bottom' : 'none'});
-  
+
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
@@ -1980,35 +1980,35 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           var fig = $(this);
           fig.css('width', fig.attr('width') + 'px');
         });
-  
+
       }
     });
-  
+
     // auto-append index.html to post-preview links in file: protocol
     // and in rstudio ide preview
     $('.post-preview').each(function(i, val) {
       if (window.location.protocol === "file:")
         $(this).attr('href', $(this).attr('href') + "index.html");
     });
-  
+
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
         $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
       });
     }
-  
+
     // add class to pandoc style tables
     $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
     $('.kable-table').children('table').addClass('pandoc-table');
-  
+
     // add figcaption style to table captions
     $('caption').parent('table').addClass("figcaption");
-  
+
     // initialize posts list
     if (window.init_posts_list)
       window.init_posts_list();
-  
+
     // implmement disqus comment link
     $('.disqus-comment-count').click(function() {
       window.headroom_prevent_pin = true;
@@ -2022,17 +2022,344 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       }
     });
   }
-  
+
   document.addEventListener('DOMContentLoaded', function() {
     if (is_downlevel_browser())
       init_downlevel();
     else
       window.addEventListener('WebComponentsReady', init_distill);
   });
-  
+
   </script>
-  
+
+  <style type="text/css">
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+
+
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #000000;
+    --header-color:    rgba(0, 0, 0, 0.8);
+    --body-color:      rgba(0, 0, 0, 0.8);
+    --aside-color:     rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    sans-serif;
+    --mono-font:       monospace;
+    --body-font:       sans-serif;
+    --navbar-font:     sans-serif;  /* websites + blogs only */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+
+  .distill-site-footer {
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #0F2E3D;
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below                      */
+  </style>
+  <style type="text/css">
+  /* base variables */
+
+  /* Edit the CSS properties in this file to create a custom
+     Distill theme. Only edit values in the right column
+     for each row; values shown are the CSS defaults.
+     To return any property to the default,
+     you may set its value to: unset
+     All rows must end with a semi-colon.                      */
+
+  /* Optional: embed custom fonts here with `@import`          */
+  /* This must remain at the top of this file.                 */
+  @import url("https://fonts.googleapis.com/css2?family=Encode+Sans");
+  @import url("https://fonts.googleapis.com/css2?family=Cabin");
+
+  /*
+  Main color: #006064
+  Complementary: #640400
+  */
+
+  html {
+    /*-- Main font sizes --*/
+    --title-size:      50px;
+    --body-size:       1.06rem;
+    --code-size:       14px;
+    --aside-size:      12px;
+    --fig-cap-size:    13px;
+    /*-- Main font colors --*/
+    --title-color:     #3E3E3E;
+    --header-color:    rgba(62, 62, 62, 0.8);
+    --body-color:      rgba(62, 62, 62, 0.8);
+    --aside-color:     rgba(62, 62, 62, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    /*-- Specify custom fonts ~~~ must be imported above   --*/
+    --heading-font:    "Cabin", sans-serif;
+    --mono-font:       monospace;
+    --body-font:       "Encode Sans", sans-serif;
+    --navbar-font:     "Cabin", sans-serif;  /* websites + blogs only */
+  }
+
+  /*-- ARTICLE METADATA --*/
+  d-byline {
+    --heading-size:    0.6rem;
+    --heading-color:   rgba(0, 0, 0, 0.5);
+    --body-size:       0.8rem;
+    --body-color:      rgba(0, 0, 0, 0.8);
+  }
+
+  /*-- ARTICLE TABLE OF CONTENTS --*/
+  .d-contents {
+    --heading-size:    18px;
+    --contents-size:   13px;
+  }
+
+  /*-- ARTICLE APPENDIX --*/
+  d-appendix {
+    --heading-size:    15px;
+    --heading-color:   rgba(0, 0, 0, 0.65);
+    --text-size:       0.8em;
+    --text-color:      rgba(0, 0, 0, 0.5);
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  /* These properties only apply to Distill sites and blogs  */
+
+  .distill-site-header {
+    --title-size:       18px;
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #006064;
+  }
+
+  .distill-site-footer {
+    --text-color:       rgba(255, 255, 255, 0.8);
+    --text-size:        15px;
+    --hover-color:      white;
+    --bkgd-color:       #006064;
+  }
+
+  /*-- Additional custom styles --*/
+  /* Add any additional CSS rules below                      */
+
+  table {
+      width: 100%;
+  }
+
+  strong {
+      color: #640400;
+  }
+
+  d-article a:link {
+      color: #640400;
+  }</style>
+  <style type="text/css">
+  /* base style */
+
+  /* FONT FAMILIES */
+
+  :root {
+    --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body,
+  .posts-list .post-preview p,
+  .posts-list .description p {
+    font-family: var(--body-font), var(--body-default);
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .posts-list .post-preview h2,
+  .posts-list .description h2 {
+    font-family: var(--heading-font), var(--heading-default);
+  }
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: var(--mono-font), var(--mono-default);
+  }
+
+
+  /*-- TITLE --*/
+  d-title h1,
+  .posts-list > h1 {
+    color: var(--title-color, black);
+  }
+
+  d-title h1 {
+    font-size: var(--title-size, 50px);
+  }
+
+  /*-- HEADERS --*/
+  d-article h1,
+  d-article h2,
+  d-article h3,
+  d-article h4,
+  d-article h5,
+  d-article h6 {
+    color: var(--header-color, rgba(0, 0, 0, 0.8));
+  }
+
+  /*-- BODY --*/
+  d-article > p,  /* only text inside of <p> tags */
+  d-article > ul, /* lists */
+  d-article > ol {
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+    font-size: var(--body-size, 1.06rem);
+  }
+
+
+  /*-- CODE --*/
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-size: var(--code-size, 14px);
+  }
+
+  /*-- ASIDE --*/
+  d-article aside {
+    font-size: var(--aside-size, 12px);
+    color: var(--aside-color, rgba(0, 0, 0, 0.6));
+  }
+
+  /*-- FIGURE CAPTIONS --*/
+  figure .caption,
+  figure figcaption,
+  .figure .caption {
+    font-size: var(--fig-cap-size, 13px);
+    color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+  }
+
+  /*-- METADATA --*/
+  d-byline h3 {
+    font-size: var(--heading-size, 0.6rem);
+    color: var(--heading-color, rgba(0, 0, 0, 0.5));
+  }
+
+  d-byline {
+    font-size: var(--body-size, 0.8rem);
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+
+  d-byline a,
+  d-article d-byline a {
+    color: var(--body-color, rgba(0, 0, 0, 0.8));
+  }
+
+  /*-- TABLE OF CONTENTS --*/
+  .d-contents nav h3 {
+    font-size: var(--heading-size, 18px);
+  }
+
+  .d-contents nav a {
+    font-size: var(--contents-size, 13px);
+  }
+
+  /*-- APPENDIX --*/
+  d-appendix h3 {
+    font-size: var(--heading-size, 15px);
+    color: var(--heading-color, rgba(0, 0, 0, 0.65));
+  }
+
+  d-appendix {
+    font-size: var(--text-size, 0.8em);
+    color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+
+  d-appendix d-footnote-list a.footnote-backlink {
+    color: var(--text-color, rgba(0, 0, 0, 0.5));
+  }
+
+  /*-- WEBSITE HEADER + FOOTER --*/
+  .distill-site-header .title {
+    font-size: var(--title-size, 18px);
+    font-family: var(--navbar-font), var(--heading-default);
+  }
+
+  .distill-site-header a,
+  .nav-dropdown .nav-dropbtn {
+    font-family: var(--navbar-font), var(--heading-default);
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    font-size: var(--text-size, 15px);
+  }
+
+  .distill-site-header a:hover,
+  .nav-dropdown:hover .nav-dropbtn {
+    color: var(--hover-color, white);
+  }
+
+  .distill-site-header {
+    font-size: var(--text-size, 15px);
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    background-color: var(--bkgd-color, #0F2E3D);
+  }
+
+  .distill-site-footer {
+    font-size: var(--text-size, 15px);
+    color: var(--text-color, rgba(255, 255, 255, 0.8));
+    background-color: var(--bkgd-color, #0F2E3D);
+  }
+
+  .distill-site-footer a:hover {
+    color: var(--hover-color, white);
+  }</style>
   <!--/radix_placeholder_distill-->
+  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
   <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
   <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
@@ -2054,7 +2381,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Luke W. Johnston","authors":[],"publishedDate":"2021-01-08T00:00:00.000-05:00"}
+{"title":"Luke W. Johnston","authors":[],"publishedDate":"2021-07-07T00:00:00.000+02:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2125,39 +2452,40 @@ Sites
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#publications">Publications</a></li>
-<li><a href="#oral-presentations">Oral presentations</a></li>
-<li><a href="#oral-poster-presentations">Oral poster presentations</a></li>
-<li><a href="#poster-presentations">Poster presentations</a></li>
-<li><a href="#other-conference-presentations">Other conference presentations</a></li>
-<li><a href="#panel-member">Panel member</a></li>
-<li><a href="#published-r-packages">Published R packages</a></li>
-<li><a href="#teaching-experience">Teaching Experience</a></li>
-<li><a href="#supervision-experience">Supervision Experience</a></li>
-<li><a href="#curriculum-development-archived-with-doi">Curriculum Development (archived with DOI)</a></li>
-<li><a href="#other-curriculum-development">Other Curriculum Development</a></li>
-<li><a href="#awards">Awards</a></li>
-<li><a href="#employment">Employment</a></li>
+<li><a href="#education"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"/></svg> Education</a></li>
+<li><a href="#affiliations"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"/></svg> Affiliations</a></li>
+<li><a href="#publications"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/></svg> Publications</a></li>
+<li><a href="#presentations"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg> Presentations</a></li>
+<li><a href="#r-packages"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M425.7 256c-16.9 0-32.8-9-41.4-23.4L320 126l-64.2 106.6c-8.7 14.5-24.6 23.5-41.5 23.5-4.5 0-9-.6-13.3-1.9L64 215v178c0 14.7 10 27.5 24.2 31l216.2 54.1c10.2 2.5 20.9 2.5 31 0L551.8 424c14.2-3.6 24.2-16.4 24.2-31V215l-137 39.1c-4.3 1.3-8.8 1.9-13.3 1.9zm212.6-112.2L586.8 41c-3.1-6.2-9.8-9.8-16.7-8.9L320 64l91.7 152.1c3.8 6.3 11.4 9.3 18.5 7.3l197.9-56.5c9.9-2.9 14.7-13.9 10.2-23.1zM53.2 41L1.7 143.8c-4.6 9.2.3 20.2 10.1 23l197.9 56.5c7.1 2 14.7-1 18.5-7.3L320 64 69.8 32.1c-6.9-.8-13.5 2.7-16.6 8.9z"/></svg> R packages</a></li>
+<li><a href="#teaching"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"/></svg> Teaching</a></li>
+<li><a href="#supervision"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/></svg> Supervision</a></li>
+<li><a href="#curriculum-development"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"/></svg> Curriculum development</a></li>
+<li><a href="#awards"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"/></svg> Awards</a></li>
+<li><a href="#employment"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"/></svg> Employment</a></li>
 </ul>
 </nav>
 </div>
 <blockquote>
-<p>I am a diabetes epidemiologist, R user and programmer, teacher of modern data analysis skills, and open science advocate.</p>
+<p>I am a diabetes epidemiologist, R user and developer, teacher of modern data science and analysis skills, and open science advocate.</p>
 </blockquote>
-<h2 id="skills">Skills</h2>
-<ul>
-<li>Languages: English (fluent), Spanish (competent)</li>
-<li>Programming: Fluent in R, LaTeX, HTML, CSS, Bash, Git; familiar with SAS, Python.</li>
-<li>Statistical techniques: Basic (t-test, ANOVA, correlation), regression modeling (linear, logistic), mixed effect modeling, generalized estimating equations, principal component analysis, partial least squares regression, cross validation, cluster analysis (hierarchical, k-means), information criterion (AIC, QIC), bootstrapping, factor analysis.</li>
-</ul>
-<h2 id="education" data-icon="graduation-cap" data-concise="true">Education</h2>
+<!--
+## Skills
+
+- Languages: English (fluent), Spanish (competent)
+- Programming: Fluent in R, LaTeX, HTML, CSS, Bash, Git; familiar with 
+SAS, Python.
+- Statistical techniques: Basic (t-test, ANOVA, correlation), regression
+modeling (linear, logistic), mixed effect modeling, generalized estimating
+equations, principal component analysis, partial least squares regression, cross
+validation, cluster analysis (hierarchical, k-means), information criterion
+(AIC, QIC), bootstrapping, factor analysis.
+-->
+<h2 id="education"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"/></svg> Education</h2>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2013 – 2017
 </td>
 <td style="text-align:left;">
@@ -2165,7 +2493,7 @@ PhD in Nutritional Sciences, University of Toronto in Toronto, CA
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2011 – 2013
 </td>
 <td style="text-align:left;">
@@ -2173,7 +2501,7 @@ MSc in Nutritional Sciences, University of Toronto in Toronto, CA
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2005 – 2010
 </td>
 <td style="text-align:left;">
@@ -2183,7 +2511,78 @@ BSc in Kinesiology, University of Waterloo in Waterloo, CA
 </tbody>
 </table>
 </div>
-<h2 id="publications" data-icon="file-alt">Publications</h2>
+<h2 id="affiliations"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"/></svg> Affiliations</h2>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2021 – present
+</td>
+<td style="text-align:left;">
+Researcher, Department of Clinical Medicine, Aarhus University in Aarhus, Denmark
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2021 – present
+</td>
+<td style="text-align:left;">
+Instructor, <a href="https://education.rstudio.com/trainers/people/johnston+luke/">RStudio Certified Instructor</a> in Boston, USA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2020 – present
+</td>
+<td style="text-align:left;">
+Member, European Association for the Study of Diabetes in Düsseldorf, Germany
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2018 – present
+</td>
+<td style="text-align:left;">
+Member, Danish Diabetes Academy in Denmark
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2015 – present
+</td>
+<td style="text-align:left;">
+Instructor and member, <a href="http://software-carpentry.org/">Software Carpentry</a> in Global
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2019 – 2021
+</td>
+<td style="text-align:left;">
+Researcher, Department of Public Health, Aarhus University in Aarhus, Denmark
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2016 – 2018
+</td>
+<td style="text-align:left;">
+Treasurer, <a href="https://uoftcoders.github.io">UofT Coders</a>, University of Toronto &amp; Mozilla Science Lab in Toronto, Canada
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2014 – 2017
+</td>
+<td style="text-align:left;">
+Treasurer, <a href="http://nsgsa.sa.utoronto.ca/">Nutritional Sciences Graduate Student Association</a>, University of Toronto in Toronto, Canada
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="publications"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/></svg> Publications</h2>
 <div class="layout-chunk" data-layout="l-body">
 <ol type="1">
 <li>M. M. Broadley, A. Gonzalez-Franquesa, A. Jonsson, C. B. Christiansen, G. D. Carrasquilla, A. Mamidi, S. M. Ghiasi, H. B. Juel, S. Falk, M. S. Isidor, P. Aldiss, L. Gillberg, K. Carolo dos Santos, R. Sabaratnam, L. O. Huang, J. S. Quist, J. R. Knudsen, S. Poulsen, R. Quaranta, M. Tozzi, R. B. Mikkelsen, M. K. Andersen, M. Dall, A. B. Møller, M. H. Drag, S. Panahi, C. L. Lyons, L. Small, A. Altıntaş, P. Poursharifi, B. Osborne, A. K. Sarvari, <strong>L. W. Johnston</strong>, M. H. Solheim, I. M. Modvig, A. S. Husted, N. Z. Jespersen, E. L. Brown, E. Bak, A. Peluso, F. Finger, K. V. Grunddal, K. Rupar, H. T. Vistisen, J. B. Henningsen, T. Ma, M. Hauge Pedersen, K. Plucinska, S. L. Jepsen, G. Repasky. ‘Next generation diabetes scientists shape global research culture’. <em>Acta Physiologica</em> (2020). DOI: <a href="https://doi.org/10.1111/apha.13455">10.1111/apha.13455</a>.</li>
@@ -2200,71 +2599,55 @@ BSc in Kinesiology, University of Waterloo in Waterloo, CA
 <li>K. Doughty, L. Rothman, <strong>L. Johnston</strong>, K. Le, J. Wu, A. Howard. ‘Low-income countries’ orthopaedic information needs: Challenges and opportunities’. <em>Clinical Orthopaedics and Related Research</em> (2010). DOI: <a href="https://doi.org/10.1007/s11999-010-1365-x">10.1007/s11999-010-1365-x</a>.</li>
 </ol>
 </div>
-<h2 id="oral-presentations">Oral presentations</h2>
+<h2 id="presentations"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg> Presentations</h2>
 <div class="layout-chunk" data-layout="l-body">
 <ol type="1">
-<li><strong>Luke W. Johnston</strong>. ‘An R toolkit to simplify and automate an open scientific workflow’. <em>European R User Meeting</em> in Budapest, Hungary (2018).</li>
-<li><strong>L. W. Johnston</strong>, C. Lee, S. B. Harris, R. Retnakaran, B. Zinman, R. P. Bazinet, A. J. Hanley. ‘Serum Non-Esterified Fatty Acid (NEFA) Concentrations are Associated with Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>33rd International Symposium on Diabetes &amp; Nutrition in Toronto, Canada</em> in Toronto, Canada (2015). DOI: <a href="https://doi.org/10.6084/m9.figshare.1545567">10.6084/m9.figshare.1545567</a>.</li>
-<li><strong>Luke W. Johnston</strong>, Christine Lee, Stewart Harris, Ravi Retnakaran, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Serum Phospholipid (PL) Fatty Acid Composition Predicts Declines in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-years in the Prospective Metabolism And Islet Cell Evaluation (PROMISE) Cohort’. <em>International Diabetes Epidemiology Group Scientific Meeting</em> in Vancouver, Canada (2015).</li>
-<li><strong>L. W. Johnston</strong>, S. Kayaniyil, C. Lee, S. B. Harris, R. Retnakaran, B. Zinman, R. P. Bazinet, A. J. Hanley. ‘Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) is Associated with Insulin Resistance in the PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort’. <em>Biennial Congress of the International Society for the Study of Fatty Acids and Lipids</em> in Stockholm, Sweden (2014).</li>
-<li>R. D. Kennedy, <strong>L. Johnston</strong>. ‘Report of the Smoke-free Policy Scan of YMCAs and YWCAs in Ontario’. <em>Meeting of the Tobacco-free Sports and Recreation Community of Practice</em> in Waterloo, Canada (2010).</li>
+<li>(Oral) <strong>Luke W. Johnston</strong>, Clemens Wittenbecher, Fabian Eichelmann. ‘NetCoupler: Inferring causal pathways between high-dimensional metabolic data and external factors’. <em>Annual useR Conference</em> in Virtual (2021).</li>
+<li>(Oral) <strong>Luke W. Johnston</strong>, Clemens Wittenbecher. ‘NetCoupler: Inferring causal pathways between high-dimensional metabolic data and external factors’. <em>Annual Meeting of the Danish Epidemiological Society</em> in Virtual (2021).</li>
+<li>(Contributed) Hannah Chatwin, <strong>Luke W Johnston</strong>, Helene Bæk Juel, Bettina Lengger, Daniel R. Witte, Malene Revsbech Christiansen, Anders Aasted Isaksen. ‘r-cubed: Guiding the overwhelmed scientist from random wrangling to Reproducible Research in R’. <em>Annual useR Conference</em> in Virtual (2021).</li>
+<li>(Oral poster) <strong>LW Johnston</strong>, C Wittenbecher, HT Vistisen, CC Dahm, DR Witte. ‘The metabolic pathways between components of stature and HbA (1c): a causal structure learning approach in the UK Biobank’. <em>European Association for the Study of Diabetes Annual Meeting</em> in virtual setting (2020).</li>
+<li>(Oral) <strong>L. W. Johnston</strong>, C. Wittenbecher. ‘NetCoupler: Inferring causal pathways between high-dimensional metabolic data and external factors’. <em>IARC Nutritional Methodology and Biostatistics Group</em> in Virtual (2020).</li>
+<li>(Oral poster) <strong>Luke Johnston</strong>, Signe Toft Andersen, Morten Charles, Marit E. Jørgensen, Troels S. Jensen, Lasse Bjerg, Daniel R. Witte. ‘A data-driven approach at characterizing heterogeneity in neuropathy assessments’. <em>European Diabetes Epidemiology Group Annual Meeting</em> in Mondorf-les-Bains, Luxembourg (2019). DOI: <a href="https://doi.org/10.6084/M9.FIGSHARE.8082491.V1">10.6084/M9.FIGSHARE.8082491.V1</a>.</li>
+<li>(Contributed) Zhila Semnani-Azad, Philip W Connelly, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, <strong>Luke W Johnston</strong>, Richard P Bazinet, Anthony J Hanley. ‘Adipose Tissue Insulin Resistance and Inflammation Are Independently Associated With Dysglycemia’. <em>ObesityWeek</em> in Las Vegas, USA (2019).</li>
+<li>(Oral poster) <strong>Luke W. Johnston</strong>, Zhen Liu, Ravi Retnakaran, Stewart B. Harris, Richard P. Bazinet, Anthony J. Hanley. ‘Specific clusters of fatty acids (FA) across multiple serum lipid fractions underlie pathophysiological features of type 2 diabetes in the Canadian Prospective Metabolism and Islet Cell Evaluation (PROMISE) cohort’. <em>European Diabetes Epidemiology Group Annual Meeting</em> in Helsingør, Denmark (2018). DOI: <a href="https://doi.org/10.6084/m9.figshare.6159293">10.6084/m9.figshare.6159293</a>.</li>
+<li>(Contributed) Zhila Semnani-Azad, Phil W. Connelly, <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, Anthony J Hanley. ‘Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>European Diabetes Epidemiology Group Meeting</em> in Helsingør, Denmark (2018).</li>
+<li>(Contributed) Ingrid D. Santaren, Richard P. Bazinet, Zhen Liu, <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B. Harris, Bernard Zinman, Anthony J. Hanley. ‘Combining dietary and biomarker data to evaluate associations of dairy intake with risk of type 2 diabetes (T2DM): The PROspective Metabolism and ISlet cell Evaluation (PROMISE) cohort’. <em>European Diabetes Epidemiology Group Annual Meeting</em> in Helsingør, Denmark (2018).</li>
+<li>(Oral) <strong>Luke W. Johnston</strong>. ‘An R toolkit to simplify and automate an open scientific workflow’. <em>European R User Meeting</em> in Budapest, Hungary (2018).</li>
+<li>(Oral poster) <strong>Luke W. Johnston</strong>, Liu Zhen, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Leg length, a marker of early childhood conditions, associates with specific clusters of serum fatty acids’. <em>Annual Meeting of the European Association for the Study of Diabetes</em> in Berlin, Germany (2018).</li>
+<li>(Panel) Daniela Saderi, Grant R. Vousden-Dishington, Lucy Patterson, <strong>Luke Johnston</strong>. ‘Community Building’. <em>Working Open Workshop, Mozilla Science Lab</em> in Montreal, Canada (2017).</li>
+<li>(Contributed) I. D. Santaren, R. Bazinet, Z. Liu, <strong>L. W. Johnston</strong>, R. Retnakaran, S. B. Harris, B. Zinman, A. J. Hanley. ‘Serum Fatty Acids Derived from Dairy Consumption Are Associated with Longitudinal Changes in Insulin Sensitivity and Beta-cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>35ᵗʰ International Symposium on Diabetes and Nutrition</em> in Skagen, Denmark (2017).</li>
+<li>(Contributed) Z. Semnani-Azad, P. W. Connelly, <strong>L. W. Johnston</strong>, R. Retnakaran, S. B. Harris, B. Zinman, A. J. Hanley. ‘Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>4th Annual BBDC-Joslin-UCPH Conference</em> in Toronto, Canada (2017).</li>
+<li>(Contributed) Zhila Semnani-Azad, Philip W Connelly, <strong>Luke W Johnston</strong>, Anthony J Hanley. ‘Determinants of Longitudinal Change in sCD163, a Biomarker of Adipose Tissue Macrophage Activation’. <em>ObesityWeek</em> in Washington, DC, USA (2017).</li>
+<li>(Contributed) Madeleine Bonsma, Lina Tran, Lindsay Coome, <strong>Luke Johnston</strong>. ‘Study Groups - Crossing the Boundaries of Discipline’. <em>Mozilla Festival</em> in London, UK (2016).</li>
+<li>(Oral) <strong>L. W. Johnston</strong>, C. Lee, S. B. Harris, R. Retnakaran, B. Zinman, R. P. Bazinet, A. J. Hanley. ‘Serum Non-Esterified Fatty Acid (NEFA) Concentrations are Associated with Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>33rd International Symposium on Diabetes &amp; Nutrition in Toronto, Canada</em> in Toronto, Canada (2015). DOI: <a href="https://doi.org/10.6084/m9.figshare.1545567">10.6084/m9.figshare.1545567</a>.</li>
+<li>(Poster) <strong>Luke W. Johnston</strong>, Christine Lee, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Serum Non-Esterified Fatty Acid (NEFA) Composition and Longitudinal Associations with Beta-Cell Dysfunction’. <em>International Diabetes Federation World Diabetes Congress</em> in Vancouver, Canada (2015).</li>
+<li>(Oral) <strong>Luke W. Johnston</strong>, Christine Lee, Stewart Harris, Ravi Retnakaran, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Serum Phospholipid (PL) Fatty Acid Composition Predicts Declines in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-years in the Prospective Metabolism And Islet Cell Evaluation (PROMISE) Cohort’. <em>International Diabetes Epidemiology Group Scientific Meeting</em> in Vancouver, Canada (2015).</li>
+<li>(Oral) <strong>L. W. Johnston</strong>, S. Kayaniyil, C. Lee, S. B. Harris, R. Retnakaran, B. Zinman, R. P. Bazinet, A. J. Hanley. ‘Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) is Associated with Insulin Resistance in the PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort’. <em>Biennial Congress of the International Society for the Study of Fatty Acids and Lipids</em> in Stockholm, Sweden (2014).</li>
+<li>(Contributed) R. D. Kennedy, <strong>L. W. Johnston</strong>, C. Munhall, S. Filsinger. ‘Secondhand Smoke in Common Spaces of Public Housing – Findings from Waterloo Region’. <em>7th National Conference on Tobacco or Health, Making the Connection: Knowledge Transforming Health</em> in Waterloo, Canada (2011).</li>
+<li>(Contributed) C. Munhall, R. W. Kennedy, <strong>L. W. Johnston</strong>, E. Steibelt, A. Trusler. ‘An Environmental Scan of Tobacco-free Policies of YMCA &amp; YWCA Locations in Ontario, Canada’. <em>17th Annual Meeting of the Society on Research on Nicotine and Tobacco</em> in Toronto, Canada (2011).</li>
+<li>(Contributed) A. W. Howard, <strong>L. Johnston</strong>, L. Rothman. ‘Probability of Multiple Fractures in Childhood Session’. <em>Safety 2010 World Conference</em> in London, UK (2010).</li>
+<li>(Oral) R. D. Kennedy, <strong>L. Johnston</strong>. ‘Report of the Smoke-free Policy Scan of YMCAs and YWCAs in Ontario’. <em>Meeting of the Tobacco-free Sports and Recreation Community of Practice</em> in Waterloo, Canada (2010).</li>
+<li>(Contributed) R. D. Kennedy, <strong>L. W. Johnston</strong>, G. T. Fong, A. Hyland, M. Travers. ‘Experimental Evaluation of Outdoor and Adjacent Indoor Tobacco Smoke Pollution in Doorways’. <em>14th World Conference on Tobacco or Health</em> in Mumbai, India (2009).</li>
+<li>(Poster) <strong>L. Johnston</strong>, R. D. Kennedy, G. T. Fong. ‘An Environmental Scan of Tobacco Control Policies on University Campuses in Ontario’. <em>Tobacco Control for the 21st Century</em> in Toronto, Canada (2008).</li>
+<li>(Contributed) R. D. Kennedy, G. T. Fong, M. Travers, A. Hyland, <strong>L. Johnston</strong>, S. Mutti. ‘Experimental Evaluation of Tobacco Control Policies in Outdoor Environments’. <em>Tobacco Control for the 21st Century</em> in Toronto, Canada (2008).</li>
+<li>(Contributed) Shahen Yashpal, Angela D. Liese, Lynne E. Wagenknecht, Steven M. Haffner, <strong>Luke W. Johnston</strong>, Beatrice Boucher, Richard P. Bazinet, Marian Rewers, Jerome I. Rotter, Steve M. Watkins, Anthony Hanley. ‘Metabolomic Profiling of the Dietary Approaches to Stop Hypertension (DASH) Diet: Novel Insights for the Nutritional Epidemiology of Type 2 Diabetes Mellitus (T2DM)’. <em>Diabetes</em> (2019). DOI: <a href="https://doi.org/10.2337/db19-1576-p">10.2337/db19-1576-p</a>.</li>
+<li>(Contributed) Windy Z.N. Wang, David E. Cole, <strong>Luke W. Johnston</strong>, Betty Y.L. Wong, Lei Fu, Ravi Retnakaran, Stewart B. Harris, Bernard Zinman, Anthony J. Hanley.. ‘Urinary Vitamin D Binding Protein as a Potential Biomarker for Nephropathy in Subjects at Risk for Type 2 Diabetes: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort Study.’. <em>Diabetes</em> (2017). DOI: <a href="https://doi.org/10.2337/db17-1489-1795">10.2337/db17-1489-1795</a>.</li>
+<li>(Poster) <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B. Harris, Zhen Liu, Richard P. Bazinet, Anthony J. Hanley. ‘Fatty Acids Produced by De Novo Lipogenesis (DNL) of Refined Carbohydrates are Associated with Worsening of Metabolic Syndrome (MetS) Components: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2017). DOI: <a href="https://doi.org/10.2337/db17-1489-1795">10.2337/db17-1489-1795</a>.</li>
+<li>(Contributed) Z. Semnani-Azad, P. W. Connelly, <strong>L. W. Johnston</strong>, R. Retnakaran, S. B. Harris, B. Zinman, A. J. Hanley. ‘Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2017). DOI: <a href="https://doi.org/10.2337/db17-1489-1795">10.2337/db17-1489-1795</a>.</li>
+<li>(Poster) <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart Harris, Bernard Zinman, Zhen Liu, Richard P. Bazinet, Anthony J. Hanley. ‘Triglyceride Fatty Acid (TGFA) Composition Longitudinally Associates with Changes in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-yrs in the Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2016). DOI: <a href="https://doi.org/10.2337/db16-1375-1656">10.2337/db16-1375-1656</a>.</li>
+<li>(Contributed) Ingrid D. Santaren, Richard P. Bazinet, Zhen Liu, <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B. Harris, Bernard Zinman, Anthony J. Hanley. ‘Serum Fatty Acids Derived from Dairy Consumption Are Associated with Insulin Sensitivity and Beta-cell Function: The PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2016). DOI: <a href="https://doi.org/10.2337/db16-1-381">10.2337/db16-1-381</a>.</li>
+<li>(Contributed) Zhila Semnani-Azad, <strong>Luke W. Johnston</strong>, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Philip W. Connelly, Anthony J. Hanley.. ‘Multivariate Determinants of Reduced Insulin Clearance in Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2016). DOI: <a href="https://doi.org/10.2337/db16-1375-1656">10.2337/db16-1375-1656</a>.</li>
+<li>(Oral poster) <strong>Luke W. Johnston</strong>, Christine Lee, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Serum Non-Esterified Fatty Acid (NEFA) Concentration is Associated with Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2015). DOI: <a href="https://doi.org/10.6084/m9.figshare.1545566">10.6084/m9.figshare.1545566</a>.</li>
+<li>(Poster) <strong>L. W. Johnston</strong>, S. Kayaniyil, C. Lee, S. B. Harris, R. Retnakaran, B. Zinman, R. P. Bazinet, A. J. Hanley. ‘Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) Is Associated with Insulin Resistance: PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2014).</li>
+<li>(Poster) <strong>L. W. Johnston</strong>, S. B. Harris, R. Retnakaran, H. C. Gerstein, J. Hamilton, B. Zinman, A. J. Hanley. ‘The association of leg length with metabolic abnormalities underlying type 2 diabetes mellitus: The PROMISE cohort’. <em>Diabetes</em> (2013).</li>
 </ol>
 </div>
-<h2 id="oral-poster-presentations">Oral poster presentations</h2>
-<div class="layout-chunk" data-layout="l-body">
-<ol type="1">
-<li><strong>LW Johnston</strong>, C Wittenbecher, HT Vistisen, CC Dahm, DR Witte. ‘The metabolic pathways between components of stature and HbA (1c): a causal structure learning approach in the UK Biobank’. <em>European Association for the Study of Diabetes Annual Meeting</em> in virtual setting (2020).</li>
-<li><strong>Luke Johnston</strong>, Signe Toft Andersen, Morten Charles, Marit E. Jørgensen, Troels S. Jensen, Lasse Bjerg, Daniel R. Witte. ‘A data-driven approach at characterizing heterogeneity in neuropathy assessments’. <em>European Diabetes Epidemiology Group Annual Meeting</em> in Mondorf-les-Bains, Luxembourg (2019). DOI: <a href="https://doi.org/10.6084/M9.FIGSHARE.8082491.V1">10.6084/M9.FIGSHARE.8082491.V1</a>.</li>
-<li><strong>Luke W. Johnston</strong>, Zhen Liu, Ravi Retnakaran, Stewart B. Harris, Richard P. Bazinet, Anthony J. Hanley. ‘Specific clusters of fatty acids (FA) across multiple serum lipid fractions underlie pathophysiological features of type 2 diabetes in the Canadian Prospective Metabolism and Islet Cell Evaluation (PROMISE) cohort’. <em>European Diabetes Epidemiology Group Annual Meeting</em> in Helsingør, Denmark (2018). DOI: <a href="https://doi.org/10.6084/m9.figshare.6159293">10.6084/m9.figshare.6159293</a>.</li>
-<li><strong>Luke W. Johnston</strong>, Liu Zhen, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Leg length, a marker of early childhood conditions, associates with specific clusters of serum fatty acids’. <em>Annual Meeting of the European Association for the Study of Diabetes</em> in Berlin, Germany (2018).</li>
-<li><strong>Luke W. Johnston</strong>, Christine Lee, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Serum Non-Esterified Fatty Acid (NEFA) Concentration is Associated with Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2015). DOI: <a href="https://doi.org/10.6084/m9.figshare.1545566">10.6084/m9.figshare.1545566</a>.</li>
-</ol>
-</div>
-<h2 id="poster-presentations">Poster presentations</h2>
-<div class="layout-chunk" data-layout="l-body">
-<ol type="1">
-<li><strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B. Harris, Zhen Liu, Richard P. Bazinet, Anthony J. Hanley. ‘Fatty Acids Produced by De Novo Lipogenesis (DNL) of Refined Carbohydrates are Associated with Worsening of Metabolic Syndrome (MetS) Components: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2017). DOI: <a href="https://doi.org/10.2337/db17-1489-1795">10.2337/db17-1489-1795</a>.</li>
-<li><strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart Harris, Bernard Zinman, Zhen Liu, Richard P. Bazinet, Anthony J. Hanley. ‘Triglyceride Fatty Acid (TGFA) Composition Longitudinally Associates with Changes in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-yrs in the Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2016). DOI: <a href="https://doi.org/10.2337/db16-1375-1656">10.2337/db16-1375-1656</a>.</li>
-<li><strong>L. W. Johnston</strong>, S. Kayaniyil, C. Lee, S. B. Harris, R. Retnakaran, B. Zinman, R. P. Bazinet, A. J. Hanley. ‘Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) Is Associated with Insulin Resistance: PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2014).</li>
-<li><strong>L. W. Johnston</strong>, S. B. Harris, R. Retnakaran, H. C. Gerstein, J. Hamilton, B. Zinman, A. J. Hanley. ‘The association of leg length with metabolic abnormalities underlying type 2 diabetes mellitus: The PROMISE cohort’. <em>Diabetes</em> (2013).</li>
-<li><strong>Luke W. Johnston</strong>, Christine Lee, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Serum Non-Esterified Fatty Acid (NEFA) Composition and Longitudinal Associations with Beta-Cell Dysfunction’. <em>International Diabetes Federation World Diabetes Congress</em> in Vancouver, Canada (2015).</li>
-<li><strong>L. Johnston</strong>, R. D. Kennedy, G. T. Fong. ‘An Environmental Scan of Tobacco Control Policies on University Campuses in Ontario’. <em>Tobacco Control for the 21st Century</em> in Toronto, Canada (2008).</li>
-</ol>
-</div>
-<h2 id="other-conference-presentations">Other conference presentations</h2>
-<div class="layout-chunk" data-layout="l-body">
-<ol type="1">
-<li>Shahen Yashpal, Angela D. Liese, Lynne E. Wagenknecht, Steven M. Haffner, <strong>Luke W. Johnston</strong>, Beatrice Boucher, Richard P. Bazinet, Marian Rewers, Jerome I. Rotter, Steve M. Watkins, Anthony Hanley. ‘Metabolomic Profiling of the Dietary Approaches to Stop Hypertension (DASH) Diet: Novel Insights for the Nutritional Epidemiology of Type 2 Diabetes Mellitus (T2DM)’. <em>Diabetes</em> (2019). DOI: <a href="https://doi.org/10.2337/db19-1576-p">10.2337/db19-1576-p</a>.</li>
-<li>Windy Z.N. Wang, David E. Cole, <strong>Luke W. Johnston</strong>, Betty Y.L. Wong, Lei Fu, Ravi Retnakaran, Stewart B. Harris, Bernard Zinman, Anthony J. Hanley.. ‘Urinary Vitamin D Binding Protein as a Potential Biomarker for Nephropathy in Subjects at Risk for Type 2 Diabetes: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort Study.’. <em>Diabetes</em> (2017). DOI: <a href="https://doi.org/10.2337/db17-1489-1795">10.2337/db17-1489-1795</a>.</li>
-<li>Z. Semnani-Azad, P. W. Connelly, <strong>L. W. Johnston</strong>, R. Retnakaran, S. B. Harris, B. Zinman, A. J. Hanley. ‘Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2017). DOI: <a href="https://doi.org/10.2337/db17-1489-1795">10.2337/db17-1489-1795</a>.</li>
-<li>Ingrid D. Santaren, Richard P. Bazinet, Zhen Liu, <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B. Harris, Bernard Zinman, Anthony J. Hanley. ‘Serum Fatty Acids Derived from Dairy Consumption Are Associated with Insulin Sensitivity and Beta-cell Function: The PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2016). DOI: <a href="https://doi.org/10.2337/db16-1-381">10.2337/db16-1-381</a>.</li>
-<li>Zhila Semnani-Azad, <strong>Luke W. Johnston</strong>, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Philip W. Connelly, Anthony J. Hanley.. ‘Multivariate Determinants of Reduced Insulin Clearance in Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2016). DOI: <a href="https://doi.org/10.2337/db16-1375-1656">10.2337/db16-1375-1656</a>.</li>
-<li>Zhila Semnani-Azad, Philip W Connelly, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, <strong>Luke W Johnston</strong>, Richard P Bazinet, Anthony J Hanley. ‘Adipose Tissue Insulin Resistance and Inflammation Are Independently Associated With Dysglycemia’. <em>ObesityWeek</em> in Las Vegas, USA (2019).</li>
-<li>Zhila Semnani-Azad, Phil W. Connelly, <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, Anthony J Hanley. ‘Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>European Diabetes Epidemiology Group Meeting</em> in Helsingør, Denmark (2018).</li>
-<li>Ingrid D. Santaren, Richard P. Bazinet, Zhen Liu, <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B. Harris, Bernard Zinman, Anthony J. Hanley. ‘Combining dietary and biomarker data to evaluate associations of dairy intake with risk of type 2 diabetes (T2DM): The PROspective Metabolism and ISlet cell Evaluation (PROMISE) cohort’. <em>European Diabetes Epidemiology Group Annual Meeting</em> in Helsingør, Denmark (2018).</li>
-<li>I. D. Santaren, R. Bazinet, Z. Liu, <strong>L. W. Johnston</strong>, R. Retnakaran, S. B. Harris, B. Zinman, A. J. Hanley. ‘Serum Fatty Acids Derived from Dairy Consumption Are Associated with Longitudinal Changes in Insulin Sensitivity and Beta-cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>35ᵗʰ International Symposium on Diabetes and Nutrition</em> in Skagen, Denmark (2017).</li>
-<li>Z. Semnani-Azad, P. W. Connelly, <strong>L. W. Johnston</strong>, R. Retnakaran, S. B. Harris, B. Zinman, A. J. Hanley. ‘Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>4th Annual BBDC-Joslin-UCPH Conference</em> in Toronto, Canada (2017).</li>
-<li>Zhila Semnani-Azad, Philip W Connelly, <strong>Luke W Johnston</strong>, Anthony J Hanley. ‘Determinants of Longitudinal Change in sCD163, a Biomarker of Adipose Tissue Macrophage Activation’. <em>ObesityWeek</em> in Washington, DC, USA (2017).</li>
-<li>Madeleine Bonsma, Lina Tran, Lindsay Coome, <strong>Luke Johnston</strong>. ‘Study Groups - Crossing the Boundaries of Discipline’. <em>Mozilla Festival</em> in London, UK (2016).</li>
-<li>R. D. Kennedy, <strong>L. W. Johnston</strong>, C. Munhall, S. Filsinger. ‘Secondhand Smoke in Common Spaces of Public Housing – Findings from Waterloo Region’. <em>7th National Conference on Tobacco or Health, Making the Connection: Knowledge Transforming Health</em> in Waterloo, Canada (2011).</li>
-<li>C. Munhall, R. W. Kennedy, <strong>L. W. Johnston</strong>, E. Steibelt, A. Trusler. ‘An Environmental Scan of Tobacco-free Policies of YMCA &amp; YWCA Locations in Ontario, Canada’. <em>17th Annual Meeting of the Society on Research on Nicotine and Tobacco</em> in Toronto, Canada (2011).</li>
-<li>A. W. Howard, <strong>L. Johnston</strong>, L. Rothman. ‘Probability of Multiple Fractures in Childhood Session’. <em>Safety 2010 World Conference</em> in London, UK (2010).</li>
-<li>R. D. Kennedy, <strong>L. W. Johnston</strong>, G. T. Fong, A. Hyland, M. Travers. ‘Experimental Evaluation of Outdoor and Adjacent Indoor Tobacco Smoke Pollution in Doorways’. <em>14th World Conference on Tobacco or Health</em> in Mumbai, India (2009).</li>
-<li>R. D. Kennedy, G. T. Fong, M. Travers, A. Hyland, <strong>L. Johnston</strong>, S. Mutti. ‘Experimental Evaluation of Tobacco Control Policies in Outdoor Environments’. <em>Tobacco Control for the 21st Century</em> in Toronto, Canada (2008).</li>
-</ol>
-</div>
-<h2 id="panel-member">Panel member</h2>
-<div class="layout-chunk" data-layout="l-body">
-<ol type="1">
-<li>Daniela Saderi, Grant R. Vousden-Dishington, Lucy Patterson, <strong>Luke Johnston</strong>. ‘Community Building’. <em>Working Open Workshop, Mozilla Science Lab</em> in Montreal, Canada (2017).</li>
-</ol>
-</div>
-<h2 id="published-r-packages" data-icon="laptop-code">Published R packages</h2>
+<h2 id="r-packages"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M425.7 256c-16.9 0-32.8-9-41.4-23.4L320 126l-64.2 106.6c-8.7 14.5-24.6 23.5-41.5 23.5-4.5 0-9-.6-13.3-1.9L64 215v178c0 14.7 10 27.5 24.2 31l216.2 54.1c10.2 2.5 20.9 2.5 31 0L551.8 424c14.2-3.6 24.2-16.4 24.2-31V215l-137 39.1c-4.3 1.3-8.8 1.9-13.3 1.9zm212.6-112.2L586.8 41c-3.1-6.2-9.8-9.8-16.7-8.9L320 64l91.7 152.1c3.8 6.3 11.4 9.3 18.5 7.3l197.9-56.5c9.9-2.9 14.7-13.9 10.2-23.1zM53.2 41L1.7 143.8c-4.6 9.2.3 20.2 10.1 23l197.9 56.5c7.1 2 14.7-1 18.5-7.3L320 64 69.8 32.1c-6.9-.8-13.5 2.7-16.6 8.9z"/></svg> R packages</h2>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2019
 </td>
 <td style="text-align:left;">
@@ -2272,7 +2655,7 @@ posterdown: Generate PDF Conference Posters Using R Markdown (contributor), CRAN
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2280,7 +2663,7 @@ prodigenr: Research Project Directory Generator (creator), CRAN
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2288,7 +2671,7 @@ broom: Convert Statistical Analysis Objects into Tidy Tibbles (contributor), CRA
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2296,7 +2679,7 @@ carpenter: Build Common Tables of Summary Statistics for Reports (creator), CRAN
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2306,12 +2689,28 @@ mason: Build Data Structures for Common Statistical Analysis (creator), CRAN
 </tbody>
 </table>
 </div>
-<h2 id="teaching-experience" data-icon="chalkboard-teacher">Teaching Experience</h2>
+<h2 id="teaching"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"/></svg> Teaching</h2>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2020 – present
+</td>
+<td style="text-align:left;">
+Lead instructor for Reproducible Research in R: An intermediate workshop on modern approaches and workflows to processing data (PhD and Postdocs), Danish Diabetes Academy in Denmark
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
+2020 – present
+</td>
+<td style="text-align:left;">
+Lead instructor for Reproducible Research in R: An introductory workshop on modern data analyses and workflows (PhD and Postdocs), Danish Diabetes Academy in Denmark
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2018 – present
 </td>
 <td style="text-align:left;">
@@ -2319,23 +2718,7 @@ Instructor and founder for Peer-led, participatory live coding R training sessio
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
-2020
-</td>
-<td style="text-align:left;">
-Lead instructor for Reproducible Research in R: An intermediate workshop on modern approaches and workflows to processing data (PhD and Postdocs), Danish Diabetes Academy in Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
-2020
-</td>
-<td style="text-align:left;">
-Lead instructor for Reproducible Research in R: An introductory workshop on modern data analyses and workflows (PhD and Postdocs), Danish Diabetes Academy in Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2019
 </td>
 <td style="text-align:left;">
@@ -2343,7 +2726,7 @@ Lead instructor for Software Carpentry Workshop (Anyone), Aarhus University in A
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2019
 </td>
 <td style="text-align:left;">
@@ -2351,7 +2734,7 @@ Lead instructor for Reproducible Quantitative Analyses and Workflows using R (Ph
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2019
 </td>
 <td style="text-align:left;">
@@ -2359,7 +2742,7 @@ Lead instructor for Reproducible Quantitative Methods: Data analysis workflow us
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2018
 </td>
 <td style="text-align:left;">
@@ -2367,7 +2750,7 @@ Instructor for FAIR Data and Software workshop (Anyone), TIB Leibniz Information
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2375,7 +2758,7 @@ Teaching assistant for Theoretical Ecology and Reproducible Quantitative Methods
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2383,7 +2766,7 @@ Teaching assistant for Public Health Nutrition (NFS1201) (Graduate), Department 
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2391,7 +2774,7 @@ Instructor for Software Carpentry workshops (R) (Anyone), Software Carpentry in 
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2399,7 +2782,7 @@ Helper for Software Carpentry workshops (Python) (Anyone), Software Carpentry in
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2407,7 +2790,7 @@ Helper for Software Carpentry workshops (R) (Anyone), Software Carpentry and Uof
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2415,7 +2798,7 @@ Teaching assistant for Basic Human Nutrition (NFS284) (Undergraduate), Departmen
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2423,7 +2806,7 @@ Instructor for Software Carpentry workshops (R) (Anyone), Software Carpentry in 
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2431,7 +2814,7 @@ Teaching assistant for Advanced Nutrition (NFS484-1484) (Mixed graduate and unde
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2439,7 +2822,7 @@ Helper for CUPE3902 Post-doc Python workshops (Post-docs), CUPE3902 Unit 5 in To
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2016 – 2017
 </td>
 <td style="text-align:left;">
@@ -2447,7 +2830,7 @@ Instructor for Departmental R workshops (Anyone), Code As Manuscript in Toronto,
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2455,7 +2838,7 @@ Instructor for Software Carpentry workshops (Python) (Anyone), Software Carpentr
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2463,7 +2846,7 @@ Helper for Software Carpentry workshops (R) (Anyone), Software Carpentry in Toro
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2015
 </td>
 <td style="text-align:left;">
@@ -2471,7 +2854,7 @@ Teaching assistant for Public Health Nutrition (NFS1201) (Graduate), Department 
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2015
 </td>
 <td style="text-align:left;">
@@ -2479,7 +2862,7 @@ Instructor for Software Carpentry Workshop (R) (Anyone), Software Carpentry in T
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2015 – 2018
 </td>
 <td style="text-align:left;">
@@ -2487,7 +2870,7 @@ Instructor and one of the co-founders for Peer-led, participatory live coding tr
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2015
 </td>
 <td style="text-align:left;">
@@ -2495,7 +2878,7 @@ Teaching helper for Software Carpentry Workshop (R) (Anyone), Software Carpentry
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2503,7 +2886,7 @@ Teaching helper for Software Carpentry Workshop (Python) (Anyone), Software Carp
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014 – 2015
 </td>
 <td style="text-align:left;">
@@ -2511,7 +2894,7 @@ Instructor and founder for Code as Manuscript: R and SAS coding workshops (Gradu
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2519,7 +2902,7 @@ Teaching assistant for Advanced Nutrition (NFS484-1484) (Graduate), Department o
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2013
 </td>
 <td style="text-align:left;">
@@ -2527,7 +2910,7 @@ Teaching assistant for Advanced Nutrition (NFS484-1484) (Graduate), Department o
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2013
 </td>
 <td style="text-align:left;">
@@ -2537,12 +2920,12 @@ Teaching assistant for Nutritional Microbiology (NFS485) (Undergraduate), Depart
 </tbody>
 </table>
 </div>
-<h2 id="supervision-experience" data-icon="hands-helping">Supervision Experience</h2>
+<h2 id="supervision"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/></svg> Supervision</h2>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017 – 2018
 </td>
 <td style="text-align:left;">
@@ -2550,7 +2933,7 @@ Master’s student, Department of Nutritional Sciences, University of Toronto in
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014 – 2015
 </td>
 <td style="text-align:left;">
@@ -2560,7 +2943,7 @@ Undergraduate student, Department of Nutritional Sciences, University of Toronto
 </tbody>
 </table>
 </div>
-<h2 id="curriculum-development-archived-with-doi" data-icon="university">Curriculum Development (archived with DOI)</h2>
+<h2 id="curriculum-development"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"/></svg> Curriculum development</h2>
 <div class="layout-chunk" data-layout="l-body">
 <ol type="1">
 <li><strong>Luke W. Johnston</strong>, Helene Bæk Juel, Bettina Lengger, Daniel R. Witte. ‘rostools/r-cubed: Reproducible Research in R - An introductory workshop on modern data analyses and workflows’. (2020). URL: <a href="https://r-cubed.rostools.org/" class="uri">https://r-cubed.rostools.org/</a>. DOI: <a href="https://doi.org/10.5281/zenodo.3921894">10.5281/zenodo.3921894</a>.</li>
@@ -2571,12 +2954,12 @@ Undergraduate student, Department of Nutritional Sciences, University of Toronto
 <li>Katrin Leinweber, Angelina Kraft, Mateusz Kuzak, <strong>Luke Johnston</strong>, Martin Hammitzsch, Konrad Förstner. ‘FAIR Data and Software: A Carpentries-based workshop’. (2018). DOI: <a href="https://doi.org/10.5281/zenodo.3707744">10.5281/zenodo.3707744</a>.</li>
 </ol>
 </div>
-<h2 id="other-curriculum-development" data-icon="university">Other Curriculum Development</h2>
+<h3 id="other-development">Other Development</h3>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2018
 </td>
 <td style="text-align:left;">
@@ -2584,7 +2967,7 @@ FAIR Data and Software (<a href="https://tibhannover.github.io/2018-07-09-FAIR-D
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2592,7 +2975,7 @@ Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430) (<a href
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014 – 2015
 </td>
 <td style="text-align:left;">
@@ -2602,12 +2985,12 @@ Code as Manuscript: Data wrangling, visualization, and reproducibility in R (<a 
 </tbody>
 </table>
 </div>
-<h2 id="awards" data-icon="trophy">Awards</h2>
+<h2 id="awards"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"/></svg> Awards</h2>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2019
 </td>
 <td style="text-align:left;">
@@ -2615,7 +2998,7 @@ Danish Diabetes Academy Postdoctoral Fellowship from Danish Diabetes Academy, De
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2623,7 +3006,7 @@ Michael C. Archer Research Excellence Award from University of Toronto, Toronto,
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2631,7 +3014,7 @@ Marie Skłodowska-Curie Master Class and Travel Fund from Aarhus University, Aar
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2639,7 +3022,7 @@ Working Open Workshop and Travel Scholarship from Mozilla Science Lab, Montreal,
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017
 </td>
 <td style="text-align:left;">
@@ -2647,7 +3030,7 @@ Gordon Cressy Student Leadership Award from University of Toronto, Toronto, Cana
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2012
 </td>
 <td style="text-align:left;">
@@ -2655,7 +3038,7 @@ Ontario Graduate Scholarship from Government of Ontario, Toronto, Canada
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2013
 </td>
 <td style="text-align:left;">
@@ -2663,7 +3046,7 @@ Trainee Travel Award from Banting and Best Diabetes Centre, Toronto, Canada
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2013
 </td>
 <td style="text-align:left;">
@@ -2671,7 +3054,7 @@ Ontario Graduate Scholarship from Government of Ontario, Toronto, Canada
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2679,7 +3062,7 @@ Trainee Travel Award from Banting and Best Diabetes Centre, Toronto, Canada
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2687,7 +3070,7 @@ Conference Travel Grant from School of Graduate Studies, University of Toronto, 
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2695,7 +3078,7 @@ Alumni Travel Award from Department of Nutritional Sciences, University of Toron
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2703,7 +3086,7 @@ New Investigator Award from International Society for the Study of Fatty Acids a
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2711,7 +3094,7 @@ Doctoral Student Research Award from Canadian Diabetes Association, Toronto, Can
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2719,7 +3102,7 @@ Graduate Novo Nordisk Studentship from Banting and Best Diabetes Centre, Toronto
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2727,7 +3110,7 @@ Margaret and Nicholas Fodor Fellowship from School of Graduate Studies, Universi
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2735,7 +3118,7 @@ Ontario Graduate Scholarship from Government of Ontario, Toronto, Canada
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2015
 </td>
 <td style="text-align:left;">
@@ -2745,12 +3128,12 @@ Trainee Travel Award from Banting and Best Diabetes Centre, University of Toront
 </tbody>
 </table>
 </div>
-<h2 id="employment" data-icon="suitcase">Employment</h2>
+<h2 id="employment"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"/></svg> Employment</h2>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2019 – present
 </td>
 <td style="text-align:left;">
@@ -2758,7 +3141,7 @@ DDA postdoctoral researcher, Steno Diabetes Center Aarhus in Aarhus, Denmark
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2018 – 2019
 </td>
 <td style="text-align:left;">
@@ -2766,7 +3149,7 @@ Postdoctoral researcher, Department of Public Health, Aarhus University in Aarhu
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2017 – 2018
 </td>
 <td style="text-align:left;">
@@ -2774,7 +3157,7 @@ Postdoctoral fellow, Department of Nutritional Sciences, University of Toronto i
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2011
 </td>
 <td style="text-align:left;">
@@ -2782,7 +3165,7 @@ Research Assistant, Propel Center for Population Health Impact, University of Wa
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2010
 </td>
 <td style="text-align:left;">
@@ -2790,7 +3173,7 @@ Research Assistant, Health Psychology Lab, University of Waterloo in Waterloo, C
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2009
 </td>
 <td style="text-align:left;">
@@ -2798,7 +3181,7 @@ Research Assistant, Child Health Evaluative Sciences, Hospital for Sick Children
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2009
 </td>
 <td style="text-align:left;">
@@ -2806,7 +3189,7 @@ Research Assistant, Toronto Rehabilitation Institute in Toronto, Canada
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2008
 </td>
 <td style="text-align:left;">
@@ -2814,7 +3197,7 @@ Research Assistant, Health Psychology Lab in Waterloo, Canada
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; font-weight: bold;">
+<td style="text-align:left;width: 20%; font-weight: bold;">
 2008
 </td>
 <td style="text-align:left;">

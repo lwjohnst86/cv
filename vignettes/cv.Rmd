@@ -11,7 +11,7 @@ www: lukewjohnston.com
 email: lwjohnst@gmail.com
 #twitter: lwjohnst
 github: lwjohnst86
-aboutme: I am a diabetes epidemiologist, R user and programmer, teacher of modern data analysis skills, and open science advocate.
+aboutme: I am a diabetes epidemiologist, R user and developer, teacher of modern data science and analysis skills, and open science advocate.
 headcolor: "324ea8"
 docname: "curriculum vitae"
 csl: vancouver.csl
