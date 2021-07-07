@@ -51,85 +51,67 @@ bib_items <- read_bib_items()
 rpkgs <- cv::rpackages
 ```
 
-## Education {data-icon=graduation-cap data-concise=true}
+## `r fa("graduation-cap")` Education
 
 ```{r list-education}
 list_education()
 ```
 
-## Publications {data-icon=file-alt}
+## `r fa("university")` Affiliations
+
+```{r list-affiliations}
+list_affiliations(cv_data)
+```
+
+## `r fa("book-open")` Publications
 
 ```{r list-articles}
 list_publications(bib_items, "Journal articles")
 ```
 
-## Oral presentations
+## `r fa("comment-dots")` Presentations
 
-```{r list-orals}
-list_publications(bib_items, "Oral presentations")
+```{r list-presentations}
+list_publications(bib_items, "presentations")
 ```
 
-## Oral poster presentations
-
-```{r list-oral-posters}
-list_publications(bib_items, "Oral poster presentations")
-```
-
-## Poster presentations
-
-```{r list-posters}
-list_publications(bib_items, "Poster presentations")
-```
-
-## Other conference presentations
-
-```{r list-other-conferences}
-list_publications(bib_items, "Other conference presentations")
-```
-
-## Panel member
-
-```{r list-panel-member}
-list_publications(bib_items, "Panel member")
-```
-
-## Published R packages {data-icon=laptop-code}
+## `r fa("box-open")` R packages
 
 ```{r list-r-packages}
 list_rpackages(rpkgs) 
 ```
 
-## Teaching Experience {data-icon=chalkboard-teacher}
+## `r fa("chalkboard-teacher")` Teaching 
 
 ```{r list-teaching}
 list_teaching(cv_data)
 ```
 
-## Supervision Experience {data-icon=hands-helping}
+## `r fa("user-friends")` Supervision
 
 ```{r list-supervision}
 list_supervision(cv_data)
 ```
 
-## Curriculum Development (archived with DOI) {data-icon=university}
+## `r fa("book-reader")` Curriculum development
 
 ```{r list-curriculum-archived}
 list_publications(bib_items, "Curriculum development")
 ```
 
-## Other Curriculum Development {data-icon=university}
+### Other Development
 
 ```{r list-curriculum}
 list_curriculum_development(cv_data)
 ```
 
-## Awards {data-icon=trophy}
+## `r fa("trophy")` Awards
 
 ```{r list-awards}
 list_awards(cv_data)
 ```
 
-## Employment {data-icon=suitcase}
+## `r fa("briefcase")` Employment
 
 ```{r list-employment}
 list_employment(cv_data)
