@@ -23,3 +23,5 @@ generate_cv_html <- function() {
     )
     fs::file_delete(here("public/cv.html"))
 }
+
+# webshot::webshot("https://cv.lukewjohnston.com/", "cv.pdf") #?
