@@ -71,7 +71,7 @@ list_publications(bib_items, "Journal articles")
 
 ## `r fa("book")` Books
 
-```{r list-articles}
+```{r list-books}
 list_publications(bib_items, "Books")
 ```
 
@@ -113,7 +113,7 @@ list_curriculum_development(cv_data)
 
 ## `r fa("users")` Committees
 
-```{r list-awards}
+```{r list-committees}
 list_committees(cv_data)
 ```
 
