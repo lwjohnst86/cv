@@ -111,6 +111,12 @@ list_publications(bib_items, "Curriculum development")
 list_curriculum_development(cv_data)
 ```
 
+## `r fa("users")` Committees
+
+```{r list-awards}
+list_committees(cv_data)
+```
+
 ## `r fa("trophy")` Awards
 
 ```{r list-awards}
