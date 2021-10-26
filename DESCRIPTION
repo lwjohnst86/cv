@@ -39,7 +39,7 @@ Imports:
     distill,
     fontawesome (>= 0.2.1)
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.1
 Remotes: 
     ropensci/bibtex,
     ropensci/bib2df
