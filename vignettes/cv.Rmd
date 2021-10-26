@@ -69,6 +69,12 @@ list_affiliations(cv_data)
 list_publications(bib_items, "Journal articles")
 ```
 
+## `r fa("book")` Books
+
+```{r list-articles}
+list_publications(bib_items, "Books")
+```
+
 ## `r fa("comment-dots")` Presentations
 
 ```{r list-presentations}
