@@ -46,85 +46,67 @@ RefManageR::BibOptions(
     sorting = "ydnt"
     # no.print.fields = NULL
 )
-cv_data <- read_cv_items() 
-bib_items <- read_bib_items() 
+cv_data <- read_cv_items() %>% 
+    filter(year(start) >= 2018)
+bib_items <- read_bib_items() %>% 
+    filter(year >= 2018)
 rpkgs <- cv::rpackages
 ```
-
-## `r fa("graduation-cap")` Education
 
 ```{r list-education}
 list_education()
 ```
+## Positions
 
-## `r fa("university")` Affiliations
-
-```{r list-affiliations}
-list_affiliations(cv_data)
+```{r list-employment}
+list_employment(cv_data)
 ```
 
-## `r fa("book-open")` Publications
-
-```{r list-articles}
-list_publications(bib_items, "Journal articles")
-```
-
-## `r fa("book")` Books
-
-```{r list-books}
-list_publications(bib_items, "Books")
-```
-
-## `r fa("comment-dots")` Presentations
-
-```{r list-presentations}
-list_publications(bib_items, "presentations")
-```
-
-## `r fa("box-open")` R packages
-
-```{r list-r-packages}
-list_rpackages(rpkgs) 
-```
-
-## `r fa("chalkboard-teacher")` Teaching 
+## Teaching and curriculum planning and development
 
 ```{r list-teaching}
-list_teaching(cv_data)
+list_teaching(cv_data, "Teaching experience.")
 ```
 
-## `r fa("user-friends")` Supervision
-
-```{r list-supervision}
-list_supervision(cv_data)
+```{r list-committees}
+list_committees(cv_data, "Course planning.")
 ```
 
-## `r fa("book-reader")` Curriculum development
+**Curriculum development**
 
 ```{r list-curriculum-archived}
 list_publications(bib_items, "Curriculum development")
 ```
 
-### Other Development
+## Presentations
 
-```{r list-curriculum}
-list_curriculum_development(cv_data)
+```{r list-presentations}
+list_publications(bib_items, "presentations")
 ```
 
-## `r fa("users")` Committees
-
-```{r list-committees}
-list_committees(cv_data)
-```
-
-## `r fa("trophy")` Awards
+## Awards and external funding
 
 ```{r list-awards}
 list_awards(cv_data)
 ```
 
-## `r fa("briefcase")` Employment
+## Publications and general dissemination 
 
-```{r list-employment}
-list_employment(cv_data)
+H-index (Google Scholar):
+
+```{r list-articles}
+list_publications(bib_items, "Journal articles")
 ```
+
+**Books**
+
+```{r list-books}
+list_publications(bib_items, "Books")
+```
+
+**R packages**
+
+```{r list-r-packages}
+list_rpackages(rpkgs) 
+```
+

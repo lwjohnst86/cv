@@ -8,7 +8,7 @@ convert_to_cvhonors <- function(.tbl) {
                   ")
 }
 
-output <- function(.object, compact = FALSE, from_bib = FALSE) {
+output <- function(.object, compact = FALSE, from_bib = FALSE, caption = NULL) {
     if (knitr::is_html_output()) {
         if (from_bib) {
             cat(.object, sep = "\n")
@@ -32,7 +32,7 @@ output <- function(.object, compact = FALSE, from_bib = FALSE) {
                     dplyr::mutate(where = if_else(is.na(where), "",
                                                   as.character(glue::glue("in {where}"))))
             }
-            .output_html_item(.object)
+            .output_html_item(.object, caption = caption)
         }
 
     } else if (knitr::is_latex_output()) {
@@ -46,12 +46,12 @@ output <- function(.object, compact = FALSE, from_bib = FALSE) {
     }
 }
 
-.output_html_item <- function(.tbl) {
+.output_html_item <- function(.tbl, caption) {
     .tbl %>%
         dplyr::transmute(when = when,
                          what = glue::glue("{what}, {with} {where}")) %>%
-        knitr::kable(col.names = NULL, align = "ll") %>%
-        kableExtra::kable_styling(c("condensed", "striped"),
+        knitr::kable(col.names = NULL, align = "ll", caption = caption, label = NA) %>%
+        kableExtra::kable_styling(c("condensed"),
                                   full_width = TRUE) %>%
         kableExtra::column_spec(1, width = "20%", bold = TRUE)
 }

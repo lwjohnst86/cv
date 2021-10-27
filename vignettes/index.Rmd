@@ -1,6 +1,4 @@
 ---
-title: "Luke W. Johnston"
-pagetitle: "Luke's CV"
 date: "`r cv::today_timestamp()`"
 ---
 
@@ -12,9 +10,28 @@ knitr::opts_chunk$set(
 library(cv)
 ```
 
-> I am a diabetes epidemiologist, R user and developer, teacher of modern data science and analysis skills, and open science advocate.
+# Luke William Johnston
+
+**Address**: Vesterport 3, 2.1, 8000 Aarhus, Denmark
+
+Diabetes epidemiologist, R user and developer, teacher of modern data science
+and analysis skills, and open science and reproducibility advocate. 
+*Only showing items since 2018. For full CV, see [cv.lukewjohnston.com](https://cv.lukewjohnston.com/).*
 
 <!--
+Personal data: Name, address, etc.
+Education (for academic degrees, list the date and year of obtaining the degree).
+Current and most recent positions held.
+Other scientific qualifications and scientific focus areas.
+Experience with supervision/mentoring, teaching or planning of courses/conferences or the like.
+International relations, interdisciplinary or cross-sectoral collaborations.
+Academic awards and honours.
+Invited oral presentations at international conferences.
+Public dissemination of the candidate’s research and results thereof, i.e. on social media, in the press or in the public in general.
+External funding obtained.
+List of publications (only already published or accepted publications should be included), including H-index.
+
+
 ## Skills
 
 - Languages: English (fluent), Spanish (competent)

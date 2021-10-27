@@ -20,8 +20,8 @@ Complementary: #640400
 
 html {
   /*-- Main font sizes --*/
-  --title-size:      50px;
-  --body-size:       1.06rem;
+  --title-size:      40px;
+  --body-size:       1.00rem;
   --code-size:       14px;
   --aside-size:      12px;
   --fig-cap-size:    13px;
@@ -81,6 +81,10 @@ d-appendix {
 /*-- Additional custom styles --*/
 /* Add any additional CSS rules below                      */
 
+d-title {
+    display: none;
+}
+
 table {
     width: 100%;
 }
@@ -91,4 +95,9 @@ strong {
 
 d-article a:link {
     color: #640400;
+}
+
+.table caption {
+    font-size: 14px;
+    font-weight: bold;
 }

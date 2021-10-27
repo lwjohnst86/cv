@@ -1,6 +1,6 @@
 #' @describeIn list_sections List all committees.
 #' @export
-list_committees <- function(.tbl) {
+list_committees <- function(.tbl, caption = NULL) {
     .tbl %>%
         dplyr::filter(section == "committee") %>%
         tidy_dates() %>%
@@ -10,5 +10,5 @@ list_committees <- function(.tbl) {
             with = organization,
             where = location
         ) %>%
-        output()
+        output(caption = caption)
 }

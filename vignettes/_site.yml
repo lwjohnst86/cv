@@ -33,6 +33,6 @@ navbar:
       href: "https://www.linkedin.com/in/luke-johnston-480365101/"
 output:
   distill::distill_article:
-    toc: true
-    toc_depth: 2
+    toc: false
+    # toc_depth: 2
     theme: theme.css
