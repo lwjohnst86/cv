@@ -5,7 +5,7 @@ list_committees <- function(.tbl) {
         dplyr::filter(section == "committee") %>%
         tidy_dates() %>%
         vitae::detailed_entries(
-            what = role,
+            what = title,
             when = date_range,
             with = organization,
             where = location
