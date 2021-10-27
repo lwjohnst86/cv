@@ -1,6 +1,6 @@
 #' @describeIn list_sections List all awards given.
 #' @export
-list_awards <- function(.tbl) {
+list_awards <- function(.tbl, caption = NULL) {
     .tbl %>%
         dplyr::filter(section == "awards") %>%
         dplyr::mutate(start = dplyr::if_else(is.na(start), end, start),
@@ -10,5 +10,5 @@ list_awards <- function(.tbl) {
             when = year,
             with = location
         ) %>%
-        output()
+        output(caption = caption)
 }
