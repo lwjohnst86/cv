@@ -47,19 +47,18 @@ RefManageR::BibOptions(
     # no.print.fields = NULL
 )
 cv_data <- read_cv_items() %>% 
-    filter(year(start) >= 2018)
+    filter(year(start) >= 2019)
 bib_items <- read_bib_items() %>% 
-    filter(year >= 2018)
+    filter(year >= 2019)
 rpkgs <- cv::rpackages
 ```
 
 ```{r list-education}
-list_education()
+list_education("Education")
 ```
-## Positions
 
 ```{r list-employment}
-list_employment(cv_data)
+list_employment(cv_data, "Positions held")
 ```
 
 ## Teaching and curriculum planning and development
@@ -78,21 +77,21 @@ list_committees(cv_data, "Course planning.")
 list_publications(bib_items, "Curriculum development")
 ```
 
-## Presentations
-
-```{r list-presentations}
-list_publications(bib_items, "presentations")
-```
-
 ## Awards and external funding
 
 ```{r list-awards}
-list_awards(cv_data)
+read_cv_items() %>% 
+    filter(section == "awards", str_detect(title, "Travel|Ontario|Studentship", negate = TRUE)) %>% 
+    list_awards("Showing all awards, excluding travel grants, during PhD and postdoc.")
 ```
 
-## Publications and general dissemination 
+<br>
+<br>
+<br>
 
-H-index (Google Scholar):
+## Dissemination activities 
+
+**Publications since 2019** (H-index from Google Scholar: 5)
 
 ```{r list-articles}
 list_publications(bib_items, "Journal articles")
@@ -108,5 +107,13 @@ list_publications(bib_items, "Books")
 
 ```{r list-r-packages}
 list_rpackages(rpkgs) 
+```
+
+**Presentations (since 2020)**
+
+```{r list-presentations}
+read_bib_items() %>% 
+    filter(year >= 2020) %>% 
+    list_publications("presentations")
 ```
 

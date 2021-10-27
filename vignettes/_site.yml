@@ -1,36 +1,36 @@
 name: cv
 output_dir: ../public
 exclude: ["portfolio.*", "dossier.*", "fonts/*.ttf", "*.cls", "*.csl"]
-navbar:
-  title: "Luke W. Johnston's CV"
-  left:
-    - icon: "fa-home"
-      href: index.html
-    # - icon: "fa-file-pdf"
-    #   href: cv.pdf
-    - text: Sites
-      menu:
-        - text: Main
-          href: https://lukewjohnston.com
-        - text: Slides
-          href: https://slides.lwjohnst.com
-        - text: Posters
-          href: https://posters.lwjohnst.com
-  right:
-    - icon: "fa-envelope"
-      href: "lwjohnst@gmail.com"
-    - icon: "fa-twitter"
-      href: "https://twitter.com/lwjohnst"
-    - icon: "fa-github"
-      href: "https://github.com/lwjohnst86"
-    - icon: "fa-gitlab"
-      href: "https://gitlab.com/lwjohnst"
-    - icon: "fa-stack-overflow"
-      href: "https://stackoverflow.com/users/2632184"
-    - icon: "fa-stack-exchange"
-      href: "https://stackexchange.com/users/1992995"
-    - icon: "fa-linkedin"
-      href: "https://www.linkedin.com/in/luke-johnston-480365101/"
+# navbar:
+title: "Luke W. Johnston's CV"
+#   left:
+#     - icon: "fa-home"
+#       href: index.html
+#     # - icon: "fa-file-pdf"
+#     #   href: cv.pdf
+#     - text: Sites
+#       menu:
+#         - text: Main
+#           href: https://lukewjohnston.com
+#         - text: Slides
+#           href: https://slides.lwjohnst.com
+#         - text: Posters
+#           href: https://posters.lwjohnst.com
+#   right:
+#     - icon: "fa-envelope"
+#       href: "lwjohnst@gmail.com"
+#     - icon: "fa-twitter"
+#       href: "https://twitter.com/lwjohnst"
+#     - icon: "fa-github"
+#       href: "https://github.com/lwjohnst86"
+#     - icon: "fa-gitlab"
+#       href: "https://gitlab.com/lwjohnst"
+#     - icon: "fa-stack-overflow"
+#       href: "https://stackoverflow.com/users/2632184"
+#     - icon: "fa-stack-exchange"
+#       href: "https://stackexchange.com/users/1992995"
+#     - icon: "fa-linkedin"
+#       href: "https://www.linkedin.com/in/luke-johnston-480365101/"
 output:
   distill::distill_article:
     toc: false

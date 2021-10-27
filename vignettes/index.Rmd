@@ -12,11 +12,13 @@ library(cv)
 
 # Luke William Johnston
 
-**Address**: Vesterport 3, 2.1, 8000 Aarhus, Denmark
+|Address|Email|Twitter|GitHub|
+|--|--|--|--|
+|Vesterport 3, 2.1, 8000 Aarhus, Denmark|lwjohnst@gmail.com  luke.johnston@rm.dk|lwjohnst|lwjohnst86|
 
 Diabetes epidemiologist, R user and developer, teacher of modern data science
 and analysis skills, and open science and reproducibility advocate. 
-*Only showing items since 2018. For full CV, see [cv.lukewjohnston.com](https://cv.lukewjohnston.com/).*
+*Only showing most items **since 2019**. For full CV, see [cv.lukewjohnston.com](https://cv.lukewjohnston.com/).*
 
 <!--
 Personal data: Name, address, etc.
