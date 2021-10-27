@@ -87,638 +87,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Luke W. Johnston's CV: Luke W. Johnston</title>
+  <title>Luke W. Johnston's CV: Untitled</title>
 
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2021-10-26"/>
-  <meta property="article:created" itemprop="dateCreated" content="2021-10-26"/>
+  <meta property="article:published" itemprop="datePublished" content="2021-10-27"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-10-27"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Luke W. Johnston&#39;s CV: Luke W. Johnston"/>
+  <meta property="og:title" content="Luke W. Johnston&#39;s CV: Untitled"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Luke W. Johnston&#39;s CV"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Luke W. Johnston&#39;s CV: Luke W. Johnston"/>
+  <meta property="twitter:title" content="Luke W. Johnston&#39;s CV: Untitled"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","pagetitle","date"]}},"value":[{"type":"character","attributes":{},"value":["Luke W. Johnston"]},{"type":"character","attributes":{},"value":["Luke's CV"]},{"type":"character","attributes":{},"value":["October 26, 2021"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["date"]}},"value":[{"type":"character","attributes":{},"value":["October 27, 2021"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2136,17 +1530,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   html {
     /*-- Main font sizes --*/
-    --title-size:      50px;
-    --body-size:       1.06rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
+    --title-size:      40px;
+    --body-size:       0.8rem;
+    --code-size:       11px;
+    --aside-size:      11px;
+    --fig-cap-size:    11px;
     /*-- Main font colors --*/
     --title-color:     #3E3E3E;
     --header-color:    rgba(62, 62, 62, 0.8);
     --body-color:      rgba(62, 62, 62, 0.8);
     --aside-color:     rgba(62, 62, 62, 0.6);
-    --fig-cap-color:   rgba(0, 0, 0, 0.6);
+    --fig-cap-color:   rgba(0, 0, 0, 0.8);
     /*-- Specify custom fonts ~~~ must be imported above   --*/
     --heading-font:    "Cabin", sans-serif;
     --mono-font:       monospace;
@@ -2170,7 +1564,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /*-- ARTICLE APPENDIX --*/
   d-appendix {
-    --heading-size:    15px;
+    --heading-size:    11px;
     --heading-color:   rgba(0, 0, 0, 0.65);
     --text-size:       0.8em;
     --text-color:      rgba(0, 0, 0, 0.5);
@@ -2182,20 +1576,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .distill-site-header {
     --title-size:       18px;
     --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
+    --text-size:        11px;
     --hover-color:      white;
     --bkgd-color:       #006064;
   }
 
   .distill-site-footer {
     --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
+    --text-size:        11px;
     --hover-color:      white;
     --bkgd-color:       #006064;
   }
 
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
+
+  d-article h2 {
+      margin: 0.2rem 0 1rem 0;
+      font-size: 1.10rem;
+      line-height: 1.1em;
+      padding-bottom: .5rem;
+  }
+
+  d-title {
+      display: none;
+  }
 
   table {
       width: 100%;
@@ -2207,6 +1612,38 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   d-article a:link {
       color: #640400;
+  }
+
+  .table caption {
+      font-size: 11px;
+      font-weight: bold;
+  }
+
+  d-article li {
+      margin-bottom: .7em;
+  }
+
+  d-article {
+      font-size: 11px;
+      line-height: 1.2em;
+      padding-top: 0rem;
+      padding-bottom: 10px;
+      color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-article table {
+      border: none;
+      margin-bottom: 1.2rem;
+  }
+
+  d-article table th, d-article table td {
+      font-size: 11px;
+      padding: 1px 4px;
+  }
+
+  figcaption, .figcaption {
+      font-size: 11px;
+      line-height: 1.2em;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2366,6 +1803,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/header-attrs-2.11.3/header-attrs.js"></script>
   <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
   <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2385,63 +1823,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Luke W. Johnston","authors":[],"publishedDate":"2021-10-26T00:00:00.000+02:00"}
+{"title":"Untitled","authors":[],"publishedDate":"2021-10-27T00:00:00.000+02:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Luke W. Johnston's CV</a>
-<a href="index.html">
-<i class="fa fa-home" aria-hidden="true"></i>
-</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-Sites
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="https://lukewjohnston.com">Main</a>
-<a href="https://slides.lwjohnst.com">Slides</a>
-<a href="https://posters.lwjohnst.com">Posters</a>
-</div>
-</div>
-</div>
-<div class="nav-right">
-<a href="lwjohnst@gmail.com">
-<i class="fa fa-envelope" aria-hidden="true"></i>
-</a>
-<a href="https://twitter.com/lwjohnst">
-<i class="fa fa-twitter" aria-hidden="true"></i>
-</a>
-<a href="https://github.com/lwjohnst86">
-<i class="fa fa-github" aria-hidden="true"></i>
-</a>
-<a href="https://gitlab.com/lwjohnst">
-<i class="fa fa-gitlab" aria-hidden="true"></i>
-</a>
-<a href="https://stackoverflow.com/users/2632184">
-<i class="fa fa-stack-overflow" aria-hidden="true"></i>
-</a>
-<a href="https://stackexchange.com/users/1992995">
-<i class="fa fa-stack-exchange" aria-hidden="true"></i>
-</a>
-<a href="https://www.linkedin.com/in/luke-johnston-480365101/">
-<i class="fa fa-linkedin" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Luke’s CV</h1>
+<h1>index.knit</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2449,29 +1841,46 @@ Sites
 
 
 <div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
-<ul>
-<li><a href="#education"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"/></svg> Education</a></li>
-<li><a href="#affiliations"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"/></svg> Affiliations</a></li>
-<li><a href="#publications"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/></svg> Publications</a></li>
-<li><a href="#books"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"/></svg> Books</a></li>
-<li><a href="#presentations"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg> Presentations</a></li>
-<li><a href="#r-packages"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M425.7 256c-16.9 0-32.8-9-41.4-23.4L320 126l-64.2 106.6c-8.7 14.5-24.6 23.5-41.5 23.5-4.5 0-9-.6-13.3-1.9L64 215v178c0 14.7 10 27.5 24.2 31l216.2 54.1c10.2 2.5 20.9 2.5 31 0L551.8 424c14.2-3.6 24.2-16.4 24.2-31V215l-137 39.1c-4.3 1.3-8.8 1.9-13.3 1.9zm212.6-112.2L586.8 41c-3.1-6.2-9.8-9.8-16.7-8.9L320 64l91.7 152.1c3.8 6.3 11.4 9.3 18.5 7.3l197.9-56.5c9.9-2.9 14.7-13.9 10.2-23.1zM53.2 41L1.7 143.8c-4.6 9.2.3 20.2 10.1 23l197.9 56.5c7.1 2 14.7-1 18.5-7.3L320 64 69.8 32.1c-6.9-.8-13.5 2.7-16.6 8.9z"/></svg> R packages</a></li>
-<li><a href="#teaching"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"/></svg> Teaching</a></li>
-<li><a href="#supervision"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/></svg> Supervision</a></li>
-<li><a href="#curriculum-development"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"/></svg> Curriculum development</a></li>
-<li><a href="#committees"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"/></svg> Committees</a></li>
-<li><a href="#awards"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"/></svg> Awards</a></li>
-<li><a href="#employment"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"/></svg> Employment</a></li>
-</ul>
-</nav>
-</div>
-<blockquote>
-<p>I am a diabetes epidemiologist, R user and developer, teacher of modern data science and analysis skills, and open science advocate.</p>
-</blockquote>
+<h1 id="luke-william-johnston">Luke William Johnston</h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Address</th>
+<th>Email</th>
+<th>Twitter</th>
+<th>GitHub</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vesterport 3, 2.1, 8000 Aarhus, Denmark</td>
+<td><a href="mailto:lwjohnst@gmail.com" class="email">lwjohnst@gmail.com</a> <a href="mailto:luke.johnston@rm.dk" class="email">luke.johnston@rm.dk</a></td>
+<td>lwjohnst</td>
+<td>lwjohnst86</td>
+</tr>
+</tbody>
+</table>
+<p>Diabetes epidemiologist, R user and developer, teacher of modern data science and analysis skills, and open science and reproducibility advocate. <em>Only showing most items <strong>since 2019</strong>. For full CV, see <a href="https://cv.lukewjohnston.com/">cv.lukewjohnston.com</a>.</em></p>
 <!--
+Personal data: Name, address, etc.
+Education (for academic degrees, list the date and year of obtaining the degree).
+Current and most recent positions held.
+Other scientific qualifications and scientific focus areas.
+Experience with supervision/mentoring, teaching or planning of courses/conferences or the like.
+International relations, interdisciplinary or cross-sectoral collaborations.
+Academic awards and honours.
+Invited oral presentations at international conferences.
+Public dissemination of the candidate’s research and results thereof, i.e. on social media, in the press or in the public in general.
+External funding obtained.
+List of publications (only already published or accepted publications should be included), including H-index.
+
+
 ## Skills
 
 - Languages: English (fluent), Spanish (competent)
@@ -2483,12 +1892,14 @@ equations, principal component analysis, partial least squares regression, cross
 validation, cluster analysis (hierarchical, k-means), information criterion
 (AIC, QIC), bootstrapping, factor analysis.
 -->
-<h2 id="education"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"/></svg> Education</h2>
 <div class="layout-chunk" data-layout="l-body">
-<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
+<table class="table table-condensed" style="margin-left: auto; margin-right: auto;">
+<caption>
+Education
+</caption>
 <tbody>
 <tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
+<td style="text-align:left;width: 15%; font-weight: bold;">
 2013 – 2017
 </td>
 <td style="text-align:left;">
@@ -2496,7 +1907,7 @@ PhD in Nutritional Sciences, University of Toronto in Toronto, CA
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
+<td style="text-align:left;width: 15%; font-weight: bold;">
 2011 – 2013
 </td>
 <td style="text-align:left;">
@@ -2504,7 +1915,7 @@ MSc in Nutritional Sciences, University of Toronto in Toronto, CA
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
+<td style="text-align:left;width: 15%; font-weight: bold;">
 2005 – 2010
 </td>
 <td style="text-align:left;">
@@ -2514,78 +1925,161 @@ BSc in Kinesiology, University of Waterloo in Waterloo, CA
 </tbody>
 </table>
 </div>
-<h2 id="affiliations"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"/></svg> Affiliations</h2>
 <div class="layout-chunk" data-layout="l-body">
-<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
+<table class="table table-condensed" style="margin-left: auto; margin-right: auto;">
+<caption>
+Positions held
+</caption>
 <tbody>
 <tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2021 – present
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2019 – present
 </td>
 <td style="text-align:left;">
-Researcher, Department of Clinical Medicine, Aarhus University in Aarhus, Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2021 – present
-</td>
-<td style="text-align:left;">
-Instructor, <a href="https://education.rstudio.com/trainers/people/johnston+luke/">RStudio Certified Instructor</a> in Boston, USA
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2020 – present
-</td>
-<td style="text-align:left;">
-Member, European Association for the Study of Diabetes in Düsseldorf, Germany
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2018 – present
-</td>
-<td style="text-align:left;">
-Member, Danish Diabetes Academy in Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2015 – present
-</td>
-<td style="text-align:left;">
-Instructor and member, <a href="http://software-carpentry.org/">Software Carpentry</a> in Global
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2019 – 2021
-</td>
-<td style="text-align:left;">
-Researcher, Department of Public Health, Aarhus University in Aarhus, Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2016 – 2018
-</td>
-<td style="text-align:left;">
-Treasurer, <a href="https://uoftcoders.github.io">UofT Coders</a>, University of Toronto &amp; Mozilla Science Lab in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014 – 2017
-</td>
-<td style="text-align:left;">
-Treasurer, <a href="http://nsgsa.sa.utoronto.ca/">Nutritional Sciences Graduate Student Association</a>, University of Toronto in Toronto, Canada
+DDA postdoctoral researcher, Steno Diabetes Center Aarhus in Aarhus, Denmark
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<h2 id="publications"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z"/></svg> Publications</h2>
+<h2 id="teaching-and-curriculum-planning-and-development">Teaching and curriculum planning and development</h2>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table table-condensed" style="margin-left: auto; margin-right: auto;">
+<caption>
+Teaching experience.
+</caption>
+<tbody>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2020 – present
+</td>
+<td style="text-align:left;">
+Lead instructor for Reproducible Research in R: An intermediate workshop on modern approaches and workflows to processing data (PhD and Postdocs), Danish Diabetes Academy in Denmark
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2020 – present
+</td>
+<td style="text-align:left;">
+Lead instructor for Reproducible Research in R: An introductory workshop on modern data analyses and workflows (PhD and Postdocs), Danish Diabetes Academy in Denmark
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2019
+</td>
+<td style="text-align:left;">
+Lead instructor for Software Carpentry Workshop (Anyone), Aarhus University in Aarhus, Denmark
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2019
+</td>
+<td style="text-align:left;">
+Lead instructor for Reproducible Quantitative Analyses and Workflows using R (PhD and Postdocs), German Institute of Human Nutrition Potsdam-Rehbrueke in Potsdam, Germany
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2019
+</td>
+<td style="text-align:left;">
+Lead instructor for Reproducible Quantitative Methods: Data analysis workflow using R (PhD and Postdocs), Danish Diabetes Academy in Denmark
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table table-condensed" style="margin-left: auto; margin-right: auto;">
+<caption>
+Course planning.
+</caption>
+<tbody>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2020 – 2021
+</td>
+<td style="text-align:left;">
+Scientific program organizing committee for the Danish Diabetes Academy Postdoctoral Winter School, Danish Diabetes Academy in Denmark
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Curriculum development</strong></p>
+<div class="layout-chunk" data-layout="l-body">
+<ol type="1">
+<li><strong>Luke W. Johnston</strong>, Helene Bæk Juel, Bettina Lengger, Daniel R. Witte. ‘rostools/r-cubed: Reproducible Research in R - An introductory workshop on modern data analyses and workflows’. (2020). URL: <a href="https://r-cubed.rostools.org/" class="uri">https://r-cubed.rostools.org/</a>. DOI: <a href="https://doi.org/10.5281/zenodo.3921894">10.5281/zenodo.3921894</a>.</li>
+<li><strong>Luke Johnston</strong>, Omar Silverman-Retana, Andreas Eiset, Signe Storgaard. ‘r-cubed: Reproducible Research in R - An Intermediate Workshop on Modern Approaches and Workflows to Processing Data’. (2020). URL: <a href="https://r-cubed-intermediate.rostools.org/" class="uri">https://r-cubed-intermediate.rostools.org/</a>. DOI: <a href="https://doi.org/10.5281/zenodo.4061900">10.5281/zenodo.4061900</a>.</li>
+<li><strong>Luke W Johnston</strong>, Daniel R Witte, João Santiago, Anna Schritz. ‘Reproducible Quantitative Methods: Data analysis workflow using R’. (2019). URL: <a href="https://dda-rcourse.lwjohnst.com/" class="uri">https://dda-rcourse.lwjohnst.com/</a>. DOI: <a href="https://doi.org/10.5281/zenodo.2603311">10.5281/zenodo.2603311</a>.</li>
+<li><strong>Luke W Johnston</strong>. ‘acdcourse: Analyzing Cohort Datasets with R’. (2019). URL: <a href="https://github.com/lwjohnst86/acdcourse" class="uri">https://github.com/lwjohnst86/acdcourse</a>. DOI: <a href="https://doi.org/10.5281/zenodo.3247819">10.5281/zenodo.3247819</a>.</li>
+<li><strong>Luke W Johnston</strong>, Madeleine Bonsma-Fisher, Joel Ostblom, Ahmed Hasan, James Santangelo, Lindsay Coome, Lina Tran, Elliott Sales De Andrade, Sara Mahallati. ‘UofTCoders/rcourse: Quantitative Methods in R for Biology’. (2019). URL: <a href="https://uoftcoders.github.io/rcourse/" class="uri">https://uoftcoders.github.io/rcourse/</a>. DOI: <a href="https://doi.org/10.5281/zenodo.1117432">10.5281/zenodo.1117432</a>.</li>
+</ol>
+</div>
+<h2 id="awards-and-external-funding">Awards and external funding</h2>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table table-condensed" style="margin-left: auto; margin-right: auto;">
+<caption>
+Showing all awards, excluding travel grants, during PhD and postdoc.
+</caption>
+<tbody>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2019
+</td>
+<td style="text-align:left;">
+Danish Diabetes Academy Postdoctoral Fellowship from Danish Diabetes Academy, Denmark
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2017
+</td>
+<td style="text-align:left;">
+Michael C. Archer Research Excellence Award from University of Toronto, Toronto, Canada
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2017
+</td>
+<td style="text-align:left;">
+Gordon Cressy Student Leadership Award from University of Toronto, Toronto, Canada
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2014
+</td>
+<td style="text-align:left;">
+New Investigator Award from International Society for the Study of Fatty Acids and Lipids, Stockholm, Sweden
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2014
+</td>
+<td style="text-align:left;">
+Doctoral Student Research Award from Canadian Diabetes Association, Toronto, Canada
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 15%; font-weight: bold;">
+2014
+</td>
+<td style="text-align:left;">
+Margaret and Nicholas Fodor Fellowship from School of Graduate Studies, University of Toronto, Toronto, Canada
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br> <br> <br></p>
+<h2 id="dissemination-activities">Dissemination activities</h2>
+<p><strong>Publications since 2019</strong> (H-index from Google Scholar: 5)</p>
 <div class="layout-chunk" data-layout="l-body">
 <ol type="1">
 <li>Shahen Yashpal, Angela D. Liese, Beatrice A. Boucher, Lynne E. Wagenknecht, Steven M. Haffner, <strong>Luke W. Johnston</strong>, Richard P. Bazinet, Marian Rewers, Jerome I. Rotter, Steve M. Watkins, Anthony J. Hanley. ‘Metabolomic profiling of the Dietary Approaches to Stop Hypertension diet provides novel insights for the nutritional epidemiology of type 2 diabetes mellitus’. <em>British Journal of Nutrition</em> (2021). DOI: <a href="https://doi.org/10.1017/s0007114521003561">10.1017/s0007114521003561</a>.</li>
@@ -2597,68 +2091,20 @@ Treasurer, <a href="http://nsgsa.sa.utoronto.ca/">Nutritional Sciences Graduate 
 <li>Zhila Semnani-Azad, Philip W Connelly, <strong>Luke W Johnston</strong>, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, Anthony J Hanley. ‘The macrophage activation marker soluble CD163 is longitudinally associated with insulin sensitivity and β-cell function’. <em>The Journal of Clinical Endocrinology &amp; Metabolism</em> (2019). DOI: <a href="https://doi.org/10.1210/clinem/dgz166">10.1210/clinem/dgz166</a>.</li>
 <li>Sara Mahdavi, Antonio Bellasi, Karan Nagra, <strong>Luke Johnston</strong>, Paul Tam, Biagio Di Iorio, Tabo Sikaneta. ‘Associations of Calcium from Food Sources versus Phosphate Binders with Serum Calcium and FGF23 in Hemodialysis Patients’. <em>Journal of Clinical Medicine</em> (2019). DOI: <a href="https://doi.org/10.3390/jcm8101680">10.3390/jcm8101680</a>.</li>
 <li>Zhila Semnani-azad, <strong>Luke W Johnston</strong>, Christine Lee, Ravi Retnakaran, Philip W Connelly, Stewart B Harris, Bernard Zinman, Anthony J Hanley. ‘Determinants of longitudinal change in insulin clearance: the Prospective Metabolism and Islet Cell Evaluation cohort’. <em>BMJ Open Diabetes Research &amp; Care</em> (2019). DOI: <a href="https://doi.org/10.1136/bmjdrc-2019-000825">10.1136/bmjdrc-2019-000825</a>.</li>
-<li><strong>Luke W. Johnston</strong>, Zhen Liu, Ravi Retnakaran, Bernard Zinman, Adria Giacca, Stewart B. Harris, Richard P. Bazinet, Anthony J. Hanley. ‘Clusters of fatty acids in the serum triacylglyceride fraction associate with the disorders of type 2 diabetes’. <em>J Lipid Res</em> (2018). DOI: <a href="https://doi.org/10.1194/jlr.P084970">10.1194/jlr.P084970</a>.</li>
-<li><strong>Luke W. Johnston</strong>, Stewart B. Harris, Ravi Retnakaran, Adria Giacca, Zhen Liu, Richard P. Bazinet, Anthony J. Hanley. ‘Association of non-esterified fatty acid composition with insulin sensitivity and beta cell function in the Prospective Metabolism and Islet Cell Evaluation (PROMISE) cohort’. <em>Diabetologia</em> (2017). DOI: <a href="https://doi.org/10.1007/s00125-017-4534-6">10.1007/s00125-017-4534-6</a>.</li>
-<li><strong>Luke W. Johnston</strong>, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Adria Giacca, Zhen Liu, Richard P. Bazinet, Anthony J. Hanley. ‘Longitudinal associations of phospholipid and cholesteryl ester fatty acids with disorders underlying diabetes.’. <em>J Clin Endocrinol Metab</em> (2016). DOI: <a href="https://doi.org/10.1210/jc.2015-4267">10.1210/jc.2015-4267</a>.</li>
-<li><strong>L. W. Johnston</strong>, S. B. Harris, R. Retnakaran, H. C. Gerstein, B. Zinman, J. Hamilton, A. J. Hanley. ‘Short leg length, a marker of early childhood deprivation, is associated with metabolic disorders underlying type 2 diabetes mellitus: the PROMISE cohort study’. <em>Diabetes Care</em> (2013). DOI: <a href="https://doi.org/10.2337/dc13-0254">10.2337/dc13-0254</a>.</li>
-<li>K. Doughty, L. Rothman, <strong>L. Johnston</strong>, K. Le, J. Wu, A. Howard. ‘Low-income countries’ orthopaedic information needs: Challenges and opportunities’. <em>Clinical Orthopaedics and Related Research</em> (2010). DOI: <a href="https://doi.org/10.1007/s11999-010-1365-x">10.1007/s11999-010-1365-x</a>.</li>
 </ol>
 </div>
-<h2 id="books"><svg aria-hidden="true" role="img" viewBox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"/></svg> Books</h2>
+<p><strong>Books</strong></p>
 <div class="layout-chunk" data-layout="l-body">
 <ol type="1">
 <li>Damien Irving, Kate Hertweck, <strong>Luke Johnston</strong>, Joel Ostblom, Charlotte Wickham. ‘Research Software Engineering with Python’. <em>Taylor &amp; Francis Ltd</em> (2021). URL: <a href="https://merely-useful.tech/py-rse/" class="uri">https://merely-useful.tech/py-rse/</a>. ISBN: <a href="https://isbnsearch.org/isbn/0367698323">0367698323</a>.</li>
 </ol>
 </div>
-<h2 id="presentations"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg> Presentations</h2>
+<p><strong>R packages</strong></p>
 <div class="layout-chunk" data-layout="l-body">
-<ol type="1">
-<li>(Oral) <strong>Luke W. Johnston</strong>, Clemens Wittenbecher, Fabian Eichelmann. ‘NetCoupler: Inferring causal pathways between high-dimensional metabolic data and external factors’. <em>Annual useR Conference</em> in Virtual (2021).</li>
-<li>(Contributed) Hannah Chatwin, <strong>Luke W Johnston</strong>, Helene Bæk Juel, Bettina Lengger, Daniel R. Witte, Malene Revsbech Christiansen, Anders Aasted Isaksen. ‘r-cubed: Guiding the overwhelmed scientist from random wrangling to Reproducible Research in R’. <em>Annual useR Conference</em> in Virtual (2021).</li>
-<li>(Oral) <strong>Luke W. Johnston</strong>, Clemens Wittenbecher. ‘NetCoupler: Inferring causal pathways between high-dimensional metabolic data and external factors’. <em>Annual Meeting of the Danish Epidemiological Society</em> in Virtual (2021).</li>
-<li>(Oral poster) <strong>LW Johnston</strong>, C Wittenbecher, HT Vistisen, CC Dahm, DR Witte. ‘The metabolic pathways between components of stature and HbA (1c): a causal structure learning approach in the UK Biobank’. <em>European Association for the Study of Diabetes Annual Meeting</em> in virtual setting (2020).</li>
-<li>(Oral) <strong>L. W. Johnston</strong>, C. Wittenbecher. ‘NetCoupler: Inferring causal pathways between high-dimensional metabolic data and external factors’. <em>IARC Nutritional Methodology and Biostatistics Group</em> in Virtual (2020).</li>
-<li>(Oral poster) <strong>Luke Johnston</strong>, Signe Toft Andersen, Morten Charles, Marit E. Jørgensen, Troels S. Jensen, Lasse Bjerg, Daniel R. Witte. ‘A data-driven approach at characterizing heterogeneity in neuropathy assessments’. <em>European Diabetes Epidemiology Group Annual Meeting</em> in Mondorf-les-Bains, Luxembourg (2019). DOI: <a href="https://doi.org/10.6084/M9.FIGSHARE.8082491.V1">10.6084/M9.FIGSHARE.8082491.V1</a>.</li>
-<li>(Contributed) Zhila Semnani-Azad, Philip W Connelly, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, <strong>Luke W Johnston</strong>, Richard P Bazinet, Anthony J Hanley. ‘Adipose Tissue Insulin Resistance and Inflammation Are Independently Associated With Dysglycemia’. <em>ObesityWeek</em> in Las Vegas, USA (2019).</li>
-<li>(Oral poster) <strong>Luke W. Johnston</strong>, Zhen Liu, Ravi Retnakaran, Stewart B. Harris, Richard P. Bazinet, Anthony J. Hanley. ‘Specific clusters of fatty acids (FA) across multiple serum lipid fractions underlie pathophysiological features of type 2 diabetes in the Canadian Prospective Metabolism and Islet Cell Evaluation (PROMISE) cohort’. <em>European Diabetes Epidemiology Group Annual Meeting</em> in Helsingør, Denmark (2018). DOI: <a href="https://doi.org/10.6084/m9.figshare.6159293">10.6084/m9.figshare.6159293</a>.</li>
-<li>(Contributed) Zhila Semnani-Azad, Phil W. Connelly, <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, Anthony J Hanley. ‘Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>European Diabetes Epidemiology Group Meeting</em> in Helsingør, Denmark (2018).</li>
-<li>(Contributed) Ingrid D. Santaren, Richard P. Bazinet, Zhen Liu, <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B. Harris, Bernard Zinman, Anthony J. Hanley. ‘Combining dietary and biomarker data to evaluate associations of dairy intake with risk of type 2 diabetes (T2DM): The PROspective Metabolism and ISlet cell Evaluation (PROMISE) cohort’. <em>European Diabetes Epidemiology Group Annual Meeting</em> in Helsingør, Denmark (2018).</li>
-<li>(Oral) <strong>Luke W. Johnston</strong>. ‘An R toolkit to simplify and automate an open scientific workflow’. <em>European R User Meeting</em> in Budapest, Hungary (2018).</li>
-<li>(Oral poster) <strong>Luke W. Johnston</strong>, Liu Zhen, Ravi Retnakaran, Stewart B Harris, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Leg length, a marker of early childhood conditions, associates with specific clusters of serum fatty acids’. <em>Annual Meeting of the European Association for the Study of Diabetes</em> in Berlin, Germany (2018).</li>
-<li>(Panel) Daniela Saderi, Grant R. Vousden-Dishington, Lucy Patterson, <strong>Luke Johnston</strong>. ‘Community Building’. <em>Working Open Workshop, Mozilla Science Lab</em> in Montreal, Canada (2017).</li>
-<li>(Contributed) I. D. Santaren, R. Bazinet, Z. Liu, <strong>L. W. Johnston</strong>, R. Retnakaran, S. B. Harris, B. Zinman, A. J. Hanley. ‘Serum Fatty Acids Derived from Dairy Consumption Are Associated with Longitudinal Changes in Insulin Sensitivity and Beta-cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>35ᵗʰ International Symposium on Diabetes and Nutrition</em> in Skagen, Denmark (2017).</li>
-<li>(Contributed) Z. Semnani-Azad, P. W. Connelly, <strong>L. W. Johnston</strong>, R. Retnakaran, S. B. Harris, B. Zinman, A. J. Hanley. ‘Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>4th Annual BBDC-Joslin-UCPH Conference</em> in Toronto, Canada (2017).</li>
-<li>(Contributed) Zhila Semnani-Azad, Philip W Connelly, <strong>Luke W Johnston</strong>, Anthony J Hanley. ‘Determinants of Longitudinal Change in sCD163, a Biomarker of Adipose Tissue Macrophage Activation’. <em>ObesityWeek</em> in Washington, DC, USA (2017).</li>
-<li>(Contributed) Madeleine Bonsma, Lina Tran, Lindsay Coome, <strong>Luke Johnston</strong>. ‘Study Groups - Crossing the Boundaries of Discipline’. <em>Mozilla Festival</em> in London, UK (2016).</li>
-<li>(Oral) <strong>L. W. Johnston</strong>, C. Lee, S. B. Harris, R. Retnakaran, B. Zinman, R. P. Bazinet, A. J. Hanley. ‘Serum Non-Esterified Fatty Acid (NEFA) Concentrations are Associated with Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>33rd International Symposium on Diabetes &amp; Nutrition in Toronto, Canada</em> in Toronto, Canada (2015). DOI: <a href="https://doi.org/10.6084/m9.figshare.1545567">10.6084/m9.figshare.1545567</a>.</li>
-<li>(Poster) <strong>Luke W. Johnston</strong>, Christine Lee, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Serum Non-Esterified Fatty Acid (NEFA) Composition and Longitudinal Associations with Beta-Cell Dysfunction’. <em>International Diabetes Federation World Diabetes Congress</em> in Vancouver, Canada (2015).</li>
-<li>(Oral) <strong>Luke W. Johnston</strong>, Christine Lee, Stewart Harris, Ravi Retnakaran, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Serum Phospholipid (PL) Fatty Acid Composition Predicts Declines in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-years in the Prospective Metabolism And Islet Cell Evaluation (PROMISE) Cohort’. <em>International Diabetes Epidemiology Group Scientific Meeting</em> in Vancouver, Canada (2015).</li>
-<li>(Oral) <strong>L. W. Johnston</strong>, S. Kayaniyil, C. Lee, S. B. Harris, R. Retnakaran, B. Zinman, R. P. Bazinet, A. J. Hanley. ‘Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) is Associated with Insulin Resistance in the PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort’. <em>Biennial Congress of the International Society for the Study of Fatty Acids and Lipids</em> in Stockholm, Sweden (2014).</li>
-<li>(Contributed) R. D. Kennedy, <strong>L. W. Johnston</strong>, C. Munhall, S. Filsinger. ‘Secondhand Smoke in Common Spaces of Public Housing – Findings from Waterloo Region’. <em>7th National Conference on Tobacco or Health, Making the Connection: Knowledge Transforming Health</em> in Waterloo, Canada (2011).</li>
-<li>(Contributed) C. Munhall, R. W. Kennedy, <strong>L. W. Johnston</strong>, E. Steibelt, A. Trusler. ‘An Environmental Scan of Tobacco-free Policies of YMCA &amp; YWCA Locations in Ontario, Canada’. <em>17th Annual Meeting of the Society on Research on Nicotine and Tobacco</em> in Toronto, Canada (2011).</li>
-<li>(Contributed) A. W. Howard, <strong>L. Johnston</strong>, L. Rothman. ‘Probability of Multiple Fractures in Childhood Session’. <em>Safety 2010 World Conference</em> in London, UK (2010).</li>
-<li>(Oral) R. D. Kennedy, <strong>L. Johnston</strong>. ‘Report of the Smoke-free Policy Scan of YMCAs and YWCAs in Ontario’. <em>Meeting of the Tobacco-free Sports and Recreation Community of Practice</em> in Waterloo, Canada (2010).</li>
-<li>(Contributed) R. D. Kennedy, <strong>L. W. Johnston</strong>, G. T. Fong, A. Hyland, M. Travers. ‘Experimental Evaluation of Outdoor and Adjacent Indoor Tobacco Smoke Pollution in Doorways’. <em>14th World Conference on Tobacco or Health</em> in Mumbai, India (2009).</li>
-<li>(Poster) <strong>L. Johnston</strong>, R. D. Kennedy, G. T. Fong. ‘An Environmental Scan of Tobacco Control Policies on University Campuses in Ontario’. <em>Tobacco Control for the 21st Century</em> in Toronto, Canada (2008).</li>
-<li>(Contributed) R. D. Kennedy, G. T. Fong, M. Travers, A. Hyland, <strong>L. Johnston</strong>, S. Mutti. ‘Experimental Evaluation of Tobacco Control Policies in Outdoor Environments’. <em>Tobacco Control for the 21st Century</em> in Toronto, Canada (2008).</li>
-<li>(Contributed) Shahen Yashpal, Angela D. Liese, Lynne E. Wagenknecht, Steven M. Haffner, <strong>Luke W. Johnston</strong>, Beatrice Boucher, Richard P. Bazinet, Marian Rewers, Jerome I. Rotter, Steve M. Watkins, Anthony Hanley. ‘Metabolomic Profiling of the Dietary Approaches to Stop Hypertension (DASH) Diet: Novel Insights for the Nutritional Epidemiology of Type 2 Diabetes Mellitus (T2DM)’. <em>Diabetes</em> (2019). DOI: <a href="https://doi.org/10.2337/db19-1576-p">10.2337/db19-1576-p</a>.</li>
-<li>(Contributed) Windy Z.N. Wang, David E. Cole, <strong>Luke W. Johnston</strong>, Betty Y.L. Wong, Lei Fu, Ravi Retnakaran, Stewart B. Harris, Bernard Zinman, Anthony J. Hanley.. ‘Urinary Vitamin D Binding Protein as a Potential Biomarker for Nephropathy in Subjects at Risk for Type 2 Diabetes: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort Study.’. <em>Diabetes</em> (2017). DOI: <a href="https://doi.org/10.2337/db17-1489-1795">10.2337/db17-1489-1795</a>.</li>
-<li>(Poster) <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B. Harris, Zhen Liu, Richard P. Bazinet, Anthony J. Hanley. ‘Fatty Acids Produced by De Novo Lipogenesis (DNL) of Refined Carbohydrates are Associated with Worsening of Metabolic Syndrome (MetS) Components: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2017). DOI: <a href="https://doi.org/10.2337/db17-1489-1795">10.2337/db17-1489-1795</a>.</li>
-<li>(Contributed) Z. Semnani-Azad, P. W. Connelly, <strong>L. W. Johnston</strong>, R. Retnakaran, S. B. Harris, B. Zinman, A. J. Hanley. ‘Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2017). DOI: <a href="https://doi.org/10.2337/db17-1489-1795">10.2337/db17-1489-1795</a>.</li>
-<li>(Poster) <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart Harris, Bernard Zinman, Zhen Liu, Richard P. Bazinet, Anthony J. Hanley. ‘Triglyceride Fatty Acid (TGFA) Composition Longitudinally Associates with Changes in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-yrs in the Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2016). DOI: <a href="https://doi.org/10.2337/db16-1375-1656">10.2337/db16-1375-1656</a>.</li>
-<li>(Contributed) Ingrid D. Santaren, Richard P. Bazinet, Zhen Liu, <strong>Luke W. Johnston</strong>, Ravi Retnakaran, Stewart B. Harris, Bernard Zinman, Anthony J. Hanley. ‘Serum Fatty Acids Derived from Dairy Consumption Are Associated with Insulin Sensitivity and Beta-cell Function: The PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2016). DOI: <a href="https://doi.org/10.2337/db16-1-381">10.2337/db16-1-381</a>.</li>
-<li>(Contributed) Zhila Semnani-Azad, <strong>Luke W. Johnston</strong>, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Philip W. Connelly, Anthony J. Hanley.. ‘Multivariate Determinants of Reduced Insulin Clearance in Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2016). DOI: <a href="https://doi.org/10.2337/db16-1375-1656">10.2337/db16-1375-1656</a>.</li>
-<li>(Oral poster) <strong>Luke W. Johnston</strong>, Christine Lee, Stewart B. Harris, Ravi Retnakaran, Bernard Zinman, Richard P. Bazinet, Anthony J. Hanley. ‘Serum Non-Esterified Fatty Acid (NEFA) Concentration is Associated with Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2015). DOI: <a href="https://doi.org/10.6084/m9.figshare.1545566">10.6084/m9.figshare.1545566</a>.</li>
-<li>(Poster) <strong>L. W. Johnston</strong>, S. Kayaniyil, C. Lee, S. B. Harris, R. Retnakaran, B. Zinman, R. P. Bazinet, A. J. Hanley. ‘Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) Is Associated with Insulin Resistance: PROspective Metabolism and ISlet Cell Evaluation (PROMISE) Cohort’. <em>Diabetes</em> (2014).</li>
-<li>(Poster) <strong>L. W. Johnston</strong>, S. B. Harris, R. Retnakaran, H. C. Gerstein, J. Hamilton, B. Zinman, A. J. Hanley. ‘The association of leg length with metabolic abnormalities underlying type 2 diabetes mellitus: The PROMISE cohort’. <em>Diabetes</em> (2013).</li>
-</ol>
-</div>
-<h2 id="r-packages"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M425.7 256c-16.9 0-32.8-9-41.4-23.4L320 126l-64.2 106.6c-8.7 14.5-24.6 23.5-41.5 23.5-4.5 0-9-.6-13.3-1.9L64 215v178c0 14.7 10 27.5 24.2 31l216.2 54.1c10.2 2.5 20.9 2.5 31 0L551.8 424c14.2-3.6 24.2-16.4 24.2-31V215l-137 39.1c-4.3 1.3-8.8 1.9-13.3 1.9zm212.6-112.2L586.8 41c-3.1-6.2-9.8-9.8-16.7-8.9L320 64l91.7 152.1c3.8 6.3 11.4 9.3 18.5 7.3l197.9-56.5c9.9-2.9 14.7-13.9 10.2-23.1zM53.2 41L1.7 143.8c-4.6 9.2.3 20.2 10.1 23l197.9 56.5c7.1 2 14.7-1 18.5-7.3L320 64 69.8 32.1c-6.9-.8-13.5 2.7-16.6 8.9z"/></svg> R packages</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
+<table class="table table-condensed" style="margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
+<td style="text-align:left;width: 15%; font-weight: bold;">
 2019
 </td>
 <td style="text-align:left;">
@@ -2666,7 +2112,7 @@ posterdown: Generate PDF Conference Posters Using R Markdown (contributor), CRAN
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
+<td style="text-align:left;width: 15%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2674,7 +2120,7 @@ prodigenr: Research Project Directory Generator (creator), CRAN
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
+<td style="text-align:left;width: 15%; font-weight: bold;">
 2014
 </td>
 <td style="text-align:left;">
@@ -2682,7 +2128,7 @@ broom: Convert Statistical Analysis Objects into Tidy Tibbles (contributor), CRA
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
+<td style="text-align:left;width: 15%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2690,7 +2136,7 @@ carpenter: Build Common Tables of Summary Statistics for Reports (creator), CRAN
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
+<td style="text-align:left;width: 15%; font-weight: bold;">
 2016
 </td>
 <td style="text-align:left;">
@@ -2700,538 +2146,15 @@ mason: Build Data Structures for Common Statistical Analysis (creator), CRAN
 </tbody>
 </table>
 </div>
-<h2 id="teaching"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z"/></svg> Teaching</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2020 – present
-</td>
-<td style="text-align:left;">
-Lead instructor for Reproducible Research in R: An intermediate workshop on modern approaches and workflows to processing data (PhD and Postdocs), Danish Diabetes Academy in Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2020 – present
-</td>
-<td style="text-align:left;">
-Lead instructor for Reproducible Research in R: An introductory workshop on modern data analyses and workflows (PhD and Postdocs), Danish Diabetes Academy in Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2018 – present
-</td>
-<td style="text-align:left;">
-Instructor and founder for Peer-led, participatory live coding R training sessions (Anyone), Aarhus University Community of Researchers Using Open Software in Aarhus, Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2019
-</td>
-<td style="text-align:left;">
-Lead instructor for Software Carpentry Workshop (Anyone), Aarhus University in Aarhus, Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2019
-</td>
-<td style="text-align:left;">
-Lead instructor for Reproducible Quantitative Analyses and Workflows using R (PhD and Postdocs), German Institute of Human Nutrition Potsdam-Rehbrueke in Potsdam, Germany
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2019
-</td>
-<td style="text-align:left;">
-Lead instructor for Reproducible Quantitative Methods: Data analysis workflow using R (PhD and Postdocs), Danish Diabetes Academy in Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2018
-</td>
-<td style="text-align:left;">
-Instructor for FAIR Data and Software workshop (Anyone), TIB Leibniz Information Centre for Science and Technology and University Library in Hannover, Germany
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Teaching assistant for Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430) (Undergraduate), Department of Ecology and Evolutionary Biology, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Teaching assistant for Public Health Nutrition (NFS1201) (Graduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Instructor for Software Carpentry workshops (R) (Anyone), Software Carpentry in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Helper for Software Carpentry workshops (Python) (Anyone), Software Carpentry in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Helper for Software Carpentry workshops (R) (Anyone), Software Carpentry and UofTCoders in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Teaching assistant for Basic Human Nutrition (NFS284) (Undergraduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2016
-</td>
-<td style="text-align:left;">
-Instructor for Software Carpentry workshops (R) (Anyone), Software Carpentry in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2016
-</td>
-<td style="text-align:left;">
-Teaching assistant for Advanced Nutrition (NFS484-1484) (Mixed graduate and undergraduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2016
-</td>
-<td style="text-align:left;">
-Helper for CUPE3902 Post-doc Python workshops (Post-docs), CUPE3902 Unit 5 in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2016 – 2017
-</td>
-<td style="text-align:left;">
-Instructor for Departmental R workshops (Anyone), Code As Manuscript in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2016
-</td>
-<td style="text-align:left;">
-Instructor for Software Carpentry workshops (Python) (Anyone), Software Carpentry in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2016
-</td>
-<td style="text-align:left;">
-Helper for Software Carpentry workshops (R) (Anyone), Software Carpentry in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2015
-</td>
-<td style="text-align:left;">
-Teaching assistant for Public Health Nutrition (NFS1201) (Graduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2015
-</td>
-<td style="text-align:left;">
-Instructor for Software Carpentry Workshop (R) (Anyone), Software Carpentry in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2015 – 2018
-</td>
-<td style="text-align:left;">
-Instructor and one of the co-founders for Peer-led, participatory live coding training sessions (Anyone), UofTCoders, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2015
-</td>
-<td style="text-align:left;">
-Teaching helper for Software Carpentry Workshop (R) (Anyone), Software Carpentry in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-Teaching helper for Software Carpentry Workshop (Python) (Anyone), Software Carpentry in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014 – 2015
-</td>
-<td style="text-align:left;">
-Instructor and founder for Code as Manuscript: R and SAS coding workshops (Graduate), Graduate Professional Skills Program, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-Teaching assistant for Advanced Nutrition (NFS484-1484) (Graduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2013
-</td>
-<td style="text-align:left;">
-Teaching assistant for Advanced Nutrition (NFS484-1484) (Graduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2013
-</td>
-<td style="text-align:left;">
-Teaching assistant for Nutritional Microbiology (NFS485) (Undergraduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="supervision"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"/></svg> Supervision</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017 – 2018
-</td>
-<td style="text-align:left;">
-Master’s student, Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014 – 2015
-</td>
-<td style="text-align:left;">
-Undergraduate student, Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="curriculum-development"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z"/></svg> Curriculum development</h2>
+<p><strong>Presentations (since 2020)</strong></p>
 <div class="layout-chunk" data-layout="l-body">
 <ol type="1">
-<li><strong>Luke W. Johnston</strong>, Helene Bæk Juel, Bettina Lengger, Daniel R. Witte. ‘rostools/r-cubed: Reproducible Research in R - An introductory workshop on modern data analyses and workflows’. (2020). URL: <a href="https://r-cubed.rostools.org/" class="uri">https://r-cubed.rostools.org/</a>. DOI: <a href="https://doi.org/10.5281/zenodo.3921894">10.5281/zenodo.3921894</a>.</li>
-<li><strong>Luke Johnston</strong>, Omar Silverman-Retana, Andreas Eiset, Signe Storgaard. ‘r-cubed: Reproducible Research in R - An Intermediate Workshop on Modern Approaches and Workflows to Processing Data’. (2020). URL: <a href="https://r-cubed-intermediate.rostools.org/" class="uri">https://r-cubed-intermediate.rostools.org/</a>. DOI: <a href="https://doi.org/10.5281/zenodo.4061900">10.5281/zenodo.4061900</a>.</li>
-<li><strong>Luke W Johnston</strong>, Daniel R Witte, João Santiago, Anna Schritz. ‘Reproducible Quantitative Methods: Data analysis workflow using R’. (2019). URL: <a href="https://dda-rcourse.lwjohnst.com/" class="uri">https://dda-rcourse.lwjohnst.com/</a>. DOI: <a href="https://doi.org/10.5281/zenodo.2603311">10.5281/zenodo.2603311</a>.</li>
-<li><strong>Luke W Johnston</strong>. ‘acdcourse: Analyzing Cohort Datasets with R’. (2019). URL: <a href="https://github.com/lwjohnst86/acdcourse" class="uri">https://github.com/lwjohnst86/acdcourse</a>. DOI: <a href="https://doi.org/10.5281/zenodo.3247819">10.5281/zenodo.3247819</a>.</li>
-<li><strong>Luke W Johnston</strong>, Madeleine Bonsma-Fisher, Joel Ostblom, Ahmed Hasan, James Santangelo, Lindsay Coome, Lina Tran, Elliott Sales De Andrade, Sara Mahallati. ‘UofTCoders/rcourse: Quantitative Methods in R for Biology’. (2019). URL: <a href="https://uoftcoders.github.io/rcourse/" class="uri">https://uoftcoders.github.io/rcourse/</a>. DOI: <a href="https://doi.org/10.5281/zenodo.1117432">10.5281/zenodo.1117432</a>.</li>
-<li>Katrin Leinweber, Angelina Kraft, Mateusz Kuzak, <strong>Luke Johnston</strong>, Martin Hammitzsch, Konrad Förstner. ‘FAIR Data and Software: A Carpentries-based workshop’. (2018). DOI: <a href="https://doi.org/10.5281/zenodo.3707744">10.5281/zenodo.3707744</a>.</li>
+<li>(Oral) <strong>Luke W. Johnston</strong>, Clemens Wittenbecher, Fabian Eichelmann. ‘NetCoupler: Inferring causal pathways between high-dimensional metabolic data and external factors’. <em>Annual useR Conference</em> in Virtual (2021).</li>
+<li>(Contributed) Hannah Chatwin, <strong>Luke W Johnston</strong>, Helene Bæk Juel, Bettina Lengger, Daniel R. Witte, Malene Revsbech Christiansen, Anders Aasted Isaksen. ‘r-cubed: Guiding the overwhelmed scientist from random wrangling to Reproducible Research in R’. <em>Annual useR Conference</em> in Virtual (2021).</li>
+<li>(Oral) <strong>Luke W. Johnston</strong>, Clemens Wittenbecher. ‘NetCoupler: Inferring causal pathways between high-dimensional metabolic data and external factors’. <em>Annual Meeting of the Danish Epidemiological Society</em> in Virtual (2021).</li>
+<li>(Oral poster) <strong>LW Johnston</strong>, C Wittenbecher, HT Vistisen, CC Dahm, DR Witte. ‘The metabolic pathways between components of stature and HbA (1c): a causal structure learning approach in the UK Biobank’. <em>European Association for the Study of Diabetes Annual Meeting</em> in virtual setting (2020).</li>
+<li>(Oral) <strong>L. W. Johnston</strong>, C. Wittenbecher. ‘NetCoupler: Inferring causal pathways between high-dimensional metabolic data and external factors’. <em>IARC Nutritional Methodology and Biostatistics Group</em> in Virtual (2020).</li>
 </ol>
-</div>
-<h3 id="other-development">Other Development</h3>
-<div class="layout-chunk" data-layout="l-body">
-<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2018
-</td>
-<td style="text-align:left;">
-FAIR Data and Software (<a href="https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/" class="uri">https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/</a>), TIB Leibniz Information Centre for Science and Technology and University Library in Hannover, Germany
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430) (<a href="https://uoftcoders.github.io/rcourse/" class="uri">https://uoftcoders.github.io/rcourse/</a>), Department of Ecology and Evolutionary Biology, University of Toronto, Canada in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014 – 2015
-</td>
-<td style="text-align:left;">
-Code as Manuscript: Data wrangling, visualization, and reproducibility in R (<a href="http://codeasmanuscript.org" class="uri">http://codeasmanuscript.org</a>), Graduate Professional Skills Program, University of Toronto in Toronto, Canada
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="committees"><svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"/></svg> Committees</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2020 – 2021
-</td>
-<td style="text-align:left;">
-Member, Danish Diabetes Academy in Denmark
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="awards"><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"/></svg> Awards</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2019
-</td>
-<td style="text-align:left;">
-Danish Diabetes Academy Postdoctoral Fellowship from Danish Diabetes Academy, Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Michael C. Archer Research Excellence Award from University of Toronto, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Marie Skłodowska-Curie Master Class and Travel Fund from Aarhus University, Aarhus, Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Working Open Workshop and Travel Scholarship from Mozilla Science Lab, Montreal, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017
-</td>
-<td style="text-align:left;">
-Gordon Cressy Student Leadership Award from University of Toronto, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2012
-</td>
-<td style="text-align:left;">
-Ontario Graduate Scholarship from Government of Ontario, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2013
-</td>
-<td style="text-align:left;">
-Trainee Travel Award from Banting and Best Diabetes Centre, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2013
-</td>
-<td style="text-align:left;">
-Ontario Graduate Scholarship from Government of Ontario, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-Trainee Travel Award from Banting and Best Diabetes Centre, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-Conference Travel Grant from School of Graduate Studies, University of Toronto, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-Alumni Travel Award from Department of Nutritional Sciences, University of Toronto, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-New Investigator Award from International Society for the Study of Fatty Acids and Lipids, Stockholm, Sweden
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-Doctoral Student Research Award from Canadian Diabetes Association, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-Graduate Novo Nordisk Studentship from Banting and Best Diabetes Centre, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-Margaret and Nicholas Fodor Fellowship from School of Graduate Studies, University of Toronto, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2014
-</td>
-<td style="text-align:left;">
-Ontario Graduate Scholarship from Government of Ontario, Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2015
-</td>
-<td style="text-align:left;">
-Trainee Travel Award from Banting and Best Diabetes Centre, University of Toronto, Toronto, Canada
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="employment"><svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#006064;overflow:visible;position:relative;"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"/></svg> Employment</h2>
-<div class="layout-chunk" data-layout="l-body">
-<table class="table table-condensed table-striped" style="margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2019 – present
-</td>
-<td style="text-align:left;">
-DDA postdoctoral researcher, Steno Diabetes Center Aarhus in Aarhus, Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2018 – 2019
-</td>
-<td style="text-align:left;">
-Postdoctoral researcher, Department of Public Health, Aarhus University in Aarhus, Denmark
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2017 – 2018
-</td>
-<td style="text-align:left;">
-Postdoctoral fellow, Department of Nutritional Sciences, University of Toronto in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2011
-</td>
-<td style="text-align:left;">
-Research Assistant, Propel Center for Population Health Impact, University of Waterloo in Waterloo, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2010
-</td>
-<td style="text-align:left;">
-Research Assistant, Health Psychology Lab, University of Waterloo in Waterloo, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2009
-</td>
-<td style="text-align:left;">
-Research Assistant, Child Health Evaluative Sciences, Hospital for Sick Children in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2009
-</td>
-<td style="text-align:left;">
-Research Assistant, Toronto Rehabilitation Institute in Toronto, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2008
-</td>
-<td style="text-align:left;">
-Research Assistant, Health Psychology Lab in Waterloo, Canada
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 20%; font-weight: bold;">
-2008
-</td>
-<td style="text-align:left;">
-Project Manager, Health Psychology Lab in Waterloo, Canada
-</td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
