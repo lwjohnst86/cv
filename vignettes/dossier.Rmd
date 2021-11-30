@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 devtools::load_all()
-library(cv)
+# library(cv)
 cv_data <- cv:::read_cv_items()
 ```
 
