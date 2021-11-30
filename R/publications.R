@@ -3,10 +3,10 @@
 list_publications <- function(.tbl, .type) {
     pub_format <- tibble::tribble(
         ~category, ~glue_exp,
-        "article", "1. {presentation_type} {author}. '{title}'. *{journal}* ({year}). {doi}",
-        "inproceedings", "1. {presentation_type} {author}. '{title}'. *{booktitle}* in {address} ({year}). {doi}",
-        "book", "1. {presentation_type} {author}. '{title}'. *{publisher}* ({year}). {url} {isbn}",
-        "misc", "1. {author}. '{title}'. ({year}). {url} {doi}"
+        "article", "1. {presentation_type} '{title}'. {author}. ({year}). {doi}",
+        "inproceedings", "1. {presentation_type} '{title}'. {author}. *{booktitle}* in {address} ({year}). {doi}",
+        "book", "1. {presentation_type} '{title}'. {author}. ({year}). {url} {isbn}",
+        "misc", "1. '{title}'. {author}. ({year}). {url} {doi}"
     )
 
     format_prep <- .tbl %>%
