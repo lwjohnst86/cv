@@ -34,13 +34,6 @@ output <- function(.object, compact = FALSE, from_bib = FALSE) {
             }
             .output_html_item(.object)
         }
-
-    } else if (knitr::is_latex_output()) {
-        if (from_bib) {
-            cat(.object, sep = "\n")
-        } else {
-            .object
-        }
     } else if (interactive()) {
         .object
     }
