@@ -1,16 +1,7 @@
 ---
 title: "Teaching Dossier"
 author: Luke Johnston
-geometry: margin=1in
-fontsize: 10pt
-#fontfamily: "DejaVu Serif"
-papersize: letterpaper
-numbersections: true
-output: 
-    pagedown::html_page:
-        toc: true
-    pdf_document:
-        toc: true
+date: "`r cv::today_timestamp()`"
 ---
 
 ```{r, include = FALSE}

@@ -2,17 +2,6 @@
 title: "Teaching Portfolio"
 author: Luke W. Johnston
 date: "`r cv::today_timestamp()`"
-geometry: margin=2cm
-fontsize: 11pt
-papersize: a4
-mainfont: "Bitstream Charter"
-output: 
-    pagedown::html_paged:
-        toc: true
-        number_sections: yes
-    pdf_document:
-        toc: true
-        number_sections: yes
 ---
 
 ```{r setup, include=FALSE}

@@ -8,8 +8,6 @@ navbar:
       href: index.html
     - icon: "fa-github"
       href: "https://github.com/lwjohnst86/cv"
-    # - icon: "fa-file-pdf"
-    #   href: cv.pdf
     - text: Sites
       menu:
         - text: Main

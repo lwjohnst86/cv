@@ -1,28 +1,7 @@
 ---
 title: "CV"
 author: "Luke W. Johnston"
-name: Luke
-surname: Johnston
-position: Postdoctoral researcher
-address: Aarhus, Denmark
 date: "`r cv::today_timestamp()`"
-# profilepic: A local file path to an image
-www: lukewjohnston.com
-email: lwjohnst@gmail.com
-#twitter: lwjohnst
-github: lwjohnst86
-aboutme: I am a diabetes epidemiologist, R user and developer, teacher of modern data science and analysis skills, and open science advocate.
-headcolor: "324ea8"
-docname: "curriculum vitae"
-csl: vancouver.csl
-output:
-    pagedown::html_resume:
-        # set it to true for a self-contained HTML page 
-        # but it'll take longer to render
-        keep_md: yes
-        self_contained: false
-    vitae::awesomecv: 
-        keep_tex: yes
 ---
 
 ```{r setup, include=FALSE}
