@@ -102,6 +102,12 @@ list_committees(cv_data)
 list_awards(cv_data)
 ```
 
+## `r fa("comments-dollar")` Funding
+
+```{r list-funding}
+list_funding(cv_data)
+```
+
 ## `r fa("briefcase")` Employment
 
 ```{r list-employment}
