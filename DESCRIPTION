@@ -43,3 +43,6 @@ RoxygenNote: 7.1.2
 Remotes: 
     ropensci/bibtex,
     ropensci/bib2df
+Depends: 
+    R (>= 2.10)
+LazyData: true
