@@ -1,8 +1,8 @@
 #' @describeIn list_sections List all education taken or obtained.
 #' @export
-list_education <- function() {
+list_education <- function(caption = NULL) {
     data("education", package = "cv")
-    output(education)
+    output(education, caption = caption)
 }
 
 save_education <- function() {

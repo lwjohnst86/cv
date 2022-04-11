@@ -1,6 +1,6 @@
 #' @describeIn list_sections List all teaching activities.
 #' @export
-list_teaching <- function(.tbl) {
+list_teaching <- function(.tbl, caption = NULL) {
     .tbl %>%
         dplyr::filter(section == "teaching") %>%
         tidy_dates() %>%
@@ -14,12 +14,12 @@ list_teaching <- function(.tbl) {
             with = organization,
             where = location
         ) %>%
-        output()
+        output(caption = caption)
 }
 
 #' @describeIn list_sections List curriculum developed.
 #' @export
-list_curriculum_development <- function(.tbl) {
+list_curriculum_development <- function(.tbl, caption = NULL) {
     .tbl %>%
         dplyr::filter(section == "curriculum") %>%
         tidy_dates() %>%
@@ -30,12 +30,12 @@ list_curriculum_development <- function(.tbl) {
             where = location,
             why = website
         ) %>%
-        output()
+        output(caption = caption)
 }
 
 #' @describeIn list_sections List supervisory activities.
 #' @export
-list_supervision <- function(.tbl) {
+list_supervision <- function(.tbl, caption = NULL) {
     .tbl %>%
         dplyr::filter(section == "supervision") %>%
         tidy_dates() %>%
@@ -45,5 +45,5 @@ list_supervision <- function(.tbl) {
             with = organization,
             where = location
         ) %>%
-        output()
+        output(caption = caption)
 }

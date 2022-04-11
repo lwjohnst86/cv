@@ -1,6 +1,6 @@
 #' @describeIn list_sections List all employment activities.
 #' @export
-list_employment <- function(.tbl) {
+list_employment <- function(.tbl, caption = NULL) {
     .tbl %>%
         dplyr::filter(section == "employment") %>%
         tidy_dates() %>%
@@ -10,5 +10,5 @@ list_employment <- function(.tbl) {
             with = organization,
             where = location
         ) %>%
-        output()
+        output(caption = caption)
 }
