@@ -6,3 +6,4 @@ recent.md
 .httr-oauth
 *.sav
 vignettes/fonts/
+inst/doc

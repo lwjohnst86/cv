@@ -1,0 +1,117 @@
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+    echo = FALSE,
+    warning = FALSE,
+    message = FALSE,
+    results = "asis",
+    comment = ""
+)
+# library(cv)
+library(here)
+devtools::load_all()
+library(tidyverse)
+library(RefManageR)
+RefManageR::BibOptions(
+    bib.style = "authoryear",
+    first.inits = TRUE,
+    style = "markdown",
+    max.names = Inf,
+    sorting = "ydnt"
+    # no.print.fields = NULL
+)
+cv_data <- read_cv_items() 
+bib_items <- read_bib_items() 
+rpkgs <- cv::rpackages
+```
+
+# Education, training, collaboration, and networking activities
+
+<br>
+
+## Activities within DDA
+
+```{r list-teaching-dda}
+cv_data %>% 
+    filter(str_detect(organization, "Danish Diabetes Academy")) %>% 
+    list_teaching("Courses taught for the DDA.") 
+```
+```{r list-committees}
+list_committees(cv_data, "Committee for networking and education.")
+```
+
+## Activities outside DDA
+
+### Teaching material in book format
+
+```{r list-books}
+list_publications(bib_items, "Books")
+```
+
+### Publications related to teaching
+
+```{r list-articles}
+bib_items %>% 
+    filter(str_detect(title, "teaching|r-cubed")) %>% 
+    list_publications("Journal articles") 
+```
+
+### Presentations related to teaching
+
+```{r list-presentations}
+bib_items %>% 
+    filter(str_detect(title, "[tT]each|r-cubed")) %>% 
+    list_publications("presentations")
+```
+
+### Educational activities as teacher or instructor
+
+```{r list-teaching-not-dda}
+cv_data %>% 
+    filter(str_detect(organization, "Danish Diabetes Academy", negate = TRUE)) %>% 
+    list_teaching() 
+```
+### Supervising students
+
+```{r list-supervision}
+list_supervision(cv_data)
+```
+
+
+### Curriculum development (archived with DOI)
+
+```{r list-curriculum-archived}
+list_publications(bib_items, "Curriculum development")
+```
+
+### Other curriculum development
+
+```{r list-curriculum}
+list_curriculum_development(cv_data)
+```
+
+### Teaching affiliations
+
+```{r list-affiliations}
+cv_data %>% 
+    filter(str_detect(role, "[iI]nstructor|[tT]eacher")) %>% 
+    list_affiliations()
+```
+
+### Educational certificates and courses taken
+
+```{r}
+cv_data %>% 
+    arrange(desc(start)) %>% 
+    filter(section %in% c("courses taken", "certificates"),
+           str_detect(title, "Teacher|Instructor")) %>% 
+    tidy_dates() %>%
+        vitae::detailed_entries(
+            what = title,
+            when = date_range,
+            with = organization,
+            where = location
+        ) %>% 
+    output()
+```
+

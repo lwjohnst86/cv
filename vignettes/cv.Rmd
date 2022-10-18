@@ -1,6 +1,6 @@
 ---
-title: "CV"
-author: "Luke W. Johnston"
+# title: "CV"
+# author: "Luke W. Johnston"
 date: "`r cv::today_timestamp()`"
 ---
 
@@ -25,91 +25,58 @@ RefManageR::BibOptions(
     sorting = "ydnt"
     # no.print.fields = NULL
 )
-cv_data <- read_cv_items() 
-bib_items <- read_bib_items() 
+cv_data <- read_cv_items() %>% 
+    filter(year(start) >= 2019)
+bib_items <- read_bib_items() %>% 
+    filter(year >= 2019)
 rpkgs <- cv::rpackages
 ```
 
-## `r fa("graduation-cap")` Education
-
 ```{r list-education}
-list_education()
+list_education("Educational degrees attained.")
 ```
 
-## `r fa("university")` Affiliations
-
-```{r list-affiliations}
-list_affiliations(cv_data)
+```{r list-employment}
+cv_data %>% 
+    filter(year(start) %in% 2017:2022) %>% 
+    list_employment("Employment in last 5 years.")
 ```
 
-## `r fa("book-open")` Publications
+## Dissemination activities 
+
+**Publications**
 
 ```{r list-articles}
-list_publications(bib_items, "Journal articles")
+bib_items %>% 
+    filter(str_detect(title, "teaching|r-cubed", negate = TRUE)) %>% 
+    list_publications("Journal articles") 
 ```
 
-## `r fa("book")` Books
-
-```{r list-books}
-list_publications(bib_items, "Books")
-```
-
-## `r fa("comment-dots")` Presentations
+**Presentations**
 
 ```{r list-presentations}
-list_publications(bib_items, "presentations")
+bib_items %>% 
+    filter(str_detect(title, "[tT]each|r-cubed", negate = TRUE)) %>% 
+    list_publications("presentations")
 ```
 
-## `r fa("box-open")` R packages
+**R packages**
 
 ```{r list-r-packages}
 list_rpackages(rpkgs) 
 ```
 
-## `r fa("chalkboard-teacher")` Teaching 
-
-```{r list-teaching}
-list_teaching(cv_data)
-```
-
-## `r fa("user-friends")` Supervision
-
-```{r list-supervision}
-list_supervision(cv_data)
-```
-
-## `r fa("book-reader")` Curriculum development
-
-```{r list-curriculum-archived}
-list_publications(bib_items, "Curriculum development")
-```
-
-### Other Development
-
-```{r list-curriculum}
-list_curriculum_development(cv_data)
-```
-
-## `r fa("users")` Committees
-
-```{r list-committees}
-list_committees(cv_data)
-```
-
-## `r fa("trophy")` Awards
-
-```{r list-awards}
-list_awards(cv_data)
-```
-
-## `r fa("comments-dollar")` Funding
+## Project funding
 
 ```{r list-funding}
 list_funding(cv_data)
 ```
 
-## `r fa("briefcase")` Employment
+## Awards and external funding
 
-```{r list-employment}
-list_employment(cv_data)
+```{r}
+read_cv_items() %>% 
+    filter(section == "awards", str_detect(title, "Travel|Ontario|Studentship", negate = TRUE)) %>% 
+    list_awards("Showing all awards, excluding travel grants, during PhD and postdoc.")
 ```
+
