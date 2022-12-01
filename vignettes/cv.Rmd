@@ -113,3 +113,9 @@ list_funding(cv_data)
 ```{r list-employment}
 list_employment(cv_data)
 ```
+
+## `r fa("bullhorn")` Outreach activities
+
+```{r list-outreach}
+list_outreach(cv_data)
+```
