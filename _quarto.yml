@@ -31,6 +31,7 @@ format:
         - litera
         - docs/theme.scss
     toc: true
+    tbl-colwidths: [20, 70]
 
 editor_options:
   markdown:
