@@ -1,7 +1,5 @@
 ---
 title: "Teaching Portfolio"
-author: Luke W. Johnston
-date: "`r cv::today_timestamp()`"
 ---
 
 ```{r setup, include=FALSE}

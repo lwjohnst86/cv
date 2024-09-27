@@ -1,7 +1,5 @@
 ---
 title: "Teaching Dossier"
-author: Luke Johnston
-date: "`r cv::today_timestamp()`"
 ---
 
 ```{r, include = FALSE}
@@ -13,8 +11,7 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 devtools::load_all()
-# library(cv)
-cv_data <- cv:::read_cv_items()
+cv_data <- read_cv_items()
 ```
 
 # Statement of teaching philosophy #
