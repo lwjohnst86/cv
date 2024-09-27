@@ -3,14 +3,6 @@ output <- function(.object, compact = FALSE, from_bib = FALSE, caption = NULL) {
     if (from_bib) {
       cat(.object, sep = "\n")
     } else {
-      # .object <- .object %>%
-      #     tibble::as_tibble() %>%
-      #     dplyr::mutate_all(~ dplyr::if_else(is.na(.), "N/A", as.character(.)))
-      #
-      # if (!"where" %in% names(.object)) {
-      #     .object <- .object %>%
-      #         dplyr::mutate(where = "N/A")
-      # }
       .object <- .object %>%
         ungroup()
 
@@ -74,22 +66,4 @@ tidy_dates <- function(.tbl) {
       end = dplyr::if_else(is.na(end), "present", as.character(end)),
       date_range = dplyr::if_else(start == end, glue("{start}"), glue("{start} -- {end}"))
     )
-}
-
-#' Timestamp for today.
-#'
-#' @return Outputs string with date as "March 1, 1999"
-#' @export
-#'
-today_timestamp <- function() {
-  lubridate::stamp("March 1, 1999", quiet = TRUE)(lubridate::today())
-}
-
-website_theme_color <- "#006064"
-fa <- function(icon) {
-  output <- ""
-  if (knitr::is_html_output() | interactive()) {
-    output <- fontawesome::fa(name = icon, fill = website_theme_color)
-  }
-  output
 }
