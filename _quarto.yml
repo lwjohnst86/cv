@@ -1,0 +1,42 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!docs/portfolio.qmd"
+    - "!docs/dossier.qmd"
+
+website:
+  title: "Luke W. Johnston's CV"
+  site-url: "https://cv.lukewjohnston.com/"
+  repo-url: "https://github.com/lwjohnst86/cv/"
+  search: false
+  navbar:
+    right:
+      - text: Sites
+        menu:
+          - text: Main
+            href: https://lukewjohnston.com
+          - text: Slides
+            href: https://slides.lwjohnst.com
+          - text: Posters
+            href: https://posters.lwjohnst.com
+  page-footer:
+    center:
+      - text: "© Copyright 2021-2024 Luke W. Johnston."
+
+format:
+  html:
+    from: markdown+emoji
+    theme:
+        - litera
+        - docs/theme.scss
+    toc: true
+
+editor_options:
+  markdown:
+    wrap: 72
+    canonical: true
+
+execute:
+  output: asis
+  echo: false
