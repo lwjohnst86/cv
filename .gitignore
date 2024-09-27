@@ -6,3 +6,5 @@ recent.md
 .httr-oauth
 *.sav
 vignettes/fonts/
+
+/.quarto/
