@@ -28,11 +28,7 @@ output <- function(.object, compact = FALSE, from_bib = FALSE, caption = NULL) {
       when = when,
       what = glue::glue("{what}, {with} {where}")
     ) |>
-    knitr::kable(col.names = NULL, align = "ll", caption = caption, label = NA) |>
-    kableExtra::kable_styling(c("condensed"),
-      full_width = TRUE
-    ) |>
-    kableExtra::column_spec(1, width = "20%", bold = TRUE)
+    knitr::kable(col.names = NULL, align = "ll", caption = caption, label = NA)
 }
 
 #' Tidy up date variables.
