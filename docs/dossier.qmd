@@ -14,197 +14,196 @@ devtools::load_all()
 cv_data <- read_cv_items()
 ```
 
-# Statement of teaching philosophy #
+# Statement of teaching philosophy
 
-## What is teaching? And why bother teaching? ##
+## What is teaching? And why bother teaching?
 
 **Synopsis**:
 
-* Foster learning *how* to learn
-* Knowing how to *apply* tools and knowledge
-* Skills and knowledge should be useful *outside* of the classroom
-* By teaching, I improve many minds and eventually the collective is
-  improved
+-   Foster learning *how* to learn
+-   Knowing how to *apply* tools and knowledge
+-   Skills and knowledge should be useful *outside* of the classroom
+-   By teaching, I improve many minds and eventually the collective is
+    improved
 
-**Specifically**, teaching is the act of *facilitating* the
-development of skills and knowledge in learners, such that it is
-persistent and reuse-able.  As a learner, I have always been more
-interested in understanding the course material than in the grades.
-As a result, I often did not get excellent grades, and only when I
-wanted to learn and understand the material, *and* the teacher was
-good, did my grades improve.  What bothered me the most was when I
-wanted to learn, but the teacher was not good.  These experiences have
-shaped how I see what teaching should be like.
+**Specifically**, teaching is the act of *facilitating* the development
+of skills and knowledge in learners, such that it is persistent and
+reuse-able. As a learner, I have always been more interested in
+understanding the course material than in the grades. As a result, I
+often did not get excellent grades, and only when I wanted to learn and
+understand the material, *and* the teacher was good, did my grades
+improve. What bothered me the most was when I wanted to learn, but the
+teacher was not good. These experiences have shaped how I see what
+teaching should be like.
 
 What good teaching really comes down to for me is *efficiency* in time
-and effort.  My time is precious.  I have maybe 90 years in this life
-and I am already a third way through.  If I teach, I don't want to
-waste my time *nor* the learners, whose time is just as precious as
-mine.  Any method that makes learning easier, more persistant, and
-more enjoyable, I will use it.  Likewise, if I can make the material
-more meaningful, useful, and understandable, I will.  I also recognize
-that I am merely a facilitator to the learning process: I can
-encourage or I can block it.  To be effective, I need to learn and get
-feedback from the learners on how I can improve this process.
+and effort. My time is precious. I have maybe 90 years in this life and
+I am already a third way through. If I teach, I don't want to waste my
+time *nor* the learners, whose time is just as precious as mine. Any
+method that makes learning easier, more persistant, and more enjoyable,
+I will use it. Likewise, if I can make the material more meaningful,
+useful, and understandable, I will. I also recognize that I am merely a
+facilitator to the learning process: I can encourage or I can block it.
+To be effective, I need to learn and get feedback from the learners on
+how I can improve this process.
 
 The *reasons* I teach are because I want to improve society in general
 and to expose learners to concepts and tools they may not have been
-exposed to.  I teach to prepare students and learners for life and as
-future productive members and shapers of society.  I teach to develop
+exposed to. I teach to prepare students and learners for life and as
+future productive members and shapers of society. I teach to develop
 scientific literacy and scientific thinking, as these skills are vital
-in modern societies.  But most importantly, I teach to improve the
-collective competence of society.  One mind may help direct a
-community or city, but multiple minds can change a nation or the
-world.  We are all interconnected, and so by improving more minds, I
-can improve the collective, the same collective that will shape the
-direction of humankind's and our planet's future.
+in modern societies. But most importantly, I teach to improve the
+collective competence of society. One mind may help direct a community
+or city, but multiple minds can change a nation or the world. We are all
+interconnected, and so by improving more minds, I can improve the
+collective, the same collective that will shape the direction of
+humankind's and our planet's future.
 
-## Teaching methods ##
+## Teaching methods
 
 **Synopsis**:
 
-* Incorporate real world, tangible examples and analogies
-* Knowledge and application go hand-in-hand
-* Getting feedback frequently to assess learning
+-   Incorporate real world, tangible examples and analogies
+-   Knowledge and application go hand-in-hand
+-   Getting feedback frequently to assess learning
 
 **Specifically**, I use methods that fit with how I see teaching to be
-and how humans are.  We as humans evolved to use *tools*, to optimize
-on *visual* information, and to be aware of *tangible* things in our
-environment and how to move in it.  So the methods I use incorporate
-how we evolved.  I use graphics or images as much as possible, for
-instance using a comic about "final".doc as a way to introduce the
-usefulness of version control.  I use real-world, concrete examples
-and analogies to describe abstract concepts, for example by describing
-R variable assignment as jars to store things or that version control
-is like stacking books.  When I teach a concept or lesson, I include a
-practice component to it, for instance when learning about how to
-critique a scientific study, I get the learners to do think-pair-share
-exercises or getting into groups to practice the concepts.
+and how humans are. We as humans evolved to use *tools*, to optimize on
+*visual* information, and to be aware of *tangible* things in our
+environment and how to move in it. So the methods I use incorporate how
+we evolved. I use graphics or images as much as possible, for instance
+using a comic about "final".doc as a way to introduce the usefulness of
+version control. I use real-world, concrete examples and analogies to
+describe abstract concepts, for example by describing R variable
+assignment as jars to store things or that version control is like
+stacking books. When I teach a concept or lesson, I include a practice
+component to it, for instance when learning about how to critique a
+scientific study, I get the learners to do think-pair-share exercises or
+getting into groups to practice the concepts.
 
-But I also know that I cannot read my learners' minds.  I need to
-*assess myself* as a teacher and the lesson content to make sure I am
-actually teaching.  I do this by frequently getting feedback from the
-learners by using 'ticket out the door' techniques, by asking
-co-instructors for their thoughts, by assessing completed assignments
-for understanding, and by self-reflecting on the lesson afterward.
+But I also know that I cannot read my learners' minds. I need to *assess
+myself* as a teacher and the lesson content to make sure I am actually
+teaching. I do this by frequently getting feedback from the learners by
+using 'ticket out the door' techniques, by asking co-instructors for
+their thoughts, by assessing completed assignments for understanding,
+and by self-reflecting on the lesson afterward.
 
-## Evaluation and assessment ##
+## Evaluation and assessment
 
 **Synopsis**:
 
-* Use 'ticket out the door'
-* Assignment and exam questions that show thought process
-* Assignments demonstrate the application
-* Frequently seek feedback
-* Include feedback as part of the assignment
+-   Use 'ticket out the door'
+-   Assignment and exam questions that show thought process
+-   Assignments demonstrate the application
+-   Frequently seek feedback
+-   Include feedback as part of the assignment
 
-**Specifically**, because whether learners are grasping the concepts
-is dependent on how well I teach, most of the evaluation involves how
-my teaching and content can improve, rather than on how well the
-learner understands what I am teaching.  So, for instance, I use
-tickets out the door to get feedback on how well the students learned
-concepts in the lesson and how well I did.  Based on that feedback, I
-can address misunderstanding or confusion in the next class.  I also
-actively seek feedback from other co-instructors to see how I can
-improve my teaching style and content, as well as reflect afterward on
-how the lesson went.  Lastly, I also try to incorporate ways to get
-more feedback in assignments I create, such as including a question on
-how the course went and any potential confusions.  To assess the
-students understanding, I develop assignments specifically to
-demonstrate that they understand the concepts or tools taught and how
-to apply them.  For example, one assignment would be to push a file to
-the course repository on GitHub, which demonstrates the student knows
-how to use Git and GitHub.
+**Specifically**, because whether learners are grasping the concepts is
+dependent on how well I teach, most of the evaluation involves how my
+teaching and content can improve, rather than on how well the learner
+understands what I am teaching. So, for instance, I use tickets out the
+door to get feedback on how well the students learned concepts in the
+lesson and how well I did. Based on that feedback, I can address
+misunderstanding or confusion in the next class. I also actively seek
+feedback from other co-instructors to see how I can improve my teaching
+style and content, as well as reflect afterward on how the lesson went.
+Lastly, I also try to incorporate ways to get more feedback in
+assignments I create, such as including a question on how the course
+went and any potential confusions. To assess the students understanding,
+I develop assignments specifically to demonstrate that they understand
+the concepts or tools taught and how to apply them. For example, one
+assignment would be to push a file to the course repository on GitHub,
+which demonstrates the student knows how to use Git and GitHub.
 
-## Teaching and learning goals ##
+## Teaching and learning goals
 
 **Synposis**:
 
-* Know where to find resources
-* Not be afraid to try new things
-* Use scientific thinking
-* Apply tools and knowledge
-* Be competent and be understanding
+-   Know where to find resources
+-   Not be afraid to try new things
+-   Use scientific thinking
+-   Apply tools and knowledge
+-   Be competent and be understanding
 
 **Specifically**, my goal is to develop a thought process that allows
 learners to be independent, resourceful, confident, critical, and
-*competent*.  By teaching skills and tools, by getting learners to
+*competent*. By teaching skills and tools, by getting learners to
 *practice* what they learn, by challenging students with unfamiliar
-problems but tools to solve those problems, and by showing learners
-that teaching and learning are an iterative, mutual process, I will be
-able to achieve my goal.  And, as a result, learners will go on to be
-better able to help society and tackle global issues that we currently
-and may potentially face.
+problems but tools to solve those problems, and by showing learners that
+teaching and learning are an iterative, mutual process, I will be able
+to achieve my goal. And, as a result, learners will go on to be better
+able to help society and tackle global issues that we currently and may
+potentially face.
 
-# Highlights of Teaching Experience #
+# Highlights of Teaching Experience
 
-| R | Course         |    Year |  Size | Freq.   | Duties                             |
-|---+----------------+---------+-------+---------+------------------------------------|
-| 1 | GPS: Code As   |    June | 7--11 | 2-hrs,  | Developed the material, slides,    |
-|   | Manuscript     |    2015 |       | 1/wk    | lesson plan, and assignments.      |
-|   | workshops      |         |       |         | Co-instructed with partner for     |
-|   |                |         |       |         | Code As Manuscript.                |
-|   |                |         |       |         |                                    |
-| 1 | Coding         | 2014 to |  4--6 | 3-hrs,  | Same as above.                     |
-|   | workshops      |    2015 |       | 1/mth   |                                    |
-|   |                |         |       |         |                                    |
-| 1 | NFS484-1484:   |    Fall |    19 | 1-hr,   | Lead the graduate tutorials,       |
-|   | Advanced Nutr. |    2014 |       | 1-wk    | develop the final exam and mark    |
-|   |                |         |       |         | it                                 |
-|   |                |         |       |         |                                    |
-| 1 | NFS484-1484:   |    Fall | 6--12 | 1-hr,   | Lead the undergraduate tutorials,  |
-|   | Advanced Nutr. |    2013 |       | 1/wk    | develop the midterm exam and mark  |
-|   |                |         |       |         | it                                 |
-|   |                |         |       |         |                                    |
-| 1 | NFS394: Res.   | 2014 to |     1 | Varied  | Co-mentored an undergraduate       |
-|   | Project        |    2015 |       |         | through a research project with    |
-|   |                |         |       |         | my supervisor.  Helped develop     |
-|   |                |         |       |         | idea, taught SAS, and provided     |
-|   |                |         |       |         | guidance on analysis and writing   |
-|   |                |         |       |         | up report.                         |
-|   |                |         |       |         |                                    |
-| 2 | UofT Coders:   |    June |   ~12 | 1-hr,   | Prepared and taught a lesson on    |
-|   | Git workshop   |    2015 |       | once    | git and GitHub.                    |
-|   |                |         |       |         |                                    |
-| 2 | Data Lit:      |    June |   ~15 | 2-hrs,  | Prepared and taught a lesson on    |
-|   | R workshop     |    2015 |       | once    | data wrangling in R using dplyr    |
-|   |                |         |       |         | and tidyr.                         |
-|   |                |         |       |         |                                    |
-| 3 | SWC: Helper    |    2015 |    25 | 2 days  | Assist learners in learning        |
-|   |                |         |       |         | programming and computing          |
-|   |                |         |       |         | skills in a Software Carpentry     |
-|   |                |         |       |         | (SWC) workshop at the Hospital     |
-|   |                |         |       |         | for Sick Children                  |
-|   |                |         |       |         |                                    |
-| 3 | SWC: Helper    |    2014 |    20 | 2 days  | Same as above, but at the Gerstein |
-|   |                |         |       |         | library at the U of T.             |
-|   |                |         |       |         |                                    |
-| 3 | NFS485: Nutr.  |  Winter |    NA | NA      | Mark the midterm, final, and       |
-|   | Microbio.      |    2013 |       |         | assignment                         |
-|   |                |         |       |         |                                    |
+| R   | Course         | Year    | Size  | Freq.  | Duties                             |
+|-----|----------------|---------|-------|--------|------------------------------------|
+| 1   | GPS: Code As   | June    | 7--11 | 2-hrs, | Developed the material, slides,    |
+|     | Manuscript     | 2015    |       | 1/wk   | lesson plan, and assignments.      |
+|     | workshops      |         |       |        | Co-instructed with partner for     |
+|     |                |         |       |        | Code As Manuscript.                |
+|     |                |         |       |        |                                    |
+| 1   | Coding         | 2014 to | 4--6  | 3-hrs, | Same as above.                     |
+|     | workshops      | 2015    |       | 1/mth  |                                    |
+|     |                |         |       |        |                                    |
+| 1   | NFS484-1484:   | Fall    | 19    | 1-hr,  | Lead the graduate tutorials,       |
+|     | Advanced Nutr. | 2014    |       | 1-wk   | develop the final exam and mark    |
+|     |                |         |       |        | it                                 |
+|     |                |         |       |        |                                    |
+| 1   | NFS484-1484:   | Fall    | 6--12 | 1-hr,  | Lead the undergraduate tutorials,  |
+|     | Advanced Nutr. | 2013    |       | 1/wk   | develop the midterm exam and mark  |
+|     |                |         |       |        | it                                 |
+|     |                |         |       |        |                                    |
+| 1   | NFS394: Res.   | 2014 to | 1     | Varied | Co-mentored an undergraduate       |
+|     | Project        | 2015    |       |        | through a research project with    |
+|     |                |         |       |        | my supervisor. Helped develop      |
+|     |                |         |       |        | idea, taught SAS, and provided     |
+|     |                |         |       |        | guidance on analysis and writing   |
+|     |                |         |       |        | up report.                         |
+|     |                |         |       |        |                                    |
+| 2   | UofT Coders:   | June    | \~12  | 1-hr,  | Prepared and taught a lesson on    |
+|     | Git workshop   | 2015    |       | once   | git and GitHub.                    |
+|     |                |         |       |        |                                    |
+| 2   | Data Lit:      | June    | \~15  | 2-hrs, | Prepared and taught a lesson on    |
+|     | R workshop     | 2015    |       | once   | data wrangling in R using dplyr    |
+|     |                |         |       |        | and tidyr.                         |
+|     |                |         |       |        |                                    |
+| 3   | SWC: Helper    | 2015    | 25    | 2 days | Assist learners in learning        |
+|     |                |         |       |        | programming and computing          |
+|     |                |         |       |        | skills in a Software Carpentry     |
+|     |                |         |       |        | (SWC) workshop at the Hospital     |
+|     |                |         |       |        | for Sick Children                  |
+|     |                |         |       |        |                                    |
+| 3   | SWC: Helper    | 2014    | 20    | 2 days | Same as above, but at the Gerstein |
+|     |                |         |       |        | library at the U of T.             |
+|     |                |         |       |        |                                    |
+| 3   | NFS485: Nutr.  | Winter  | NA    | NA     | Mark the midterm, final, and       |
+|     | Microbio.      | 2013    |       |        | assignment                         |
+|     |                |         |       |        |                                    |
 
-Table: List of courses, tutorials, or workshops taught.  'R' is the
-level of responsibility (1 being the highest), 'Size' is the number of
-learners in the course, and 'Freq' is the frequency of the tutorials
-or workshops.
+: List of courses, tutorials, or workshops taught. 'R' is the level of
+responsibility (1 being the highest), 'Size' is the number of learners
+in the course, and 'Freq' is the frequency of the tutorials or
+workshops.
 
-# Evidence of Teaching Effectiveness and Development #
+# Evidence of Teaching Effectiveness and Development
 
 Much of my evaluations and feedback I store on my GitHub account, for
 example for my "Code As Manuscript" workshop series, feedback and
 evaluations are found at
-<https://github.com/codeasmanuscript/workshops/tree/master/evals>.
-Below are some excerpts of some feedback I received.  Collecting
-feedback has allowed me to incorporate as much of it as I can into
-improving my teaching, how I present the content, and what content I
-should actually be teaching.
+<https://github.com/codeasmanuscript/workshops/tree/master/evals>. Below
+are some excerpts of some feedback I received. Collecting feedback has
+allowed me to incorporate as much of it as I can into improving my
+teaching, how I present the content, and what content I should actually
+be teaching.
 
-## Student evaluation ##
+## Student evaluation
 
 Bahar Davoudi:
 
 > Dedicated instructors. Worked one-on-one to teach us and make us
-> understand the concepts.  It was really useful when Luke used a
+> understand the concepts. It was really useful when Luke used a
 > physical example to teach us "add" and "commit" with a stack of
 > markers! A great method to make coding instructions clear and less
 > abstract.
@@ -213,7 +212,6 @@ Renata Musa:
 
 > ... as a participant, I feel that both Luke and Daiva truly want to
 > make it useful.
-
 
 Shawn Smith:
 
@@ -226,160 +224,158 @@ Shawn Smith:
 
 Anonymous:
 
-> Good use of analogies, clearly explained.  It was helpful that you
-> were both very flexible and willing to address questions.
+> Good use of analogies, clearly explained. It was helpful that you were
+> both very flexible and willing to address questions.
 
 > Focus on what can be accomplished in specific amount of time.
 
 > Thank you for donating your time to teach us these important
-> techniques.  \[To improve\] ... spending more time to practice...
+> techniques. \[To improve\] ... spending more time to practice...
 
-## Peer evaluation ##
+## Peer evaluation
 
 Daiva Nielsen (co-instructor for the "Code As Manuscript" series):
 
 > Good explanation and interpretation of techniques, why they were
-> useful. Some students were falling behind on keeping up with code,
-> may need to go slower.
+> useful. Some students were falling behind on keeping up with code, may
+> need to go slower.
 
 > Clarify that this \[command-line tool\] is what they will be using
 > throughout the workshop series, why this is useful, acknowledge that
 > the majority of people have practically no experience with it, and
 > assure them that they can learn how to perform some basic tasks with
-> it comfortably. Lots of positive reinforcement because this is so
-> new to so many people.
+> it comfortably. Lots of positive reinforcement because this is so new
+> to so many people.
 
 Xu Fei (organizer of the Data Literacy Meetup workshops):
 
-> (Note: This is in response to me trying to answer a question I
-> wasn't fully prepared for) ... I think if we know that we are going
-> into unknown water by trying a question, we may want to make it
-> clear from the beginning instead of jumping right on it and not
-> getting an answer. Sometimes it's better to ask the person to come
-> ask it again later on, so that we can keep the pace.  ... when
-> someone asks things out of the prepared curriculum, we go further to
-> explain it, but if for some reason the output is not what we
-> expected, we had to troubleshoot on the spot. Even if we don't
-> manage to get the desired output, we still need to move on, but that
-> leaves the question unanswered. I think this may add to the
-> "unstructured impression".
+> (Note: This is in response to me trying to answer a question I wasn't
+> fully prepared for) ... I think if we know that we are going into
+> unknown water by trying a question, we may want to make it clear from
+> the beginning instead of jumping right on it and not getting an
+> answer. Sometimes it's better to ask the person to come ask it again
+> later on, so that we can keep the pace. ... when someone asks things
+> out of the prepared curriculum, we go further to explain it, but if
+> for some reason the output is not what we expected, we had to
+> troubleshoot on the spot. Even if we don't manage to get the desired
+> output, we still need to move on, but that leaves the question
+> unanswered. I think this may add to the "unstructured impression".
 
-## Professional development ##
+## Professional development
 
-* Software Carpentry Instructor Training program (Feb.--Apr. 2015)
-* Advanced University Teaching Preparation program
-  (Sept. 2013--present)
+-   Software Carpentry Instructor Training program (Feb.--Apr. 2015)
+-   Advanced University Teaching Preparation program (Sept.
+    2013--present)
 
-# Course and Curriculum Development #
+# Course and Curriculum Development
 
-## Graduate Professional Skills: Code As Manuscript workshops (June 2015) ##
+## Graduate Professional Skills: Code As Manuscript workshops (June 2015)
 
 Given that datasets are increasingly getting larger, that computing
-skills are increasingly needed to analyze data, and that scientists
-and researchers are often not provided training in best practices on
+skills are increasingly needed to analyze data, and that scientists and
+researchers are often not provided training in best practices on
 computing and programming (even statistics), I started developing a
 series of workshops that were aimed to fill that training void
-(including a bit on statistical techniques).  Discussions with
-colleague Daiva Nielsen on this issue revealed her equal desire to
-provide training on this matter, and as a results we began
-collaborating together to put together a series of workshop, which we
-initially started for our graduate students in our home department of
-Nutritional Sciences at the University of Toronto (see subsection
-below).  Since collaborating, we've named our workshop series "Code As
-Manuscript".
+(including a bit on statistical techniques). Discussions with colleague
+Daiva Nielsen on this issue revealed her equal desire to provide
+training on this matter, and as a results we began collaborating
+together to put together a series of workshop, which we initially
+started for our graduate students in our home department of Nutritional
+Sciences at the University of Toronto (see subsection below). Since
+collaborating, we've named our workshop series "Code As Manuscript".
 
 Our workshop series was approved and advertised by Liam O'Leary, GPS
-coordinator.  The syllabus for our GPS workshop series is found at
-<http://codeasmanuscript.github.io/workshops/gps/sas-syllabus/>, as
-well as a hard-copy found in [Appendix A](#appendix-a).
+coordinator. The syllabus for our GPS workshop series is found at
+<http://codeasmanuscript.github.io/workshops/gps/sas-syllabus/>, as well
+as a hard-copy found in [Appendix A](#appendix-a).
 
 In line with our mission statement and focus on reproducibility and
 openness, we've kept all our lesson material in a public format:
 
-* Our material is found on GitHub at
-  <https://github.com/codeasmanuscript/workshops>
-* Our website showing our material is at
-  <http://codeasmanuscript.github.io/workshops/>
+-   Our material is found on GitHub at
+    <https://github.com/codeasmanuscript/workshops>
+-   Our website showing our material is at
+    <http://codeasmanuscript.github.io/workshops/>
 
-
-## Departmental workshops on coding (2014--2015) ##
+## Departmental workshops on coding (2014--2015)
 
 These were the initial workshops we (myself and Daiva Nielsen) started
-developing for our Department of Nutritional Sciences, explained in
-more detail above.  The table below lists the workshops we taught to
-the department.
+developing for our Department of Nutritional Sciences, explained in more
+detail above. The table below lists the workshops we taught to the
+department.
 
-| Workshop                         | Description                                            |
-|----------------------------------+--------------------------------------------------------|
-| Let's 'Git' started! An          | This workshop introduces the concept of                |
-| introduction to version          | versions, managing them, keeping a record              |
-| control                          | of changes to files and folders, and working           |
-|                                  | toward a solution for the reproducibility              |
-|                                  | problem.  We teach the most common and fairly          |
-|                                  | basic commands in Git that will help jump start        |
-|                                  | learners to incorporating Git in their everyday        |
-|                                  | research workflow                                      |
-|                                  |                                                        |
-| 'Git'-ing better: Collaborating  | This workshop expands on some commands in Git          |
-| on your research with version    | and introduces efficient methods for collaborating     |
-| control and GitHub               | on research projects or on code using Git and          |
-|                                  | GitHub.  GitHub (github.com) is a powerful and         |
-|                                  | very popular online platform for sharing and           |
-|                                  | collaborating on code and research projects.  It       |
-|                                  | can also be used as a form of a secure and stable      |
-|                                  | backup.                                                |
-|                                  |                                                        |
-| From codes to tables: Reducing   | This workshop goes through the SAS ODS commands        |
-| the number of steps in your      | that allow results from analyses to be output and      |
-| analysis using SAS ODS           | customized to be close to or exactly how a table       |
-|                                  | in a manuscript will look like.  This allows the       |
-|                                  | researcher/graduate student to make their manuscript   |
-|                                  | more reproducible and reduces the amount of work       |
-|                                  | needed to create a table, rather than with copying     |
-|                                  | and pasting.                                           |
-|                                  |                                                        |
-| Know your data and how to handle | Through this workshop, we focus on the analysis        |
-| it correctly: Statistical        | itself rather than the medium of analysis (the code).  |
-| assumptions                      | We introduce common assumptions for linear regression  |
-|                                  | and ANOVA, how to diagnose problems, and how to fix    |
-|                                  | them.  Throughout the workshop, we use live coding     |
-|                                  | of the SAS commands so that learners see it in action. |
-|                                  |                                                        |
+| Workshop | Description |
+|----|----|
+| Let's 'Git' started! An | This workshop introduces the concept of |
+| introduction to version | versions, managing them, keeping a record |
+| control | of changes to files and folders, and working |
+|  | toward a solution for the reproducibility |
+|  | problem. We teach the most common and fairly |
+|  | basic commands in Git that will help jump start |
+|  | learners to incorporating Git in their everyday |
+|  | research workflow |
+|  |  |
+| 'Git'-ing better: Collaborating | This workshop expands on some commands in Git |
+| on your research with version | and introduces efficient methods for collaborating |
+| control and GitHub | on research projects or on code using Git and |
+|  | GitHub. GitHub (github.com) is a powerful and |
+|  | very popular online platform for sharing and |
+|  | collaborating on code and research projects. It |
+|  | can also be used as a form of a secure and stable |
+|  | backup. |
+|  |  |
+| From codes to tables: Reducing | This workshop goes through the SAS ODS commands |
+| the number of steps in your | that allow results from analyses to be output and |
+| analysis using SAS ODS | customized to be close to or exactly how a table |
+|  | in a manuscript will look like. This allows the |
+|  | researcher/graduate student to make their manuscript |
+|  | more reproducible and reduces the amount of work |
+|  | needed to create a table, rather than with copying |
+|  | and pasting. |
+|  |  |
+| Know your data and how to handle | Through this workshop, we focus on the analysis |
+| it correctly: Statistical | itself rather than the medium of analysis (the code). |
+| assumptions | We introduce common assumptions for linear regression |
+|  | and ANOVA, how to diagnose problems, and how to fix |
+|  | them. Throughout the workshop, we use live coding |
+|  | of the SAS commands so that learners see it in action. |
+|  |  |
 
-Table: List of workshops taught to the graduate students in the
-Department of Nutritional Sciences.
+: List of workshops taught to the graduate students in the Department of
+Nutritional Sciences.
 
-## NFS484-1484: Advanced Nutrition (2013--2014) ##
+## NFS484-1484: Advanced Nutrition (2013--2014)
 
 I've led hour-long, weekly tutorial sessions for two terms (once per
-year), both times in the Fall term.  The first year I taught one of
-the undergraduate sections, and for the second year I taught the
-graduate section.  In the first year, a fellow TA and I developed the
-slides for both undergraduate and graduate sections.  With the
-guidance of the course professor, I developed the midterm was well.
-In the following year that I was a TA, I refined and expanded on the
-slides, converting them into text-based files that can be converted
-into pdf files (using pandoc, <http://pandoc.org/>) and stored all 10
-tutorials on GitHub at so that future TAs can all easily access the
-material.  Lastly, I also developed the final exam.
+year), both times in the Fall term. The first year I taught one of the
+undergraduate sections, and for the second year I taught the graduate
+section. In the first year, a fellow TA and I developed the slides for
+both undergraduate and graduate sections. With the guidance of the
+course professor, I developed the midterm was well. In the following
+year that I was a TA, I refined and expanded on the slides, converting
+them into text-based files that can be converted into pdf files (using
+pandoc, <http://pandoc.org/>) and stored all 10 tutorials on GitHub at
+so that future TAs can all easily access the material. Lastly, I also
+developed the final exam.
 
 In a list, here are the materials I developed for this course:
 
-* Midterm 2013, see [Appendix B](#appendix-b)
-* Final 2014, see [Appendix B](#appendix-b)
-* Slides and material for tutorials at
-  <https://github.com/lwjohnst86/nfs484-1484-tutorials>
+-   Midterm 2013, see [Appendix B](#appendix-b)
+-   Final 2014, see [Appendix B](#appendix-b)
+-   Slides and material for tutorials at
+    <https://github.com/lwjohnst86/nfs484-1484-tutorials>
 
-# Appendices #
+# Appendices
 
-## Appendix A: ##
+## Appendix A: {#appendix-a}
 
 Syllabus for the Graduate Professional Skills program *Code As
 Manuscript* workshop series.
 
-------
+------------------------------------------------------------------------
 
-**Code as Manuscript: Practices for Reproducibility and Efficiency in SAS**
+**Code as Manuscript: Practices for Reproducibility and Efficiency in
+SAS**
 
 **Course description**:
 
@@ -388,27 +384,27 @@ research reproducibility and to get the students practicing with using
 version control systems and with using techniques in SAS that make the
 analysis more efficient, less error prone, and less stressful.
 Techniques for using version control systems to faciliate greater
-collaboration among peers will also be presented.  The ultimate goal
-of the workshops is to demonstrate how to reduce the total number of
-steps required to produce a manuscript from the data analysis stage
-(hence the name *Code As Manuscript*).  Given the applied nature of
-the concepts in these workshops, hands-on activities and
-[live coding](http://en.wikipedia.org/wiki/Live_coding) will be
-integrated into each workshop.
+collaboration among peers will also be presented. The ultimate goal of
+the workshops is to demonstrate how to reduce the total number of steps
+required to produce a manuscript from the data analysis stage (hence the
+name *Code As Manuscript*). Given the applied nature of the concepts in
+these workshops, hands-on activities and [live
+coding](http://en.wikipedia.org/wiki/Live_coding) will be integrated
+into each workshop.
 
 **Goal**:
 
 The expected goal of the workshops is that you will be able to:
 
-* Put your research under version control using Git.
-* Push and pull your git research repository to either
-  [GitHub](https://github.com/) or
-  [BitBucket](https://bitbucket.org/).
-* Simplify your SAS code by using macros and ODS facilities in a way
-  that allows code to output results into a file that can be easily
-  incorporated into a manuscript or report.
-* To put the macros into either a macro file or as a SAS autocall
-  library so that the macros are useable in all your SAS files.
+-   Put your research under version control using Git.
+-   Push and pull your git research repository to either
+    [GitHub](https://github.com/) or
+    [BitBucket](https://bitbucket.org/).
+-   Simplify your SAS code by using macros and ODS facilities in a way
+    that allows code to output results into a file that can be easily
+    incorporated into a manuscript or report.
+-   To put the macros into either a macro file or as a SAS autocall
+    library so that the macros are useable in all your SAS files.
 
 Attaining these goals will the first steps in making an efficient and
 highly productive workflow, that is also scientifically rigorous and
@@ -416,65 +412,66 @@ transparent, which you can take with you for the rest of your career.
 
 **Schedule**:
 
-Lesson content can be found [here]({{ site.baseurl }}/lessons/).  The workshop will
+Lesson content can be found
+[here](%7B%7B%20site.baseurl%20%7D%7D/lessons/). The workshop will
 follow the following sequence of topics:
 
-1. Git: June 16th, 3:00-5:00pm
-2. GitHub: June 23rd, 3:00-5:00pm
-3. Macros: June 30th, 3:00-5:00pm
-4. ODS: July 7th, 3:00-5:00pm
+1.  Git: June 16th, 3:00-5:00pm
+2.  GitHub: June 23rd, 3:00-5:00pm
+3.  Macros: June 30th, 3:00-5:00pm
+4.  ODS: July 7th, 3:00-5:00pm
 
 **Intended audience:**
 
-Graduate students or post-docs whose research involves a fair amount
-of data analysis using SAS.
+Graduate students or post-docs whose research involves a fair amount of
+data analysis using SAS.
 
 **Pre-requisites:**
 
-* Bring a fully charged laptop
-* Install the appropriate software (see our
-  [instructions page]({{ site.baseurl }}/lessons/instructions/))
-* Fairly competent in coding SAS commands.  *We are not here to teach
-  an introduction to SAS*, we assume you are fairly competent with
-  using SAS.  If you are a novice, recognize that you may not
-  understand everything that is going on... *However*, you will still
-  likely learn a lot!!
-* Some familiarity with the command-line or with computing is
-  desirable, but not necessary.
+-   Bring a fully charged laptop
+-   Install the appropriate software (see our [instructions
+    page](%7B%7B%20site.baseurl%20%7D%7D/lessons/instructions/))
+-   Fairly competent in coding SAS commands. *We are not here to teach
+    an introduction to SAS*, we assume you are fairly competent with
+    using SAS. If you are a novice, recognize that you may not
+    understand everything that is going on... *However*, you will still
+    likely learn a lot!!
+-   Some familiarity with the command-line or with computing is
+    desirable, but not necessary.
 
 **Assignment**:
 
 Because of the hands-on nature of the workshops, in order to obtain a
 GPS credit for the workshops you need to:
 
-1. Come to all the workshops
-2. Complete each workshop assignment
+1.  Come to all the workshops
+2.  Complete each workshop assignment
 
 To hand in the assignment, you will need to:
 
-1. Fork our shared workshop repository
-2. Clone it to your computer
-3. Create a new folder with your name
-4. Put the assignments for each workshop in your new folder
-5. Commit and push the assignments to your fork
-6. Submit a pull request to the main shared repository
+1.  Fork our shared workshop repository
+2.  Clone it to your computer
+3.  Create a new folder with your name
+4.  Put the assignments for each workshop in your new folder
+5.  Commit and push the assignments to your fork
+6.  Submit a pull request to the main shared repository
 
-Don't worry if this doesn't make sense yet.  We will go over all these
+Don't worry if this doesn't make sense yet. We will go over all these
 details over the workshop series.
 
 **Instructors**
 
-Luke Johnston, MSc, PhD (c)  
-luke.johnston@mail.utoronto.ca
+Luke Johnston, MSc, PhD (c)\
+luke.johnston\@mail.utoronto.ca
 
-Daiva Nielsen, PhD  
-daiva.nielsen@mail.utoronto.ca
+Daiva Nielsen, PhD\
+daiva.nielsen\@mail.utoronto.ca
 
-------
+------------------------------------------------------------------------
 
 \newpage\newpage
 
-## Appendix B: ##
+## Appendix B: {#appendix-b}
 
 Midterm 2013 and final exam 2014 for NFS1484.
 
