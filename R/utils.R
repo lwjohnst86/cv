@@ -35,21 +35,6 @@ output <- function(.object, compact = FALSE, from_bib = FALSE, caption = NULL) {
     kableExtra::column_spec(1, width = "20%", bold = TRUE)
 }
 
-.output_html_resume_item <- function(.tbl) {
-  .tbl |>
-    glue_data("
-
-        ### {with}
-
-        {what}
-
-        {where}
-
-        {when}
-
-        ")
-}
-
 #' Tidy up date variables.
 #'
 #' @param .tbl Dataset to tidy with `start` and `end` date variables.
