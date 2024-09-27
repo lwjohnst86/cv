@@ -7,16 +7,16 @@ devtools::load_all()
 library(tidyverse)
 library(pander)
 conflicted::conflict_prefer("filter", "dplyr")
-cv_data <- read_cv_items() %>%
+cv_data <- read_cv_items() |>
   filter(section %in% c(
     "curriculum", "certificates", "courses taken",
     "teaching", "supervision"
-  )) %>%
-  tidy_dates() %>%
+  )) |>
+  tidy_dates() |>
   mutate(
     Title = if_else(!is.na(website), glue::glue("{title} ({website})"), title),
     teaching_level = str_replace(teaching_level, "[Uu]ndergraduate", "Undergrad")
-  ) %>%
+  ) |>
   rename(
     Years = date_range, Role = role, Level = teaching_level,
     Organization = organization, Location = location
@@ -205,9 +205,9 @@ learning of concepts and tools go hand-in-hand, hence why I spend a
 large portion of time teaching and developing "non-official" content.
 
 ```{r teaching-completed}
-cv_data %>%
-  filter(section == "teaching") %>%
-  select(Years, Title, Role, Level, Organization, Location) %>%
+cv_data |>
+  filter(section == "teaching") |>
+  select(Years, Title, Role, Level, Organization, Location) |>
   output_table("Teaching completed to date.")
 ```
 
@@ -246,11 +246,11 @@ for as long as I can. They also requested I develop and teach a more
 advanced version to be also taught every year.
 
 ```{r course-management}
-cv_data %>%
+cv_data |>
   filter(section == "teaching" &
     (str_detect(Role, "Lead instructor|founder") |
-      str_detect(Title, "Reproducible"))) %>%
-  select(Years, Title, Role, Level, Organization, Location) %>%
+      str_detect(Title, "Reproducible"))) |>
+  select(Years, Title, Role, Level, Organization, Location) |>
   output_table("Experience with teaching session management and higher responsibility.")
 ```
 
@@ -264,10 +264,10 @@ students while I was a PhD students at the University of Toronto and I
 have plans to supervise a PhD student during my current position.
 
 ```{r supervision}
-cv_data %>%
-  filter(section == "supervision") %>%
-  mutate(Role = "Co-mentor") %>%
-  select(Years, Level, Role, Organization, Location) %>%
+cv_data |>
+  filter(section == "supervision") |>
+  mutate(Role = "Co-mentor") |>
+  select(Years, Level, Role, Organization, Location) |>
   output_table("Students supervised.")
 ```
 
@@ -288,10 +288,10 @@ training courses that ensure I am applying the best tools necessary when
 teaching these skills.
 
 ```{r teachers-training-taken}
-cv_data %>%
+cv_data |>
   filter(section == "certificates" &
-    str_detect(title, "Graduate Professional", negate = TRUE)) %>%
-  select(Years, Title, Organization, Location) %>%
+    str_detect(title, "Graduate Professional", negate = TRUE)) |>
+  select(Years, Title, Organization, Location) |>
   output_table("Courses and certificates for improving my pedagogical skills and knowledge.")
 ```
 
@@ -330,10 +330,10 @@ team-based environment:
     undergraduate students.
 
 ```{r working-in-teams}
-cv_data %>%
+cv_data |>
   filter(section == "teaching" &
-    str_detect(Title, "Reproducible|Theoretical|Code as Manuscript|Peer-led")) %>%
-  select(Years, Title, Role, Level, Organization, Location) %>%
+    str_detect(Title, "Reproducible|Theoretical|Code as Manuscript|Peer-led")) |>
+  select(Years, Title, Role, Level, Organization, Location) |>
   output_table("Experience working with a team of teachers")
 ```
 
@@ -348,13 +348,13 @@ material, collectively called Merely Useful, which I described more in
 the section above.
 
 ```{r teaching-material, table.small.fontsize = FALSE}
-pubs %>%
-  filter(groups == "Curriculum development") %>%
-  select(author, title, year, doi, url) %>%
+pubs |>
+  filter(groups == "Curriculum development") |>
+  select(author, title, year, doi, url) |>
   mutate(
     author = str_replace_all(author, " and ", ", "),
     doi = str_to_lower(doi)
-  ) %>%
+  ) |>
   glue::glue_data("1. {author}. {title} ({year}). DOI: {doi}. URL: {url}")
 ```
 

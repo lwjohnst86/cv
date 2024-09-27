@@ -3,14 +3,14 @@ output <- function(.object, compact = FALSE, from_bib = FALSE, caption = NULL) {
     if (from_bib) {
       cat(.object, sep = "\n")
     } else {
-      .object <- .object %>%
+      .object <- .object |>
         ungroup()
 
       if (!"where" %in% names(.object)) {
-        .object <- .object %>%
+        .object <- .object |>
           dplyr::mutate(where = "")
       } else {
-        .object <- .object %>%
+        .object <- .object |>
           dplyr::mutate(where = if_else(is.na(where), "",
             as.character(glue::glue("in {where}"))
           ))
@@ -23,20 +23,20 @@ output <- function(.object, compact = FALSE, from_bib = FALSE, caption = NULL) {
 }
 
 .output_html_item <- function(.tbl, caption) {
-  .tbl %>%
+  .tbl |>
     dplyr::transmute(
       when = when,
       what = glue::glue("{what}, {with} {where}")
-    ) %>%
-    knitr::kable(col.names = NULL, align = "ll", caption = caption, label = NA) %>%
+    ) |>
+    knitr::kable(col.names = NULL, align = "ll", caption = caption, label = NA) |>
     kableExtra::kable_styling(c("condensed"),
       full_width = TRUE
-    ) %>%
+    ) |>
     kableExtra::column_spec(1, width = "20%", bold = TRUE)
 }
 
 .output_html_resume_item <- function(.tbl) {
-  .tbl %>%
+  .tbl |>
     glue_data("
 
         ### {with}
@@ -58,8 +58,8 @@ output <- function(.object, compact = FALSE, from_bib = FALSE, caption = NULL) {
 #' @export
 #'
 tidy_dates <- function(.tbl) {
-  .tbl %>%
-    dplyr::arrange(dplyr::desc(is.na(end)), dplyr::desc(start)) %>%
+  .tbl |>
+    dplyr::arrange(dplyr::desc(is.na(end)), dplyr::desc(start)) |>
     dplyr::mutate(
       start = lubridate::year(start),
       end = lubridate::year(end),

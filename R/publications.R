@@ -9,8 +9,8 @@ list_publications <- function(.tbl, .type) {
     "misc", "1. '{title}'. {author}. ({year}). {url} {doi}"
   )
 
-  format_prep <- .tbl %>%
-    dplyr::arrange(dplyr::desc(year)) %>%
+  format_prep <- .tbl |>
+    dplyr::arrange(dplyr::desc(year)) |>
     dplyr::mutate(
       title = stringr::str_remove_all(title, "\\{|\\}"),
       presentation_type = stringr::str_remove(groups, " presentations"),
@@ -34,19 +34,19 @@ list_publications <- function(.tbl, .type) {
         "",
         paste0("ISBN: [", isbn, "](https://isbnsearch.org/isbn/", isbn, ").")
       ),
-      author = purrr::map_chr(author, ~ stringr::str_c(.x$full_name, collapse = ", ")) %>%
+      author = purrr::map_chr(author, ~ stringr::str_c(.x$full_name, collapse = ", ")) |>
         stringr::str_replace("(L(uke|\\.)?( ?W\\.?)? Johnston)", "**\\1**"),
-    ) %>%
-    dplyr::filter(category %in% c("article", "inproceedings", "misc", "book")) %>%
-    dplyr::filter(stringr::str_detect(groups, .type)) %>%
-    tidyr::nest(data = !category) %>%
+    ) |>
+    dplyr::filter(category %in% c("article", "inproceedings", "misc", "book")) |>
+    dplyr::filter(stringr::str_detect(groups, .type)) |>
+    tidyr::nest(data = !category) |>
     dplyr::left_join(pub_format, by = "category")
 
   purrr::map2(
     format_prep$data,
     format_prep$glue_exp,
     ~ glue::glue_data(.x = .x, .y, sep = "\n")
-  ) %>%
-    unlist() %>%
+  ) |>
+    unlist() |>
     output(from_bib = TRUE)
 }

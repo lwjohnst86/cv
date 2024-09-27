@@ -8,10 +8,10 @@ list_education <- function(caption = NULL) {
 save_education <- function() {
   orcid <- "0000-0003-4169-2616"
   orcid_education_data <- rorcid::orcid_educations(orcid)[[1]]
-  education <- orcid_education_data$`affiliation-group`$summaries %>%
-    dplyr::bind_rows() %>%
-    dplyr::rename_all(~ stringr::str_remove(., "education-summary\\.")) %>%
-    dplyr::as_tibble(.name_repair = "universal") %>%
+  education <- orcid_education_data$`affiliation-group`$summaries |>
+    dplyr::bind_rows() |>
+    dplyr::rename_all(~ stringr::str_remove(., "education-summary\\.")) |>
+    dplyr::as_tibble(.name_repair = "universal") |>
     dplyr::select(
       department.name,
       role.title,
@@ -19,7 +19,7 @@ save_education <- function() {
       dplyr::matches("end.date"),
       dplyr::matches("organization"),
       url.value
-    ) %>%
+    ) |>
     vitae::detailed_entries(
       what = glue("{role.title} in {department.name}"),
       when = glue("{start.date.year.value} -- {end.date.year.value}"),
