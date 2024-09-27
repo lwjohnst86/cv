@@ -1,7 +1,7 @@
 #' @describeIn list_sections List all teaching activities.
 #' @export
-list_teaching <- function(.tbl, caption = NULL) {
-  .tbl |>
+list_teaching <- function(data, caption = NULL) {
+  data |>
     dplyr::filter(section == "teaching") |>
     tidy_dates() |>
     dplyr::mutate(
@@ -19,8 +19,8 @@ list_teaching <- function(.tbl, caption = NULL) {
 
 #' @describeIn list_sections List curriculum developed.
 #' @export
-list_curriculum_development <- function(.tbl, caption = NULL) {
-  .tbl |>
+list_curriculum_development <- function(data, caption = NULL) {
+  data |>
     dplyr::filter(section == "curriculum") |>
     tidy_dates() |>
     vitae::detailed_entries(
@@ -35,8 +35,8 @@ list_curriculum_development <- function(.tbl, caption = NULL) {
 
 #' @describeIn list_sections List supervisory activities.
 #' @export
-list_supervision <- function(.tbl, caption = NULL) {
-  .tbl |>
+list_supervision <- function(data, caption = NULL) {
+  data |>
     dplyr::filter(section == "supervision") |>
     tidy_dates() |>
     vitae::detailed_entries(

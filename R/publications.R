@@ -1,6 +1,6 @@
 #' @describeIn list_sections List all publications.
 #' @export
-list_publications <- function(.tbl, .type) {
+list_publications <- function(data, .type) {
   pub_format <- tibble::tribble(
     ~category, ~glue_exp,
     "article", "1. {presentation_type} '{title}'. {author}. ({year}). {doi}",
@@ -9,7 +9,7 @@ list_publications <- function(.tbl, .type) {
     "misc", "1. '{title}'. {author}. ({year}). {url} {doi}"
   )
 
-  format_prep <- .tbl |>
+  format_prep <- data |>
     dplyr::arrange(dplyr::desc(year)) |>
     dplyr::mutate(
       title = stringr::str_remove_all(title, "\\{|\\}"),

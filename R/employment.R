@@ -1,7 +1,7 @@
 #' @describeIn list_sections List all employment activities.
 #' @export
-list_employment <- function(.tbl, caption = NULL) {
-  .tbl |>
+list_employment <- function(data, caption = NULL) {
+  data |>
     dplyr::filter(section == "employment") |>
     tidy_dates() |>
     vitae::detailed_entries(

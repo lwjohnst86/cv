@@ -1,7 +1,7 @@
 #' @describeIn list_sections List all awards given.
 #' @export
-list_awards <- function(.tbl, caption = NULL) {
-  .tbl |>
+list_awards <- function(data, caption = NULL) {
+  data |>
     dplyr::filter(section == "awards") |>
     dplyr::mutate(
       start = dplyr::if_else(is.na(start), end, start),

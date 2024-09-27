@@ -18,32 +18,32 @@
 \alias{list_supervision}
 \title{List sections for a CV.}
 \usage{
-list_affiliations(.tbl)
+list_affiliations(data)
 
-list_awards(.tbl, caption = NULL)
+list_awards(data, caption = NULL)
 
-list_committees(.tbl, caption = NULL)
+list_committees(data, caption = NULL)
 
 list_education(caption = NULL)
 
-list_employment(.tbl, caption = NULL)
+list_employment(data, caption = NULL)
 
-list_funding(.tbl)
+list_funding(data)
 
-list_outreach(.tbl, caption = NULL)
+list_outreach(data, caption = NULL)
 
-list_publications(.tbl, .type)
+list_publications(data, .type)
 
-list_rpackages(.tbl)
+list_rpackages(data)
 
-list_teaching(.tbl, caption = NULL)
+list_teaching(data, caption = NULL)
 
-list_curriculum_development(.tbl, caption = NULL)
+list_curriculum_development(data, caption = NULL)
 
-list_supervision(.tbl, caption = NULL)
+list_supervision(data, caption = NULL)
 }
 \arguments{
-\item{.tbl}{CV data.}
+\item{data}{CV data.}
 }
 \value{
 Depending on output type, returns:

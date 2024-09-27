@@ -42,15 +42,15 @@ knitr::opts_chunk$set(
 )
 
 # Function to generate tables.
-output_table <- function(.tbl, caption) {
+output_table <- function(data, caption) {
   if (knitr::is_html_output()) {
     knitr::kable(
-      .tbl,
+      data,
       caption = caption
     )
   } else {
     pander::pandoc.table(
-      t = .tbl,
+      t = data,
       caption = caption,
       split.tables = Inf,
       justify = "left"

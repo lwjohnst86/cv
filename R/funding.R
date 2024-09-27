@@ -1,7 +1,7 @@
 #' @describeIn list_sections List all funding and grants given.
 #' @export
-list_funding <- function(.tbl) {
-  .tbl |>
+list_funding <- function(data) {
+  data |>
     dplyr::filter(section == "funding") |>
     dplyr::mutate(
       start = dplyr::if_else(is.na(start), end, start),

@@ -1,7 +1,7 @@
 #' @describeIn list_sections List all outreach activities.
 #' @export
-list_outreach <- function(.tbl, caption = NULL) {
-  .tbl |>
+list_outreach <- function(data, caption = NULL) {
+  data |>
     dplyr::filter(section == "outreach") |>
     tidy_dates() |>
     vitae::detailed_entries(

@@ -15,7 +15,7 @@ NULL
 #' @title List sections for a CV.
 #'
 #' @name list_sections
-#' @param .tbl CV data.
+#' @param data CV data.
 #'
 #' @return Depending on output type, returns:
 #'

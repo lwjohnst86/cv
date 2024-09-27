@@ -1,7 +1,7 @@
 #' @describeIn list_sections List all committees.
 #' @export
-list_committees <- function(.tbl, caption = NULL) {
-  .tbl |>
+list_committees <- function(data, caption = NULL) {
+  data |>
     dplyr::filter(section == "committee") |>
     tidy_dates() |>
     vitae::detailed_entries(

@@ -4,10 +4,10 @@
 \alias{tidy_dates}
 \title{Tidy up date variables.}
 \usage{
-tidy_dates(.tbl)
+tidy_dates(data)
 }
 \arguments{
-\item{.tbl}{Dataset to tidy with \code{start} and \code{end} date variables.}
+\item{data}{Dataset to tidy with \code{start} and \code{end} date variables.}
 }
 \value{
 A \code{\link[tibble:tibble]{tibble::tibble()}} dataset with tidied date variables.

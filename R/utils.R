@@ -22,8 +22,8 @@ output <- function(.object, compact = FALSE, from_bib = FALSE, caption = NULL) {
   }
 }
 
-.output_html_item <- function(.tbl, caption) {
-  .tbl |>
+.output_html_item <- function(data, caption) {
+  data |>
     dplyr::transmute(
       when = when,
       what = glue::glue("{what}, {with} {where}")
@@ -37,13 +37,13 @@ output <- function(.object, compact = FALSE, from_bib = FALSE, caption = NULL) {
 
 #' Tidy up date variables.
 #'
-#' @param .tbl Dataset to tidy with `start` and `end` date variables.
+#' @param data Dataset to tidy with `start` and `end` date variables.
 #'
 #' @return A [tibble::tibble()] dataset with tidied date variables.
 #' @export
 #'
-tidy_dates <- function(.tbl) {
-  .tbl |>
+tidy_dates <- function(data) {
+  data |>
     dplyr::arrange(dplyr::desc(is.na(end)), dplyr::desc(start)) |>
     dplyr::mutate(
       start = lubridate::year(start),
