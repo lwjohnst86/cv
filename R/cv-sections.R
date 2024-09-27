@@ -1,0 +1,215 @@
+#' @describeIn list_sections List all affiliations.
+#' @export
+list_affiliations <- function(data) {
+  data |>
+    dplyr::filter(section == "affiliations") |>
+    tidy_dates() |>
+    vitae::detailed_entries(
+      what = role,
+      when = date_range,
+      with = organization,
+      where = location
+    ) |>
+    output()
+}
+
+#' @describeIn list_sections List all awards given.
+#' @export
+list_awards <- function(data, caption = NULL) {
+  data |>
+    dplyr::filter(section == "awards") |>
+    dplyr::mutate(
+      start = dplyr::if_else(is.na(start), end, start),
+      year = lubridate::year(start),
+      amount = dplyr::if_else(is.na(value), "",
+        paste0("(", value, ")")
+      )
+    ) |>
+    vitae::brief_entries(
+      what = glue::glue("{title} from {organization} {amount}"),
+      when = year,
+      with = location
+    ) |>
+    output(caption = caption)
+}
+
+#' @describeIn list_sections List all committees.
+#' @export
+list_committees <- function(data, caption = NULL) {
+  data |>
+    dplyr::filter(section == "committee") |>
+    tidy_dates() |>
+    vitae::detailed_entries(
+      what = title,
+      when = date_range,
+      with = organization,
+      where = location
+    ) |>
+    output(caption = caption)
+}
+
+#' @describeIn list_sections List all education taken or obtained.
+#' @export
+list_education <- function(caption = NULL) {
+  data("education", package = "cv")
+  output(education, caption = caption)
+}
+
+#' @describeIn list_sections List all employment activities.
+#' @export
+list_employment <- function(data, caption = NULL) {
+  data |>
+    dplyr::filter(section == "employment") |>
+    tidy_dates() |>
+    vitae::detailed_entries(
+      what = role,
+      when = date_range,
+      with = organization,
+      where = location
+    ) |>
+    output(caption = caption)
+}
+
+#' @describeIn list_sections List all funding and grants given.
+#' @export
+list_funding <- function(data) {
+  data |>
+    dplyr::filter(section == "funding") |>
+    dplyr::mutate(
+      start = dplyr::if_else(is.na(start), end, start),
+      year = lubridate::year(start),
+      amount = dplyr::if_else(is.na(value), "",
+        paste0("(", value, ")")
+      )
+    ) |>
+    vitae::brief_entries(
+      what = glue::glue("{title} from {organization} {amount}"),
+      when = year,
+      with = location
+    ) |>
+    output()
+}
+
+#' @describeIn list_sections List all outreach activities.
+#' @export
+list_outreach <- function(data, caption = NULL) {
+  data |>
+    dplyr::filter(section == "outreach") |>
+    tidy_dates() |>
+    vitae::detailed_entries(
+      what = glue::glue("{str_to_sentence(role)} for [{title}]({website}): {details}"),
+      when = date_range,
+      with = organization,
+      where = location
+    ) |>
+    output(caption = caption)
+}
+
+#' @describeIn list_sections List all publications.
+#' @export
+list_publications <- function(data, .type) {
+  pub_format <- tibble::tribble(
+    ~category, ~glue_exp,
+    "article", "1. {presentation_type} '{title}'. {author}. ({year}). {doi}",
+    "inproceedings", "1. {presentation_type} '{title}'. {author}. *{booktitle}* in {address} ({year}). {doi}",
+    "book", "1. {presentation_type} '{title}'. {author}. ({year}). {url} {isbn}",
+    "misc", "1. '{title}'. {author}. ({year}). {url} {doi}"
+  )
+
+  format_prep <- data |>
+    dplyr::arrange(dplyr::desc(year)) |>
+    dplyr::mutate(
+      title = stringr::str_remove_all(title, "\\{|\\}"),
+      presentation_type = stringr::str_remove(groups, " presentations"),
+      presentation_type = if_else(stringr::str_detect(groups, "presentations"),
+        as.character(glue::glue("({presentation_type})")),
+        ""
+      ),
+      category = tolower(category),
+      doi = dplyr::if_else(
+        is.na(doi),
+        "",
+        paste0("DOI: [", doi, "](https://doi.org/", doi, ").")
+      ),
+      url = dplyr::if_else(
+        is.na(url),
+        "",
+        paste0("URL: <", url, ">.")
+      ),
+      isbn = dplyr::if_else(
+        is.na(isbn),
+        "",
+        paste0("ISBN: [", isbn, "](https://isbnsearch.org/isbn/", isbn, ").")
+      ),
+      author = purrr::map_chr(author, ~ stringr::str_c(.x$full_name, collapse = ", ")) |>
+        stringr::str_replace("(L(uke|\\.)?( ?W\\.?)? Johnston)", "**\\1**"),
+    ) |>
+    dplyr::filter(category %in% c("article", "inproceedings", "misc", "book")) |>
+    dplyr::filter(stringr::str_detect(groups, .type)) |>
+    tidyr::nest(data = !category) |>
+    dplyr::left_join(pub_format, by = "category")
+
+  purrr::map2(
+    format_prep$data,
+    format_prep$glue_exp,
+    ~ glue::glue_data(.x = .x, .y, sep = "\n")
+  ) |>
+    unlist() |>
+    output(from_bib = TRUE)
+}
+
+#' @describeIn list_sections List all R packages developed (from CRAN).
+#' @export
+list_rpackages <- function(data) {
+  output(data)
+}
+
+#' @describeIn list_sections List all teaching activities.
+#' @export
+list_teaching <- function(data, caption = NULL) {
+  data |>
+    dplyr::filter(section == "teaching") |>
+    tidy_dates() |>
+    dplyr::mutate(
+      organization = organization |>
+        stringr::str_replace_all("\\[(.+?)\\]\\(.+?\\)", "\\1")
+    ) |>
+    vitae::detailed_entries(
+      what = glue("{str_to_sentence(role)} for {title} ({teaching_level})"),
+      when = date_range,
+      with = organization,
+      where = location
+    ) |>
+    output(caption = caption)
+}
+
+#' @describeIn list_sections List curriculum developed.
+#' @export
+list_curriculum_development <- function(data, caption = NULL) {
+  data |>
+    dplyr::filter(section == "curriculum") |>
+    tidy_dates() |>
+    vitae::detailed_entries(
+      what = glue("{title} ({website})"),
+      when = date_range,
+      with = organization,
+      where = location,
+      why = website
+    ) |>
+    output(caption = caption)
+}
+
+#' @describeIn list_sections List supervisory activities.
+#' @export
+list_supervision <- function(data, caption = NULL) {
+  data |>
+    dplyr::filter(section == "supervision") |>
+    tidy_dates() |>
+    vitae::detailed_entries(
+      what = glue("{teaching_level} student"),
+      when = date_range,
+      with = organization,
+      where = location
+    ) |>
+    output(caption = caption)
+}
