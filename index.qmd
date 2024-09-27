@@ -1,0 +1,134 @@
+---
+title: "Luke W. Johnston"
+date: "2024-09-27"
+---
+
+```{r setup}
+#| include: false
+
+# library(cv)
+devtools::load_all()
+library(here)
+library(tidyverse)
+cv_data <- read_cv_items()
+bib_items <- read_bib_items()
+rpkgs <- cv::rpackages
+```
+
+> I am a diabetes epidemiologist, R user and developer, teacher of
+> modern data science and analysis skills, and open science advocate.
+
+<!--
+## Skills
+
+- Languages: English (fluent), Spanish (competent)
+- Programming: Fluent in R, LaTeX, HTML, CSS, Bash, Git; familiar with 
+SAS, Python.
+
+    tools:
+        - icon: "envelope"
+          href: "lwjohnst@gmail.com"
+        - icon: "orcid"
+          href: "https://orcid.org/0000-0003-4169-2616"
+        - icon: "github"
+          href: "https://github.com/lwjohnst86"
+        - icon: "gitlab"
+          href: "https://gitlab.com/lwjohnst"
+        - icon: "stack-overflow"
+          href: "https://stackoverflow.com/users/2632184"
+        - icon: "stack-overflow"
+        #   href: "https://stackexchange.com/users/1992995"
+        - icon: "linkedin"
+          href: "https://www.linkedin.com/in/luke-johnston-480365101/"
+
+-->
+
+## {{< fa graduation-cap >}} Education
+
+```{r list-education}
+list_education()
+```
+
+## {{< fa building-columns >}} Affiliations
+
+```{r list-affiliations}
+list_affiliations(cv_data)
+```
+
+## {{< fa book-open >}} Publications
+
+```{r list-articles}
+list_publications(bib_items, "Journal articles")
+```
+
+## {{< fa book >}} Books
+
+```{r list-books}
+list_publications(bib_items, "Books")
+```
+
+## {{< fa comment-dots >}} Presentations
+
+```{r list-presentations}
+list_publications(bib_items, "presentations")
+```
+
+## {{< fa box-open >}} R packages
+
+```{r list-r-packages}
+list_rpackages(rpkgs)
+```
+
+## {{< fa chalkboard-user >}} Teaching
+
+```{r list-teaching}
+list_teaching(cv_data)
+```
+
+## {{< fa user-group >}} Supervision
+
+```{r list-supervision}
+list_supervision(cv_data)
+```
+
+## {{< fa book-open-reader >}} Curriculum development
+
+```{r list-curriculum-archived}
+list_publications(bib_items, "Curriculum development")
+```
+
+### Other Development
+
+```{r list-curriculum}
+list_curriculum_development(cv_data)
+```
+
+## {{< fa users >}} Committees
+
+```{r list-committees}
+list_committees(cv_data)
+```
+
+## {{< fa trophy >}} Awards
+
+```{r list-awards}
+list_awards(cv_data)
+```
+
+## {{< fa comments-dollar >}} Funding
+
+```{r list-funding}
+list_funding(cv_data)
+```
+
+## {{< fa briefcase >}} Employment
+
+```{r list-employment}
+list_employment(cv_data)
+```
+
+## {{< fa bullhorn >}} Outreach activities
+
+```{r list-outreach}
+list_outreach(cv_data)
+```
