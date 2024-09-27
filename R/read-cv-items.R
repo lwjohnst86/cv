@@ -35,10 +35,3 @@ read_bib_items <- function() {
         dplyr::rename_with(snakecase::to_snake_case) %>%
         dplyr::filter(category != "COMMENT")
 }
-
-read_bib <- function() {
-    fs::path_package("cv", "data", "work.bib") %>%
-        RefManageR::ReadBib() %>%
-        print()
-        # RefManageR::PrintBibliography()
-}
