@@ -48,13 +48,6 @@ list_committees <- function(data, caption = NULL) {
     output(caption = caption)
 }
 
-#' @describeIn list_sections List all education taken or obtained.
-#' @export
-list_education <- function(caption = NULL) {
-  data("education", package = "cv")
-  output(education, caption = caption)
-}
-
 #' @describeIn list_sections List all employment activities.
 #' @export
 list_employment <- function(data, caption = NULL) {
@@ -156,31 +149,6 @@ list_publications <- function(data, .type) {
   ) |>
     unlist() |>
     output(from_bib = TRUE)
-}
-
-#' @describeIn list_sections List all R packages developed (from CRAN).
-#' @export
-list_rpackages <- function(data) {
-  output(data)
-}
-
-#' @describeIn list_sections List all teaching activities.
-#' @export
-list_teaching <- function(data, caption = NULL) {
-  data |>
-    dplyr::filter(section == "teaching") |>
-    tidy_dates() |>
-    dplyr::mutate(
-      organization = organization |>
-        stringr::str_replace_all("\\[(.+?)\\]\\(.+?\\)", "\\1")
-    ) |>
-    vitae::detailed_entries(
-      what = glue("{str_to_sentence(role)} for {title} ({teaching_level})"),
-      when = date_range,
-      with = organization,
-      where = location
-    ) |>
-    output(caption = caption)
 }
 
 #' @describeIn list_sections List curriculum developed.

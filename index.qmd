@@ -1,18 +1,36 @@
 ---
 title: "Luke W. Johnston"
 date: "2024-09-27"
+listing:
+  - id: r-packages
+    template: inst/ejs/list-r-packages.ejs
+    contents: data/r-packages.yml
+    field-types:
+      start-date: date
+    date-format: "long"
+  - id: teaching
+    template: inst/ejs/list-entry.ejs
+    contents: data/teaching.yml
+    field-types:
+      start-date: date
+      end-date: date
+    date-format: "long"
+  - id: education
+    template: inst/ejs/list-entry.ejs
+    contents: data/education.yml
+    field-types:
+      start-date: date
+      end-date: date
+    date-format: "YYYY"
 ---
 
 ```{r setup}
 #| include: false
-
-# library(cv)
 devtools::load_all()
 library(here)
 library(tidyverse)
 cv_data <- read_cv_items()
 bib_items <- read_bib_items()
-rpkgs <- cv::rpackages
 ```
 
 > I am a diabetes epidemiologist, R user and developer, teacher of
@@ -45,9 +63,8 @@ SAS, Python.
 
 ## {{< fa graduation-cap >}} Education
 
-```{r list-education}
-list_education()
-```
+::: {#education}
+:::
 
 ## {{< fa building-columns >}} Affiliations
 
@@ -75,15 +92,13 @@ list_publications(bib_items, "presentations")
 
 ## {{< fa box-open >}} R packages
 
-```{r list-r-packages}
-list_rpackages(rpkgs)
-```
+::: {#r-packages}
+:::
 
 ## {{< fa chalkboard-user >}} Teaching
 
-```{r list-teaching}
-list_teaching(cv_data)
-```
+::: {#teaching}
+:::
 
 ## {{< fa user-group >}} Supervision
 
