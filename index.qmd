@@ -33,6 +33,15 @@ cv_data <- read_cv_items()
 bib_items <- read_bib_items()
 ```
 
+
+{{< fa envelope >}}\ [lwjohnst\@gmail.com](mailto:lwjohnst@gmail.com){.email}
+{{< fa brands gitlab >}}\ [`@lwjohnst`](https://gitlab.com/lwjohnst/) 
+{{< fa brands github >}}\ [`@lwjohnst86`](https://github.com/lwjohnst86/)
+{{< fa brands orcid >}}\ [0000-0003-4169-2616](https://orcid.org/0000-0003-4169-2616)
+
+{{< fa brands linkedin >}} {{< fa brands stack-overflow >}}
+{{< fa brands stack-exchange >}} {{< fa brands twitter >}}
+
 > I am a diabetes epidemiologist, R user and developer, teacher of
 > modern data science and analysis skills, and open science advocate.
 
