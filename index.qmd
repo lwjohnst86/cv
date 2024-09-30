@@ -39,34 +39,17 @@ bib_items <- read_bib_items()
 {{< fa brands github >}}\ [`@lwjohnst86`](https://github.com/lwjohnst86/)
 {{< fa brands orcid >}}\ [0000-0003-4169-2616](https://orcid.org/0000-0003-4169-2616)
 
-{{< fa brands linkedin >}} {{< fa brands stack-overflow >}}
+{{< fa brands linkedin >}}\ [`lwjohnst`](www.linkedin.com/in/lwjohnst) {{< fa brands stack-overflow >}}
 {{< fa brands stack-exchange >}} {{< fa brands twitter >}}
 
 > I am a diabetes epidemiologist, R user and developer, teacher of
 > modern data science and analysis skills, and open science advocate.
 
 <!--
-## Skills
-
-- Languages: English (fluent), Spanish (competent)
-- Programming: Fluent in R, LaTeX, HTML, CSS, Bash, Git; familiar with 
-SAS, Python.
-
-    tools:
-        - icon: "envelope"
-          href: "lwjohnst@gmail.com"
-        - icon: "orcid"
-          href: "https://orcid.org/0000-0003-4169-2616"
-        - icon: "github"
-          href: "https://github.com/lwjohnst86"
-        - icon: "gitlab"
-          href: "https://gitlab.com/lwjohnst"
         - icon: "stack-overflow"
           href: "https://stackoverflow.com/users/2632184"
         - icon: "stack-overflow"
         #   href: "https://stackexchange.com/users/1992995"
-        - icon: "linkedin"
-          href: "https://www.linkedin.com/in/luke-johnston-480365101/"
 
 -->
 
