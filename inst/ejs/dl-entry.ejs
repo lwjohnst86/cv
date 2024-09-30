@@ -1,0 +1,37 @@
+```{=html}
+<dl>
+<% for (const item of items) { %>
+  <dt>
+  <% if (item.href) { %>
+    <a href="<%- item.href %>"><%= item.title %></a>
+  <% } else { %>
+    <%= item.title %>
+  <% } %> 
+  </dt>
+  <dd>
+    <div class="d-flex justify-content-between">
+      <div>
+        <i class="fa-regular fa-calendar-days"></i> <% if (item['end-date']) { %>
+          <%- item['start-date'] %> to <%- item['end-date'] %>
+        <% } else { %>
+          <%- item['start-date'] %> to present
+        <% } %> 
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot"></i> <%= item.location %>
+      </div>
+    </div>
+  </dd>
+  <% if (item.supervisor) { %>
+  <dd>
+    Supervisor: <%= item.supervisor %>
+  </dd>
+  <% } %>
+  <% if (item.description) { %>
+  <dd>
+    <%= item.description %>
+  </dd>
+  <% } %>
+<% } %>
+</dl>
+```
