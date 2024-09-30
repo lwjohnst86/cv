@@ -1,8 +1,14 @@
 ---
 title: "Luke W. Johnston"
-date: "2024-09-27"
+date: "2024-09-30"
 date-format: "medium"
 listing:
+  - id: awards
+    template: inst/ejs/dl-entry.ejs
+    contents: data/awards.yml
+    field-types:
+      start-date: date
+      end-date: date
   - id: committees
     template: inst/ejs/dl-entry.ejs
     contents: data/committees.yml
@@ -128,9 +134,8 @@ list_curriculum_development(cv_data)
 
 ## {{< fa trophy >}} Awards
 
-```{r list-awards}
-list_awards(cv_data)
-```
+::: {#awards}
+:::
 
 ## {{< fa comments-dollar >}} Funding
 
