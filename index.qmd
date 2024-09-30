@@ -1,22 +1,27 @@
 ---
 title: "Luke W. Johnston"
 date: "2024-09-27"
+date-format: "medium"
 listing:
+  - id: employment
+    template: inst/ejs/dl-entry.ejs
+    contents: data/employment.yml
+    field-types:
+      start-date: date
+      end-date: date
   - id: r-packages
-    template: inst/ejs/list-r-packages.ejs
+    template: inst/ejs/dl-entry.ejs
     contents: data/r-packages.yml
     field-types:
       start-date: date
-    date-format: "long"
   - id: teaching
-    template: inst/ejs/list-entry.ejs
+    template: inst/ejs/dl-entry.ejs
     contents: data/teaching.yml
     field-types:
       start-date: date
       end-date: date
-    date-format: "long"
   - id: education
-    template: inst/ejs/list-entry.ejs
+    template: inst/ejs/dl-entry.ejs
     contents: data/education.yml
     field-types:
       start-date: date
@@ -130,9 +135,8 @@ list_funding(cv_data)
 
 ## {{< fa briefcase >}} Employment
 
-```{r list-employment}
-list_employment(cv_data)
-```
+::: {#employment}
+:::
 
 ## {{< fa bullhorn >}} Outreach activities
 
