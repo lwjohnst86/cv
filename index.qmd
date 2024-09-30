@@ -3,6 +3,12 @@ title: "Luke W. Johnston"
 date: "2024-09-27"
 date-format: "medium"
 listing:
+  - id: committees
+    template: inst/ejs/dl-entry.ejs
+    contents: data/committees.yml
+    field-types:
+      start-date: date
+      end-date: date
   - id: employment
     template: inst/ejs/dl-entry.ejs
     contents: data/employment.yml
@@ -117,9 +123,8 @@ list_curriculum_development(cv_data)
 
 ## {{< fa users >}} Committees
 
-```{r list-committees}
-list_committees(cv_data)
-```
+::: {#committees}
+:::
 
 ## {{< fa trophy >}} Awards
 
