@@ -143,3 +143,14 @@ list_funding(cv_data)
 ```{r list-outreach}
 list_outreach(cv_data)
 ```
+
+```{=html}
+<style>
+dl {
+  display: block;
+}
+dd {
+  margin-left: 2em;
+}
+</style>
+```
