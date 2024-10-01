@@ -21,11 +21,6 @@ listing:
     field-types:
       start-date: date
       end-date: date  
-  - id: r-packages
-    template: ejs/dl-entry.ejs
-    contents: data/r-packages.yml
-    field-types:
-      start-date: date
   - id: teaching
     template: ejs/dl-entry.ejs
     contents: data/teaching.yml
@@ -74,11 +69,6 @@ list_publications(bib_items, "Books")
 ```{r list-presentations}
 list_publications(bib_items, "presentations")
 ```
-
-## {{< fa box-open >}} R packages
-
-::: {#r-packages}
-:::
 
 ## {{< fa person-chalkboard >}} Teaching
 
