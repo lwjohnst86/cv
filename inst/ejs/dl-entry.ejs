@@ -11,7 +11,10 @@
   <dd>
     <div class="d-flex justify-content-between">
       <div>
-        <i class="fa-regular fa-calendar-days"></i> <% if (item['end-date']) { %>
+        <i class="fa-regular fa-calendar-days"></i> 
+        <% if (item['start-date'] == item['end-date']) { %>
+          <%- item['start-date'] %>
+        <% } else if (item['end-date']) { %>
           <%- item['start-date'] %> to <%- item['end-date'] %>
         <% } else { %>
           <%- item['start-date'] %> to present
