@@ -9,12 +9,6 @@ listing:
     field-types:
       start-date: date
       end-date: date  
-  - id: courses-taken
-    template: ejs/dl-entry.ejs
-    contents: data/courses-taken.yml
-    field-types:
-      start-date: date
-      end-date: date  
   - id: curriculum-development
     template: ejs/dl-entry.ejs
     contents: data/curriculum-development.yml
@@ -150,11 +144,6 @@ list_publications(bib_items, "Curriculum development")
 ## {{< fa bullhorn >}} Outreach activities
 
 ::: {#outreach}
-::: 
-
-## {{< fa school >}} Courses taken
-
-::: {#courses-taken}
 ::: 
 
 ```{=html}
