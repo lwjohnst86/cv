@@ -50,13 +50,6 @@ listing:
     field-types:
       start-date: date
       end-date: date
-  - id: education
-    template: ejs/dl-entry.ejs
-    contents: data/education.yml
-    field-types:
-      start-date: date
-      end-date: date
-    date-format: "YYYY"
 ---
 
 ```{r setup}
@@ -80,11 +73,6 @@ bib_items <- read_bib_items()
 > modern data science and analysis skills, and open science advocate.
 
 ::: {#sections}
-:::
-
-## {{< fa graduation-cap >}} Education
-
-::: {#education}
 :::
 
 ## {{< fa book-open >}} Publications
