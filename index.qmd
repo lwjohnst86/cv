@@ -138,7 +138,7 @@ list_publications(bib_items, "presentations")
 ::: {#r-packages}
 :::
 
-## {{< fa chalkboard-user >}} Teaching
+## {{< fa person-chalkboard >}} Teaching
 
 ::: {#teaching}
 :::
