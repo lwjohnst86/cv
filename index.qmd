@@ -21,7 +21,6 @@ listing:
     field-types:
       start-date: date
       end-date: date
-    date-format: "YYYY"
   - id: committees
     template: inst/ejs/dl-entry.ejs
     contents: data/committees.yml
