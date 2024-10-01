@@ -7,14 +7,14 @@ listing:
     template: ejs/sections.ejs
     contents: data/entries.yml
     field-types:
-      start-date: date
-      end-date: date  
+      start: date
+      end: date  
   - id: curriculum-development
     template: ejs/dl-entry.ejs
     contents: data/curriculum-development.yml
     field-types:
-      start-date: date
-      end-date: date  
+      start: date
+      end: date  
 ---
 
 ```{r setup}

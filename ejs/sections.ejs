@@ -18,12 +18,12 @@
       <div class="d-flex justify-content-between">
         <div>
           <i class="fa-regular fa-calendar-days"></i> 
-          <% if (entry['start-date'] == entry['end-date']) { %>
-            <%- entry['start-date'] %>
-          <% } else if (entry['end-date']) { %>
-            <%- entry['start-date'] %> to <%- entry['end-date'] %>
+          <% if (entry.start == entry.end) { %>
+            <%= entry.start %>
+          <% } else if (entry.end) { %>
+            <%= entry.start %> to <%= entry.end %>
           <% } else { %>
-            <%- entry['start-date'] %> to present
+            <%= entry.start %> to present
           <% } %> 
         </div>
         <div>
