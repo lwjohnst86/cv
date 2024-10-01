@@ -8,11 +8,9 @@ Authors@R:
            email = "lwjohnst@gmail.com",
            comment = c(ORCID = "0000-0003-4169-2616"))
 Description: To store my CV data and to generate it.
-License: MIT + file LICENSE
 Encoding: UTF-8
 Imports: 
     rorcid,
-    vitae,
     dplyr,
     knitr,
     here,
@@ -22,27 +20,12 @@ Imports:
     purrr,
     stringr,
     pkgsearch,
-    magrittr,
     tibble,
-    rfigshare,
-    fs,
-    usethis,
     jsonlite,
     readr,
-    rmarkdown,
-    conflicted,
-    pander,
-    RefManageR,
-    bibtex (>= 0.4.3),
     bib2df (>= 1.1.2),
-    snakecase,
-    distill,
-    fontawesome (>= 0.2.1),
-    kableExtra
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+    snakecase
 Remotes: 
-    ropensci/bibtex,
     ropensci/bib2df
 Depends: 
     R (>= 2.10)
