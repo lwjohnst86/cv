@@ -378,3 +378,19 @@
       organization: Health Psychology Lab
       supervisor: Ryan David Kennedy
       location: Waterloo, Canada
+
+- section: Funding
+  description: "Grants for larger projects that include salary for multiple people as well as funds for resources."
+  icon: fa-comments-dollar
+  entries:
+    - title: A framework for an open and scalable infrastructure for health data exemplified by the DD2 initiative
+      start-date: '2022-01-01'
+      end-date: '2027-12-31'
+      description: |
+        Grant (NNF21OC0069462) from the NNF Data Science Research Infrastructure Programme
+        to develop an infrastructure for managing, sharing, and discovering data. NNF
+        posted a brief <a href="https://datascience.novonordiskfonden.dk/projects/a-framework-for-an-open-and-scalable-infrastructure-for-health-data-exemplified-by-the-dd2-initiative/">description</a>
+        of it. Amount: DKK 14,977,580.
+      href: https://doi.org/10.5281/zenodo.6511112
+      organization: NovoNordiskFonden
+      location: Aarhus, Denmark

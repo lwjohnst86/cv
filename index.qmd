@@ -27,12 +27,6 @@ listing:
     field-types:
       start-date: date
       end-date: date  
-  - id: funding
-    template: ejs/dl-entry.ejs
-    contents: data/funding.yml
-    field-types:
-      start-date: date
-      end-date: date
   - id: r-packages
     template: ejs/dl-entry.ejs
     contents: data/r-packages.yml
@@ -111,11 +105,6 @@ list_publications(bib_items, "Curriculum development")
 ### Other Development
 
 ::: {#curriculum-development}
-:::
-
-## {{< fa comments-dollar >}} Funding
-
-::: {#funding}
 :::
 
 ## {{< fa bullhorn >}} Outreach activities
