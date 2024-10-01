@@ -1,0 +1,71 @@
+- title: Instructor
+  start-date: '2021-01-18'
+  end-date: ''
+  description: ''
+  href: ''
+  organization: '[RStudio Certified Instructor](https://education.rstudio.com/trainers/people/johnston+luke/)'
+  location: Boston, USA
+- title: Member
+  start-date: '2020-07-10'
+  end-date: ''
+  description: ''
+  href: ''
+  organization: European Association for the Study of Diabetes
+  location: Düsseldorf, Germany
+- title: Team leader
+  start-date: '2022-06-01'
+  end-date: ''
+  description: ''
+  href: ''
+  organization: Steno Diabetes Center Aarhus
+  location: Aarhus, Denmark
+- title: Researcher
+  start-date: '2021-02-10'
+  end-date: '2022-06-01'
+  description: ''
+  href: ''
+  organization: Department of Clinical Medicine, Aarhus University
+  location: Aarhus, Denmark
+- title: Researcher
+  start-date: '2019-12-01'
+  end-date: '2021-02-10'
+  description: ''
+  href: ''
+  organization: Department of Public Health, Aarhus University
+  location: Aarhus, Denmark
+- title: Member
+  start-date: '2018-07-05'
+  end-date: ''
+  description: ''
+  href: ''
+  organization: Danish Diabetes and Endocrinology Academy
+  location: Denmark
+- title: Instructor and member
+  start-date: '2015-05-26'
+  end-date: '2019-10-22'
+  description: ''
+  href: ''
+  organization: '[Software Carpentry](http://software-carpentry.org/)'
+  location: Global
+- title: Treasurer
+  start-date: '2016-01-14'
+  end-date: '2018-01-31'
+  description: Responsible for managing the finances, identifying potential sources
+    of funding and applying to them as applicable, reimbursing students for expenses,
+    and buying the snacks for the coding sessions. Other communal duties include maintaining
+    the GitHub repository and dealing with Issues and Pull Requests (via GitHub) that
+    may arise.
+  href: https://github.com/UofTCoders/council/tree/master/treasurer
+  organization: '[UofT Coders](https://uoftcoders.github.io), University of Toronto
+    & Mozilla Science Lab'
+  location: Toronto, Canada
+- title: Treasurer
+  start-date: '2014-09-01'
+  end-date: '2017-08-31'
+  description: Responsible for the accounting of the NSGSA finances, reimbursing students
+    for expenses, applying for the Graduate Student Union Head Grant to secure funding,
+    and dealing with any finance related issues that may come up.
+  href: ''
+  organization: '[Nutritional Sciences Graduate Student Association](http://nsgsa.sa.utoronto.ca/),
+    University of Toronto'
+  location: Toronto, Canada
