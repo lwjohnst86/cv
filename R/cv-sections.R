@@ -50,19 +50,3 @@ list_publications <- function(data, .type) {
     unlist() |>
     output(from_bib = TRUE)
 }
-
-#' @describeIn list_sections List curriculum developed.
-#' @export
-list_curriculum_development <- function(data, caption = NULL) {
-  data |>
-    dplyr::filter(section == "curriculum") |>
-    tidy_dates() |>
-    vitae::detailed_entries(
-      what = glue("{title} ({website})"),
-      when = date_range,
-      with = organization,
-      where = location,
-      why = website
-    ) |>
-    output(caption = caption)
-}
