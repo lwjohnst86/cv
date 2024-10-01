@@ -1,0 +1,18 @@
+- section: affiliations
+  description: Non-paying memberships to organizations.
+  icon: fa-building-columns
+  items:
+  - title: Instructor
+    start-date: '2021-01-18'
+    end-date: ''
+    description: ''
+    href: ''
+    organization: '[RStudio Certified Instructor](https://education.rstudio.com/trainers/people/johnston+luke/)'
+    location: Boston, USA
+  - title: Instructor and member
+    start-date: '2015-05-26'
+    end-date: '2019-10-22'
+    description: ''
+    href: ''
+    organization: '[Software Carpentry](http://software-carpentry.org/)'
+    location: Global
