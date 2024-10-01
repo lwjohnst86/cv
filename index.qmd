@@ -3,6 +3,12 @@ title: "Luke W. Johnston"
 date: "2024-09-30"
 date-format: "medium"
 listing:
+  - id: outreach
+    template: inst/ejs/dl-entry.ejs
+    contents: data/outreach.yml
+    field-types:
+      start-date: date
+      end-date: date  
   - id: funding
     template: inst/ejs/dl-entry.ejs
     contents: data/funding.yml
@@ -156,9 +162,8 @@ list_curriculum_development(cv_data)
 
 ## {{< fa bullhorn >}} Outreach activities
 
-```{r list-outreach}
-list_outreach(cv_data)
-```
+::: {#outreach}
+::: 
 
 ```{=html}
 <style>
