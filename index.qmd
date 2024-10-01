@@ -3,6 +3,12 @@ title: "Luke W. Johnston"
 date: "2024-09-30"
 date-format: "medium"
 listing:
+  - id: supervision
+    template: inst/ejs/dl-entry.ejs
+    contents: data/supervision.yml
+    field-types:
+      start-date: date
+      end-date: date  
   - id: affiliations
     template: inst/ejs/dl-entry.ejs
     contents: data/affiliations.yml
@@ -128,9 +134,8 @@ list_publications(bib_items, "presentations")
 
 ## {{< fa user-group >}} Supervision
 
-```{r list-supervision}
-list_supervision(cv_data)
-```
+::: {#supervision}
+:::
 
 ## {{< fa book-open-reader >}} Curriculum development
 

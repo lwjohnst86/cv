@@ -66,18 +66,3 @@ list_curriculum_development <- function(data, caption = NULL) {
     ) |>
     output(caption = caption)
 }
-
-#' @describeIn list_sections List supervisory activities.
-#' @export
-list_supervision <- function(data, caption = NULL) {
-  data |>
-    dplyr::filter(section == "supervision") |>
-    tidy_dates() |>
-    vitae::detailed_entries(
-      what = glue("{teaching_level} student"),
-      when = date_range,
-      with = organization,
-      where = location
-    ) |>
-    output(caption = caption)
-}
