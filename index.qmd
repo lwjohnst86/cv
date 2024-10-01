@@ -33,12 +33,6 @@ listing:
     field-types:
       start-date: date
       end-date: date
-  - id: employment
-    template: ejs/dl-entry.ejs
-    contents: data/employment.yml
-    field-types:
-      start-date: date
-      end-date: date
   - id: r-packages
     template: ejs/dl-entry.ejs
     contents: data/r-packages.yml
@@ -122,11 +116,6 @@ list_publications(bib_items, "Curriculum development")
 ## {{< fa comments-dollar >}} Funding
 
 ::: {#funding}
-:::
-
-## {{< fa briefcase >}} Employment
-
-::: {#employment}
 :::
 
 ## {{< fa bullhorn >}} Outreach activities
