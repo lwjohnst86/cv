@@ -82,7 +82,6 @@ listing:
 devtools::load_all()
 library(here)
 library(tidyverse)
-cv_data <- read_cv_items()
 bib_items <- read_bib_items()
 ```
 
