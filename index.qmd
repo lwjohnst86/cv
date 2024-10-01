@@ -39,12 +39,6 @@ listing:
     field-types:
       start-date: date
       end-date: date
-  - id: committees
-    template: ejs/dl-entry.ejs
-    contents: data/committees.yml
-    field-types:
-      start-date: date
-      end-date: date
   - id: employment
     template: ejs/dl-entry.ejs
     contents: data/employment.yml
@@ -141,11 +135,6 @@ list_publications(bib_items, "Curriculum development")
 ### Other Development
 
 ::: {#curriculum-development}
-:::
-
-## {{< fa users >}} Committees
-
-::: {#committees}
 :::
 
 ## {{< fa comments-dollar >}} Funding
