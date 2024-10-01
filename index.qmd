@@ -15,12 +15,6 @@ listing:
     field-types:
       start-date: date
       end-date: date  
-  - id: certificates
-    template: ejs/dl-entry.ejs
-    contents: data/certificates.yml
-    field-types:
-      start-date: date
-      end-date: date  
   - id: curriculum-development
     template: ejs/dl-entry.ejs
     contents: data/curriculum-development.yml
@@ -42,12 +36,6 @@ listing:
   - id: funding
     template: ejs/dl-entry.ejs
     contents: data/funding.yml
-    field-types:
-      start-date: date
-      end-date: date
-  - id: awards
-    template: ejs/dl-entry.ejs
-    contents: data/awards.yml
     field-types:
       start-date: date
       end-date: date
@@ -160,11 +148,6 @@ list_publications(bib_items, "Curriculum development")
 ::: {#committees}
 :::
 
-## {{< fa trophy >}} Awards
-
-::: {#awards}
-:::
-
 ## {{< fa comments-dollar >}} Funding
 
 ::: {#funding}
@@ -178,11 +161,6 @@ list_publications(bib_items, "Curriculum development")
 ## {{< fa bullhorn >}} Outreach activities
 
 ::: {#outreach}
-::: 
-
-## {{< fa certificate >}} Certificates
-
-::: {#certificates}
 ::: 
 
 ## {{< fa school >}} Courses taken
