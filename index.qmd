@@ -3,6 +3,12 @@ title: "Luke W. Johnston"
 date: "2024-09-30"
 date-format: "medium"
 listing:
+  - id: affiliations
+    template: inst/ejs/dl-entry.ejs
+    contents: data/affiliations.yml
+    field-types:
+      start-date: date
+      end-date: date  
   - id: outreach
     template: inst/ejs/dl-entry.ejs
     contents: data/outreach.yml
@@ -89,9 +95,8 @@ bib_items <- read_bib_items()
 
 ## {{< fa building-columns >}} Affiliations
 
-```{r list-affiliations}
-list_affiliations(cv_data)
-```
+::: {#affiliations}
+:::
 
 ## {{< fa book-open >}} Publications
 
