@@ -3,6 +3,12 @@ title: "Luke W. Johnston"
 date: "2024-09-30"
 date-format: "medium"
 listing:
+  - id: certificates
+    template: inst/ejs/dl-entry.ejs
+    contents: data/certificates.yml
+    field-types:
+      start-date: date
+      end-date: date  
   - id: curriculum-development
     template: inst/ejs/dl-entry.ejs
     contents: data/curriculum-development.yml
@@ -177,6 +183,11 @@ list_publications(bib_items, "Curriculum development")
 ## {{< fa bullhorn >}} Outreach activities
 
 ::: {#outreach}
+::: 
+
+## {{< fa certificate >}} Certificates
+
+::: {#certificates}
 ::: 
 
 ```{=html}

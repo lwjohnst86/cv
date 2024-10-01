@@ -1,0 +1,36 @@
+- title: RStudio Instructor Training and Certification Program
+  start-date: '2020-08-06'
+  end-date: '2020-08-06'
+  description: ''
+  href: https://education.rstudio.com/trainers/people/johnston+luke/
+  organization: RStudio
+  location: Boston, USA
+- title: Software Carpentry Instructor Training
+  start-date: '2015-05-26'
+  end-date: '2015-05-26'
+  description: ''
+  href: http://swcarpentry.github.io/training-course/2015/02/luke-johnston/
+  organization: Software Carpentry
+  location: Online
+- title: Advanced University Teaching Preparation
+  start-date: '2015-08-01'
+  end-date: '2015-08-01'
+  description: ''
+  href: ''
+  organization: Teaching Assistants' Training Program, University of Toronto
+  location: Toronto, Canada
+- title: Graduate Professional Skills
+  start-date: '2017-11-09'
+  end-date: '2017-11-09'
+  description: ''
+  href: ''
+  organization: Graduate Professional Skills Program, School of Graduate Studies,
+    University of Toronto
+  location: Toronto, Canada
+- title: Data Carpentry Instructor Training
+  start-date: '2016-11-15'
+  end-date: '2016-11-15'
+  description: ''
+  href: ''
+  organization: Data Carpentry
+  location: Online
