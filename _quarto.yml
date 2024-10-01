@@ -29,9 +29,8 @@ format:
     from: markdown+emoji
     theme:
         - litera
-        - docs/theme.scss
-    toc: true
-    tbl-colwidths: [20, 70]
+        - theme.scss
+    toc: false
 
 editor_options:
   markdown:
