@@ -15,12 +15,6 @@ listing:
     field-types:
       start-date: date
       end-date: date  
-  - id: supervision
-    template: ejs/dl-entry.ejs
-    contents: data/supervision.yml
-    field-types:
-      start-date: date
-      end-date: date  
   - id: teaching
     template: ejs/dl-entry.ejs
     contents: data/teaching.yml
@@ -73,11 +67,6 @@ list_publications(bib_items, "presentations")
 ## {{< fa person-chalkboard >}} Teaching
 
 ::: {#teaching}
-:::
-
-## {{< fa user-group >}} Supervision
-
-::: {#supervision}
 :::
 
 ## {{< fa book-open-reader >}} Curriculum development

@@ -470,3 +470,41 @@
       start-date: '2016-07-29'
       href: https://github.com/lwjohnst86/carpenter
       location: CRAN
+
+- section: Supervision
+  description: "Acting as a formal (co-)supervisor to students and their projects."
+  icon: fa-user-group
+  entries:
+    - title: Bachelor student Windy Wang
+      start-date: "2014-09-01"
+      end-date: "2015-04-30"
+      description: |
+        Co-supervised with Dr. Anthony Hanley for the Research Projects course
+        (NFS394) in Nutritional Sciences. Supervision consisted of helping guide the
+        development of the research question and teaching Windy coding in SAS and
+        using statistical techniques to analyze the data.  Project title was
+        <em>Validating a bioelectric impedance instrument against the gold standard
+        dual-energy x-ray absorptiometry on measures of adiposity</em>.
+      organization: Department of Nutritional Sciences, University of Toronto
+      location: Toronto, Canada
+    - title: Master's student Shahen Yashpal
+      start-date: "2017-09-01"
+      end-date: "2018-01-31"
+      description: |
+        Co-supervised with Dr. Anthony Hanley. I trained Shahen in R and statistics,
+        as well as assisted in guiding the research project and analysis. Project
+        title was <em>Metabolomic Profiling of the DASH Diet: Novel Insights for the
+        Nutritional Epidemiology of Type 2 Diabetes Mellitus</em>.
+      organization: Department of Nutritional Sciences, University of Toronto
+      location: Toronto, Canada
+    - title: Master's student Núria Estanyol-Torres
+      start-date: "2023-03-01"
+      end-date: "2023-06-03"
+      description: |
+        Supervised Núria in a (remote) Master's certificate in Biostatistics and
+        Bioinformatics while she was doing her PhD in Chalmers University of
+        Technology Gothenburg, Sweden.  Thesis title: <em>Pipeline in R for creating
+        multi-metabolite signatures of dietary adherence from observational
+        data</em>.
+      organization: Universitat Oberta de Catalunya
+      location: Barcelona, Spain
