@@ -3,6 +3,12 @@ title: "Luke W. Johnston"
 date: "2024-09-30"
 date-format: "medium"
 listing:
+  - id: courses-taken
+    template: inst/ejs/dl-entry.ejs
+    contents: data/courses-taken.yml
+    field-types:
+      start-date: date
+      end-date: date  
   - id: certificates
     template: inst/ejs/dl-entry.ejs
     contents: data/certificates.yml
@@ -187,6 +193,11 @@ list_publications(bib_items, "Curriculum development")
 ## {{< fa certificate >}} Certificates
 
 ::: {#certificates}
+::: 
+
+## {{< fa school >}} Courses taken
+
+::: {#courses-taken}
 ::: 
 
 ```{=html}
