@@ -1,10 +1,7 @@
 _ignore/
 .Rproj.user
 *.bak
-index.md
-recent.md
 .httr-oauth
 *.sav
-vignettes/fonts/
 
 /.quarto/
