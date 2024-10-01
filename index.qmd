@@ -3,6 +3,12 @@ title: "Luke W. Johnston"
 date: "2024-09-30"
 date-format: "medium"
 listing:
+  - id: sections
+    template: ejs/sections.ejs
+    contents: data/entries.yml
+    field-types:
+      start-date: date
+      end-date: date  
   - id: courses-taken
     template: ejs/dl-entry.ejs
     contents: data/courses-taken.yml
@@ -24,12 +30,6 @@ listing:
   - id: supervision
     template: ejs/dl-entry.ejs
     contents: data/supervision.yml
-    field-types:
-      start-date: date
-      end-date: date  
-  - id: affiliations
-    template: ejs/dl-entry.ejs
-    contents: data/affiliations.yml
     field-types:
       start-date: date
       end-date: date  
@@ -103,14 +103,12 @@ bib_items <- read_bib_items()
 > I am a diabetes epidemiologist, R and Python software developer, teacher of
 > modern data science and analysis skills, and open science advocate.
 
+::: {#sections}
+:::
+
 ## {{< fa graduation-cap >}} Education
 
 ::: {#education}
-:::
-
-## {{< fa building-columns >}} Affiliations
-
-::: {#affiliations}
 :::
 
 ## {{< fa book-open >}} Publications

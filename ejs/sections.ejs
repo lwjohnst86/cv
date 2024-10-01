@@ -1,0 +1,47 @@
+```{=html}
+<% for (const item of items) { %>
+  <h2><i class="fa-regular <%- item.icon %>"></i> <%= item.section %></h2>
+  <% if (item.description) { %>
+    <p><%= item.description %></p>
+  <% } %>
+
+  <dl>
+  <% for (const entry of item.entries) { %>
+    <dt>
+    <% if (entry.href) { %>
+      <a href="<%- entry.href %>"><%= entry.title %></a>
+    <% } else { %>
+      <%= entry.title %>
+    <% } %> 
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <% if (entry['start-date'] == entry['end-date']) { %>
+            <%- entry['start-date'] %>
+          <% } else if (entry['end-date']) { %>
+            <%- entry['start-date'] %> to <%- entry['end-date'] %>
+          <% } else { %>
+            <%- entry['start-date'] %> to present
+          <% } %> 
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> <%= entry.location %>
+        </div>
+      </div>
+    </dd>
+    <% if (entry.supervisor) { %>
+    <dd>
+      Supervisor: <%= entry.supervisor %>
+    </dd>
+    <% } %>
+    <% if (entry.description) { %>
+    <dd>
+      <%= entry.description %>
+    </dd>
+    <% } %>
+  <% } %>
+  </dl>
+<% } %>
+```
