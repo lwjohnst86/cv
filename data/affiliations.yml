@@ -12,25 +12,4 @@
   href: ''
   organization: '[Software Carpentry](http://software-carpentry.org/)'
   location: Global
-- title: Treasurer
-  start-date: '2016-01-14'
-  end-date: '2018-01-31'
-  description: Responsible for managing the finances, identifying potential sources
-    of funding and applying to them as applicable, reimbursing students for expenses,
-    and buying the snacks for the coding sessions. Other communal duties include maintaining
-    the GitHub repository and dealing with Issues and Pull Requests (via GitHub) that
-    may arise.
-  href: https://github.com/UofTCoders/council/tree/master/treasurer
-  organization: '[UofT Coders](https://uoftcoders.github.io), University of Toronto
-    & Mozilla Science Lab'
-  location: Toronto, Canada
-- title: Treasurer
-  start-date: '2014-09-01'
-  end-date: '2017-08-31'
-  description: Responsible for the accounting of the NSGSA finances, reimbursing students
-    for expenses, applying for the Graduate Student Union Head Grant to secure funding,
-    and dealing with any finance related issues that may come up.
-  href: ''
-  organization: '[Nutritional Sciences Graduate Student Association](http://nsgsa.sa.utoronto.ca/),
-    University of Toronto'
-  location: Toronto, Canada
+
