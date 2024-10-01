@@ -15,12 +15,6 @@ listing:
     field-types:
       start-date: date
       end-date: date  
-  - id: teaching
-    template: ejs/dl-entry.ejs
-    contents: data/teaching.yml
-    field-types:
-      start-date: date
-      end-date: date
 ---
 
 ```{r setup}
@@ -63,11 +57,6 @@ list_publications(bib_items, "Books")
 ```{r list-presentations}
 list_publications(bib_items, "presentations")
 ```
-
-## {{< fa person-chalkboard >}} Teaching
-
-::: {#teaching}
-:::
 
 ## {{< fa book-open-reader >}} Curriculum development
 
