@@ -1,62 +1,14 @@
 ---
 title: "Teaching Portfolio"
+execute:
+  eval: false
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, eval=FALSE}
 devtools::load_all()
 library(tidyverse)
-library(pander)
-conflicted::conflict_prefer("filter", "dplyr")
-cv_data <- read_cv_items() |>
-  filter(section %in% c(
-    "curriculum", "certificates", "courses taken",
-    "teaching", "supervision"
-  )) |>
-  tidy_dates() |>
-  mutate(
-    Title = if_else(!is.na(website), glue::glue("{title} ({website})"), title),
-    teaching_level = str_replace(teaching_level, "[Uu]ndergraduate", "Undergrad")
-  ) |>
-  rename(
-    Years = date_range, Role = role, Level = teaching_level,
-    Organization = organization, Location = location
-  )
 
 pubs <- read_bib_items()
-
-# Function to make pdf table size smaller.
-knitr::knit_hooks$set(
-  table.small.fontsize =
-    function(before, options, envir) {
-      if (before) {
-        knitr::asis_output("\\footnotesize\n")
-      } else {
-        knitr::asis_output("\\normalsize\n")
-      }
-    }
-)
-
-knitr::opts_chunk$set(
-  echo = FALSE, comment = "", results = "asis",
-  table.small.fontsize = TRUE, eval = FALSE
-)
-
-# Function to generate tables.
-output_table <- function(data, caption) {
-  if (knitr::is_html_output()) {
-    knitr::kable(
-      data,
-      caption = caption
-    )
-  } else {
-    pander::pandoc.table(
-      t = data,
-      caption = caption,
-      split.tables = Inf,
-      justify = "left"
-    )
-  }
-}
 ```
 
 <!--

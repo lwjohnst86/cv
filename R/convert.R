@@ -97,33 +97,6 @@ extract_first_published <- function(pkgs) {
     purrr::map_chr(~ jsonlite::fromJSON(as.character(.x))$versions[[1]]$date)
 }
 
-# library(tidyverse)
-# read_csv("data/cv-items.csv") |>
-#   filter(section == "teaching") |>
-#   select(-section, -doi, -value, -teaching_level) |>
-#   rename(
-#     href = website,
-#     supervisor = person_name,
-#     description = details,
-#     `start-date` = start,
-#     `end-date` = end
-#   ) |>
-#   mutate(across(where(is.character), \(x) if_else(is.na(x), "", x))) |>
-#   mutate(
-#     `start-date` = `start-date` |>
-#       lubridate::as_date() |>
-#       as.character(),
-#     `end-date` = `end-date` |>
-#       lubridate::as_date() |>
-#       as.character(),
-#     `end-date` = if_else(is.na(`end-date`), "", `end-date`),
-#     organization = organization |>
-#       stringr::str_replace_all("\\[(.*?)\\]\\(.*?\\)", "\\1")
-#   ) |>
-#   relocate(title, .before = everything()) |>
-#   dataframe_to_list() |>
-#   yaml::write_yaml("data/teaching.yml")
-
 # Helpers -----------------------------------------------------------------
 
 dataframe_to_list <- function(data) {

@@ -9,11 +9,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-devtools::load_all()
-cv_data <- read_cv_items()
-```
-
 # Statement of teaching philosophy
 
 ## What is teaching? And why bother teaching?
