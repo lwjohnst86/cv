@@ -4,78 +4,78 @@ date: "2024-09-30"
 date-format: "medium"
 listing:
   - id: courses-taken
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/courses-taken.yml
     field-types:
       start-date: date
       end-date: date  
   - id: certificates
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/certificates.yml
     field-types:
       start-date: date
       end-date: date  
   - id: curriculum-development
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/curriculum-development.yml
     field-types:
       start-date: date
       end-date: date  
   - id: supervision
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/supervision.yml
     field-types:
       start-date: date
       end-date: date  
   - id: affiliations
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/affiliations.yml
     field-types:
       start-date: date
       end-date: date  
   - id: outreach
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/outreach.yml
     field-types:
       start-date: date
       end-date: date  
   - id: funding
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/funding.yml
     field-types:
       start-date: date
       end-date: date
   - id: awards
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/awards.yml
     field-types:
       start-date: date
       end-date: date
   - id: committees
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/committees.yml
     field-types:
       start-date: date
       end-date: date
   - id: employment
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/employment.yml
     field-types:
       start-date: date
       end-date: date
   - id: r-packages
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/r-packages.yml
     field-types:
       start-date: date
   - id: teaching
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/teaching.yml
     field-types:
       start-date: date
       end-date: date
   - id: education
-    template: inst/ejs/dl-entry.ejs
+    template: ejs/dl-entry.ejs
     contents: data/education.yml
     field-types:
       start-date: date
@@ -96,20 +96,12 @@ bib_items <- read_bib_items()
 {{< fa brands gitlab >}}\ [`@lwjohnst`](https://gitlab.com/lwjohnst/) 
 {{< fa brands github >}}\ [`@lwjohnst86`](https://github.com/lwjohnst86/)
 {{< fa brands orcid >}}\ [0000-0003-4169-2616](https://orcid.org/0000-0003-4169-2616)
+{{< fa brands linkedin >}}\ [`lwjohnst`](www.linkedin.com/in/lwjohnst) 
+{{< fa brands stack-overflow >}}\ [Luke W. Johnston](https://stackoverflow.com/users/2632184)
+{{< fa brands stack-exchange >}}\ [Luke W. Johnston](https://stackexchange.com/users/1992995) 
 
-{{< fa brands linkedin >}}\ [`lwjohnst`](www.linkedin.com/in/lwjohnst) {{< fa brands stack-overflow >}}
-{{< fa brands stack-exchange >}} {{< fa brands twitter >}}
-
-> I am a diabetes epidemiologist, R user and developer, teacher of
+> I am a diabetes epidemiologist, R and Python software developer, teacher of
 > modern data science and analysis skills, and open science advocate.
-
-<!--
-        - icon: "stack-overflow"
-          href: "https://stackoverflow.com/users/2632184"
-        - icon: "stack-overflow"
-        #   href: "https://stackexchange.com/users/1992995"
-
--->
 
 ## {{< fa graduation-cap >}} Education
 
