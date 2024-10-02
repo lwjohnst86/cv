@@ -1,22 +1,3 @@
-- section: Affiliations
-  description: "Non-paying memberships to organizations."
-  icon: fa-building-columns
-  entries:
-    - title: Instructor
-      start: '2021-01-18'
-      end: ''
-      description: ''
-      href: 'https://education.rstudio.com/trainers/people/johnston+luke/'
-      organization: 'RStudio Certified Instructor'
-      location: Boston, USA
-    - title: Instructor and member
-      start: '2015-05-26'
-      end: '2019-10-22'
-      description: ''
-      href: ''
-      organization: 'Software Carpentry'
-      location: Global
-
 - section: Awards
   description: "Awards and honors given to and/or for me (e.g., scholarships or funds for my own salary)."
   icon: fa-trophy
