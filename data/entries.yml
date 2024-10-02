@@ -3,44 +3,50 @@
   icon: fa-trophy
   entries:
     - title: Research Education and Networking Award
-      start: '2022-12-01'
-      end: '2022-12-01'
-      description: 'Recognition for involvement in education and networking of researchers
-        in Denmark.. Amount: DKK 25,000'
+      start: "2022-12-01"
+      end: "2022-12-01"
+      description:
+        "Recognition for involvement in education and networking of researchers
+        in Denmark.. Amount: DKK 25,000"
       organization: Danish Diabetes Academy
       location: Denmark
     - title: Danish Diabetes Academy Postdoctoral Fellowship
-      start: '2019-12-01'
-      end: '2023-12-31'
-      description: 'Nationally competitive ~3-year fellowship. Extended because of the
-        pandemic and because of receiving a larger project grant.. Amount: DKK 1.8 million'
+      start: "2019-12-01"
+      end: "2023-12-31"
+      description:
+        "Nationally competitive ~3-year fellowship. Extended because of the
+        pandemic and because of receiving a larger project grant.. Amount: DKK 1.8 million"
       organization: Danish Diabetes Academy
       location: Denmark
     - title: Michael C. Archer Research Excellence Award
-      start: '2017-11-23'
-      end: '2017-11-23'
-      description: Recognition for the best research article published in 2016 by a graduate
+      start: "2017-11-23"
+      end: "2017-11-23"
+      description:
+        Recognition for the best research article published in 2016 by a graduate
         student in the Department of Nutritional Sciences.
       organization: University of Toronto
       location: Toronto, Canada
     - title: Marie Skłodowska-Curie Master Class and Travel Fund
-      start: '2017-05-16'
-      end: '2017-05-18'
-      description: Participation in a workshop aimed at applying for the Marie Curie Fellowship,
+      start: "2017-05-16"
+      end: "2017-05-18"
+      description:
+        Participation in a workshop aimed at applying for the Marie Curie Fellowship,
         with travel expenses and accommodations paid.
       organization: Aarhus University
       location: Aarhus, Denmark
     - title: Working Open Workshop and Travel Scholarship
-      start: '2017-03-10'
-      end: '2017-03-11'
-      description: 'Attendance to a workshop hosted by the Mozilla Science Lab to train
-        on using open source and processes for research projects.. Amount: USD 300'
+      start: "2017-03-10"
+      end: "2017-03-11"
+      description:
+        "Attendance to a workshop hosted by the Mozilla Science Lab to train
+        on using open source and processes for research projects.. Amount: USD 300"
       organization: Mozilla Science Lab
       location: Montreal, Canada
     - title: Gordon Cressy Student Leadership Award
-      start: '2017-04-25'
-      end: '2017-04-25'
-      description: For recognition of outstanding extra-curricular contributions to the
+      start: "2017-04-25"
+      end: "2017-04-25"
+      description:
+        For recognition of outstanding extra-curricular contributions to the
         faculty and the university as a whole. Contributions include creating a workshop
         series (offered in the Graduate Professional Skills program) to teach coding to
         graduate students, playing an instrumental role in starting a student group (UofTCoders)
@@ -50,81 +56,87 @@
       organization: University of Toronto
       location: Toronto, Canada
     - title: Ontario Graduate Scholarship
-      start: '2012-09-01'
-      end: '2013-08-31'
-      description: '. Amount: CAD 15000'
+      start: "2012-09-01"
+      end: "2013-08-31"
+      description: ". Amount: CAD 15000"
       organization: Government of Ontario
       location: Toronto, Canada
     - title: Trainee Travel Award
-      start: '2013-05-08'
-      end: '2013-05-08'
-      description: 'For attendance to the American Diabetes Association 73rd Scientific
-        Sessions. Amount: CAD 1000'
+      start: "2013-05-08"
+      end: "2013-05-08"
+      description:
+        "For attendance to the American Diabetes Association 73rd Scientific
+        Sessions. Amount: CAD 1000"
       organization: Banting and Best Diabetes Centre
       location: Toronto, Canada
     - title: Ontario Graduate Scholarship
-      start: '2013-09-01'
-      end: '2014-08-31'
-      description: '. Amount: CAD 15000'
+      start: "2013-09-01"
+      end: "2014-08-31"
+      description: ". Amount: CAD 15000"
       organization: Government of Ontario
       location: Toronto, Canada
     - title: Trainee Travel Award
-      start: '2014-06-01'
-      end: '2014-06-01'
-      description: 'For attendance to the American Diabetes Association 74rd Scientific
-        Sessions. Amount: CAD 1000'
+      start: "2014-06-01"
+      end: "2014-06-01"
+      description:
+        "For attendance to the American Diabetes Association 74rd Scientific
+        Sessions. Amount: CAD 1000"
       organization: Banting and Best Diabetes Centre
       location: Toronto, Canada
     - title: Conference Travel Grant
-      start: '2014-05-22'
-      end: '2014-05-22'
-      description: 'For attendance to the International Society for the Study of Fatty
-        Acids and Lipids 2014 Biennial Congress. Amount: CAD 1120'
+      start: "2014-05-22"
+      end: "2014-05-22"
+      description:
+        "For attendance to the International Society for the Study of Fatty
+        Acids and Lipids 2014 Biennial Congress. Amount: CAD 1120"
       organization: University of Toronto
       location: Toronto, Canada
     - title: Alumni Travel Award
-      start: '2014-04-22'
-      end: '2014-04-22'
-      description: 'For attendance to the International Society for the Study of Fatty
-        Acids and Lipids 2014 Biennial Congress. Amount: CAD 200'
+      start: "2014-04-22"
+      end: "2014-04-22"
+      description:
+        "For attendance to the International Society for the Study of Fatty
+        Acids and Lipids 2014 Biennial Congress. Amount: CAD 200"
       organization: Department of Nutritional Sciences, University of Toronto
       location: Toronto, Canada
     - title: New Investigator Award
-      start: '2014-06-28'
-      end: '2014-06-28'
-      description: Given out during the International Society for the Study of Fatty Acids
+      start: "2014-06-28"
+      end: "2014-06-28"
+      description:
+        Given out during the International Society for the Study of Fatty Acids
         and Lipids 2014 Biennial Congress
       organization: International Society for the Study of Fatty Acids and Lipids
       location: Stockholm, Sweden
     - title: Doctoral Student Research Award
-      start: '2014-09-01'
-      end: '2017-08-31'
-      description: 'National competitive award. Amount: CAD 21000'
+      start: "2014-09-01"
+      end: "2017-08-31"
+      description: "National competitive award. Amount: CAD 21000"
       organization: Canadian Diabetes Association
       location: Toronto, Canada
     - title: Graduate Novo Nordisk Studentship
-      start: '2014-09-01'
-      end: '2015-08-31'
-      description: '. Amount: CAD 3840'
+      start: "2014-09-01"
+      end: "2015-08-31"
+      description: ". Amount: CAD 3840"
       organization: Banting and Best Diabetes Centre
       location: Toronto, Canada
     - title: Margaret and Nicholas Fodor Fellowship
-      start: '2014-09-01'
-      end: '2015-08-31'
-      description: 'University-wide awards. Amount: CAD 3000'
+      start: "2014-09-01"
+      end: "2015-08-31"
+      description: "University-wide awards. Amount: CAD 3000"
       organization: University of Toronto
       location: Toronto, Canada
     - title: Ontario Graduate Scholarship
-      start: '2014-09-01'
-      end: '2015-08-31'
-      description: 'Awarded, but declined for the CDA Doctoral Award. Amount: CAD 15000'
+      start: "2014-09-01"
+      end: "2015-08-31"
+      description: "Awarded, but declined for the CDA Doctoral Award. Amount: CAD 15000"
       organization: Government of Ontario
       location: Toronto, Canada
     - title: Trainee Travel Award
-      start: '2015-06-08'
-      end: '2015-06-08'
-      description: 'For attendance to the American Diabetes Association 75rd Scientific
-        Sessions. Amount: CAD 1000'
+      start: "2015-06-08"
+      end: "2015-06-08"
+      description:
+        "For attendance to the American Diabetes Association 75rd Scientific
+        Sessions. Amount: CAD 1000"
       organization: Banting and Best Diabetes Centre, University of Toronto
       location: Toronto, Canada
 
@@ -133,40 +145,40 @@
   icon: fa-certificate
   entries:
     - title: RStudio Instructor Training and Certification Program
-      start: '2020-08-06'
-      end: '2020-08-06'
-      description: 'Certificate for completing an instructor training program.'
+      start: "2020-08-06"
+      end: "2020-08-06"
+      description: "Certificate for completing an instructor training program."
       href: https://education.rstudio.com/trainers/people/johnston+luke/
       organization: RStudio
       location: Boston, USA
     - title: Software Carpentry Instructor Training
-      start: '2015-05-26'
-      end: '2015-05-26'
-      description: 'Certificate for completing an instructor training program.'
+      start: "2015-05-26"
+      end: "2015-05-26"
+      description: "Certificate for completing an instructor training program."
       href: http://swcarpentry.github.io/training-course/2015/02/luke-johnston/
       organization: Software Carpentry
       location: Online
     - title: Advanced University Teaching Preparation
-      start: '2015-08-01'
-      end: '2015-08-01'
+      start: "2015-08-01"
+      end: "2015-08-01"
       description: |
         Certificate of completing the university's teacher training program for graduate students.
-      href: ''
+      href: ""
       organization: "Teaching Assistants' Training Program, University of Toronto"
       location: Toronto, Canada
     - title: Graduate Professional Skills
-      start: '2017-11-09'
-      end: '2017-11-09'
+      start: "2017-11-09"
+      end: "2017-11-09"
       description: |
         Certificate of completing a program of courses and workshops offered to graduate students to develop their professional skills, such as project management, communication, and leadership.
-      href: ''
+      href: ""
       organization: Graduate Professional Skills Program, School of Graduate Studies, University of Toronto
       location: Toronto, Canada
     - title: Data Carpentry Instructor Training
-      start: '2016-11-15'
-      end: '2016-11-15'
-      description: ''
-      href: ''
+      start: "2016-11-15"
+      end: "2016-11-15"
+      description: ""
+      href: ""
       organization: Data Carpentry
       location: Online
 
@@ -174,33 +186,37 @@
   description: "Participation in committee, group, or council level activities."
   icon: fa-users
   entries:
-    - title: Scientific program organizing committee for the Danish Diabetes Academy Postdoctoral
+    - title:
+        Scientific program organizing committee for the Danish Diabetes Academy Postdoctoral
         Winter School
-      start: '2020-01-01'
-      end: '2021-11-06'
-      description: Brainstorm and decide on overall school theme, develop the challenge
+      start: "2020-01-01"
+      end: "2021-11-06"
+      description:
+        Brainstorm and decide on overall school theme, develop the challenge
         project material and output, find and invite speakers for sessions, as well as
         contributing to creating the podcast on the challenge material.
       organization: Danish Diabetes Academy
       location: Denmark
     - title: Treasurer for the UofT Coders council
-      start: '2016-01-14'
-      end: '2018-01-31'
-      description: Responsible for managing the finances, identifying potential sources
+      start: "2016-01-14"
+      end: "2018-01-31"
+      description:
+        Responsible for managing the finances, identifying potential sources
         of funding and applying to them as applicable, reimbursing students for expenses,
         and buying the snacks for the coding sessions. Other communal duties include maintaining
         the GitHub repository and dealing with Issues and Pull Requests (via GitHub) that
         may arise.
       href: https://uoftcoders.github.io/studyGroup
-      organization: 'University of Toronto & Mozilla Science Lab'
+      organization: "University of Toronto & Mozilla Science Lab"
       location: Toronto, Canada
     - title: Treasurer for the Nutritional Sciences Graduate Student Association
-      start: '2014-09-01'
-      end: '2017-08-31'
-      description: Responsible for the accounting of the NSGSA finances, reimbursing students
+      start: "2014-09-01"
+      end: "2017-08-31"
+      description:
+        Responsible for the accounting of the NSGSA finances, reimbursing students
         for expenses, applying for the Graduate Student Union Head Grant to secure funding,
         and dealing with any finance related issues that may come up.
-      href: ''
+      href: ""
       organization: University of Toronto
       location: Toronto, Canada
 
@@ -209,38 +225,38 @@
   icon: fa-school
   entries:
     - title: Aarhus University Teachers Training Programme
-      start: '2019-08-21'
-      end: '2019-12-19'
-      description: ''
-      href: ''
+      start: "2019-08-21"
+      end: "2019-12-19"
+      description: ""
+      href: ""
       organization: Aarhus University
       location: Aarhus, Denmark
     - title: Postdoctoral Winter School
-      start: '2019-11-03'
-      end: '2019-11-08'
-      description: ''
-      href: ''
+      start: "2019-11-03"
+      end: "2019-11-08"
+      description: ""
+      href: ""
       organization: Danish Diabetes Academy
       location: Malaga, Spain
     - title: Mozilla Open Project Leaders Training
-      start: '2018-02-21'
-      end: '2018-06-11'
-      description: ''
+      start: "2018-02-21"
+      end: "2018-06-11"
+      description: ""
       href: https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif
       organization: Mozilla
       location: Online
     - title: "'OMICS and Epidemiology"
-      start: '2016-05-25'
-      end: '2016-05-26'
-      description: ''
-      href: ''
+      start: "2016-05-25"
+      end: "2016-05-26"
+      description: ""
+      href: ""
       organization: McMaster University Health Sciences
       location: Toronto, Canada
     - title: Foundations of Project Management I
-      start: '2016-11-23'
-      end: '2016-11-24'
-      description: ''
-      href: ''
+      start: "2016-11-23"
+      end: "2016-11-24"
+      description: ""
+      href: ""
       organization: Mitacs
       location: Toronto, Canada
 
@@ -249,20 +265,20 @@
   icon: fa-graduation-cap
   entries:
     - title: PhD in Nutritional Sciences
-      start: '2013-09-01'
-      end: '2017-09-14'
+      start: "2013-09-01"
+      end: "2017-09-14"
       location: University of Toronto in Toronto, CA
       href: https://hdl.handle.net/1807/80893
-      description: 'Thesis title: <em>Fatty acid composition in four serum lipid fractions and the pathogenesis of diabetes.</em>'
+      description: "Thesis title: <em>Fatty acid composition in four serum lipid fractions and the pathogenesis of diabetes.</em>"
     - title: MSc in Nutritional Sciences
-      start: '2011-09-01'
-      end: '2013-08-30'
+      start: "2011-09-01"
+      end: "2013-08-30"
       location: University of Toronto in Toronto, CA
       href: https://hdl.handle.net/1807/42975
-      description: 'Thesis title: <em>Association of Leg Length with Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus.</em>'
+      description: "Thesis title: <em>Association of Leg Length with Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus.</em>"
     - title: BSc in Kinesiology
-      start: '2005-09-01'
-      end: '2010-04-30'
+      start: "2005-09-01"
+      end: "2010-04-30"
       location: University of Waterloo in Waterloo, CA
 
 - section: Employment
@@ -270,25 +286,27 @@
   icon: fa-briefcase
   entries:
     - title: Team leader
-      start: '2022-06-01'
-      end: ''
-      description: Working on a project building an open infrastructure for health data,
+      start: "2022-06-01"
+      end: ""
+      description:
+        Working on a project building an open infrastructure for health data,
         funded by the NovoNordisk Foundation.
-      organization: Department of Clinical Medicine, Aarhus University and Steno Diabetes
+      organization:
+        Department of Clinical Medicine, Aarhus University and Steno Diabetes
         Center Aarhus
       supervisor: ""
       location: Aarhus, Denmark
     - title: DDA postdoctoral researcher
-      start: '2019-12-01'
-      end: '2022-05-31'
+      start: "2019-12-01"
+      end: "2022-05-31"
       description: |
         Working on a project funded by the Danish Diabetes Academy. Doing research in diabetes epidemiology, specifically on identifying: the metabolic mediation between early childhood biomarkers and adult diabetes status; developing causal structure learning methods; and, creating a framework (as text and as software) for conducting reproducible and open scientific research.
       organization: Steno Diabetes Center Aarhus
       supervisor: Dr. Daniel Witte
       location: Aarhus, Denmark
     - title: Postdoctoral researcher
-      start: '2018-02-01'
-      end: '2019-11-30'
+      start: "2018-02-01"
+      end: "2019-11-30"
       description: |
         Doing research in diabetes epidemiology, specifically on identifying:
 
@@ -302,16 +320,16 @@
       supervisor: Dr. Daniel Witte
       location: Aarhus, Denmark
     - title: Postdoctoral fellow
-      start: '2017-09-20'
-      end: '2018-01-31'
+      start: "2017-09-20"
+      end: "2018-01-31"
       description: |
         Finishing up PhD research projects, maintaining and developing a website for the <a href="https://promise-cohort.gitlab.io/PROMISE">PROMISE data dictionary and description</a> and training new graduate students on data analysis using R.
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Anthony Hanley
       location: Toronto, Canada
     - title: Research Assistant
-      start: '2011-01-01'
-      end: '2011-07-30'
+      start: "2011-01-01"
+      end: "2011-07-30"
       description: |
         Collected air quality samples from Region of Waterloo-owned social housing. Analyzed the air quality data using MS Excel.
         Produced and tested a survey for Program Training and Consultation Centre on SurveyMonkey. Wrote three reports on data collected from the survey results.
@@ -320,40 +338,40 @@
       supervisor: Karen Pieters, Dr. Ryan David Kennedy, and Dr. Rhona Hanning
       location: Waterloo, Canada
     - title: Research Assistant
-      start: '2010-08-01'
-      end: '2010-08-30'
+      start: "2010-08-01"
+      end: "2010-08-30"
       description: |
         Analyzed data from previous cigarette smoking experiments done in 2008 using MS Excel. Conducted a smoke-free policy scan of YMCAs and YWCAs in Ontario and presented findings to the Tobacco-free Sports and Recreation Community of Practice.
       organization: Health Psychology Lab, University of Waterloo
       supervisor: Dr. Ryan David Kennedy
       location: Waterloo, Canada
     - title: Research Assistant
-      start: '2009-09-01'
-      end: '2009-12-20'
+      start: "2009-09-01"
+      end: "2009-12-20"
       description: |
         Analyzed data from the WHO and PLoS Medicine using MS Excel. Developed a method for interpreting fracture data from the National Ambulatory Care Reporting System using statistical probability equations.
       organization: Child Health Evaluative Sciences, Hospital for Sick Children
       supervisor: Dr. Andrew Howard
       location: Toronto, Canada
     - title: Research Assistant
-      start: '2009-01-01'
-      end: '2009-04-30'
+      start: "2009-01-01"
+      end: "2009-04-30"
       description: |
         Examined balance in clinical populations, including individuals with dementia, using pressure plates. Used EMG electrodes, VICON markers and other monitoring equipment to obverse and collect data from research participants. Analyzed data from various experiments and studies using LabView and MATLAB software. Evaluated the reliability of using Bluetooth technology in the foot switch device (industry gold standard) and analyzed the relationship with an accelerometer.
       organization: Toronto Rehabilitation Institute
       supervisor: Dr. Avril Mansfield and Dr. William McIlroy
       location: Toronto, Canada
     - title: Research Assistant
-      start: '2008-09-01'
-      end: '2008-12-20'
+      start: "2008-09-01"
+      end: "2008-12-20"
       description: |
         Used MS Excel and SPSS 17.0 to organize and analyze data from experiments and prepare the data for presentations at provincial and international tobacco control conferences. Independently conducted a phone survey of Ontario’s university campuses’ outdoor smoking policies and prepared a poster to be presented at a tobacco control conference.
       organization: Health Psychology Lab
       supervisor: Ryan David Kennedy
       location: Waterloo, Canada
     - title: Project Manager
-      start: '2008-05-01'
-      end: '2008-08-30'
+      start: "2008-05-01"
+      end: "2008-08-30"
       description: |
         Managed 3 projects aimed at measuring tobacco smoke pollution in outdoor and quasi-outdoor environments. Organized and analyzed data using MS Excel and SPSS 17.0. Supervised and scheduled a team of 10 Research Assistants.
       organization: Health Psychology Lab
@@ -364,9 +382,21 @@
   description: "Grants for larger projects that include salary for multiple people as well as funds for resources."
   icon: fa-comments-dollar
   entries:
+    - title: "DP-Next: Sustainable Type 2 Diabetes Prevention for the 21st Century"
+      start: "2025-01-01"
+      end: "2029-12-31"
+      description: |
+        Contributor to a funded grant from the NovoNordiskFonden Steno National
+        Collaborative Programme. I will act as Work Package 1 lead, which aims
+        to provide modern operational and management practices that incorporate
+        software and data engineering, iterative project management, and
+        collaborative workflows and tools.  Amount: DKK ~25 million
+      href: https://steno-aarhus.github.io/dp-next/
+      organization: NovoNordiskFonden
+      location: Aarhus, Denmark
     - title: A framework for an open and scalable infrastructure for health data exemplified by the DD2 initiative
-      start: '2022-01-01'
-      end: '2027-12-31'
+      start: "2022-01-01"
+      end: "2027-12-31"
       description: |
         Grant (NNF21OC0069462) from the NNF Data Science Research Infrastructure Programme
         to develop an infrastructure for managing, sharing, and discovering data. NNF
@@ -380,18 +410,20 @@
   description: "Activities involving some type of outreach to a diverse audience, including the general public."
   icon: fa-bullhorn
   entries:
-    - title: 'The Future is Transparent: Moving Towards Open Science'
-      start: '2022-10-27'
-      end: '2022-10-27'
-      description: Speaker on a podcast discussing how to move researchers more towards incorporating
+    - title: "The Future is Transparent: Moving Towards Open Science"
+      start: "2022-10-27"
+      end: "2022-10-27"
+      description:
+        Speaker on a podcast discussing how to move researchers more towards incorporating
         open science practices.
       href: https://open.spotify.com/embed/episode/69hakmX1QRw0RIn6jry9xL?utm_source=generator
       organization: Danish Diabetes Academy
       location: Denmark
-    - title: 'The 1st Gothenburg Precision Nutrition Forum: Using Multi-OMCIs for Data-Driven
-        Systems Epidemiology - Towards Precision Nutrition'
-      start: '2022-09-12'
-      end: '2022-09-14'
+    - title:
+        "The 1st Gothenburg Precision Nutrition Forum: Using Multi-OMCIs for Data-Driven
+        Systems Epidemiology - Towards Precision Nutrition"
+      start: "2022-09-12"
+      end: "2022-09-14"
       description: Developed the website for this conference with the videos of the talks and poster abstracts.
       href: https://precision-nutrition-forum.github.io/2022/
       organization: Chalmers University of Technology
@@ -472,45 +504,51 @@
         information about an entire model, such as goodness of fit measures like AIC and
         BIC. <code>augment()</code> adds information about individual observations to a dataset, such
         as fitted values or influence measures.
-      start: '2014-11-23'
+      start: "2014-11-23"
       href: https://github.com/tidymodels/broom
       location: CRAN
-    - title: 'prodigenr: Research Project Directory Generator'
-      description: Creator. Create a project directory structure, along with typical files
+    - title: "prodigenr: Research Project Directory Generator"
+      description:
+        Creator. Create a project directory structure, along with typical files
         for that project.  This allows projects to be quickly and easily created, as well
         as for them to be standardized. Designed specifically with scientists in mind
         (mainly bio-medical researchers, but likely applies to other fields).
-      start: '2016-04-30'
+      start: "2016-04-30"
       href: https://github.com/rostools/prodigenr
       location: CRAN
-    - title: 'NetCoupler: Inference of Causal Links Between a Network and an External
-        Variable'
-      description: Creator. The 'NetCoupler' algorithm identifies potential direct effects
+    - title:
+        "NetCoupler: Inference of Causal Links Between a Network and an External
+        Variable"
+      description:
+        Creator. The 'NetCoupler' algorithm identifies potential direct effects
         of correlated, high-dimensional variables formed as a network with an external
         variable. The external variable may act as the dependent/response variable or
         as an independent/predictor variable to the network.
-      start: '2022-04-08'
+      start: "2022-04-08"
       href: https://github.com/NetCoupler/NetCoupler
       location: CRAN
-    - title: 'mason: Build Data Structures for Common Statistical Analysis'
-      description: Creator. Use a consistent syntax to create data structures of common
+    - title: "mason: Build Data Structures for Common Statistical Analysis"
+      description:
+        Creator. Use a consistent syntax to create data structures of common
         statistical techniques that can be continued in a pipe chain.  Design the analysis,
         add settings and variables, construct the results, and polish the final structure.
         Rinse and repeat for any number of statistical techniques.
-      start: '2016-07-15'
+      start: "2016-07-15"
       href: https://github.com/lwjohnst86/mason
       location: CRAN
-    - title: 'posterdown: Generate PDF Conference Posters Using R Markdown'
-      description: Contributor. Use 'rmarkdown' and 'pagedown' to generate HTML and PDF
+    - title: "posterdown: Generate PDF Conference Posters Using R Markdown"
+      description:
+        Contributor. Use 'rmarkdown' and 'pagedown' to generate HTML and PDF
         conference posters.
-      start: '2019-10-09'
+      start: "2019-10-09"
       href: https://github.com/brentthorne/posterdown
       location: CRAN
-    - title: 'carpenter: Build Common Tables of Summary Statistics for Reports'
-      description: Creator. Mainly used to build tables that are commonly presented for
+    - title: "carpenter: Build Common Tables of Summary Statistics for Reports"
+      description:
+        Creator. Mainly used to build tables that are commonly presented for
         bio-medical/health research, such as basic characteristic tables or descriptive
         statistics.
-      start: '2016-07-29'
+      start: "2016-07-29"
       href: https://github.com/lwjohnst86/carpenter
       location: CRAN
 
@@ -556,103 +594,107 @@
   description: "Teaching activities, excluding curriculum development."
   icon: fa-person-chalkboard
   entries:
-    - title: 'Reproducible Research in R: An advanced workshop on creating collaborative
-        and automated analysis pipelines'
-      start: '2022-12-07'
-      end: ''
+    - title:
+        "Reproducible Research in R: An advanced workshop on creating collaborative
+        and automated analysis pipelines"
+      start: "2022-12-07"
+      end: ""
       description: |
         Three day workshop on using R for reproducible workflows and approaches to data processing to PhD students and postdoctoral researchers.
       href: https://r-cubed-advanced.rostools.org
       role: Lead instructor
       organization: Danish Diabetes and Endocrinology Academy
-      supervisor: ''
+      supervisor: ""
       location: Denmark
-    - title: 'Reproducible Research in R: An intermediate workshop on modern approaches
-        and workflows to processing data'
-      start: '2020-09-08'
-      end: ''
+    - title:
+        "Reproducible Research in R: An intermediate workshop on modern approaches
+        and workflows to processing data"
+      start: "2020-09-08"
+      end: ""
       description: |
         Three day workshop on using R for reproducible pipelines and collaboration of data analysis projects to PhD students and postdoctoral researchers.
       href: https://r-cubed-intermediate.rostools.org
       role: Lead instructor
       organization: Danish Diabetes and Endocrinology Academy
-      supervisor: ''
+      supervisor: ""
       location: Denmark
-    - title: 'Reproducible Research in R: An introductory workshop on modern data analyses
-        and workflows'
-      start: '2020-06-22'
-      end: ''
+    - title:
+        "Reproducible Research in R: An introductory workshop on modern data analyses
+        and workflows"
+      start: "2020-06-22"
+      end: ""
       description: |
         Three day workshop on an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
       href: https://r-cubed-intro.rostools.org
       role: Lead instructor
       organization: Danish Diabetes and Endocrinology Academy
-      supervisor: ''
+      supervisor: ""
       location: Denmark
-    - title: 'Reproducible Quantitative Methods: Data analysis workflow using R'
-      start: '2019-03-04'
-      end: '2019-03-19'
+    - title: "Reproducible Quantitative Methods: Data analysis workflow using R"
+      start: "2019-03-04"
+      end: "2019-03-19"
       description: |
         Four day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
       href: https://dda-rcourse.lwjohnst.com/
       role: Lead instructor
       organization: Danish Diabetes and Endocrinology Academy
-      supervisor: ''
+      supervisor: ""
       location: Denmark
     - title: Reproducible Quantitative Analyses and Workflows using R
-      start: '2019-05-21'
-      end: '2019-03-19'
+      start: "2019-05-21"
+      end: "2019-03-19"
       description: |
         Three day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
       href: https://rqawr-course.lwjohnst.com/
       role: Lead instructor
       organization: German Institute of Human Nutrition Potsdam-Rehbrueke
-      supervisor: ''
+      supervisor: ""
       location: Potsdam, Germany
     - title: Software Carpentry Workshop
-      start: '2019-10-22'
-      end: '2019-10-23'
+      start: "2019-10-22"
+      end: "2019-10-23"
       description: |
         Coordinate and instruct a 2-day Software Carpentry workshop to any member of Aarhus University.
       href: https://github.com/au-cru/2019-10-22-aarhus
       role: Lead instructor
       organization: Aarhus University
-      supervisor: ''
+      supervisor: ""
       location: Aarhus, Denmark
     - title: Peer-led, participatory live coding R training sessions
-      start: '2018-06-01'
-      end: '2020-06-12'
+      start: "2018-06-01"
+      end: "2020-06-12"
       description: |
         Founded a group dedicated to skill sharing of data analysis in the statistical programming language R (and others). Organize and instruct several sessions on using R, in a participatory live coding format.
       href: https://github.com/au-cru/site/
       role: Instructor and founder
       organization: Aarhus University Community of Researchers Using Open Software
-      supervisor: ''
+      supervisor: ""
       location: Aarhus, Denmark
     - title: FAIR Data and Software workshop
-      start: '2018-07-09'
-      end: '2018-07-13'
+      start: "2018-07-09"
+      end: "2018-07-13"
       description: |
         Taught and contributed to workshop material on building FAIR (findable, accessible, interoperable, and reusable) data and software.
       href: https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/
       role: Instructor
-      organization: TIB Leibniz Information Centre for Science and Technology and University
+      organization:
+        TIB Leibniz Information Centre for Science and Technology and University
         Library
-      supervisor: ''
+      supervisor: ""
       location: Hannover, Germany
     - title: Software Carpentry workshops (R)
-      start: '2017-01-19'
-      end: '2017-01-19'
+      start: "2017-01-19"
+      end: "2017-01-19"
       description: |
         Helped learners during the Git session of the two day workshop.
       href: https://uoftcoders.github.io/2018-01-18-utoronto/
       role: Helper
       organization: Software Carpentry and UofTCoders
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)
-      start: '2017-09-07'
-      end: '2017-12-21'
+      start: "2017-09-07"
+      end: "2017-12-21"
       description: |
         Created the curriculum (along with five other members). Taught three lectures, created and marked assignments.
       href: https://uoftcoders.github.io/rcourse
@@ -661,8 +703,8 @@
       supervisor: Dr. Martin Krkosek
       location: Toronto, Canada
     - title: Public Health Nutrition (NFS1201)
-      start: '2017-09-07'
-      end: '2017-12-21'
+      start: "2017-09-07"
+      end: "2017-12-21"
       description: |
         Gave a lecture and created the assignment (see website). Marked the assignment.
       href: https://gitlab.com/lwjohnst/nfs1201-2017
@@ -671,138 +713,139 @@
       supervisor: Dr. Valerie Tarasuk
       location: Toronto, Canada
     - title: Software Carpentry workshops (R)
-      start: '2017-05-08'
-      end: '2017-05-09'
+      start: "2017-05-08"
+      end: "2017-05-09"
       description: |
         Instructed the second day of the two-day workshop at Ryserson University on advanced uses of R.
-      href: ''
+      href: ""
       role: Instructor
       organization: Software Carpentry
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: Basic Human Nutrition (NFS284)
-      start: '2017-01-02'
-      end: '2017-04-28'
+      start: "2017-01-02"
+      end: "2017-04-28"
       description: Marked assignments and exams.
-      href: ''
+      href: ""
       role: Teaching Assistant
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Debbie Gurfinkel
       location: Toronto, Canada
     - title: Software Carpentry workshops (Python)
-      start: '2017-02-03'
-      end: '2017-02-04'
+      start: "2017-02-03"
+      end: "2017-02-04"
       description: |
         Acted as helper to the instructors at a two-day workshop introducing computing to researchers and students at the University of Toronto. Duties were to answer any questions and fix any problems that novice learners encountered during the two day workshop.
       href: http://uoftcoders.github.io/2017-02-03-utoronto/
       role: Helper
       organization: Software Carpentry
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: Advanced Nutrition (NFS484-1484)
-      start: '2016-09-01'
-      end: '2016-12-21'
+      start: "2016-09-01"
+      end: "2016-12-21"
       description: |
         Marked exams. Developed and marked a [short assignment](https://github.com/lwjohnst86/nfs484-1484-assignment-2016). Answered any student questions.
-      href: ''
+      href: ""
       role: Teaching Assistant
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Carol Greenwood
       location: Toronto, Canada
     - title: Software Carpentry workshops (R)
-      start: '2016-09-14'
-      end: '2016-09-14'
+      start: "2016-09-14"
+      end: "2016-09-14"
       description: |
         Taught the first R session to novice learners at a two-day workshop on introducing computing to researchers and students at York University.
       href: https://gvwilson.github.io/2016-09-14-yorku/
       role: Instructor
       organization: Software Carpentry
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: CUPE3902 Post-doc Python workshops
-      start: '2016-07-27'
-      end: '2016-08-10'
+      start: "2016-07-27"
+      end: "2016-08-10"
       description: |
         The [UofTCoders](https://uoftcoders.github.io/studyGroup/) members were hired by CUPE3902 Unit 5 to teach Python to post-doctoral fellows. As a core member of the UofTCoders, I acted as a helper to the instructors at the three-part workshop series introducing the Python programming language. Duties were to answer any questions and fix any problems that novice learners encountered during the Python sessions.
-      href: ''
+      href: ""
       role: Helper
       organization: CUPE3902 Unit 5
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: Departmental R workshops
-      start: '2016-05-26'
-      end: '2017-04-12'
+      start: "2016-05-26"
+      end: "2017-04-12"
       description: |
         I wanted to increase the computing capacity of my graduate department and to start to promote a culture of code-sharing and code reviews. Since how analyses are conducted and what the code is to create the scientific results is increasingly becoming more important, I wanted to start teaching students how to use R efficiently and productively. I've also set up a code review with my lab, so it was efficient for me to wrap these workshops up with the code reviews.
       href: http://codeasmanuscript.github.io/code-along
       role: Instructor
       organization: Code As Manuscript
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: Software Carpentry workshops (R)
-      start: '2016-04-25'
-      end: '2016-04-26'
+      start: "2016-04-25"
+      end: "2016-04-26"
       description: |
         Acted as helper to the instructors at a two-day workshop introducing computing to researchers and students at the University of Toronto. Duties were to answer any questions and fix any problems that novice learners encountered during the R sessions.
       href: http://uoftcoders.github.io/2016-04-25-utoronto/
       role: Helper
       organization: Software Carpentry
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: Software Carpentry workshops (Python)
-      start: '2016-05-09'
-      end: '2016-05-10'
+      start: "2016-05-09"
+      end: "2016-05-10"
       description: |
         Taught the Git session to novice learners at a two-day workshop on introducing computing to researchers and students at the University of Toronto, as well as acted as helper during the Shell and Python sessions.
       href: http://uoftcoders.github.io/2016-05-09-utoronto/
       role: Instructor
       organization: Software Carpentry
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: Peer-led, participatory live coding training sessions
-      start: '2015-06-11'
-      end: '2018-01-31'
-      description: Was involved in developing a PhD student group aimed at teaching and
+      start: "2015-06-11"
+      end: "2018-01-31"
+      description:
+        Was involved in developing a PhD student group aimed at teaching and
         peer-sharing computing skills such as Git, R, Python, and many other computing
         programs.
       href: http://uoftcoders.github.io
       role: Instructor and one of the co-founders
       organization: UofTCoders, University of Toronto
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
-    - title: 'Code as Manuscript:  R and SAS coding workshops'
-      start: '2014-10-01'
-      end: '2015-11-23'
+    - title: "Code as Manuscript:  R and SAS coding workshops"
+      start: "2014-10-01"
+      end: "2015-11-23"
       description: |
         Taught three workshops on SAS and R. SAS workshops were co-instructed and co-developed with Dr. Daiva Nielsen. R workshops were co-instructed with Sarah Meister. We taught version control, beginner and advanced coding techniques, and how to structure research projects around the idea of reproducibility. Consistent with our mission statement, our material is publicly available online at https://github.com/codeasmanuscript.
       href: http://codeasmanuscript.org
       role: Instructor and founder
       organization: Graduate Professional Skills Program, University of Toronto
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: Public Health Nutrition (NFS1201)
-      start: '2015-09-01'
-      end: '2015-12-31'
+      start: "2015-09-01"
+      end: "2015-12-31"
       description: |
         Gave [two lectures](https://github.com/lwjohnst86/nfs1201-lectures) during the course and developed and marked the [final (third) assignment](https://github.com/lwjohnst86/nfs1201-assignment).
-      href: ''
+      href: ""
       role: Teaching Assistant
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Sarah Orr
       location: Toronto, Canada
     - title: Software Carpentry Workshop (R)
-      start: '2015-07-16'
-      end: '2015-07-17'
+      start: "2015-07-16"
+      end: "2015-07-17"
       description: |
         Coding workshop hosted at the Hospital for Sick Children, Toronto. I taught version control using Git and acted as helper for the Shell and R sessions.
       href: http://blog.tomwright.ca/2015-07-16-sickkids/
       role: Instructor
       organization: Software Carpentry
-      supervisor: ''
+      supervisor: ""
       location: Toronto, Canada
     - title: Software Carpentry Workshop (R)
-      start: '2015-01-29'
-      end: '2015-01-30'
+      start: "2015-01-29"
+      end: "2015-01-30"
       description: |
         Coding workshop hosted at the Hospital for Sick Children, Toronto. I provided technical support, worked through students' problems and issues with them, and answered any questions.
       href: http://tomwright01.github.io/2015-01-29-sickkids/
@@ -811,8 +854,8 @@
       supervisor: Tom Wright
       location: Toronto, Canada
     - title: Software Carpentry Workshop (Python)
-      start: '2014-10-30'
-      end: '2014-10-31'
+      start: "2014-10-30"
+      end: "2014-10-31"
       description: |
         Coding workshop hosted at the Gerstein Library, University of Toronto. I provided technical support, assisted students' with problems and issues, and answered student questions.
       href: http://swcarpentry.github.io/2014-10-30-utoronto/
@@ -821,31 +864,31 @@
       supervisor: Dr. Greg Wilson
       location: Toronto, Canada
     - title: Advanced Nutrition (NFS484-1484)
-      start: '2014-09-01'
-      end: '2014-12-31'
+      start: "2014-09-01"
+      end: "2014-12-31"
       description: |
         Developed and lead [tutorials](https://github.com/lwjohnst86/nfs484-1484-tutorials) for graduate students. Developed and marked the [final exam](https://github.com/lwjohnst86/nfs484-1484-exams). Answered any student questions.
-      href: ''
+      href: ""
       role: Teaching Assistant
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Carol Greenwood
       location: Toronto, Canada
     - title: Advanced Nutrition (NFS484-1484)
-      start: '2013-09-01'
-      end: '2013-12-31'
+      start: "2013-09-01"
+      end: "2013-12-31"
       description: |
         Lead [tutorials](https://github.com/lwjohnst86/nfs484-1484-tutorials) for undergraduate students. Developed and marked the [midterm exam](https://github.com/lwjohnst86/nfs484-1484-exams). Answered any student questions.
-      href: ''
+      href: ""
       role: Teaching Assistant
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Carol Greenwood
       location: Toronto, Canada
     - title: Nutritional Microbiology (NFS485)
-      start: '2013-01-01'
-      end: '2013-04-30'
+      start: "2013-01-01"
+      end: "2013-04-30"
       description: |
         Answer student emails and questions. Mark midterm exam, assignment and final exam. Invigilate midterm and final exam.
-      href: ''
+      href: ""
       role: Teaching Assistant
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Elena Comelli
@@ -853,10 +896,10 @@
     - title: Nutritional Microbiology (NFS485)
 
 - section: Data engineering and management
-  description: "Teaching activities, excluding curriculum development."
-  icon: fa-person-chalkboard
+  description: "Activities involving building, designing, structuring, organizing, and managing data, databases, and data pipelines."
+  icon: fa-database
   entries:
-    - title: PROMISE dataset managed as an R package
+    - title: PROMISE cohort data managed as an R package
       start: "2016-11-16"
       end: ""
       description: |
