@@ -1,11 +1,27 @@
 ---
 title: "Luke W. Johnston"
-date: "2024-09-30"
+#description: Full CV at [cv.lukewjohnston.com](https://cv.lukewjohnston.com).
+date: "2024-10-02"
 date-format: "medium"
 listing:
   - id: sections
     template: ejs/sections.ejs
     contents: data/entries.yml
+    # sort: "section"
+    include: 
+      section: 
+        - "Education"
+        - "Funding"
+        - "Awards"
+        - "Employment"
+        - "Certificates"
+        - "Courses taken"
+        - "Package development"
+        - "Data engineering and management"
+        - "Supervision"
+        - "Committees"
+        - "Outreach activities"
+        - "Teaching"
     field-types:
       start: date
       end: date  
@@ -34,8 +50,8 @@ bib_items <- read_bib_items()
 {{< fa brands stack-overflow >}}\ [Luke W. Johnston](https://stackoverflow.com/users/2632184)
 {{< fa brands stack-exchange >}}\ [Luke W. Johnston](https://stackexchange.com/users/1992995) 
 
-> I am a diabetes epidemiologist, R and Python software developer, teacher of
-> modern data science and analysis skills, and open science advocate.
+> Team leader, researcher, software and data architect, software and data developer, 
+> data science and coding teacher, open science advocate.
 
 ::: {#sections}
 :::
@@ -68,5 +84,3 @@ list_publications(bib_items, "Curriculum development")
 
 ::: {#curriculum-development}
 :::
-
-::::
