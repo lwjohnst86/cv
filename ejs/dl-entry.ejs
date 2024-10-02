@@ -11,14 +11,22 @@
   <dd>
     <div class="d-flex justify-content-between">
       <div>
-        <i class="fa-regular fa-calendar-days"></i> 
-        <% if (item['start-date'] == item['end-date']) { %>
-          <%- item['start-date'] %>
-        <% } else if (item['end-date']) { %>
-          <%- item['start-date'] %> to <%- item['end-date'] %>
-        <% } else { %>
-          <%- item['start-date'] %> to present
-        <% } %> 
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          <% let start_date = new Date(item.start) %>
+          <% let start = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(start_date) %>
+
+          <% if (item.end) { %>
+            <% let end_date = new Date(item.end) %>
+            <% let end = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(end_date) %>
+            <% if (item.start == item.end) { %>
+              <%= start %>
+            <% } else { %>
+              <%= start %> to <%= end %>
+            <% } %>
+          <% } else { %> 
+            <%= start %> to present
+          <% } %> 
       </div>
       <div>
         <i class="fa-solid fa-location-dot"></i> <%= item.location %>
