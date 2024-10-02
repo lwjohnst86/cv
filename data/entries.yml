@@ -893,7 +893,6 @@
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Elena Comelli
       location: Toronto, Canada
-    - title: Nutritional Microbiology (NFS485)
 
 - section: Data engineering and management
   description: "Activities involving building, designing, structuring, organizing, and managing data, databases, and data pipelines."
