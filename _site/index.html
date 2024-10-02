@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-09-27">
 
 <title>Luke W. Johnston – Luke W. Johnston’s CV</title>
 <style>
@@ -26,6 +25,8 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -53,11 +54,97 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-sections .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-section','listing-description','listing-icon','listing-entries',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-section","listing-description","listing-icon","listing-entries"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-sections'] = new List('listing-sections', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-curriculum-development .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-start','listing-end','listing-description','listing-href','listing-organization','listing-location',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-start-sort'] },{ data: ['listing-end-sort'] }],
+      
+      searchColumns: ["listing-title","listing-start","listing-end","listing-description","listing-href","listing-organization","listing-location"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-curriculum-development'] = new List('listing-curriculum-development', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -103,31 +190,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Education</a></li>
-  <li><a href="#affiliations" id="toc-affiliations" class="nav-link" data-scroll-target="#affiliations"><i class="fa-solid fa-building-columns" aria-label="building-columns"></i> Affiliations</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications"><i class="fa-solid fa-book-open" aria-label="book-open"></i> Publications</a></li>
-  <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books"><i class="fa-solid fa-book" aria-label="book"></i> Books</a></li>
-  <li><a href="#presentations" id="toc-presentations" class="nav-link" data-scroll-target="#presentations"><i class="fa-solid fa-comment-dots" aria-label="comment-dots"></i> Presentations</a></li>
-  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages"><i class="fa-solid fa-box-open" aria-label="box-open"></i> R packages</a></li>
-  <li><a href="#teaching" id="toc-teaching" class="nav-link" data-scroll-target="#teaching"><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i> Teaching</a></li>
-  <li><a href="#supervision" id="toc-supervision" class="nav-link" data-scroll-target="#supervision"><i class="fa-solid fa-user-group" aria-label="user-group"></i> Supervision</a></li>
-  <li><a href="#curriculum-development" id="toc-curriculum-development" class="nav-link" data-scroll-target="#curriculum-development"><i class="fa-solid fa-book-open-reader" aria-label="book-open-reader"></i> Curriculum development</a>
-  <ul class="collapse">
-  <li><a href="#other-development" id="toc-other-development" class="nav-link" data-scroll-target="#other-development">Other Development</a></li>
-  </ul></li>
-  <li><a href="#committees" id="toc-committees" class="nav-link" data-scroll-target="#committees"><i class="fa-solid fa-users" aria-label="users"></i> Committees</a></li>
-  <li><a href="#awards" id="toc-awards" class="nav-link" data-scroll-target="#awards"><i class="fa-solid fa-trophy" aria-label="trophy"></i> Awards</a></li>
-  <li><a href="#funding" id="toc-funding" class="nav-link" data-scroll-target="#funding"><i class="fa-solid fa-comments-dollar" aria-label="comments-dollar"></i> Funding</a></li>
-  <li><a href="#employment" id="toc-employment" class="nav-link" data-scroll-target="#employment"><i class="fa-solid fa-briefcase" aria-label="briefcase"></i> Employment</a></li>
-  <li><a href="#outreach-activities" id="toc-outreach-activities" class="nav-link" data-scroll-target="#outreach-activities"><i class="fa-solid fa-bullhorn" aria-label="bullhorn"></i> Outreach activities</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -144,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 27, 2024</p>
+      <p class="date">Oct 2, 2024</p>
     </div>
   </div>
   
@@ -156,103 +219,3272 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><i class="fa-solid fa-envelope" aria-label="envelope"></i>&nbsp;<a href="mailto:lwjohnst@gmail.com" class="email">lwjohnst@gmail.com</a> <i class="fa-brands fa-gitlab" aria-label="gitlab"></i>&nbsp;<a href="https://gitlab.com/lwjohnst/"><code>@lwjohnst</code></a> <i class="fa-brands fa-github" aria-label="github"></i>&nbsp;<a href="https://github.com/lwjohnst86/"><code>@lwjohnst86</code></a> <i class="fa-brands fa-orcid" aria-label="orcid"></i>&nbsp;<a href="https://orcid.org/0000-0003-4169-2616">0000-0003-4169-2616</a> <i class="fa-brands fa-linkedin" aria-label="linkedin"></i>&nbsp;<a href="www.linkedin.com/in/lwjohnst"><code>lwjohnst</code></a> <i class="fa-brands fa-stack-overflow" aria-label="stack-overflow"></i>&nbsp;<a href="https://stackoverflow.com/users/2632184">Luke W. Johnston</a> <i class="fa-brands fa-stack-exchange" aria-label="stack-exchange"></i>&nbsp;<a href="https://stackexchange.com/users/1992995">Luke W. Johnston</a></p>
 <blockquote class="blockquote">
-<p>I am a diabetes epidemiologist, R user and developer, teacher of modern data science and analysis skills, and open science advocate.</p>
+<p>Team leader, researcher, software and data architect, software and data developer, data science and coding teacher, open science advocate.</p>
 </blockquote>
-<!--
-## Skills
+<div id="listing-sections" class="quarto-listing quarto-listing-container-custom">
 
-- Languages: English (fluent), Spanish (competent)
-- Programming: Fluent in R, LaTeX, HTML, CSS, Bash, Git; familiar with 
-SAS, Python.
+  <h2 class="anchored"><i class="fa-regular fa-trophy"></i> Awards</h2>
+  
+    <p>Awards and honors given to and/or for me (e.g., scholarships or funds for my own salary).</p>
+  
 
-    tools:
-        - icon: "envelope"
-          href: "lwjohnst@gmail.com"
-        - icon: "orcid"
-          href: "https://orcid.org/0000-0003-4169-2616"
-        - icon: "github"
-          href: "https://github.com/lwjohnst86"
-        - icon: "gitlab"
-          href: "https://gitlab.com/lwjohnst"
-        - icon: "stack-overflow"
-          href: "https://stackoverflow.com/users/2632184"
-        - icon: "stack-overflow"
-        #   href: "https://stackexchange.com/users/1992995"
-        - icon: "linkedin"
-          href: "https://www.linkedin.com/in/luke-johnston-480365101/"
+  <dl>
+  
+    <dt>
+    
+      Research Education and Networking Award
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
 
--->
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education"><i class="fa-solid fa-graduation-cap" aria-label="graduation-cap"></i> Education</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2013 – 2017</td>
-<td style="text-align: left;">PhD in Nutritional Sciences, University of Toronto in Toronto, CA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2011 – 2013</td>
-<td style="text-align: left;">MSc in Nutritional Sciences, University of Toronto in Toronto, CA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2005 – 2010</td>
-<td style="text-align: left;">BSc in Kinesiology, University of Waterloo in Waterloo, CA</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="affiliations" class="level2">
-<h2 class="anchored" data-anchor-id="affiliations"><i class="fa-solid fa-building-columns" aria-label="building-columns"></i> Affiliations</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2022 – present</td>
-<td style="text-align: left;">Team leader, Steno Diabetes Center Aarhus in Aarhus, Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2021 – present</td>
-<td style="text-align: left;">Instructor, <a href="https://education.rstudio.com/trainers/people/johnston+luke/">RStudio Certified Instructor</a> in Boston, USA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2020 – present</td>
-<td style="text-align: left;">Member, European Association for the Study of Diabetes in Düsseldorf, Germany</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2018 – present</td>
-<td style="text-align: left;">Member, Danish Diabetes and Endocrinology Academy in Denmark</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2021 – 2022</td>
-<td style="text-align: left;">Researcher, Department of Clinical Medicine, Aarhus University in Aarhus, Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2019 – 2021</td>
-<td style="text-align: left;">Researcher, Department of Public Health, Aarhus University in Aarhus, Denmark</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2016 – 2018</td>
-<td style="text-align: left;">Treasurer, <a href="https://uoftcoders.github.io">UofT Coders</a>, University of Toronto &amp; Mozilla Science Lab in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2015 – 2019</td>
-<td style="text-align: left;">Instructor and member, <a href="http://software-carpentry.org/">Software Carpentry</a> in Global</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014 – 2017</td>
-<td style="text-align: left;">Treasurer, <a href="http://nsgsa.sa.utoronto.ca/">Nutritional Sciences Graduate Student Association</a>, University of Toronto in Toronto, Canada</td>
-</tr>
-</tbody>
-</table>
-</section>
+          
+            
+            
+            
+              1 Dec 2022
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Recognition for involvement in education and networking of researchers in Denmark.. Amount: DKK 25,000
+    </dd>
+    
+  
+    <dt>
+    
+      Danish Diabetes Academy Postdoctoral Fellowship
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Dec 2019 to 31 Dec 2023
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Nationally competitive ~3-year fellowship. Extended because of the pandemic and because of receiving a larger project grant.. Amount: DKK 1.8 million
+    </dd>
+    
+  
+    <dt>
+    
+      Michael C. Archer Research Excellence Award
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              23 Nov 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Recognition for the best research article published in 2016 by a graduate student in the Department of Nutritional Sciences.
+    </dd>
+    
+  
+    <dt>
+    
+      Marie Skłodowska-Curie Master Class and Travel Fund
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              16 May 2017 to 18 May 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Aarhus, Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Participation in a workshop aimed at applying for the Marie Curie Fellowship, with travel expenses and accommodations paid.
+    </dd>
+    
+  
+    <dt>
+    
+      Working Open Workshop and Travel Scholarship
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              10 Mar 2017 to 11 Mar 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Montreal, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Attendance to a workshop hosted by the Mozilla Science Lab to train on using open source and processes for research projects.. Amount: USD 300
+    </dd>
+    
+  
+    <dt>
+    
+      Gordon Cressy Student Leadership Award
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              25 Apr 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      For recognition of outstanding extra-curricular contributions to the faculty and the university as a whole. Contributions include creating a workshop series (offered in the Graduate Professional Skills program) to teach coding to graduate students, playing an instrumental role in starting a student group (UofTCoders) to allow for peer-level skill sharing of coding and programming for science and research, and for running short, twice-monthly coding sessions in the Department of Nutritional Sciences.
+    </dd>
+    
+  
+    <dt>
+    
+      Ontario Graduate Scholarship
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2012 to 31 Aug 2013
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      . Amount: CAD 15000
+    </dd>
+    
+  
+    <dt>
+    
+      Trainee Travel Award
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              8 May 2013
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      For attendance to the American Diabetes Association 73rd Scientific Sessions. Amount: CAD 1000
+    </dd>
+    
+  
+    <dt>
+    
+      Ontario Graduate Scholarship
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2013 to 31 Aug 2014
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      . Amount: CAD 15000
+    </dd>
+    
+  
+    <dt>
+    
+      Trainee Travel Award
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Jun 2014
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      For attendance to the American Diabetes Association 74rd Scientific Sessions. Amount: CAD 1000
+    </dd>
+    
+  
+    <dt>
+    
+      Conference Travel Grant
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              22 May 2014
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      For attendance to the International Society for the Study of Fatty Acids and Lipids 2014 Biennial Congress. Amount: CAD 1120
+    </dd>
+    
+  
+    <dt>
+    
+      Alumni Travel Award
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              22 Apr 2014
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      For attendance to the International Society for the Study of Fatty Acids and Lipids 2014 Biennial Congress. Amount: CAD 200
+    </dd>
+    
+  
+    <dt>
+    
+      New Investigator Award
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              28 Jun 2014
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Stockholm, Sweden
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Given out during the International Society for the Study of Fatty Acids and Lipids 2014 Biennial Congress
+    </dd>
+    
+  
+    <dt>
+    
+      Doctoral Student Research Award
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2014 to 31 Aug 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      National competitive award. Amount: CAD 21000
+    </dd>
+    
+  
+    <dt>
+    
+      Graduate Novo Nordisk Studentship
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2014 to 31 Aug 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      . Amount: CAD 3840
+    </dd>
+    
+  
+    <dt>
+    
+      Margaret and Nicholas Fodor Fellowship
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2014 to 31 Aug 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      University-wide awards. Amount: CAD 3000
+    </dd>
+    
+  
+    <dt>
+    
+      Ontario Graduate Scholarship
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2014 to 31 Aug 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Awarded, but declined for the CDA Doctoral Award. Amount: CAD 15000
+    </dd>
+    
+  
+    <dt>
+    
+      Trainee Travel Award
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              8 Jun 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      For attendance to the American Diabetes Association 75rd Scientific Sessions. Amount: CAD 1000
+    </dd>
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-certificate"></i> Certificates</h2>
+  
+    <p>Certificates of completion or participation in courses, workshops, or other training.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      <a href="https://education.rstudio.com/trainers/people/johnston+luke/">RStudio Instructor Training and Certification Program</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              6 Aug 2020
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Boston, USA
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Certificate for completing an instructor training program.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://swcarpentry.github.io/training-course/2015/02/luke-johnston/">Software Carpentry Instructor Training</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              26 May 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Online
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Certificate for completing an instructor training program.
+    </dd>
+    
+  
+    <dt>
+    
+      Advanced University Teaching Preparation
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Aug 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Certificate of completing the university's teacher training program for graduate students.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Graduate Professional Skills
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              9 Nov 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Certificate of completing a program of courses and workshops offered to graduate students to develop their professional skills, such as project management, communication, and leadership.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Data Carpentry Instructor Training
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              15 Nov 2016
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Online
+        </div>
+      </div>
+    </dd>
+    
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-users"></i> Committees</h2>
+  
+    <p>Participation in committee, group, or council level activities.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      Scientific program organizing committee for the Danish Diabetes Academy Postdoctoral Winter School
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Jan 2020 to 6 Nov 2021
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Brainstorm and decide on overall school theme, develop the challenge project material and output, find and invite speakers for sessions, as well as contributing to creating the podcast on the challenge material.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://uoftcoders.github.io/studyGroup">Treasurer for the UofT Coders council</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              14 Jan 2016 to 31 Jan 2018
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Responsible for managing the finances, identifying potential sources of funding and applying to them as applicable, reimbursing students for expenses, and buying the snacks for the coding sessions. Other communal duties include maintaining the GitHub repository and dealing with Issues and Pull Requests (via GitHub) that may arise.
+    </dd>
+    
+  
+    <dt>
+    
+      Treasurer for the Nutritional Sciences Graduate Student Association
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2014 to 31 Aug 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Responsible for the accounting of the NSGSA finances, reimbursing students for expenses, applying for the Graduate Student Union Head Grant to secure funding, and dealing with any finance related issues that may come up.
+    </dd>
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-school"></i> Courses taken</h2>
+  
+    <p>Courses and workshops taken outside of formal university settings.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      Aarhus University Teachers Training Programme
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              21 Aug 2019 to 19 Dec 2019
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Aarhus, Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+  
+    <dt>
+    
+      Postdoctoral Winter School
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              3 Nov 2019 to 8 Nov 2019
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Malaga, Spain
+        </div>
+      </div>
+    </dd>
+    
+    
+  
+    <dt>
+    
+      <a href="https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif">Mozilla Open Project Leaders Training</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              21 Feb 2018 to 11 Jun 2018
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Online
+        </div>
+      </div>
+    </dd>
+    
+    
+  
+    <dt>
+    
+      'OMICS and Epidemiology
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              25 May 2016 to 26 May 2016
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+  
+    <dt>
+    
+      Foundations of Project Management I
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              23 Nov 2016 to 24 Nov 2016
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-graduation-cap"></i> Education</h2>
+  
+    <p>Formal university education.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      <a href="https://hdl.handle.net/1807/80893">PhD in Nutritional Sciences</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2013 to 14 Sept 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> University of Toronto in Toronto, CA
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Thesis title: <em>Fatty acid composition in four serum lipid fractions and the pathogenesis of diabetes.</em>
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://hdl.handle.net/1807/42975">MSc in Nutritional Sciences</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2011 to 30 Aug 2013
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> University of Toronto in Toronto, CA
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Thesis title: <em>Association of Leg Length with Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus.</em>
+    </dd>
+    
+  
+    <dt>
+    
+      BSc in Kinesiology
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2005 to 30 Apr 2010
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> University of Waterloo in Waterloo, CA
+        </div>
+      </div>
+    </dd>
+    
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-briefcase"></i> Employment</h2>
+  
+    <p>Positions and places where I work or worked.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      Team leader
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            1 Jun 2022 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Aarhus, Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Working on a project building an open infrastructure for health data, funded by the NovoNordisk Foundation.
+    </dd>
+    
+  
+    <dt>
+    
+      DDA postdoctoral researcher
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Dec 2019 to 31 May 2022
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Aarhus, Denmark
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Daniel Witte
+    </dd>
+    
+    
+    <dd>
+      Working on a project funded by the Danish Diabetes Academy. Doing research in diabetes epidemiology, specifically on identifying: the metabolic mediation between early childhood biomarkers and adult diabetes status; developing causal structure learning methods; and, creating a framework (as text and as software) for conducting reproducible and open scientific research.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Postdoctoral researcher
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Feb 2018 to 30 Nov 2019
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Aarhus, Denmark
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Daniel Witte
+    </dd>
+    
+    
+    <dd>
+      Doing research in diabetes epidemiology, specifically on identifying:
+
+<ul>
+<li>Patterns of accelerometry-derived physical activity with metabolic status.</li>
+<li>The metabolic mediation between early childhood biomarkers and adult diabetes status.</li>
+<li>Developing a simulation method for incorporating multiple epidemiological results into a single framework.</li>
+<li>Assisting a PhD student's social network analysis on the programming aspects of work.</li>
+</ul>
+
+    </dd>
+    
+  
+    <dt>
+    
+      Postdoctoral fellow
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              20 Sept 2017 to 31 Jan 2018
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Anthony Hanley
+    </dd>
+    
+    
+    <dd>
+      Finishing up PhD research projects, maintaining and developing a website for the <a href="https://promise-cohort.gitlab.io/PROMISE">PROMISE data dictionary and description</a> and training new graduate students on data analysis using R.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Research Assistant
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Jan 2011 to 30 Jul 2011
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Waterloo, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Karen Pieters, Dr. Ryan David Kennedy, and Dr. Rhona Hanning
+    </dd>
+    
+    
+    <dd>
+      Collected air quality samples from Region of Waterloo-owned social housing. Analyzed the air quality data using MS Excel.
+Produced and tested a survey for Program Training and Consultation Centre on SurveyMonkey. Wrote three reports on data collected from the survey results.
+Organized and scheduled interviews and data collection dates for a study in the Waterloo Region evaluating the School Food and Beverage Policy PPM150. Managed a team of 4 researchers to collect survey and interview data from primary and secondary schools in the Waterloo Region. Managed the storing and organizing of data collected from the surveys and interviews.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Research Assistant
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Aug 2010 to 30 Aug 2010
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Waterloo, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Ryan David Kennedy
+    </dd>
+    
+    
+    <dd>
+      Analyzed data from previous cigarette smoking experiments done in 2008 using MS Excel. Conducted a smoke-free policy scan of YMCAs and YWCAs in Ontario and presented findings to the Tobacco-free Sports and Recreation Community of Practice.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Research Assistant
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2009 to 20 Dec 2009
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Andrew Howard
+    </dd>
+    
+    
+    <dd>
+      Analyzed data from the WHO and PLoS Medicine using MS Excel. Developed a method for interpreting fracture data from the National Ambulatory Care Reporting System using statistical probability equations.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Research Assistant
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Jan 2009 to 30 Apr 2009
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Avril Mansfield and Dr. William McIlroy
+    </dd>
+    
+    
+    <dd>
+      Examined balance in clinical populations, including individuals with dementia, using pressure plates. Used EMG electrodes, VICON markers and other monitoring equipment to obverse and collect data from research participants. Analyzed data from various experiments and studies using LabView and MATLAB software. Evaluated the reliability of using Bluetooth technology in the foot switch device (industry gold standard) and analyzed the relationship with an accelerometer.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Research Assistant
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2008 to 20 Dec 2008
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Waterloo, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Ryan David Kennedy
+    </dd>
+    
+    
+    <dd>
+      Used MS Excel and SPSS 17.0 to organize and analyze data from experiments and prepare the data for presentations at provincial and international tobacco control conferences. Independently conducted a phone survey of Ontario’s university campuses’ outdoor smoking policies and prepared a poster to be presented at a tobacco control conference.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Project Manager
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 May 2008 to 30 Aug 2008
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Waterloo, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Ryan David Kennedy
+    </dd>
+    
+    
+    <dd>
+      Managed 3 projects aimed at measuring tobacco smoke pollution in outdoor and quasi-outdoor environments. Organized and analyzed data using MS Excel and SPSS 17.0. Supervised and scheduled a team of 10 Research Assistants.
+
+    </dd>
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-comments-dollar"></i> Funding</h2>
+  
+    <p>Grants for larger projects that include salary for multiple people as well as funds for resources.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      <a href="https://steno-aarhus.github.io/dp-next/">DP-Next: Sustainable Type 2 Diabetes Prevention for the 21st Century</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Jan 2025 to 31 Dec 2029
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Aarhus, Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Contributor to a funded grant from the NovoNordiskFonden Steno National
+Collaborative Programme. I will act as Work Package 1 lead, which aims
+to provide modern operational and management practices that incorporate
+software and data engineering, iterative project management, and
+collaborative workflows and tools.  Amount: DKK ~25 million
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://doi.org/10.5281/zenodo.6511112">A framework for an open and scalable infrastructure for health data exemplified by the DD2 initiative</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Jan 2022 to 31 Dec 2027
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Aarhus, Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Grant (NNF21OC0069462) from the NNF Data Science Research Infrastructure Programme
+to develop an infrastructure for managing, sharing, and discovering data. NNF
+posted a brief <a href="https://datascience.novonordiskfonden.dk/projects/a-framework-for-an-open-and-scalable-infrastructure-for-health-data-exemplified-by-the-dd2-initiative/">description</a>
+of it. Amount: DKK 14,977,580.
+
+    </dd>
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-bullhorn"></i> Outreach activities</h2>
+  
+    <p>Activities involving some type of outreach to a diverse audience, including the general public.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      <a href="https://open.spotify.com/embed/episode/69hakmX1QRw0RIn6jry9xL?utm_source=generator">The Future is Transparent: Moving Towards Open Science</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              27 Oct 2022
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Speaker on a podcast discussing how to move researchers more towards incorporating open science practices.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://precision-nutrition-forum.github.io/2022/">The 1st Gothenburg Precision Nutrition Forum: Using Multi-OMCIs for Data-Driven Systems Epidemiology - Towards Precision Nutrition</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              12 Sept 2022 to 14 Sept 2022
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Gothenburg, Sweden
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Developed the website for this conference with the videos of the talks and poster abstracts.
+    </dd>
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-box-open"></i> Package development</h2>
+  
+    <p>Creation of or contribution to software packages.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      <a href="https://github.com/seedcase-project/seedcase-sprout">seedcase-sprout: Upload your research data to formally structure it for better, more reliable, and easier research</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            26 Nov 2023 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> GitHub
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Co-creator. Sprout is a Python software package that is a component of
+the Seedcase framework that aims to take data created or collected for
+research studies and "grow" it in a structured way using modern data
+engineering best practices. Sprout is the backbone of the Seedcase
+family; this is where data is uploaded, described, and stored based on a
+relational database design.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://github.com/steno-aarhus/ukbAid">ukbAid: Aid Steno Researchers Who Work on the UKB RAP</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            10 Jul 2022 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> GitHub
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. The goal of ukbAid is to help our research group at Steno Diabetes Center Aarhus (SDCA) that is working on the UK Biobank (UKB) on the research analysis platform (RAP). This package and the general workflow we are using will help us be as reproducible as possible, but without sharing any data that is not permitted.
+    </dd>
+    
+  
+    <dt>
+    
+      dstDataPrep: Convert Denmark Statistics Data into Modern Formats
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            9 Mar 2022 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Denmark Statistics servers
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. The main goal of dstDataPrep is to convert all the SAS data files on Denmark Statistics servers for the Steno Aarhus DARTER Project into modern and faster formats like Parquet. It also helps researchers access and import these central data sources into the fast and modern analytic tool DuckDB.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://gitlab.com/promise-cohort/PROMISE.scrub">PROMISE.scrub: Scrub the PROMISE dataset</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            18 Sept 2017 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> GitLab
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. The goal of PROMISE.scrub is to provide functions that help
+with cleaning and preparing the PROMISE dataset for eventual use in
+analyses and research projects. There are several of these packages that
+all work to make it easier to handle the different needs of preparing
+the PROMISE dataset, at least from a data management point of view, to
+be trustworthy and of sufficient quality control.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://gitlab.com/promise-cohort/PROMISE.methods">PROMISE.methods: PROMISE Method Documentation and Data Dictionary Helpers</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            18 Sept 2017 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> GitLab
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. The goal of PROMISE.methods is to provide functions for
+creating the data dictionary and other functions for the dataset and
+method documentation. This is a companion package to the main PROMISE
+package.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://gitlab.com/promise-cohort/PROMISE.audit">PROMISE.audit: Identifies Unexpected Values in the PROMISE Datasets</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            28 Nov 2017 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> GitLab
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. The aim of this package is to run audits on datasets to check
+for errors or typos in values. For instance, with a column called
+MonthsPerYear, the values should be integers that go from 1 to 12. If
+there are violations to this pattern, the values need to be investigated
+at the raw data source. This is a companion package to the main PROMISE
+package.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://github.com/tidymodels/broom">broom: Convert Statistical Objects into Tidy Tibbles</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            23 Nov 2014 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> CRAN
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Contributor. Summarizes key information about statistical objects in tidy tibbles. This makes it easy to report results, create plots and consistently work with large numbers of models at once. Broom provides three verbs that each provide different types of information about a model. <code>tidy()</code> summarizes information about model components such as coefficients of a regression. <code>glance()</code> reports information about an entire model, such as goodness of fit measures like AIC and BIC. <code>augment()</code> adds information about individual observations to a dataset, such as fitted values or influence measures.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://github.com/rostools/prodigenr">prodigenr: Research Project Directory Generator</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            30 Apr 2016 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> CRAN
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. Create a project directory structure, along with typical files for that project.  This allows projects to be quickly and easily created, as well as for them to be standardized. Designed specifically with scientists in mind (mainly bio-medical researchers, but likely applies to other fields).
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://github.com/NetCoupler/NetCoupler">NetCoupler: Inference of Causal Links Between a Network and an External Variable</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            8 Apr 2022 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> CRAN
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. The 'NetCoupler' algorithm identifies potential direct effects of correlated, high-dimensional variables formed as a network with an external variable. The external variable may act as the dependent/response variable or as an independent/predictor variable to the network.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://github.com/lwjohnst86/mason">mason: Build Data Structures for Common Statistical Analysis</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            15 Jul 2016 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> CRAN
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. Use a consistent syntax to create data structures of common statistical techniques that can be continued in a pipe chain.  Design the analysis, add settings and variables, construct the results, and polish the final structure. Rinse and repeat for any number of statistical techniques.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://github.com/brentthorne/posterdown">posterdown: Generate PDF Conference Posters Using R Markdown</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            9 Oct 2019 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> CRAN
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Contributor. Use 'rmarkdown' and 'pagedown' to generate HTML and PDF conference posters.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://github.com/lwjohnst86/carpenter">carpenter: Build Common Tables of Summary Statistics for Reports</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            29 Jul 2016 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> CRAN
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. Mainly used to build tables that are commonly presented for bio-medical/health research, such as basic characteristic tables or descriptive statistics.
+    </dd>
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-user-group"></i> Supervision</h2>
+  
+    <p>Acting as a formal (co-)supervisor to students and their projects.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      Bachelor student Windy Wang
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2014 to 30 Apr 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Co-supervised with Dr. Anthony Hanley for the Research Projects course
+(NFS394) in Nutritional Sciences. Supervision consisted of helping guide the
+development of the research question and teaching Windy coding in SAS and
+using statistical techniques to analyze the data.  Project title was
+<em>Validating a bioelectric impedance instrument against the gold standard
+dual-energy x-ray absorptiometry on measures of adiposity</em>.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Master's student Shahen Yashpal
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2017 to 31 Jan 2018
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Co-supervised with Dr. Anthony Hanley. I trained Shahen in R and statistics,
+as well as assisted in guiding the research project and analysis. Project
+title was <em>Metabolomic Profiling of the DASH Diet: Novel Insights for the
+Nutritional Epidemiology of Type 2 Diabetes Mellitus</em>.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Master's student Núria Estanyol-Torres
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Mar 2023 to 3 Jun 2023
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Barcelona, Spain
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Supervised Núria in a (remote) Master's certificate in Biostatistics and
+Bioinformatics while she was doing her PhD in Chalmers University of
+Technology Gothenburg, Sweden.  Thesis title: <em>Pipeline in R for creating
+multi-metabolite signatures of dietary adherence from observational
+data</em>.
+
+    </dd>
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-person-chalkboard"></i> Teaching</h2>
+  
+    <p>Teaching activities, excluding curriculum development.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      <a href="https://r-cubed-advanced.rostools.org">Reproducible Research in R: An advanced workshop on creating collaborative and automated analysis pipelines</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            7 Dec 2022 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Three day workshop on using R for reproducible workflows and approaches to data processing to PhD students and postdoctoral researchers.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://r-cubed-intermediate.rostools.org">Reproducible Research in R: An intermediate workshop on modern approaches and workflows to processing data</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            8 Sept 2020 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Three day workshop on using R for reproducible pipelines and collaboration of data analysis projects to PhD students and postdoctoral researchers.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://r-cubed-intro.rostools.org">Reproducible Research in R: An introductory workshop on modern data analyses and workflows</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            22 Jun 2020 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Three day workshop on an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://dda-rcourse.lwjohnst.com/">Reproducible Quantitative Methods: Data analysis workflow using R</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              4 Mar 2019 to 19 Mar 2019
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Four day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://rqawr-course.lwjohnst.com/">Reproducible Quantitative Analyses and Workflows using R</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              21 May 2019 to 19 Mar 2019
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Potsdam, Germany
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Three day workshop teaching an introduction to using R for reproducible data analysis to PhD students and postdoctoral researchers.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://github.com/au-cru/2019-10-22-aarhus">Software Carpentry Workshop</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              22 Oct 2019 to 23 Oct 2019
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Aarhus, Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Coordinate and instruct a 2-day Software Carpentry workshop to any member of Aarhus University.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://github.com/au-cru/site/">Peer-led, participatory live coding R training sessions</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Jun 2018 to 12 Jun 2020
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Aarhus, Denmark
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Founded a group dedicated to skill sharing of data analysis in the statistical programming language R (and others). Organize and instruct several sessions on using R, in a participatory live coding format.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/">FAIR Data and Software workshop</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              9 Jul 2018 to 13 Jul 2018
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Hannover, Germany
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Taught and contributed to workshop material on building FAIR (findable, accessible, interoperable, and reusable) data and software.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://uoftcoders.github.io/2018-01-18-utoronto/">Software Carpentry workshops (R)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              19 Jan 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Helped learners during the Git session of the two day workshop.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://uoftcoders.github.io/rcourse">Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              7 Sept 2017 to 21 Dec 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Martin Krkosek
+    </dd>
+    
+    
+    <dd>
+      Created the curriculum (along with five other members). Taught three lectures, created and marked assignments.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://gitlab.com/lwjohnst/nfs1201-2017">Public Health Nutrition (NFS1201)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              7 Sept 2017 to 21 Dec 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Valerie Tarasuk
+    </dd>
+    
+    
+    <dd>
+      Gave a lecture and created the assignment (see website). Marked the assignment.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Software Carpentry workshops (R)
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              8 May 2017 to 9 May 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Instructed the second day of the two-day workshop at Ryserson University on advanced uses of R.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Basic Human Nutrition (NFS284)
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              2 Jan 2017 to 28 Apr 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Debbie Gurfinkel
+    </dd>
+    
+    
+    <dd>
+      Marked assignments and exams.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://uoftcoders.github.io/2017-02-03-utoronto/">Software Carpentry workshops (Python)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              3 Feb 2017 to 4 Feb 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Acted as helper to the instructors at a two-day workshop introducing computing to researchers and students at the University of Toronto. Duties were to answer any questions and fix any problems that novice learners encountered during the two day workshop.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Advanced Nutrition (NFS484-1484)
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2016 to 21 Dec 2016
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Carol Greenwood
+    </dd>
+    
+    
+    <dd>
+      Marked exams. Developed and marked a [short assignment](https://github.com/lwjohnst86/nfs484-1484-assignment-2016). Answered any student questions.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="https://gvwilson.github.io/2016-09-14-yorku/">Software Carpentry workshops (R)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              14 Sept 2016
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Taught the first R session to novice learners at a two-day workshop on introducing computing to researchers and students at York University.
+
+    </dd>
+    
+  
+    <dt>
+    
+      CUPE3902 Post-doc Python workshops
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              27 Jul 2016 to 10 Aug 2016
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      The [UofTCoders](https://uoftcoders.github.io/studyGroup/) members were hired by CUPE3902 Unit 5 to teach Python to post-doctoral fellows. As a core member of the UofTCoders, I acted as a helper to the instructors at the three-part workshop series introducing the Python programming language. Duties were to answer any questions and fix any problems that novice learners encountered during the Python sessions.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://codeasmanuscript.github.io/code-along">Departmental R workshops</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              26 May 2016 to 12 Apr 2017
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      I wanted to increase the computing capacity of my graduate department and to start to promote a culture of code-sharing and code reviews. Since how analyses are conducted and what the code is to create the scientific results is increasingly becoming more important, I wanted to start teaching students how to use R efficiently and productively. I've also set up a code review with my lab, so it was efficient for me to wrap these workshops up with the code reviews.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://uoftcoders.github.io/2016-04-25-utoronto/">Software Carpentry workshops (R)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              25 Apr 2016 to 26 Apr 2016
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Acted as helper to the instructors at a two-day workshop introducing computing to researchers and students at the University of Toronto. Duties were to answer any questions and fix any problems that novice learners encountered during the R sessions.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://uoftcoders.github.io/2016-05-09-utoronto/">Software Carpentry workshops (Python)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              9 May 2016 to 10 May 2016
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Taught the Git session to novice learners at a two-day workshop on introducing computing to researchers and students at the University of Toronto, as well as acted as helper during the Shell and Python sessions.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://uoftcoders.github.io">Peer-led, participatory live coding training sessions</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              11 Jun 2015 to 31 Jan 2018
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Was involved in developing a PhD student group aimed at teaching and peer-sharing computing skills such as Git, R, Python, and many other computing programs.
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://codeasmanuscript.org">Code as Manuscript:  R and SAS coding workshops</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Oct 2014 to 23 Nov 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Taught three workshops on SAS and R. SAS workshops were co-instructed and co-developed with Dr. Daiva Nielsen. R workshops were co-instructed with Sarah Meister. We taught version control, beginner and advanced coding techniques, and how to structure research projects around the idea of reproducibility. Consistent with our mission statement, our material is publicly available online at https://github.com/codeasmanuscript.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Public Health Nutrition (NFS1201)
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2015 to 31 Dec 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Sarah Orr
+    </dd>
+    
+    
+    <dd>
+      Gave [two lectures](https://github.com/lwjohnst86/nfs1201-lectures) during the course and developed and marked the [final (third) assignment](https://github.com/lwjohnst86/nfs1201-assignment).
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://blog.tomwright.ca/2015-07-16-sickkids/">Software Carpentry Workshop (R)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              16 Jul 2015 to 17 Jul 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Coding workshop hosted at the Hospital for Sick Children, Toronto. I taught version control using Git and acted as helper for the Shell and R sessions.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://tomwright01.github.io/2015-01-29-sickkids/">Software Carpentry Workshop (R)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              29 Jan 2015 to 30 Jan 2015
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Tom Wright
+    </dd>
+    
+    
+    <dd>
+      Coding workshop hosted at the Hospital for Sick Children, Toronto. I provided technical support, worked through students' problems and issues with them, and answered any questions.
+
+    </dd>
+    
+  
+    <dt>
+    
+      <a href="http://swcarpentry.github.io/2014-10-30-utoronto/">Software Carpentry Workshop (Python)</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              30 Oct 2014 to 31 Oct 2014
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Greg Wilson
+    </dd>
+    
+    
+    <dd>
+      Coding workshop hosted at the Gerstein Library, University of Toronto. I provided technical support, assisted students' with problems and issues, and answered student questions.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Advanced Nutrition (NFS484-1484)
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2014 to 31 Dec 2014
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Carol Greenwood
+    </dd>
+    
+    
+    <dd>
+      Developed and lead [tutorials](https://github.com/lwjohnst86/nfs484-1484-tutorials) for graduate students. Developed and marked the [final exam](https://github.com/lwjohnst86/nfs484-1484-exams). Answered any student questions.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Advanced Nutrition (NFS484-1484)
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2013 to 31 Dec 2013
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Carol Greenwood
+    </dd>
+    
+    
+    <dd>
+      Lead [tutorials](https://github.com/lwjohnst86/nfs484-1484-tutorials) for undergraduate students. Developed and marked the [midterm exam](https://github.com/lwjohnst86/nfs484-1484-exams). Answered any student questions.
+
+    </dd>
+    
+  
+    <dt>
+    
+      Nutritional Microbiology (NFS485)
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Jan 2013 to 30 Apr 2013
+            
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    <dd>
+      Supervisor: Dr. Elena Comelli
+    </dd>
+    
+    
+    <dd>
+      Answer student emails and questions. Mark midterm exam, assignment and final exam. Invigilate midterm and final exam.
+
+    </dd>
+    
+  
+  </dl>
+
+  <h2 class="anchored"><i class="fa-regular fa-database"></i> Data engineering and management</h2>
+  
+    <p>Activities involving building, designing, structuring, organizing, and managing data, databases, and data pipelines.</p>
+  
+
+  <dl>
+  
+    <dt>
+    
+      <a href="https://promise-cohort.gitlab.io/PROMISE/">PROMISE cohort data managed as an R package</a>
+     
+    </dt>
+    <dd>
+      <div class="d-flex justify-content-between">
+        <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+           
+            16 Nov 2016 to present
+           
+        </div>
+        <div>
+          <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+        </div>
+      </div>
+    </dd>
+    
+    
+    <dd>
+      Creator. I built, as well as occasionally maintain, the PROMISE cohort database. 
+It originally had no organization or structure, with files across different computers
+and with different names. I applied data engineering practices to structure it into
+a pipeline that checks, validates, re-organizes, and FAIR-ifies the data. Setting it
+up as an (unpublished) R package made it easier to test, fix, validate,
+reuse, and share it with other researchers using PROMISE data.
+
+    </dd>
+    
+  
+  </dl>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 <section id="publications" class="level2">
 <h2 class="anchored" data-anchor-id="publications"><i class="fa-solid fa-book-open" aria-label="book-open"></i> Publications</h2>
 <ol type="1">
@@ -326,195 +3558,6 @@ SAS, Python.
 <li>(Poster) ‘The association of leg length with metabolic abnormalities underlying type 2 diabetes mellitus: The PROMISE cohort’. <strong>L. W. Johnston</strong>, S. B. Harris, R. Retnakaran, H. C. Gerstein, J. Hamilton, B. Zinman, A. J. Hanley. (2013).</li>
 </ol>
 </section>
-<section id="r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="r-packages"><i class="fa-solid fa-box-open" aria-label="box-open"></i> R packages</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2022</td>
-<td style="text-align: left;">NetCoupler: Inference of Causal Links Between a Network and an External</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Variable (creator), CRAN</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">broom: Convert Statistical Objects into Tidy Tibbles (contributor), CRAN</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2016</td>
-<td style="text-align: left;">prodigenr: Research Project Directory Generator (creator), CRAN</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2016</td>
-<td style="text-align: left;">mason: Build Data Structures for Common Statistical Analysis (creator), CRAN</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2019</td>
-<td style="text-align: left;">posterdown: Generate PDF Conference Posters Using R Markdown (contributor), CRAN</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2016</td>
-<td style="text-align: left;">carpenter: Build Common Tables of Summary Statistics for Reports (creator), CRAN</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="teaching" class="level2">
-<h2 class="anchored" data-anchor-id="teaching"><i class="fa-solid fa-chalkboard-user" aria-label="chalkboard-user"></i> Teaching</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2022 – present</td>
-<td style="text-align: left;">Lead instructor for Reproducible Research in R: An advanced workshop on creating collaborative and automated analysis pipelines (PhD and Postdocs), Danish Diabetes and Endocrinology Academy in Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2020 – present</td>
-<td style="text-align: left;">Lead instructor for Reproducible Research in R: An intermediate workshop on modern approaches and workflows to processing data (PhD and Postdocs), Danish Diabetes and Endocrinology Academy in Denmark</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2020 – present</td>
-<td style="text-align: left;">Lead instructor for Reproducible Research in R: An introductory workshop on modern data analyses and workflows (PhD and Postdocs), Danish Diabetes and Endocrinology Academy in Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2018 – present</td>
-<td style="text-align: left;">Instructor and founder for Peer-led, participatory live coding R training sessions (Anyone), Aarhus University Community of Researchers Using Open Software in Aarhus, Denmark</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2019</td>
-<td style="text-align: left;">Lead instructor for Software Carpentry Workshop (Anyone), Aarhus University in Aarhus, Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2019</td>
-<td style="text-align: left;">Lead instructor for Reproducible Quantitative Analyses and Workflows using R (PhD and Postdocs), German Institute of Human Nutrition Potsdam-Rehbrueke in Potsdam, Germany</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2019</td>
-<td style="text-align: left;">Lead instructor for Reproducible Quantitative Methods: Data analysis workflow using R (PhD and Postdocs), Danish Diabetes and Endocrinology Academy in Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2018</td>
-<td style="text-align: left;">Instructor for FAIR Data and Software workshop (Anyone), TIB Leibniz Information Centre for Science and Technology and University Library in Hannover, Germany</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Teaching assistant for Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430) (Undergraduate), Department of Ecology and Evolutionary Biology, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Teaching assistant for Public Health Nutrition (NFS1201) (Graduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Instructor for Software Carpentry workshops (R) (Anyone), Software Carpentry in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Helper for Software Carpentry workshops (Python) (Anyone), Software Carpentry in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Helper for Software Carpentry workshops (R) (Anyone), Software Carpentry and UofTCoders in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Teaching assistant for Basic Human Nutrition (NFS284) (Undergraduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2016</td>
-<td style="text-align: left;">Instructor for Software Carpentry workshops (R) (Anyone), Software Carpentry in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2016</td>
-<td style="text-align: left;">Teaching assistant for Advanced Nutrition (NFS484-1484) (Mixed graduate and undergraduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2016</td>
-<td style="text-align: left;">Helper for CUPE3902 Post-doc Python workshops (Post-docs), CUPE3902 Unit 5 in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2016 – 2017</td>
-<td style="text-align: left;">Instructor for Departmental R workshops (Anyone), Code As Manuscript in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2016</td>
-<td style="text-align: left;">Instructor for Software Carpentry workshops (Python) (Anyone), Software Carpentry in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2016</td>
-<td style="text-align: left;">Helper for Software Carpentry workshops (R) (Anyone), Software Carpentry in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2015</td>
-<td style="text-align: left;">Teaching assistant for Public Health Nutrition (NFS1201) (Graduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2015</td>
-<td style="text-align: left;">Instructor for Software Carpentry Workshop (R) (Anyone), Software Carpentry in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2015 – 2018</td>
-<td style="text-align: left;">Instructor and one of the co-founders for Peer-led, participatory live coding training sessions (Anyone), UofTCoders, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2015</td>
-<td style="text-align: left;">Teaching helper for Software Carpentry Workshop (R) (Anyone), Software Carpentry in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">Teaching helper for Software Carpentry Workshop (Python) (Anyone), Software Carpentry in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2014 – 2015</td>
-<td style="text-align: left;">Instructor and founder for Code as Manuscript: R and SAS coding workshops (Graduate), Graduate Professional Skills Program, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">Teaching assistant for Advanced Nutrition (NFS484-1484) (Graduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2013</td>
-<td style="text-align: left;">Teaching assistant for Advanced Nutrition (NFS484-1484) (Graduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2013</td>
-<td style="text-align: left;">Teaching assistant for Nutritional Microbiology (NFS485) (Undergraduate), Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="supervision" class="level2">
-<h2 class="anchored" data-anchor-id="supervision"><i class="fa-solid fa-user-group" aria-label="user-group"></i> Supervision</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2023</td>
-<td style="text-align: left;">Master’s student, Universitat Oberta de Catalunya in Barcelona, Spain</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2017 – 2018</td>
-<td style="text-align: left;">Master’s student, Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014 – 2015</td>
-<td style="text-align: left;">Undergraduate student, Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="curriculum-development" class="level2">
 <h2 class="anchored" data-anchor-id="curriculum-development"><i class="fa-solid fa-book-open-reader" aria-label="book-open-reader"></i> Curriculum development</h2>
 <ol type="1">
@@ -527,212 +3570,127 @@ SAS, Python.
 </ol>
 <section id="other-development" class="level3">
 <h3 class="anchored" data-anchor-id="other-development">Other Development</h3>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2018</td>
-<td style="text-align: left;">FAIR Data and Software (https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/), TIB Leibniz Information Centre for Science and Technology and University Library in Hannover, Germany</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430) (https://uoftcoders.github.io/rcourse/), Department of Ecology and Evolutionary Biology, University of Toronto, Canada in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014 – 2015</td>
-<td style="text-align: left;">Code as Manuscript: Data wrangling, visualization, and reproducibility in R (http://codeasmanuscript.org), Graduate Professional Skills Program, University of Toronto in Toronto, Canada</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="committees" class="level2">
-<h2 class="anchored" data-anchor-id="committees"><i class="fa-solid fa-users" aria-label="users"></i> Committees</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2020 – 2021</td>
-<td style="text-align: left;">Scientific program organizing committee for the Danish Diabetes Academy Postdoctoral Winter School, Danish Diabetes Academy in Denmark</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="awards" class="level2">
-<h2 class="anchored" data-anchor-id="awards"><i class="fa-solid fa-trophy" aria-label="trophy"></i> Awards</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2022</td>
-<td style="text-align: left;">Research Education and Networking Award from Danish Diabetes Academy (DKK 25,000), Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2019</td>
-<td style="text-align: left;">Danish Diabetes Academy Postdoctoral Fellowship from Danish Diabetes Academy (DKK 1.8 million), Denmark</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Michael C. Archer Research Excellence Award from University of Toronto , Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Marie Skłodowska-Curie Master Class and Travel Fund from Aarhus University , Aarhus, Denmark</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Working Open Workshop and Travel Scholarship from Mozilla Science Lab (USD 300), Montreal, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2017</td>
-<td style="text-align: left;">Gordon Cressy Student Leadership Award from University of Toronto , Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2012</td>
-<td style="text-align: left;">Ontario Graduate Scholarship from Government of Ontario (CAD 15000), Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2013</td>
-<td style="text-align: left;">Trainee Travel Award from Banting and Best Diabetes Centre (CAD 1000), Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2013</td>
-<td style="text-align: left;">Ontario Graduate Scholarship from Government of Ontario (CAD 15000), Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">Trainee Travel Award from Banting and Best Diabetes Centre (CAD 1000), Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">Conference Travel Grant from University of Toronto (CAD 1120), Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">Alumni Travel Award from Department of Nutritional Sciences, University of Toronto (CAD 200), Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">New Investigator Award from International Society for the Study of Fatty Acids and Lipids , Stockholm, Sweden</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">Doctoral Student Research Award from Canadian Diabetes Association (CAD 21000), Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">Graduate Novo Nordisk Studentship from Banting and Best Diabetes Centre (CAD 3840), Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">Margaret and Nicholas Fodor Fellowship from University of Toronto (CAD 3000), Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2014</td>
-<td style="text-align: left;">Ontario Graduate Scholarship from Government of Ontario (CAD 15000), Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2015</td>
-<td style="text-align: left;">Trainee Travel Award from Banting and Best Diabetes Centre, University of Toronto (CAD 1000), Toronto, Canada</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="funding" class="level2">
-<h2 class="anchored" data-anchor-id="funding"><i class="fa-solid fa-comments-dollar" aria-label="comments-dollar"></i> Funding</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2022</td>
-<td style="text-align: left;">A framework for an open and scalable infrastructure for health data exemplified by the DD2 initiative (NNF21OC0069462) from NovoNordiskFonden (DKK 14,977,580), Aarhus, Denmark</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="employment" class="level2">
-<h2 class="anchored" data-anchor-id="employment"><i class="fa-solid fa-briefcase" aria-label="briefcase"></i> Employment</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2022 – present</td>
-<td style="text-align: left;">Team leader, Department of Clinical Medicine, Aarhus University and Steno Diabetes Center Aarhus in Aarhus, Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2019 – 2022</td>
-<td style="text-align: left;">DDA postdoctoral researcher, Steno Diabetes Center Aarhus in Aarhus, Denmark</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2018 – 2019</td>
-<td style="text-align: left;">Postdoctoral researcher, Department of Public Health, Aarhus University in Aarhus, Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2017 – 2018</td>
-<td style="text-align: left;">Postdoctoral fellow, Department of Nutritional Sciences, University of Toronto in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2011</td>
-<td style="text-align: left;">Research Assistant, Propel Center for Population Health Impact, University of Waterloo in Waterloo, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2010</td>
-<td style="text-align: left;">Research Assistant, Health Psychology Lab, University of Waterloo in Waterloo, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2009</td>
-<td style="text-align: left;">Research Assistant, Child Health Evaluative Sciences, Hospital for Sick Children in Toronto, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2009</td>
-<td style="text-align: left;">Research Assistant, Toronto Rehabilitation Institute in Toronto, Canada</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2008</td>
-<td style="text-align: left;">Research Assistant, Health Psychology Lab in Waterloo, Canada</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2008</td>
-<td style="text-align: left;">Project Manager, Health Psychology Lab in Waterloo, Canada</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="outreach-activities" class="level2">
-<h2 class="anchored" data-anchor-id="outreach-activities"><i class="fa-solid fa-bullhorn" aria-label="bullhorn"></i> Outreach activities</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 70%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2022</td>
-<td style="text-align: left;">Speaker for <a href="https://open.spotify.com/embed/episode/69hakmX1QRw0RIn6jry9xL?utm_source=generator">The Future is Transparent: Moving Towards Open Science</a>: Podcast discussing how to move researchers more towards incorporating open science practices., Danish Diabetes Academy in Denmark</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2022</td>
-<td style="text-align: left;">Website developer for <a href="https://precision-nutrition-forum.github.io/2022/">The 1st Gothenburg Precision Nutrition Forum: Using Multi-OMCIs for Data-Driven Systems Epidemiology - Towards Precision Nutrition</a>: Developed the website with the videos of the talks and poster abstracts., Chalmers University of Technology in Denmark</td>
-</tr>
-</tbody>
-</table>
+<div id="listing-curriculum-development" class="quarto-listing quarto-listing-container-custom">
+<dl>
+
+  <dt>
+  
+    <a href="https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/">FAIR Data and Software</a>
+   
+  </dt>
+  <dd>
+    <div class="d-flex justify-content-between">
+      <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              9 Jul 2018 to 13 Jul 2018
+            
+           
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot"></i> Hannover, Germany
+      </div>
+    </div>
+  </dd>
+  
+  
+  <dd>
+    Week long Carpentries-based workshop aimed
+at teaching FAIR principles for research data and for software management and
+development. Contributed to and taught the workshop material.
+
+  </dd>
+  
+
+  <dt>
+  
+    <a href="https://uoftcoders.github.io/rcourse/">Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)</a>
+   
+  </dt>
+  <dd>
+    <div class="d-flex justify-content-between">
+      <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Sept 2017 to 22 Dec 2017
+            
+           
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+      </div>
+    </div>
+  </dd>
+  
+  
+  <dd>
+    Pilot course to teach computational and quantitative analyses in R for
+ecology and evolutionary biology undergraduate students. DOI: <a href="https://doi.org/10.5281/zenodo.1117432">10.5281/zenodo.1117432</a>.
+
+  </dd>
+  
+
+  <dt>
+  
+    <a href="https://github.com/codeasmanuscript.">Code as Manuscript: Data wrangling, visualization, and reproducibility in R</a>
+   
+  </dt>
+  <dd>
+    <div class="d-flex justify-content-between">
+      <div>
+          <i class="fa-regular fa-calendar-days"></i> 
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          
+          
+
+          
+            
+            
+            
+              1 Oct 2014 to 23 Nov 2015
+            
+           
+      </div>
+      <div>
+        <i class="fa-solid fa-location-dot"></i> Toronto, Canada
+      </div>
+    </div>
+  </dd>
+  
+  
+  <dd>
+    Developed a multi-day workshop series on initially SAS with colleague
+Dr. Daiva Nielsen and later I developed a series on R. These workshops aimed to
+teach scientific coding skills to graduate students, such as using version control,
+structuring research projects, using reproducibility concepts, and "software development"
+concepts in a scientific coding context.
+
+  </dd>
+  
+
+</dl>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 
 
+
+</section>
 </section>
 
 </main> <!-- /main -->
