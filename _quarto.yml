@@ -28,8 +28,8 @@ format:
   html:
     from: markdown+emoji
     theme:
-        - litera
-        - theme.scss
+      - litera
+      - theme.scss
     toc: false
 
 editor_options:
