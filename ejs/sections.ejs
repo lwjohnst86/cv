@@ -18,12 +18,20 @@
       <div class="d-flex justify-content-between">
         <div>
           <i class="fa-regular fa-calendar-days"></i> 
-          <% if (entry.start == entry.end) { %>
-            <%= entry.start %>
-          <% } else if (entry.end) { %>
-            <%= entry.start %> to <%= entry.end %>
-          <% } else { %>
-            <%= entry.start %> to present
+          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+          <% let start_date = new Date(entry.start) %>
+          <% let start = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(start_date) %>
+
+          <% if (entry.end) { %>
+            <% let end_date = new Date(entry.end) %>
+            <% let end = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(end_date) %>
+            <% if (entry.start == entry.end) { %>
+              <%= start %>
+            <% } else { %>
+              <%= start %> to <%= end %>
+            <% } %>
+          <% } else { %> 
+            <%= start %> to present
           <% } %> 
         </div>
         <div>
