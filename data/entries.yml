@@ -851,3 +851,21 @@
       supervisor: Dr. Elena Comelli
       location: Toronto, Canada
     - title: Nutritional Microbiology (NFS485)
+
+- section: Data engineering and management
+  description: "Teaching activities, excluding curriculum development."
+  icon: fa-person-chalkboard
+  entries:
+    - title: PROMISE dataset managed as an R package
+      start: "2016-11-16"
+      end: ""
+      description: |
+        Creator. I built, as well as occasionally maintain, the PROMISE cohort database. 
+        It originally had no organization or structure, with files across different computers
+        and with different names. I applied data engineering practices to structure it into
+        a pipeline that checks, validates, re-organizes, and FAIR-ifies the data. Setting it
+        up as an (unpublished) R package made it easier to test, fix, validate,
+        reuse, and share it with other researchers using PROMISE data.
+      href: https://promise-cohort.gitlab.io/PROMISE/
+      organization: Department of Nutritional Sciences, University of Toronto
+      location: Toronto, Canada
