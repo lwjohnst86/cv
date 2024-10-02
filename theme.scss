@@ -5,11 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen');
 
-$font-family-serif: "Oxygen", sans-serif !default;
-$font-family-sans-serif: "Oxygen", sans-serif !default;
-$headings-font-family: "Oxygen", sans-serif !default;
-$font-size-root: 18px !default;
+$font-family-serif: "Cabin", sans-serif !default;
+$font-family-sans-serif: "Cabin", sans-serif !default;
+$headings-font-family: "Cabin", sans-serif !default;
+$font-size-root: 14px !default;
 
 /*-- scss:rules --*/
 
+dl {
+  display: block;
+}
 
+dd {
+  margin-left: 2em;
+}

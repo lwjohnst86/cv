@@ -69,13 +69,4 @@ list_publications(bib_items, "Curriculum development")
 ::: {#curriculum-development}
 :::
 
-```{=html}
-<style>
-dl {
-  display: block;
-}
-dd {
-  margin-left: 2em;
-}
-</style>
-```
+::::
