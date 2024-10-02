@@ -420,14 +420,76 @@
   description: "Creation of or contribution to software packages."
   icon: fa-box-open
   entries:
-    - title: 'broom: Convert Statistical Objects into Tidy Tibbles'
-      description: Contributor. Summarizes key information about statistical objects in
+    - title: "seedcase-sprout: Upload your research data to formally structure it for better, more reliable, and easier research"
+      description: |
+        Co-creator. Sprout is a Python software package that is a component of
+        the Seedcase framework that aims to take data created or collected for
+        research studies and "grow" it in a structured way using modern data
+        engineering best practices. Sprout is the backbone of the Seedcase
+        family; this is where data is uploaded, described, and stored based on a
+        relational database design.
+      start: "2023-11-26"
+      href: https://github.com/seedcase-project/seedcase-sprout
+      location: GitHub
+    - title: "ukbAid: Aid Steno Researchers Who Work on the UKB RAP"
+      description:
+        Creator. The goal of ukbAid is to help our research group at Steno
+        Diabetes Center Aarhus (SDCA) that is working on the UK Biobank (UKB) on
+        the research analysis platform (RAP). This package and the general
+        workflow we are using will help us be as reproducible as possible, but
+        without sharing any data that is not permitted.
+      start: "2022-07-10"
+      href: https://github.com/steno-aarhus/ukbAid
+      location: GitHub
+    - title: "dstDataPrep: Convert Denmark Statistics Data into Modern Formats"
+      description:
+        Creator. The main goal of dstDataPrep is to convert all the SAS data files on
+        Denmark Statistics servers for the Steno Aarhus DARTER Project into modern
+        and faster formats like Parquet. It also helps researchers access and import
+        these central data sources into the fast and modern analytic tool DuckDB.
+      start: "2022-03-09"
+      href: ""
+      location: Denmark Statistics servers
+    - title: "PROMISE.scrub: Scrub the PROMISE dataset"
+      description: |
+        Creator. The goal of PROMISE.scrub is to provide functions that help
+        with cleaning and preparing the PROMISE dataset for eventual use in
+        analyses and research projects. There are several of these packages that
+        all work to make it easier to handle the different needs of preparing
+        the PROMISE dataset, at least from a data management point of view, to
+        be trustworthy and of sufficient quality control.
+      start: "2017-09-18"
+      href: https://gitlab.com/promise-cohort/PROMISE.scrub
+      location: GitLab
+    - title: "PROMISE.methods: PROMISE Method Documentation and Data Dictionary Helpers"
+      description: |
+        Creator. The goal of PROMISE.methods is to provide functions for
+        creating the data dictionary and other functions for the dataset and
+        method documentation. This is a companion package to the main PROMISE
+        package.
+      start: "2017-09-18"
+      href: https://gitlab.com/promise-cohort/PROMISE.methods
+      location: GitLab
+    - title: "PROMISE.audit: Identifies Unexpected Values in the PROMISE Datasets"
+      description: |
+        Creator. The aim of this package is to run audits on datasets to check
+        for errors or typos in values. For instance, with a column called
+        MonthsPerYear, the values should be integers that go from 1 to 12. If
+        there are violations to this pattern, the values need to be investigated
+        at the raw data source. This is a companion package to the main PROMISE
+        package.
+      start: "2017-11-28"
+      href: https://gitlab.com/promise-cohort/PROMISE.audit
+      location: GitLab
+    - title: "broom: Convert Statistical Objects into Tidy Tibbles"
+      description:
+        Contributor. Summarizes key information about statistical objects in
         tidy tibbles. This makes it easy to report results, create plots and consistently
         work with large numbers of models at once. Broom provides three verbs that each
-        provide different types of information about a model. tidy() summarizes information
-        about model components such as coefficients of a regression. glance() reports
+        provide different types of information about a model. <code>tidy()</code> summarizes information
+        about model components such as coefficients of a regression. <code>glance()</code> reports
         information about an entire model, such as goodness of fit measures like AIC and
-        BIC. augment() adds information about individual observations to a dataset, such
+        BIC. <code>augment()</code> adds information about individual observations to a dataset, such
         as fitted values or influence measures.
       start: '2014-11-23'
       href: https://github.com/tidymodels/broom
