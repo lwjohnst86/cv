@@ -902,7 +902,7 @@
       start: "2016-11-16"
       end: ""
       description: |
-        Creator. I built, as well as occasionally maintain, the PROMISE cohort database. 
+        Creator. I built, as well as occasionally maintain, the PROMISE cohort database.
         It originally had no organization or structure, with files across different computers
         and with different names. I applied data engineering practices to structure it into
         a pipeline that checks, validates, re-organizes, and FAIR-ifies the data. Setting it
@@ -911,3 +911,83 @@
       href: https://promise-cohort.gitlab.io/PROMISE/
       organization: Department of Nutritional Sciences, University of Toronto
       location: Toronto, Canada
+
+- section: Educational resources
+  icon: book-open-reader
+  description: Educational resources that I've developed or contributed to.
+  entries:
+  - title: 'Reproducible Quantitative Methods: Data analysis workflow using R'
+    href: https://dda-rcourse.lwjohnst.com/
+    doi: 10.5281/zenodo.2603311
+    description: Course material taught for PhD and PostDocs from the Danish Diabetes
+      Academy.
+    start: '2019'
+    end: '2019'
+  - title: 'acdcourse: Analyzing Cohort Datasets with R'
+    href: https://github.com/lwjohnst86/acdcourse
+    doi: 10.5281/zenodo.3247819
+    description: "Interactive course material on how to analyze cohort datasets in R."
+    location: GitHub
+    start: '2019'
+    end: '2019'
+  - title: 'UofTCoders/rcourse: Quantitative Methods in R for Biology'
+    href: https://uoftcoders.github.io/rcourse/
+    doi: 10.5281/zenodo.1117432
+    description: |
+      Quantitative Methods in R for Biology is a course aimed at undergraduates at a
+      third year level or above. The course covers statistics and data analysis for
+      ecology and reproducible quantitative methods in R.
+    start: '2017-12-18'
+    end: '2019-06-06'
+  - title: 'FAIR Data and Software: A Carpentries-based workshop'
+    href: https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/
+    doi: 10.5281/zenodo.3707744
+    description: |
+      Week long Carpentries-based workshop aimed
+      at teaching FAIR principles for research data and for software management and
+      development. Contributed to and taught the workshop material.
+    start: "2018-07-09"
+    end: "2018-07-13"
+    organization:
+      TIB Leibniz Information Centre for Science and Technology and University
+      Library
+    location: Hannover, Germany
+  - title: 'rostools/r-cubed: Reproducible Research in R - An introductory workshop
+      on modern data analyses and workflows'
+    href: https://r-cubed-intro.rostools.org/
+    doi: 10.5281/zenodo.3921894
+    description: |
+       A 3-day workshop for researchers introducing modern and reproducible data
+       analysis tools and workflows with R. Taught to PhD students and postdoc
+       researchers.
+    start: '2020'
+    end: '2020'
+  - title: 'r-cubed: Reproducible Research in R - An Intermediate Workshop on Modern
+      Approaches and Workflows to Processing Data'
+    href: https://r-cubed-intermediate.rostools.org/
+    doi: 10.5281/zenodo.4061900
+    description: .na.character
+    start: '2020'
+    end: '2020'
+  - title: Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)
+    start: "2017-09-01"
+    end: "2017-12-22"
+    description: |
+      Pilot course to teach computational and quantitative analyses in R for
+      ecology and evolutionary biology undergraduate students.
+    href: https://uoftcoders.github.io/rcourse/
+    doi: 10.5281/zenodo.1117432
+    organization: Department of Ecology and Evolutionary Biology, University of Toronto
+    location: Toronto, Canada
+  - title: "Code as Manuscript: Data wrangling, visualization, and reproducibility in R"
+    start: "2014-10-01"
+    end: "2015-11-23"
+    description: |
+      Developed a multi-day workshop series on initially SAS with colleague
+      Dr. Daiva Nielsen and later I developed a series on R. These workshops aimed to
+      teach scientific coding skills to graduate students, such as using version control,
+      structuring research projects, using reproducibility concepts, and "software development"
+      concepts in a scientific coding context.
+    href: https://github.com/codeasmanuscript.
+    organization: Graduate Professional Skills Program, University of Toronto
+    location: Toronto, Canada
