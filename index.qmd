@@ -25,62 +25,21 @@ listing:
     field-types:
       start: date
       end: date  
-  - id: curriculum-development
-    template: ejs/dl-entry.ejs
-    contents: data/curriculum-development.yml
-    field-types:
-      start: date
-      end: date  
 ---
 
-```{r setup}
-#| include: false
-devtools::load_all()
-library(here)
-library(tidyverse)
-bib_items <- read_bib_items()
-```
+{{< fa envelope >}} [lwjohnst\@gmail.com](mailto:lwjohnst@gmail.com){.email}
+{{< fa brands gitlab >}} [`@lwjohnst`](https://gitlab.com/lwjohnst/)
+{{< fa brands github >}} [`@lwjohnst86`](https://github.com/lwjohnst86/)
+{{< fa brands orcid >}} [0000-0003-4169-2616](https://orcid.org/0000-0003-4169-2616)
+{{< fa brands linkedin >}} [`lwjohnst`](www.linkedin.com/in/lwjohnst)
+{{< fa brands stack-overflow >}} [Luke W.
+Johnston](https://stackoverflow.com/users/2632184)
+{{< fa brands stack-exchange >}} [Luke W.
+Johnston](https://stackexchange.com/users/1992995)
 
-
-{{< fa envelope >}}\ [lwjohnst\@gmail.com](mailto:lwjohnst@gmail.com){.email}
-{{< fa brands gitlab >}}\ [`@lwjohnst`](https://gitlab.com/lwjohnst/) 
-{{< fa brands github >}}\ [`@lwjohnst86`](https://github.com/lwjohnst86/)
-{{< fa brands orcid >}}\ [0000-0003-4169-2616](https://orcid.org/0000-0003-4169-2616)
-{{< fa brands linkedin >}}\ [`lwjohnst`](www.linkedin.com/in/lwjohnst) 
-{{< fa brands stack-overflow >}}\ [Luke W. Johnston](https://stackoverflow.com/users/2632184)
-{{< fa brands stack-exchange >}}\ [Luke W. Johnston](https://stackexchange.com/users/1992995) 
-
-> Team leader, researcher, software and data architect, software and data developer, 
-> data science and coding teacher, open science advocate.
+> Team leader, researcher, software and data architect, software and
+> data developer, data science and coding teacher, open science
+> advocate.
 
 ::: {#sections}
-:::
-
-## {{< fa book-open >}} Publications
-
-```{r list-articles}
-list_publications(bib_items, "Journal articles")
-```
-
-## {{< fa book >}} Books
-
-```{r list-books}
-list_publications(bib_items, "Books")
-```
-
-## {{< fa comment-dots >}} Presentations
-
-```{r list-presentations}
-list_publications(bib_items, "presentations")
-```
-
-## {{< fa book-open-reader >}} Curriculum development
-
-```{r list-curriculum-archived}
-list_publications(bib_items, "Curriculum development")
-```
-
-### Other Development
-
-::: {#curriculum-development}
 :::
