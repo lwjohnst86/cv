@@ -1,7 +1,7 @@
 ---
 title: "Luke W. Johnston"
 #description: Full CV at [cv.lukewjohnston.com](https://cv.lukewjohnston.com).
-date: "2024-10-02"
+date-modified: "2024-10-02"
 date-format: "medium"
 listing:
   - id: sections
