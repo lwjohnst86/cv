@@ -1,55 +1,59 @@
-```{=html}
+<!-- TODO: sort sections at this point? -->
 <% for (const item of items) { %>
-  <h2><i class="fa-regular <%- item.icon %>"></i> <%= item.section %></h2>
-  <% if (item.description) { %>
-    <p><%= item.description %></p>
-  <% } %>
+## {{< fa <%- item.icon %> >}} <%= item.section %>
 
-  <dl>
-  <% for (const entry of item.entries) { %>
-    <dt>
-    <% if (entry.href) { %>
-      <a href="<%- entry.href %>"><%= entry.title %></a>
-    <% } else { %>
-      <%= entry.title %>
-    <% } %> 
-    </dt>
-    <dd>
-      <div class="d-flex justify-content-between">
-        <div>
-          <i class="fa-regular fa-calendar-days"></i> 
-          <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
-          <% let start_date = new Date(entry.start) %>
-          <% let start = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(start_date) %>
-
-          <% if (entry.end) { %>
-            <% let end_date = new Date(entry.end) %>
-            <% let end = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(end_date) %>
-            <% if (entry.start == entry.end) { %>
-              <%= start %>
-            <% } else { %>
-              <%= start %> to <%= end %>
-            <% } %>
-          <% } else { %> 
-            <%= start %> to present
-          <% } %> 
-        </div>
-        <div>
-          <i class="fa-solid fa-location-dot"></i> <%= entry.location %>
-        </div>
-      </div>
-    </dd>
-    <% if (entry.supervisor) { %>
-    <dd>
-      Supervisor: <%= entry.supervisor %>
-    </dd>
-    <% } %>
-    <% if (entry.description) { %>
-    <dd>
-      <%= entry.description %>
-    </dd>
-    <% } %>
-  <% } %>
-  </dl>
+<% if (item.description) { %>
+<%= item.description %>
 <% } %>
-```
+
+<!-- TODO: sort dates at this point? -->
+<% for (const entry of item.entries) { %>
+<% if (entry.href) { %>
+### [<%= entry.title %>](<%- entry.href %>)
+<% } else { %>
+### <%= entry.title %>
+<% } %> 
+
+<!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
+::: {layout-ncol="2"}
+<% if (entry.year) { %>
+  <% var date_range = year %>
+<% } else { %> 
+  <% let start_as_date = new Date(entry.start) %>
+  <% let start = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(start_as_date) %>
+  <% if (entry.end) { %>
+    <% let end_as_date = new Date(entry.end) %>
+    <% let end = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(end_as_date) %>
+    <% if (entry.start == entry.end) { %>
+      <% var date_range = start %>
+    <% } else { %>
+      <% var date_range = start + ' to ' + end %>
+    <% } %>
+  <% } else { %> 
+    <% var date_range = start + ' to present' %>
+  <% } %> 
+<% } %> 
+{{< fa calendar-days >}} <%= date_range %>
+
+<% if (entry.organization) { %>
+{{< fa location-dot >}} <%= entry.organization %>, <%= entry.location %>
+<% } else if (entry.location) { %> 
+{{< fa location-dot >}} <%= entry.location %>
+<% } %> 
+
+<% if (entry.doi) { %>
+<% for (const doi of entry.doi) { %>
+{{< ai doi >}} [<%= doi %>](https://doi.org/<%= doi %>)
+<% } %> 
+<% } %> 
+:::
+
+<% if (entry.supervisor) { %>
+- Supervisor: <%= entry.supervisor %>
+<% } %>
+<% if (entry.description) { %>
+- <%= entry.description %>
+<% } %>
+
+<% } %>
+<% } %>
