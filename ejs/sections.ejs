@@ -6,6 +6,19 @@ items.forEach(item => {
     return dateB - dateA
   })
 })
+
+if (templateParams.entries_after_year) {
+  items = items.map(item => {
+    return {
+      ...item,
+      entries: item.entries.filter(entry => {
+        const after_year = new Date(templateParams.entries_after_year)
+        const entryDate = new Date(entry.start || entry.year)
+        return entryDate > after_year
+      })
+    }
+  })
+}
 %>
 
 <% for (const section of templateParams.sections) { %>

@@ -22,7 +22,6 @@ listing:
       - "Journal articles"
       - "Books"
       - "Presentations"
-    # TODO: Need to implement this.
     # entries_after_year: "2020"
 ---
 
