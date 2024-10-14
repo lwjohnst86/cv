@@ -1,13 +1,13 @@
 - section: Awards
   description: "Awards and honors given to and/or for me (e.g., scholarships or funds for my own salary)."
-  icon: fa-trophy
+  icon: trophy
   entries:
     - title: Research Education and Networking Award
       start: "2022-12-01"
       end: "2022-12-01"
       description:
         "Recognition for involvement in education and networking of researchers
-        in Denmark.. Amount: DKK 25,000"
+        in Denmark. Amount: DKK 25,000"
       organization: Danish Diabetes Academy
       location: Denmark
     - title: Danish Diabetes Academy Postdoctoral Fellowship
@@ -15,7 +15,7 @@
       end: "2023-12-31"
       description:
         "Nationally competitive ~3-year fellowship. Extended because of the
-        pandemic and because of receiving a larger project grant.. Amount: DKK 1.8 million"
+        pandemic and because of receiving a larger project grant. Amount: DKK 1.8 million"
       organization: Danish Diabetes Academy
       location: Denmark
     - title: Michael C. Archer Research Excellence Award
@@ -39,7 +39,7 @@
       end: "2017-03-11"
       description:
         "Attendance to a workshop hosted by the Mozilla Science Lab to train
-        on using open source and processes for research projects.. Amount: USD 300"
+        on using open source and processes for research projects. Amount: USD 300"
       organization: Mozilla Science Lab
       location: Montreal, Canada
     - title: Gordon Cressy Student Leadership Award
@@ -58,7 +58,7 @@
     - title: Ontario Graduate Scholarship
       start: "2012-09-01"
       end: "2013-08-31"
-      description: ". Amount: CAD 15000"
+      description: "Provincial-level graduate scholarship. Amount: CAD 15000"
       organization: Government of Ontario
       location: Toronto, Canada
     - title: Trainee Travel Award
@@ -72,7 +72,7 @@
     - title: Ontario Graduate Scholarship
       start: "2013-09-01"
       end: "2014-08-31"
-      description: ". Amount: CAD 15000"
+      description: "Provincial-level graduate scholarship. Amount: CAD 15000"
       organization: Government of Ontario
       location: Toronto, Canada
     - title: Trainee Travel Award
@@ -110,13 +110,13 @@
     - title: Doctoral Student Research Award
       start: "2014-09-01"
       end: "2017-08-31"
-      description: "National competitive award. Amount: CAD 21000"
+      description: "Nationally competitive award. Amount: CAD 21000"
       organization: Canadian Diabetes Association
       location: Toronto, Canada
     - title: Graduate Novo Nordisk Studentship
       start: "2014-09-01"
       end: "2015-08-31"
-      description: ". Amount: CAD 3840"
+      description: "University-wide awards. Amount: CAD 3840"
       organization: Banting and Best Diabetes Centre
       location: Toronto, Canada
     - title: Margaret and Nicholas Fodor Fellowship
@@ -142,7 +142,7 @@
 
 - section: Certificates
   description: "Certificates of completion or participation in courses, workshops, or other training."
-  icon: fa-certificate
+  icon: certificate
   entries:
     - title: RStudio Instructor Training and Certification Program
       start: "2020-08-06"
@@ -164,34 +164,61 @@
       description: |
         Certificate of completing the university's teacher training program for graduate students.
       href: ""
-      organization: "Teaching Assistants' Training Program, University of Toronto"
+      organization: University of Toronto
       location: Toronto, Canada
     - title: Graduate Professional Skills
       start: "2017-11-09"
       end: "2017-11-09"
       description: |
-        Certificate of completing a program of courses and workshops offered to graduate students to develop their professional skills, such as project management, communication, and leadership.
+        Certificate of completing a program of courses and workshops offered to
+        graduate students to develop their professional skills, such as project
+        management, communication, and leadership.
       href: ""
-      organization: Graduate Professional Skills Program, School of Graduate Studies, University of Toronto
+      organization: School of Graduate Studies, University of Toronto
       location: Toronto, Canada
     - title: Data Carpentry Instructor Training
       start: "2016-11-15"
       end: "2016-11-15"
-      description: ""
+      description: |
+        Certificate for completing an instructor training program required to
+        teach Data Carpentry workshops.
       href: ""
       organization: Data Carpentry
+      location: Online
+    - title: Aarhus University Teachers Training Programme
+      start: "2019-08-21"
+      end: "2019-12-19"
+      description: |
+        A teacher training programme for future and current instructors of
+        university-level courses.
+      href: ""
+      organization: Aarhus University
+      location: Aarhus, Denmark
+    - title: Foundations of Project Management I
+      start: "2016-11-23"
+      end: "2016-11-24"
+      description: "An intensive course on learning the basics of project management."
+      href: ""
+      organization: Mitacs
+      location: Toronto, Canada
+    - title: Mozilla Open Project Leaders Training
+      start: "2018-02-21"
+      end: "2018-06-11"
+      description: |
+        Training programme for those who want to or are currently leading
+        open source projects.
+      href: https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif
+      organization: Mozilla
       location: Online
 
 - section: Committees
   description: "Participation in committee, group, or council level activities."
-  icon: fa-users
+  icon: users
   entries:
-    - title:
-        Scientific program organizing committee for the Danish Diabetes Academy Postdoctoral
-        Winter School
+    - title: Scientific program organizing committee for the Danish Diabetes Academy Postdoctoral Winter School
       start: "2020-01-01"
       end: "2021-11-06"
-      description:
+      description: |
         Brainstorm and decide on overall school theme, develop the challenge
         project material and output, find and invite speakers for sessions, as well as
         contributing to creating the podcast on the challenge material.
@@ -220,70 +247,33 @@
       organization: University of Toronto
       location: Toronto, Canada
 
-- section: Courses taken
-  description: "Courses and workshops taken outside of formal university settings."
-  icon: fa-school
-  entries:
-    - title: Aarhus University Teachers Training Programme
-      start: "2019-08-21"
-      end: "2019-12-19"
-      description: ""
-      href: ""
-      organization: Aarhus University
-      location: Aarhus, Denmark
-    - title: Postdoctoral Winter School
-      start: "2019-11-03"
-      end: "2019-11-08"
-      description: ""
-      href: ""
-      organization: Danish Diabetes Academy
-      location: Malaga, Spain
-    - title: Mozilla Open Project Leaders Training
-      start: "2018-02-21"
-      end: "2018-06-11"
-      description: ""
-      href: https://mozilla.github.io/leadership-training/round-5/projects/#an-r-software-toolkit-to-simplify-an-open-collaborative-scientif
-      organization: Mozilla
-      location: Online
-    - title: "'OMICS and Epidemiology"
-      start: "2016-05-25"
-      end: "2016-05-26"
-      description: ""
-      href: ""
-      organization: McMaster University Health Sciences
-      location: Toronto, Canada
-    - title: Foundations of Project Management I
-      start: "2016-11-23"
-      end: "2016-11-24"
-      description: ""
-      href: ""
-      organization: Mitacs
-      location: Toronto, Canada
-
 - section: Education
   description: "Formal university education."
-  icon: fa-graduation-cap
+  icon: graduation-cap
   entries:
     - title: PhD in Nutritional Sciences
       start: "2013-09-01"
       end: "2017-09-14"
-      location: University of Toronto in Toronto, CA
+      organization: University of Toronto
+      location: Toronto, Canada
       href: https://hdl.handle.net/1807/80893
-      description: "Thesis title: <em>Fatty acid composition in four serum lipid fractions and the pathogenesis of diabetes.</em>"
+      description: "Thesis title: *Fatty acid composition in four serum lipid fractions and the pathogenesis of diabetes.*"
     - title: MSc in Nutritional Sciences
       start: "2011-09-01"
       end: "2013-08-30"
-      location: University of Toronto in Toronto, CA
+      organization: University of Toronto
+      location: Toronto, Canada
       href: https://hdl.handle.net/1807/42975
-      description: "Thesis title: <em>Association of Leg Length with Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus.</em>"
+      description: "Thesis title: *Association of Leg Length with Metabolic Abnormalities Underlying Type 2 Diabetes Mellitus.*"
     - title: BSc in Kinesiology
       start: "2005-09-01"
       end: "2010-04-30"
-      location: University of Waterloo in Waterloo, CA
+      organization: University of Waterloo
+      location: Waterloo, Canada
 
 - section: Employment
   description: "Positions and places where I work or worked."
-  icon: fa-briefcase
+  icon: briefcase
   entries:
     - title: Team leader
       start: "2022-06-01"
@@ -291,8 +281,8 @@
       description:
         Working on a project building an open infrastructure for health data,
         funded by the NovoNordisk Foundation.
-      organization:
-        Department of Clinical Medicine, Aarhus University and Steno Diabetes
+      organization: |
+        Department of Clinical Medicine, Aarhus University & Steno Diabetes
         Center Aarhus
       supervisor: ""
       location: Aarhus, Denmark
@@ -300,7 +290,12 @@
       start: "2019-12-01"
       end: "2022-05-31"
       description: |
-        Working on a project funded by the Danish Diabetes Academy. Doing research in diabetes epidemiology, specifically on identifying: the metabolic mediation between early childhood biomarkers and adult diabetes status; developing causal structure learning methods; and, creating a framework (as text and as software) for conducting reproducible and open scientific research.
+        Working on a project funded by the Danish Diabetes Academy.
+        Doing research in diabetes epidemiology, specifically on identifying:
+        the metabolic mediation between early childhood biomarkers and adult diabetes status;
+        developing causal structure learning methods;
+        and, creating a framework (as text and as software) for conducting
+        reproducible and open scientific research.
       organization: Steno Diabetes Center Aarhus
       supervisor: Dr. Daniel Witte
       location: Aarhus, Denmark
@@ -310,12 +305,10 @@
       description: |
         Doing research in diabetes epidemiology, specifically on identifying:
 
-        <ul>
-        <li>Patterns of accelerometry-derived physical activity with metabolic status.</li>
-        <li>The metabolic mediation between early childhood biomarkers and adult diabetes status.</li>
-        <li>Developing a simulation method for incorporating multiple epidemiological results into a single framework.</li>
-        <li>Assisting a PhD student's social network analysis on the programming aspects of work.</li>
-        </ul>
+        - Patterns of accelerometry-derived physical activity with metabolic status.
+        - The metabolic mediation between early childhood biomarkers and adult diabetes status.
+        - Developing a simulation method for incorporating multiple epidemiological results into a single framework.
+        - Assisting a PhD student's social network analysis on the programming aspects of work.
       organization: Department of Public Health, Aarhus University
       supervisor: Dr. Daniel Witte
       location: Aarhus, Denmark
@@ -323,7 +316,9 @@
       start: "2017-09-20"
       end: "2018-01-31"
       description: |
-        Finishing up PhD research projects, maintaining and developing a website for the <a href="https://promise-cohort.gitlab.io/PROMISE">PROMISE data dictionary and description</a> and training new graduate students on data analysis using R.
+        Finishing up PhD research projects, maintaining and developing a website for the
+        <a href="https://promise-cohort.gitlab.io/PROMISE">PROMISE data dictionary and description</a>
+        and training new graduate students on data analysis using R.
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Anthony Hanley
       location: Toronto, Canada
@@ -331,9 +326,13 @@
       start: "2011-01-01"
       end: "2011-07-30"
       description: |
-        Collected air quality samples from Region of Waterloo-owned social housing. Analyzed the air quality data using MS Excel.
-        Produced and tested a survey for Program Training and Consultation Centre on SurveyMonkey. Wrote three reports on data collected from the survey results.
-        Organized and scheduled interviews and data collection dates for a study in the Waterloo Region evaluating the School Food and Beverage Policy PPM150. Managed a team of 4 researchers to collect survey and interview data from primary and secondary schools in the Waterloo Region. Managed the storing and organizing of data collected from the surveys and interviews.
+        - Collected air quality samples from Region of Waterloo-owned social housing.
+        - Analyzed the air quality data using MS Excel.
+        - Produced and tested a survey for Program Training and Consultation Centre on SurveyMonkey.
+        - Wrote three reports on data collected from the survey results.
+        - Organized and scheduled interviews and data collection dates for a study in the Waterloo Region evaluating the School Food and Beverage Policy PPM150.
+        - Managed a team of 4 researchers to collect survey and interview data from primary and secondary schools in the Waterloo Region.
+        - Managed the storing and organizing of data collected from the surveys and interviews.
       organization: Propel Center for Population Health Impact, University of Waterloo
       supervisor: Karen Pieters, Dr. Ryan David Kennedy, and Dr. Rhona Hanning
       location: Waterloo, Canada
@@ -341,7 +340,8 @@
       start: "2010-08-01"
       end: "2010-08-30"
       description: |
-        Analyzed data from previous cigarette smoking experiments done in 2008 using MS Excel. Conducted a smoke-free policy scan of YMCAs and YWCAs in Ontario and presented findings to the Tobacco-free Sports and Recreation Community of Practice.
+        - Analyzed data from previous cigarette smoking experiments done in 2008 using MS Excel.
+        - Conducted a smoke-free policy scan of YMCAs and YWCAs in Ontario and presented findings to the Tobacco-free Sports and Recreation Community of Practice.
       organization: Health Psychology Lab, University of Waterloo
       supervisor: Dr. Ryan David Kennedy
       location: Waterloo, Canada
@@ -349,7 +349,8 @@
       start: "2009-09-01"
       end: "2009-12-20"
       description: |
-        Analyzed data from the WHO and PLoS Medicine using MS Excel. Developed a method for interpreting fracture data from the National Ambulatory Care Reporting System using statistical probability equations.
+        - Analyzed data from the WHO and PLoS Medicine using MS Excel.
+        - Developed a method for interpreting fracture data from the National Ambulatory Care Reporting System using statistical probability equations.
       organization: Child Health Evaluative Sciences, Hospital for Sick Children
       supervisor: Dr. Andrew Howard
       location: Toronto, Canada
@@ -357,7 +358,10 @@
       start: "2009-01-01"
       end: "2009-04-30"
       description: |
-        Examined balance in clinical populations, including individuals with dementia, using pressure plates. Used EMG electrodes, VICON markers and other monitoring equipment to obverse and collect data from research participants. Analyzed data from various experiments and studies using LabView and MATLAB software. Evaluated the reliability of using Bluetooth technology in the foot switch device (industry gold standard) and analyzed the relationship with an accelerometer.
+        - Examined balance in clinical populations, including individuals with dementia, using pressure plates.
+        - Used EMG electrodes, VICON markers and other monitoring equipment to obverse and collect data from research participants.
+        - Analyzed data from various experiments and studies using LabView and MATLAB software.
+        - Evaluated the reliability of using Bluetooth technology in the foot switch device (industry gold standard) and analyzed the relationship with an accelerometer.
       organization: Toronto Rehabilitation Institute
       supervisor: Dr. Avril Mansfield and Dr. William McIlroy
       location: Toronto, Canada
@@ -365,7 +369,8 @@
       start: "2008-09-01"
       end: "2008-12-20"
       description: |
-        Used MS Excel and SPSS 17.0 to organize and analyze data from experiments and prepare the data for presentations at provincial and international tobacco control conferences. Independently conducted a phone survey of Ontario’s university campuses’ outdoor smoking policies and prepared a poster to be presented at a tobacco control conference.
+        - Used MS Excel and SPSS 17.0 to organize and analyze data from experiments and prepare the data for presentations at provincial and international tobacco control conferences.
+        - Independently conducted a phone survey of Ontario’s university campuses’ outdoor smoking policies and prepared a poster to be presented at a tobacco control conference.
       organization: Health Psychology Lab
       supervisor: Ryan David Kennedy
       location: Waterloo, Canada
@@ -373,18 +378,20 @@
       start: "2008-05-01"
       end: "2008-08-30"
       description: |
-        Managed 3 projects aimed at measuring tobacco smoke pollution in outdoor and quasi-outdoor environments. Organized and analyzed data using MS Excel and SPSS 17.0. Supervised and scheduled a team of 10 Research Assistants.
+        - Managed 3 projects aimed at measuring tobacco smoke pollution in outdoor and quasi-outdoor environments.
+        - Organized and analyzed data using MS Excel and SPSS 17.0.
+        - Supervised and scheduled a team of 10 Research Assistants.
       organization: Health Psychology Lab
       supervisor: Ryan David Kennedy
       location: Waterloo, Canada
 
 - section: Funding
   description: "Grants for larger projects that include salary for multiple people as well as funds for resources."
-  icon: fa-comments-dollar
+  icon: comments-dollar
   entries:
     - title: "DP-Next: Sustainable Type 2 Diabetes Prevention for the 21st Century"
-      start: "2025-01-01"
-      end: "2029-12-31"
+      start: "2025-09-01"
+      end: "2030-08-31"
       description: |
         Contributor to a funded grant from the NovoNordiskFonden Steno National
         Collaborative Programme. I will act as Work Package 1 lead, which aims
@@ -408,20 +415,18 @@
 
 - section: Outreach activities
   description: "Activities involving some type of outreach to a diverse audience, including the general public."
-  icon: fa-bullhorn
+  icon: bullhorn
   entries:
     - title: "The Future is Transparent: Moving Towards Open Science"
       start: "2022-10-27"
       end: "2022-10-27"
-      description:
+      description: |
         Speaker on a podcast discussing how to move researchers more towards incorporating
         open science practices.
       href: https://open.spotify.com/embed/episode/69hakmX1QRw0RIn6jry9xL?utm_source=generator
       organization: Danish Diabetes Academy
       location: Denmark
-    - title:
-        "The 1st Gothenburg Precision Nutrition Forum: Using Multi-OMCIs for Data-Driven
-        Systems Epidemiology - Towards Precision Nutrition"
+    - title: "The 1st Gothenburg Precision Nutrition Forum: Using Multi-OMCIs for Data-Driven Systems Epidemiology - Towards Precision Nutrition"
       start: "2022-09-12"
       end: "2022-09-14"
       description: Developed the website for this conference with the videos of the talks and poster abstracts.
@@ -431,8 +436,16 @@
 
 - section: Package development
   description: "Creation of or contribution to software packages."
-  icon: fa-box-open
+  icon: box-open
   entries:
+    - title: "osdc: An Open-Source Diabetes Classifier for Danish Registers "
+      description: |
+        Co-creator. An R package that aims to make it easier and more explicit to classify 
+        type 1 and type 2 diabetes within a Danish register context.
+      # TODO: Update this with first release to CRAN
+      start: "2022-11-20"
+      href: https://github.com/steno-aarhus/osdc
+      location: GitHub
     - title: "seedcase-sprout: Upload your research data to formally structure it for better, more reliable, and easier research"
       description: |
         Co-creator. Sprout is a Python software package that is a component of
@@ -499,10 +512,10 @@
         Contributor. Summarizes key information about statistical objects in
         tidy tibbles. This makes it easy to report results, create plots and consistently
         work with large numbers of models at once. Broom provides three verbs that each
-        provide different types of information about a model. <code>tidy()</code> summarizes information
-        about model components such as coefficients of a regression. <code>glance()</code> reports
+        provide different types of information about a model. `tidy()` summarizes information
+        about model components such as coefficients of a regression. `glance()` reports
         information about an entire model, such as goodness of fit measures like AIC and
-        BIC. <code>augment()</code> adds information about individual observations to a dataset, such
+        BIC. `augment()` adds information about individual observations to a dataset, such
         as fitted values or influence measures.
       start: "2014-11-23"
       href: https://github.com/tidymodels/broom
@@ -516,9 +529,7 @@
       start: "2016-04-30"
       href: https://github.com/rostools/prodigenr
       location: CRAN
-    - title:
-        "NetCoupler: Inference of Causal Links Between a Network and an External
-        Variable"
+    - title: "NetCoupler: Inference of Causal Links Between a Network and an External Variable"
       description:
         Creator. The 'NetCoupler' algorithm identifies potential direct effects
         of correlated, high-dimensional variables formed as a network with an external
@@ -532,8 +543,10 @@
         Creator. Use a consistent syntax to create data structures of common
         statistical techniques that can be continued in a pipe chain.  Design the analysis,
         add settings and variables, construct the results, and polish the final structure.
-        Rinse and repeat for any number of statistical techniques.
+        Rinse and repeat for any number of statistical techniques. *Archived
+        due to better packages that had been built since I first created this*.
       start: "2016-07-15"
+      end: "2023-09-10"
       href: https://github.com/lwjohnst86/mason
       location: CRAN
     - title: "posterdown: Generate PDF Conference Posters Using R Markdown"
@@ -554,7 +567,7 @@
 
 - section: Supervision
   description: "Acting as a formal (co-)supervisor to students and their projects."
-  icon: fa-user-group
+  icon: user-group
   entries:
     - title: Bachelor student Windy Wang
       start: "2014-09-01"
@@ -564,8 +577,8 @@
         (NFS394) in Nutritional Sciences. Supervision consisted of helping guide the
         development of the research question and teaching Windy coding in SAS and
         using statistical techniques to analyze the data.  Project title was
-        <em>Validating a bioelectric impedance instrument against the gold standard
-        dual-energy x-ray absorptiometry on measures of adiposity</em>.
+        *Validating a bioelectric impedance instrument against the gold standard
+        dual-energy x-ray absorptiometry on measures of adiposity*.
       organization: Department of Nutritional Sciences, University of Toronto
       location: Toronto, Canada
     - title: Master's student Shahen Yashpal
@@ -574,8 +587,8 @@
       description: |
         Co-supervised with Dr. Anthony Hanley. I trained Shahen in R and statistics,
         as well as assisted in guiding the research project and analysis. Project
-        title was <em>Metabolomic Profiling of the DASH Diet: Novel Insights for the
-        Nutritional Epidemiology of Type 2 Diabetes Mellitus</em>.
+        title was *Metabolomic Profiling of the DASH Diet: Novel Insights for the
+        Nutritional Epidemiology of Type 2 Diabetes Mellitus*.
       organization: Department of Nutritional Sciences, University of Toronto
       location: Toronto, Canada
     - title: Master's student Núria Estanyol-Torres
@@ -584,19 +597,17 @@
       description: |
         Supervised Núria in a (remote) Master's certificate in Biostatistics and
         Bioinformatics while she was doing her PhD in Chalmers University of
-        Technology Gothenburg, Sweden.  Thesis title: <em>Pipeline in R for creating
+        Technology Gothenburg, Sweden.  Thesis title: *Pipeline in R for creating
         multi-metabolite signatures of dietary adherence from observational
-        data</em>.
+        data*.
       organization: Universitat Oberta de Catalunya
       location: Barcelona, Spain
 
 - section: Teaching
   description: "Teaching activities, excluding curriculum development."
-  icon: fa-person-chalkboard
+  icon: person-chalkboard
   entries:
-    - title:
-        "Reproducible Research in R: An advanced workshop on creating collaborative
-        and automated analysis pipelines"
+    - title: "Reproducible Research in R: An advanced workshop on creating collaborative and automated analysis pipelines"
       start: "2022-12-07"
       end: ""
       description: |
@@ -604,11 +615,8 @@
       href: https://r-cubed-advanced.rostools.org
       role: Lead instructor
       organization: Danish Diabetes and Endocrinology Academy
-      supervisor: ""
       location: Denmark
-    - title:
-        "Reproducible Research in R: An intermediate workshop on modern approaches
-        and workflows to processing data"
+    - title: "Reproducible Research in R: An intermediate workshop on modern approaches and workflows to processing data"
       start: "2020-09-08"
       end: ""
       description: |
@@ -616,11 +624,8 @@
       href: https://r-cubed-intermediate.rostools.org
       role: Lead instructor
       organization: Danish Diabetes and Endocrinology Academy
-      supervisor: ""
       location: Denmark
-    - title:
-        "Reproducible Research in R: An introductory workshop on modern data analyses
-        and workflows"
+    - title: "Reproducible Research in R: An introductory workshop on modern data analyses and workflows"
       start: "2020-06-22"
       end: ""
       description: |
@@ -628,7 +633,6 @@
       href: https://r-cubed-intro.rostools.org
       role: Lead instructor
       organization: Danish Diabetes and Endocrinology Academy
-      supervisor: ""
       location: Denmark
     - title: "Reproducible Quantitative Methods: Data analysis workflow using R"
       start: "2019-03-04"
@@ -638,7 +642,6 @@
       href: https://dda-rcourse.lwjohnst.com/
       role: Lead instructor
       organization: Danish Diabetes and Endocrinology Academy
-      supervisor: ""
       location: Denmark
     - title: Reproducible Quantitative Analyses and Workflows using R
       start: "2019-05-21"
@@ -648,7 +651,6 @@
       href: https://rqawr-course.lwjohnst.com/
       role: Lead instructor
       organization: German Institute of Human Nutrition Potsdam-Rehbrueke
-      supervisor: ""
       location: Potsdam, Germany
     - title: Software Carpentry Workshop
       start: "2019-10-22"
@@ -658,7 +660,6 @@
       href: https://github.com/au-cru/2019-10-22-aarhus
       role: Lead instructor
       organization: Aarhus University
-      supervisor: ""
       location: Aarhus, Denmark
     - title: Peer-led, participatory live coding R training sessions
       start: "2018-06-01"
@@ -668,7 +669,6 @@
       href: https://github.com/au-cru/site/
       role: Instructor and founder
       organization: Aarhus University Community of Researchers Using Open Software
-      supervisor: ""
       location: Aarhus, Denmark
     - title: FAIR Data and Software workshop
       start: "2018-07-09"
@@ -677,10 +677,9 @@
         Taught and contributed to workshop material on building FAIR (findable, accessible, interoperable, and reusable) data and software.
       href: https://tibhannover.github.io/2018-07-09-FAIR-Data-and-Software/
       role: Instructor
-      organization:
+      organization: |
         TIB Leibniz Information Centre for Science and Technology and University
         Library
-      supervisor: ""
       location: Hannover, Germany
     - title: Software Carpentry workshops (R)
       start: "2017-01-19"
@@ -690,7 +689,6 @@
       href: https://uoftcoders.github.io/2018-01-18-utoronto/
       role: Helper
       organization: Software Carpentry and UofTCoders
-      supervisor: ""
       location: Toronto, Canada
     - title: Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)
       start: "2017-09-07"
@@ -720,7 +718,6 @@
       href: ""
       role: Instructor
       organization: Software Carpentry
-      supervisor: ""
       location: Toronto, Canada
     - title: Basic Human Nutrition (NFS284)
       start: "2017-01-02"
@@ -739,14 +736,12 @@
       href: http://uoftcoders.github.io/2017-02-03-utoronto/
       role: Helper
       organization: Software Carpentry
-      supervisor: ""
       location: Toronto, Canada
     - title: Advanced Nutrition (NFS484-1484)
       start: "2016-09-01"
       end: "2016-12-21"
       description: |
         Marked exams. Developed and marked a [short assignment](https://github.com/lwjohnst86/nfs484-1484-assignment-2016). Answered any student questions.
-      href: ""
       role: Teaching Assistant
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Carol Greenwood
@@ -759,17 +754,14 @@
       href: https://gvwilson.github.io/2016-09-14-yorku/
       role: Instructor
       organization: Software Carpentry
-      supervisor: ""
       location: Toronto, Canada
     - title: CUPE3902 Post-doc Python workshops
       start: "2016-07-27"
       end: "2016-08-10"
       description: |
         The [UofTCoders](https://uoftcoders.github.io/studyGroup/) members were hired by CUPE3902 Unit 5 to teach Python to post-doctoral fellows. As a core member of the UofTCoders, I acted as a helper to the instructors at the three-part workshop series introducing the Python programming language. Duties were to answer any questions and fix any problems that novice learners encountered during the Python sessions.
-      href: ""
       role: Helper
       organization: CUPE3902 Unit 5
-      supervisor: ""
       location: Toronto, Canada
     - title: Departmental R workshops
       start: "2016-05-26"
@@ -778,8 +770,7 @@
         I wanted to increase the computing capacity of my graduate department and to start to promote a culture of code-sharing and code reviews. Since how analyses are conducted and what the code is to create the scientific results is increasingly becoming more important, I wanted to start teaching students how to use R efficiently and productively. I've also set up a code review with my lab, so it was efficient for me to wrap these workshops up with the code reviews.
       href: http://codeasmanuscript.github.io/code-along
       role: Instructor
-      organization: Code As Manuscript
-      supervisor: ""
+      organization: Department of Nutritional Sciences, University of Toronto
       location: Toronto, Canada
     - title: Software Carpentry workshops (R)
       start: "2016-04-25"
@@ -789,7 +780,6 @@
       href: http://uoftcoders.github.io/2016-04-25-utoronto/
       role: Helper
       organization: Software Carpentry
-      supervisor: ""
       location: Toronto, Canada
     - title: Software Carpentry workshops (Python)
       start: "2016-05-09"
@@ -799,7 +789,6 @@
       href: http://uoftcoders.github.io/2016-05-09-utoronto/
       role: Instructor
       organization: Software Carpentry
-      supervisor: ""
       location: Toronto, Canada
     - title: Peer-led, participatory live coding training sessions
       start: "2015-06-11"
@@ -811,7 +800,6 @@
       href: http://uoftcoders.github.io
       role: Instructor and one of the co-founders
       organization: UofTCoders, University of Toronto
-      supervisor: ""
       location: Toronto, Canada
     - title: "Code as Manuscript:  R and SAS coding workshops"
       start: "2014-10-01"
@@ -821,14 +809,12 @@
       href: http://codeasmanuscript.org
       role: Instructor and founder
       organization: Graduate Professional Skills Program, University of Toronto
-      supervisor: ""
       location: Toronto, Canada
     - title: Public Health Nutrition (NFS1201)
       start: "2015-09-01"
       end: "2015-12-31"
       description: |
         Gave [two lectures](https://github.com/lwjohnst86/nfs1201-lectures) during the course and developed and marked the [final (third) assignment](https://github.com/lwjohnst86/nfs1201-assignment).
-      href: ""
       role: Teaching Assistant
       organization: Department of Nutritional Sciences, University of Toronto
       supervisor: Dr. Sarah Orr
@@ -840,8 +826,8 @@
         Coding workshop hosted at the Hospital for Sick Children, Toronto. I taught version control using Git and acted as helper for the Shell and R sessions.
       href: http://blog.tomwright.ca/2015-07-16-sickkids/
       role: Instructor
+      supervisor: Tom Wright
       organization: Software Carpentry
-      supervisor: ""
       location: Toronto, Canada
     - title: Software Carpentry Workshop (R)
       start: "2015-01-29"
@@ -896,7 +882,7 @@
 
 - section: Data engineering and management
   description: "Activities involving building, designing, structuring, organizing, and managing data, databases, and data pipelines."
-  icon: fa-database
+  icon: database
   entries:
     - title: PROMISE cohort data managed as an R package
       start: "2016-11-16"
@@ -919,17 +905,16 @@
   - title: 'Reproducible Quantitative Methods: Data analysis workflow using R'
     href: https://dda-rcourse.lwjohnst.com/
     doi: 10.5281/zenodo.2603311
-    description: Course material taught for PhD and PostDocs from the Danish Diabetes
-      Academy.
-    start: '2019'
-    end: '2019'
+    description: Material for a 4-day course taught for PhD and PostDocs from the Danish Diabetes Academy.
+    start: '2019-03-04'
+    end: '2019-03-19'
   - title: 'acdcourse: Analyzing Cohort Datasets with R'
     href: https://github.com/lwjohnst86/acdcourse
     doi: 10.5281/zenodo.3247819
     description: "Interactive course material on how to analyze cohort datasets in R."
     location: GitHub
-    start: '2019'
-    end: '2019'
+    start: '2019-06-17'
+    end: '2019-06-17'
   - title: 'UofTCoders/rcourse: Quantitative Methods in R for Biology'
     href: https://uoftcoders.github.io/rcourse/
     doi: 10.5281/zenodo.1117432
@@ -949,7 +934,7 @@
     start: "2018-07-09"
     end: "2018-07-13"
     organization:
-      TIB Leibniz Information Centre for Science and Technology and University
+      TIB Leibniz Information Centre for Science & Technology and University
       Library
     location: Hannover, Germany
   - title: 'rostools/r-cubed: Reproducible Research in R - An introductory workshop
@@ -960,15 +945,17 @@
        A 3-day workshop for researchers introducing modern and reproducible data
        analysis tools and workflows with R. Taught to PhD students and postdoc
        researchers.
-    start: '2020'
-    end: '2020'
+    start: '2020-06-29'
+    end: ""
   - title: 'r-cubed: Reproducible Research in R - An Intermediate Workshop on Modern
       Approaches and Workflows to Processing Data'
     href: https://r-cubed-intermediate.rostools.org/
     doi: 10.5281/zenodo.4061900
-    description: .na.character
-    start: '2020'
-    end: '2020'
+    description: |
+      A 3-day course on how to clean, reorganize, and process larger and more complex data before it can be analyzed, for
+      researchers, PhD students, and postdocs.
+    start: '2020-10-01'
+    end: ''
   - title: Theoretical Ecology and Reproducible Quantitative Methods in R (EEB430)
     start: "2017-09-01"
     end: "2017-12-22"
@@ -989,5 +976,454 @@
       structuring research projects, using reproducibility concepts, and "software development"
       concepts in a scientific coding context.
     href: https://github.com/codeasmanuscript.
-    organization: Graduate Professional Skills Program, University of Toronto
+    organization: School of Graduate Studies, University of Toronto
     location: Toronto, Canada
+
+- section: Books
+  icon: book
+  description: Work that has been published in a book format.
+  entries:
+  - title: Research Software Engineering with Python
+    isbn: 0367698323
+    start: '2021-08-06'
+    end: '2021-08-06'
+
+- section: Presentations
+  icon: comment-dots
+  description: Work that I have contributed to or that I've lead that was presented
+    at conferences, seminars, and other events, either online or in-person.
+  entries:
+  - title: Study Groups - Crossing the Boundaries of Discipline
+    organization: Mozilla Festival
+    type: Contributed
+    location: London, UK
+    start: '2016-10-29'
+    end: '2016-10-29'
+  - title: Probability of Multiple Fractures in Childhood Session
+    organization: Safety 2010 World Conference
+    type: Contributed
+    location: London, UK
+    start: '2010-09-21'
+    end: '2010-09-24'
+  - title: 'Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) Is Associated with
+      Insulin Resistance: PROspective Metabolism and ISlet Cell Evaluation (PROMISE)
+      Cohort'
+    organization: "American Diabetes Association's 74th Scientific Sessions"
+    doi: 10.2337/db14-1317-1629
+    type: Poster
+    location: San Francisco, US
+    href: "https://figshare.com/s/a7cf86f77bc4be78ac7f"
+    start: '2014-06-14'
+    end: '2014-06-17'
+  - title: 'NetCoupler: Inferring causal pathways between high-dimensional metabolic
+      data and external factors'
+    organization: UseR! 2021 Conference
+    type: Oral
+    location: Virtual
+    href: "https://www.youtube.com/watch?v=MKWZG6mD27k&list=PL4IzsxWztPdnviiir8c5GaarXd9vZ2TIP&index=34"
+    start: '2021-07-05'
+    end: '2021-07-09'
+  - title: An Environmental Scan of Tobacco Control Policies on University Campuses
+      in Ontario
+    organization: "Tobacco Control for the 21st Century: Challenges in Research and Evaluation"
+    type: Contributed
+    location: Toronto, Canada
+    start: '2008-11-10'
+    end: '2008-11-10'
+  - title: 'Serum Non-Esterified Fatty Acid (NEFA) Concentration is Associated with
+      Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and
+      Islet Cell Evaluation (PROMISE) Cohort'
+    organization: American Diabetes Association's 75th Scientific Session
+    doi:
+      - 10.6084/m9.figshare.1545566
+      - 10.2337/db15-1472-1800
+    type: Oral poster
+    location: Boston, US
+    start: '2015-06-05'
+    end: '2015-06-09'
+  - title: 'Serum Non-Esterified Fatty Acid (NEFA) Concentrations are Associated with
+      Longitudinal Progression of Beta-Cell Dysfunction: Prospective Metabolism and
+      Islet Cell Evaluation (PROMISE) Cohort'
+    organization: 33rd International Symposium on Diabetes & Nutrition
+    doi: 10.6084/m9.figshare.1545567
+    type: Oral
+    location: Toronto, Canada
+    start: '2015-06-09'
+    end: '2015-06-12'
+  - title: Serum Non-Esterified Fatty Acid (NEFA) Composition and Longitudinal Associations
+      with Beta-Cell Dysfunction
+    organization: International Diabetes Federation World Diabetes Congress
+    type: Poster
+    location: Vancouver, Canada
+    href: https://figshare.com/s/7301482497f6a6349dc8
+    start: '2015-11-30'
+    end: '2015-12-04'
+  - title: 'The association of leg length with metabolic abnormalities underlying
+      type 2 diabetes mellitus: The PROMISE cohort'
+    organization: American Diabetes Association's 73th Scientific Sessions
+    doi: 10.2337/db13-1395-1677
+    type: Poster
+    location: Chicago, US
+    href: https://figshare.com/s/271bfd6c988efcdb5921
+    start: '2013-06-21'
+    end: '2013-06-25'
+  - title: Serum Phospholipid (PL) Fatty Acid Composition Predicts Declines in Insulin
+      Sensitivity (IS) and Beta-Cell Function Over 6-years in the Prospective Metabolism
+      And Islet Cell Evaluation (PROMISE) Cohort
+    organization: International Diabetes Epidemiology Group Scientific Meeting
+    type: Oral
+    location: Vancouver, Canada
+    href: https://figshare.com/s/1cce7abacad54e48aa0a
+    start: '2015-12-05'
+    end: '2015-12-05'
+  - title: Triglyceride Fatty Acid (TGFA) Composition Longitudinally Associates with
+      Changes in Insulin Sensitivity (IS) and Beta-Cell Function Over 6-yrs in the
+      Prospective Metabolism and Islet Cell Evaluation (PROMISE) Cohort
+    organization: American Diabetes Association 76th Scientific Sessions
+    doi:
+      - 10.2337/db16-1375-1656
+      - 10.6084/m9.figshare.3422767
+    type: Poster
+    location: New Orleans
+    start: '2016-06-10'
+    end: '2016-06-14'
+  - title: Experimental Evaluation of Tobacco Control Policies in Outdoor Environments
+    organization: "Tobacco Control for the 21st Century: Challenges in Research and Evaluation"
+    type: Contributed
+    location: Toronto, Canada
+    start: '2008-11-10'
+    end: '2008-11-10'
+  - title: Report of the Smoke-free Policy Scan of YMCAs and YWCAs in Ontario
+    organization: Meeting of the Tobacco-free Sports and Recreation Community of Practice
+    type: Oral
+    location: Waterloo, Canada
+    start: '2010-08-17'
+    end: '2010-08-17'
+  - title: Experimental Evaluation of Outdoor and Adjacent Indoor Tobacco Smoke Pollution
+      in Doorways
+    organization: 14th World Conference on Tobacco or Health
+    type: Contributed
+    location: Mumbai, India
+    start: '2009-03-08'
+    end: '2009-03-12'
+  - title: Secondhand Smoke in Common Spaces of Public Housing – Findings from Waterloo
+      Region
+    organization: '7th National Conference on Tobacco or Health, Making the Connection:
+      Knowledge Transforming Health'
+    type: Contributed
+    location: Toronto, Canada
+    year: '2011'
+  - title: An Environmental Scan of Tobacco-free Policies of YMCA & YWCA Locations
+      in Ontario, Canada
+    organization: 17th Annual Meeting of the Society on Research on Nicotine and Tobacco
+    note: Toronto, Canada
+    type: Contributed
+    location: Toronto, Canada
+    year: '2011'
+  - title: 'Serum Fatty Acids Derived from Dairy Consumption Are Associated with Insulin
+      Sensitivity and Beta-cell Function: The PROspective Metabolism and ISlet Cell
+      Evaluation (PROMISE) Cohort'
+    organization: American Diabetes Association 76th Scientific Sessions in New Orleans
+    doi: 10.2337/db16-1-381
+    type: Contributed
+    location: New Orleans, US
+    start: '2016-06-10'
+    end: '2016-06-14'
+  - title: Multivariate Determinants of Reduced Insulin Clearance in Prospective Metabolism
+      and Islet Cell Evaluation (PROMISE) Cohort
+    organization: American Diabetes Association 76th Scientific Sessions in New Orleans
+    doi: 10.2337/db16-1375-1656
+    type: Contributed
+    location: New Orleans, US
+    start: '2016-06-10'
+    end: '2016-06-14'
+  - title: 'Urinary Vitamin D Binding Protein as a Potential Biomarker for Nephropathy
+      in Subjects at Risk for Type 2 Diabetes: The Prospective Metabolism and Islet
+      Cell Evaluation (PROMISE) Cohort Study'
+    organization: American Diabetes Association 77th Scientific Sessions
+    doi: 10.2337/db17-1489-1795
+    type: Contributed
+    location: San Diego, US
+    start: '2017-06-09'
+    end: '2017-06-13'
+  - title: 'Fatty Acids Produced by De Novo Lipogenesis (DNL) of Refined Carbohydrates
+      are Associated with Worsening of Metabolic Syndrome (MetS) Components: The Prospective
+      Metabolism and Islet Cell Evaluation (PROMISE) Cohort'
+    organization: American Diabetes Association 77th Scientific Sessions
+    doi: 
+      - 10.2337/db17-1489-1795
+      - 10.6084/m9.figshare.5077663.v1
+      - 10.6084/m9.figshare.5116384.v1
+    type: Poster
+    location: San Diego, US
+    start: '2017-06-09'
+    end: '2017-06-13'
+  - title: 'Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and
+      Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE)
+      Cohort'
+    organization: American Diabetes Association 77th Scientific Sessions
+    doi: 10.2337/db17-1489-1795
+    type: Contributed
+    location: San Diego, US
+    start: '2017-06-09'
+    end: '2017-06-13'
+  - title: Community Building Panel Discussion
+    organization: Working Open Workshop, Mozilla Science Lab
+    type: Panel
+    location: Montreal, Canada
+    start: '2017-03-11'
+    end: '2017-03-11'
+  - title: 'Serum Fatty Acids Derived from Dairy Consumption Are Associated with Longitudinal
+      Changes in Insulin Sensitivity and Beta-cell Function: The Prospective Metabolism
+      and Islet Cell Evaluation (PROMISE) Cohort'
+    organization: 35th International Symposium on Diabetes and Nutrition
+    type: Contributed
+    location: Skagen, Denmark
+    start: '2017-06-19'
+    end: '2017-06-22'
+  - title: Specific clusters of fatty acids (FA) across multiple serum lipid fractions
+      underlie pathophysiological features of type 2 diabetes in the Canadian Prospective
+      Metabolism and Islet Cell Evaluation (PROMISE) cohort
+    organization: European Diabetes Epidemiology Group Annual Meeting
+    doi: 10.6084/m9.figshare.6159293
+    href: "https://github.com/lwjohnst86/edeg2018"
+    type: Oral poster
+    location: Helsingør, Denmark
+    start: '2018-04-21'
+    end: '2018-04-24'
+  - title: 'Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and
+      Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE)
+      Cohort'
+    organization: 4th Annual BBDC-Joslin-UCPH Conference
+    note: Poster presentation on Oct. 20
+    type: Contributed
+    location: Toronto, Canada
+    start: '2017-10-20'
+    end: '2017-10-20'
+  - title: 'Longitudinal Associations of Soluble CD163 with Insulin Sensitivity and
+      Beta-Cell Function: The Prospective Metabolism and Islet Cell Evaluation (PROMISE)
+      Cohort'
+    organization: European Diabetes Epidemiology Group Meeting
+    type: Contributed
+    location: Helsingør, Denmark
+    start: '2018-04-21'
+    end: '2018-04-24'
+  - title: 'Combining dietary and biomarker data to evaluate associations of dairy
+      intake with risk of type 2 diabetes (T2DM): The PROspective Metabolism and ISlet
+      cell Evaluation (PROMISE) cohort'
+    organization: European Diabetes Epidemiology Group Annual Meeting
+    type: Contributed
+    location: Helsingør, Denmark
+    start: '2018-04-21'
+    end: '2018-04-24'
+  - title: An R toolkit to simplify and automate an open scientific workflow
+    organization: European R User Meeting
+    type: Oral
+    location: Budapest, Hungary
+    start: '2018-05-14'
+    end: '2018-05-16'
+  - title: Leg length, a marker of early childhood conditions, associates with specific
+      clusters of serum fatty acids
+    organization: Annual Meeting of the European Association for the Study of Diabetes
+    type: Oral poster
+    location: Berlin, Germany
+    start: '2018-10-01'
+    end: '2018-10-05'
+  - title: 'Metabolomic Profiling of the Dietary Approaches to Stop Hypertension (DASH)
+      Diet: Novel Insights for the Nutritional Epidemiology of Type 2 Diabetes Mellitus
+      (T2DM)'
+    organization: American Diabetes Association XX Scientific Sessions
+    doi: 10.2337/db19-1576-p
+    type: Contributed
+    location: San Francisco, US
+    start: '2019-06-07'
+    end: '2019-06-11'
+  - title: A data-driven approach at characterizing heterogeneity in neuropathy assessments
+    organization: European Diabetes Epidemiology Group Annual Meeting
+    doi: 10.6084/m9.figshare.8082491.V1
+    type: Oral poster
+    location: Mondorf-les-Bains, Luxembourg
+    start: '2019-05-11'
+    end: '2019-05-14'
+  - title: Adipose Tissue Insulin Resistance and Inflammation Are Independently Associated
+      With Dysglycemia
+    organization: ObesityWeek
+    type: Contributed
+    location: Las Vegas, USA
+    start: '2019-11-03'
+    end: '2019-11-07'
+  - title: Determinants of Longitudinal Change in sCD163, a Biomarker of Adipose Tissue
+      Macrophage Activation
+    organization: ObesityWeek
+    type: Contributed
+    location: Washington, DC, USA
+    start: '2017-10-29'
+    end: '2017-11-02'
+  - title: 'The metabolic pathways between components of stature and HbA (1c): a causal
+      structure learning approach in the UK Biobank'
+    organization: European Association for the Study of Diabetes Annual Meeting
+    doi: 10.1007/s00125-020-05221-5
+    type: Oral poster
+    location: Online
+    start: '2020-09-21'
+    end: '2020-09-24'
+  - title: Lower Serum Non-Esterified Eicosapentaenoic Acid (EPA) is Associated with
+      Insulin Resistance in the PROspective Metabolism and ISlet Cell Evaluation (PROMISE)
+      Cohort
+    organization: Biennial Congress of the International Society for the Study of
+      Fatty Acids and Lipids
+    type: Oral
+    location: Stockholm, Sweden
+    href: https://figshare.com/s/89dbdcb4695f19cbd2b1
+    start: '2014-06-28'
+    end: '2014-07-02'
+  - title: 'NetCoupler: Inferring causal pathways between high-dimensional metabolic
+      data and external factors'
+    organization: IARC Nutritional Methodology and Biostatistics Group
+    note: Invited oral, Dec. 16th
+    type: Oral
+    location: Virtual
+    start: '2020-12-16'
+    end: '2020-12-16'
+  - title: 'r-cubed: Guiding the overwhelmed scientist from random wrangling to Reproducible
+      Research in R'
+    organization: Annual UseR Conference
+    type: Contributed
+    location: Virtual
+    href: "https://www.youtube.com/watch?v=qPUcT65HuM8&list=PL4IzsxWztPdnviiir8c5GaarXd9vZ2TIP&index=42"
+    start: '2021-07-05'
+    end: '2021-07-09'
+  - title: 'NetCoupler: Inferring causal pathways between high-dimensional metabolic
+      data and external factors'
+    organization: Annual Meeting of the Danish Epidemiological Society
+    type: Oral
+    location: Virtual
+    start: '2021-05-20'
+    end: '2021-05-21'
+  - title: How I Teach Life Scientists About Reproducibility and Data Analysis Using
+      R
+    organization: 'Life Science Trainers Talk Series "How I Teach Life Scientists..."'
+    type: Oral
+    location: Virtual
+    href: "https://www.youtube.com/watch?v=RP9n_kfUQCU&feature=youtu.be"
+    start: '2021-11-18'
+    end: '2021-11-18'
+
+- section: Journal articles
+  icon: book-open
+  description: |
+    Academic outputs that lead to an article published in a journal. Some entries
+    were also published as preprints and so have a duplicate entry in the Preprints section.
+  entries:
+  - title: "Low-income countries' orthopaedic information needs: Challenges and opportunities"
+    doi: 10.1007/s11999-010-1365-x
+    year: '2010'
+    roles: ''
+  - title: 'Short leg length, a marker of early childhood deprivation, is associated
+      with metabolic disorders underlying type 2 diabetes mellitus: the PROMISE cohort
+      study'
+    doi: 10.2337/dc13-0254
+    year: '2013'
+    roles: ''
+  - title: Longitudinal associations of phospholipid and cholesteryl ester fatty acids
+      with disorders underlying diabetes.
+    doi: 
+      - 10.1210/jc.2015-4267
+      - 10.6084/m9.figshare.1552011.v2
+    year: '2016'
+    roles: ''
+  - title: Clusters of fatty acids in the serum triacylglyceride fraction associate
+      with the disorders of type 2 diabetes
+    doi: 
+      - 10.1194/jlr.P084970
+      - 10.6084/m9.figshare.5143438
+      - 10.1101/279703
+    href: https://www.biorxiv.org/content/early/2018/03/14/279703.full.pdf
+    year: '2018'
+    roles: ''
+  - title: Association of non-esterified fatty acid composition with insulin sensitivity
+      and beta cell function in the Prospective Metabolism and Islet Cell Evaluation
+      (PROMISE) cohort
+    doi: 
+      - 10.1007/s00125-017-4534-6
+      - 10.6084/m9.figshare.3472433
+    year: '2017'
+    roles: ''
+  - title: 'A graduate student-led participatory live-coding quantitative methods
+      course in R: Experiences on initiating, developing, and teaching'
+    doi: 
+      - 10.21105/jose.00049
+      - 10.5281/zenodo.3240508
+    year: '2019'
+    roles: ''
+  - title: 'The Distribution of Fatty Acid Biomarkers of Dairy Intake across Serum
+      Lipid Fractions: The Prospective Metabolism and Islet Cell Evaluation (PROMISE)
+      Cohort'
+    doi: 10.1002/lipd.12185
+    year: '2019'
+    roles: ''
+  - title: The macrophage activation marker soluble CD163 is longitudinally associated
+      with insulin sensitivity and β-cell function
+    doi: 10.1210/clinem/dgz166
+    year: '2019'
+    roles: ''
+  - title: Associations of Calcium from Food Sources versus Phosphate Binders with
+      Serum Calcium and FGF23 in Hemodialysis Patients
+    doi: 10.3390/jcm8101680
+    year: '2019'
+    roles: ''
+  - title: 'Determinants of longitudinal change in insulin clearance: the Prospective
+      Metabolism and Islet Cell Evaluation cohort'
+    doi: 10.1136/bmjdrc-2019-000825
+    year: '2019'
+    roles: ''
+  - title: Next generation diabetes scientists shape global research culture
+    doi: 10.1111/apha.13455
+    year: '2020'
+    roles: ''
+  - title: 'Effect of familial diabetes status and age at diagnosis on type 2 diabetes
+      risk: a nation-wide register-based study from Denmark'
+    doi: 10.1007/s00125-020-05113-8
+    year: '2020'
+    roles: ''
+  - title: Metabolomic profiling of the {Dietary Approaches to Stop Hypertension}
+      diet provides novel insights for the nutritional epidemiology of type 2 diabetes
+      mellitus
+    doi: 10.1017/s0007114521003561
+    year: '2021'
+    roles: ''
+  - title: 'r-cubed: Guiding the overwhelmed scientist from random wrangling to
+      Reproducible Research in R'
+    doi: 10.21105/jose.00122
+    year: '2021'
+    roles: ''
+  - title: Dihydroceramide- and ceramide-profiling provides insights into human cardiometabolic
+      disease etiology
+    doi: 10.1038/s41467-022-28496-1
+    year: '2022'
+    roles: ''
+  - title: Escaping irreproducible research practices and spreading awareness through
+      education and (re-)training
+    doi: 10.1042/bio_2022_103
+    year: '2022'
+    roles: ''
+  - title: 'The Association between the Substitution of Red Meat with Legumes and
+      the Risk of Primary Liver Cancer in the UK Biobank: A Cohort Study'
+    doi:
+      - 10.3390/nu16152383
+      - 10.5281/zenodo.11670569
+      - 10.5281/zenodo.12666778
+      - 10.5281/zenodo.12702170
+    href: "https://github.com/steno-aarhus/legliv"
+    year: '2024'
+    roles:
+      - "software"
+      - "project administration"
+      - "writing - review & editing"
+      - "data curation"
+      - "resources"
+  - title: 'Urinary Vitamin D Binding Protein: A Marker of Kidney Tubular Dysfunction
+      in Patients at Risk for Type 2 Diabetes'
+    doi: 10.1210/jendso/bvae014
+    year: '2024'
+    roles: ''
