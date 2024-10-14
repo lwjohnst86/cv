@@ -1,28 +1,36 @@
-<!-- TODO: sort sections at this point? -->
-<% for (const item of items) { %>
+<% 
+items.forEach(item => {
+  item.entries.sort((a, b) => {
+    var dateA = new Date(a.start || a.year)
+    var dateB = new Date(b.start || b.year)
+    return dateB - dateA
+  })
+})
+%>
+
+<% for (const section of templateParams.sections) { %>
+<% const item = items.filter(element => element.section == section)[0] %>
 ## {{< fa <%- item.icon %> >}} <%= item.section %>
 
 <% if (item.description) { %>
 <%= item.description %>
 <% } %>
 
-<!-- TODO: sort dates at this point? -->
 <% for (const entry of item.entries) { %>
 <% if (entry.href) { %>
-### [<%= entry.title %>](<%- entry.href %>)
+**[<%= entry.title %>](<%- entry.href %>)**
 <% } else { %>
-### <%= entry.title %>
+**<%= entry.title %>**
 <% } %> 
 
 <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
-::: {layout-ncol="2"}
 <% if (entry.year) { %>
-  <% var date_range = year %>
+  <% var date_range = entry.year %>
 <% } else { %> 
-  <% let start_as_date = new Date(entry.start) %>
+  <% let start_as_date = new Date(entry.start + "T12:00:00Z") %>
   <% let start = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(start_as_date) %>
   <% if (entry.end) { %>
-    <% let end_as_date = new Date(entry.end) %>
+    <% let end_as_date = new Date(entry.end + "T12:00:00Z") %>
     <% let end = new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium'}).format(end_as_date) %>
     <% if (entry.start == entry.end) { %>
       <% var date_range = start %>
@@ -33,6 +41,7 @@
     <% var date_range = start + ' to present' %>
   <% } %> 
 <% } %> 
+::: {layout-ncol="2"}
 {{< fa calendar-days >}} <%= date_range %>
 
 <% if (entry.organization) { %>
@@ -40,19 +49,34 @@
 <% } else if (entry.location) { %> 
 {{< fa location-dot >}} <%= entry.location %>
 <% } %> 
+:::
+
+<% if (entry.isbn) { %>
+ISBN: [<%= entry.isbn %>](https://barcodelookup.com/<%= entry.isbn %>)
+<% } %> 
 
 <% if (entry.doi) { %>
+::: {layout-ncol="3"}
+<% if (Array.isArray(entry.doi)) { %>
 <% for (const doi of entry.doi) { %>
 {{< ai doi >}} [<%= doi %>](https://doi.org/<%= doi %>)
 <% } %> 
+<% } else { %> 
+{{< ai doi >}} [<%= entry.doi %>](https://doi.org/<%= entry.doi %>)
 <% } %> 
 :::
+<% } %> 
+
+<% if (entry.type) { %>
+Presentation type: <%= entry.type %>
+<% } %>
+
+<% if (entry.description) { %>
+<%= entry.description %>
+<% } %>
 
 <% if (entry.supervisor) { %>
-- Supervisor: <%= entry.supervisor %>
-<% } %>
-<% if (entry.description) { %>
-- <%= entry.description %>
+Supervisor: <%= entry.supervisor %>
 <% } %>
 
 <% } %>

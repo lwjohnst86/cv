@@ -1,30 +1,29 @@
 ---
 title: "Luke W. Johnston"
 #description: Full CV at [cv.lukewjohnston.com](https://cv.lukewjohnston.com).
-date-modified: "2024-10-02"
-date-format: "medium"
+date-modified: "2024-10-13"
 listing:
-  - id: sections
-    template: ejs/sections.ejs
-    contents: data/entries.yml
-    # sort: "section"
-    include: 
-      section: 
-        - "Education"
-        - "Funding"
-        - "Awards"
-        - "Employment"
-        - "Certificates"
-        - "Courses taken"
-        - "Package development"
-        - "Data engineering and management"
-        - "Supervision"
-        - "Committees"
-        - "Outreach activities"
-        - "Teaching"
-    field-types:
-      start: date
-      end: date  
+  template: ejs/sections.ejs
+  contents: data/entries.yml
+  template-params: 
+    sections: 
+      - "Education"
+      - "Funding"
+      - "Awards"
+      - "Employment"
+      - "Certificates"
+      - "Package development"
+      - "Data engineering and management"
+      - "Committees"
+      - "Outreach activities"
+      - "Supervision"
+      - "Teaching"
+      - "Educational resources"
+      - "Journal articles"
+      - "Books"
+      - "Presentations"
+    # TODO: Need to implement this.
+    # entries_after_year: "2020"
 ---
 
 {{< fa envelope >}} [lwjohnst\@gmail.com](mailto:lwjohnst@gmail.com){.email}
@@ -41,5 +40,7 @@ Johnston](https://stackexchange.com/users/1992995)
 > data developer, data science and coding teacher, open science
 > advocate.
 
-::: {#sections}
-:::
+<!--
+Personal philosophy?
+Skills?
+-->
