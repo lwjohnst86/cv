@@ -902,6 +902,27 @@
   icon: book-open-reader
   description: Educational resources that I've developed or contributed to.
   entries:
+  - title: "r-cubed: Reproducible Research in R - An Intermediate Workshop on Modern Approaches and Workflows to Processing Data"
+    href: "https://r-cubed-intermediate.rostools.org/"
+    doi: "10.5281/zenodo.4061899"
+    description: |
+      Reproducibility and open scientific practices are increasingly being requested or required of scientists and researchers, 
+      but training on these practices has not kept pace. This course intends to help bridge that gap and covers the fundamentals 
+      and workflow of data analysis in R. This repository contains the lesson, lecture, and assignment material for the course, 
+      including the website source files and other associated course administration files.
+    start: '2020-10-01'
+    end: ''
+  - title: 'r-cubed: Guiding the overwhelmed scientist from random wrangling to Reproducible Research in R'
+    href: "https://r-cubed-intro.rostools.org/"
+    doi: "10.5281/zenodo.3921893"
+    description: |
+      Reproducibility and open scientific practices are increasingly being requested or required of scientists and 
+      researchers, but training on these practices has not kept pace. This 3-day course intends to help bridge 
+      that gap and covers the fundamentals and workflow of data analysis in R. This repository contains the lesson, 
+      lecture, and assignment material for the course, including the website source files and other associated 
+      course administration files.
+    start: '2020-06-29'
+    end: ''
   - title: 'Reproducible Quantitative Methods: Data analysis workflow using R'
     href: https://dda-rcourse.lwjohnst.com/
     doi: 10.5281/zenodo.2603311
