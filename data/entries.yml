@@ -435,6 +435,15 @@
       href: "https://ddeacademy.dk/events/networking/what-can-i-be-with-a-phd/"
       organization: Danish Diabetes and Endocrinology Academy
       location: Copenhagen, Denmark
+    - title: "Open Science: Should we set science free?"
+      start: "2022-11-03"
+      end: "2022-11-03"
+      description: |
+        Interviewed by an Aarhus University journalist about the importance of open science
+        and the barriers to effective open science practices.
+      href: "https://health.medarbejdere.au.dk/en/display/artikel/open-science-boer-forskningen-saettes-fri"
+      organization: Aarhus University
+      location: Aarhus, Denmark
     - title: "The Future is Transparent: Moving Towards Open Science"
       start: "2022-10-27"
       end: "2022-10-27"
