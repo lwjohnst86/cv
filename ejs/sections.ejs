@@ -31,9 +31,9 @@ if (templateParams.entries_after_year) {
 
 <% for (const entry of item.entries) { %>
 <% if (entry.href) { %>
-**[<%= entry.title %>](<%- entry.href %>)**
+  <% var title = '**[' + entry.title + '](' + entry.href + ')**' %>
 <% } else { %>
-**<%= entry.title %>**
+  <% var title = '**' + entry.title + '**' %>
 <% } %> 
 
 <!-- TODO: This is needed only because I can't get Quarto to assign them as dates -->
@@ -54,15 +54,15 @@ if (templateParams.entries_after_year) {
     <% var date_range = start + ' to present' %>
   <% } %> 
 <% } %> 
-::: {layout-ncol="2"}
-{{< fa calendar-days >}} <%= date_range %>
 
 <% if (entry.organization) { %>
-{{< fa location-dot >}} <%= entry.organization %>, <%= entry.location %>
+  <% var location = entry.organization + ', ' + entry.location %>
 <% } else if (entry.location) { %> 
-{{< fa location-dot >}} <%= entry.location %>
+  <% var location = entry.location %>
 <% } %> 
-:::
+
+| <%= title %>
+| {{< fa calendar-days >}} <%= date_range %> | {{< fa location-dot >}} <%= location %>
 
 <% if (entry.isbn) { %>
 ISBN: [<%= entry.isbn %>](https://barcodelookup.com/<%= entry.isbn %>)
@@ -81,15 +81,25 @@ ISBN: [<%= entry.isbn %>](https://barcodelookup.com/<%= entry.isbn %>)
 <% } %> 
 
 <% if (entry.type) { %>
-Presentation type: <%= entry.type %>
+  <% var presentation_type = '*Presentation type*: ' + entry.type %>
+<% } else { %>
+  <% var presentation_type = '' %>
 <% } %>
 
 <% if (entry.description) { %>
-<%= entry.description %>
+  <% var description = entry.description %>
+<% } else { %>
+  <% var description = '' %>
 <% } %>
 
 <% if (entry.supervisor) { %>
-Supervisor: <%= entry.supervisor %>
+  <% var supervisor = 'Supervisor: ' + entry.supervisor %>
+<% } else { %>
+  <% var supervisor = '' %>
+<% } %>
+
+<% if (entry.description) { %>
+<%= description %> <%= presentation_type %> <%= supervisor %>
 <% } %>
 
 <% } %>
