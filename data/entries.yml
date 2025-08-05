@@ -607,6 +607,16 @@
   description: "Teaching activities, excluding curriculum development."
   icon: person-chalkboard
   entries:
+    - title: "An introductory workshop on using GitHub"
+      start: "2025-05-26"
+      end: ""
+      description: |
+        Three hour workshop introducing GitHub to beginners, through the use of the GitHub web
+        interface.
+      href: https://github-intro.rostools.org
+      role: Lead instructor
+      organization: Steno Diabetes Center Aarhus
+      location: Denmark
     - title: "Reproducible Research in R: An advanced workshop on creating collaborative and automated analysis pipelines"
       start: "2022-12-07"
       end: ""
