@@ -291,9 +291,7 @@
       description:
         Working on a project building an open infrastructure for health data,
         funded by the NovoNordisk Foundation.
-      organization: |
-        Department of Clinical Medicine, Aarhus University & Steno Diabetes
-        Center Aarhus
+      organization: "Department of Clinical Medicine, Aarhus University & Steno Diabetes Center Aarhus"
       supervisor: ""
       location: Aarhus, Denmark
     - title: DDA postdoctoral researcher
@@ -313,12 +311,11 @@
       start: "2018-02-01"
       end: "2019-11-30"
       description: |
-        Doing research in diabetes epidemiology, specifically on identifying:
-
-        - Patterns of accelerometry-derived physical activity with metabolic status.
-        - The metabolic mediation between early childhood biomarkers and adult diabetes status.
-        - Developing a simulation method for incorporating multiple epidemiological results into a single framework.
-        - Assisting a PhD student's social network analysis on the programming aspects of work.
+        Doing research in diabetes epidemiology, specifically on identifying: Patterns of accelerometry-derived 
+        physical activity with metabolic status; the metabolic mediation between early childhood biomarkers and 
+        adult diabetes status; developing a simulation method for incorporating multiple epidemiological results 
+        into a single framework; and, assisting a PhD student's social network analysis on the 
+        programming aspects of work.
       organization: Department of Public Health, Aarhus University
       supervisor: Dr. Daniel Witte
       location: Aarhus, Denmark
@@ -336,13 +333,16 @@
       start: "2011-01-01"
       end: "2011-07-30"
       description: |
-        - Collected air quality samples from Region of Waterloo-owned social housing.
-        - Analyzed the air quality data using MS Excel.
-        - Produced and tested a survey for Program Training and Consultation Centre on SurveyMonkey.
-        - Wrote three reports on data collected from the survey results.
-        - Organized and scheduled interviews and data collection dates for a study in the Waterloo Region evaluating the School Food and Beverage Policy PPM150.
-        - Managed a team of 4 researchers to collect survey and interview data from primary and secondary schools in the Waterloo Region.
-        - Managed the storing and organizing of data collected from the surveys and interviews.
+        Collected air quality samples from Region of Waterloo-owned social
+        housing. Analyzed the air quality data using MS Excel. Produced and
+        tested a survey for Program Training and Consultation Centre on
+        SurveyMonkey. Wrote three reports on data collected from the survey
+        results. Organized and scheduled interviews and data collection dates
+        for a study in the Waterloo Region evaluating the School Food and
+        Beverage Policy PPM150. Managed a team of 4 researchers to collect
+        survey and interview data from primary and secondary schools in the
+        Waterloo Region. Managed the storing and organizing of data collected
+        from the surveys and interviews.
       organization: Propel Center for Population Health Impact, University of Waterloo
       supervisor: Karen Pieters, Dr. Ryan David Kennedy, and Dr. Rhona Hanning
       location: Waterloo, Canada
@@ -350,8 +350,10 @@
       start: "2010-08-01"
       end: "2010-08-30"
       description: |
-        - Analyzed data from previous cigarette smoking experiments done in 2008 using MS Excel.
-        - Conducted a smoke-free policy scan of YMCAs and YWCAs in Ontario and presented findings to the Tobacco-free Sports and Recreation Community of Practice.
+        Analyzed data from previous cigarette smoking experiments done in 2008
+        using MS Excel.  Conducted a smoke-free policy scan of YMCAs and YWCAs
+        in Ontario and presented findings to the Tobacco-free Sports and
+        Recreation Community of Practice.
       organization: Health Psychology Lab, University of Waterloo
       supervisor: Dr. Ryan David Kennedy
       location: Waterloo, Canada
@@ -359,8 +361,9 @@
       start: "2009-09-01"
       end: "2009-12-20"
       description: |
-        - Analyzed data from the WHO and PLoS Medicine using MS Excel.
-        - Developed a method for interpreting fracture data from the National Ambulatory Care Reporting System using statistical probability equations.
+        Analyzed data from the WHO and PLoS Medicine using MS Excel.  Developed
+        a method for interpreting fracture data from the National Ambulatory
+        Care Reporting System using statistical probability equations.
       organization: Child Health Evaluative Sciences, Hospital for Sick Children
       supervisor: Dr. Andrew Howard
       location: Toronto, Canada
@@ -368,10 +371,13 @@
       start: "2009-01-01"
       end: "2009-04-30"
       description: |
-        - Examined balance in clinical populations, including individuals with dementia, using pressure plates.
-        - Used EMG electrodes, VICON markers and other monitoring equipment to obverse and collect data from research participants.
-        - Analyzed data from various experiments and studies using LabView and MATLAB software.
-        - Evaluated the reliability of using Bluetooth technology in the foot switch device (industry gold standard) and analyzed the relationship with an accelerometer.
+        Examined balance in clinical populations, including individuals with
+        dementia, using pressure plates.  Used EMG electrodes, VICON markers and
+        other monitoring equipment to obverse and collect data from research
+        participants.  Analyzed data from various experiments and studies using
+        LabView and MATLAB software.  Evaluated the reliability of using
+        Bluetooth technology in the foot switch device (industry gold standard)
+        and analyzed the relationship with an accelerometer.
       organization: Toronto Rehabilitation Institute
       supervisor: Dr. Avril Mansfield and Dr. William McIlroy
       location: Toronto, Canada
@@ -379,8 +385,11 @@
       start: "2008-09-01"
       end: "2008-12-20"
       description: |
-        - Used MS Excel and SPSS 17.0 to organize and analyze data from experiments and prepare the data for presentations at provincial and international tobacco control conferences.
-        - Independently conducted a phone survey of Ontario’s university campuses’ outdoor smoking policies and prepared a poster to be presented at a tobacco control conference.
+        Used MS Excel and SPSS 17.0 to organize and analyze data from
+        experiments and prepare the data for presentations at provincial and
+        international tobacco control conferences.  Independently conducted a
+        phone survey of Ontario’s university campuses’ outdoor smoking policies
+        and prepared a poster to be presented at a tobacco control conference.
       organization: Health Psychology Lab
       supervisor: Ryan David Kennedy
       location: Waterloo, Canada
@@ -388,9 +397,10 @@
       start: "2008-05-01"
       end: "2008-08-30"
       description: |
-        - Managed 3 projects aimed at measuring tobacco smoke pollution in outdoor and quasi-outdoor environments.
-        - Organized and analyzed data using MS Excel and SPSS 17.0.
-        - Supervised and scheduled a team of 10 Research Assistants.
+        Managed 3 projects aimed at measuring tobacco smoke pollution in outdoor
+        and quasi-outdoor environments.  Organized and analyzed data using MS
+        Excel and SPSS 17.0.  Supervised and scheduled a team of 10 Research
+        Assistants.
       organization: Health Psychology Lab
       supervisor: Ryan David Kennedy
       location: Waterloo, Canada
@@ -1507,7 +1517,7 @@
     doi: 10.1007/s00125-020-05113-8
     year: '2020'
     roles: ''
-  - title: Metabolomic profiling of the {Dietary Approaches to Stop Hypertension}
+  - title: Metabolomic profiling of the Dietary Approaches to Stop Hypertension
       diet provides novel insights for the nutritional epidemiology of type 2 diabetes
       mellitus
     doi: 10.1017/s0007114521003561
