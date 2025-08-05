@@ -16,7 +16,7 @@ listing:
       - "Data engineering and management"
       - "Committees"
       - "Outreach activities"
-      - "Supervision"
+      - "Supervision and mentoring"
       - "Teaching"
       - "Educational resources"
       - "Journal articles"
