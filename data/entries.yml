@@ -884,6 +884,15 @@
   description: "Activities involving building, designing, structuring, organizing, and managing data, databases, and data pipelines."
   icon: database
   entries:
+    - title: ON-LiMiT study data management
+      start: "2025-06-01"
+      end: ""
+      description: |
+        Collaborator. The Seedcase Project team is collaborating with the ON-LiMiT
+        study group to build, organise, structure, and help manage the data they will collect.
+      href: "https://github.com/onlimit-study"
+      organization: Steno Diabetes Center Aarhus
+      location: Aarhus, Denmark
     - title: PROMISE cohort data managed as an R package
       start: "2016-11-16"
       end: ""
