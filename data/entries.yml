@@ -1518,3 +1518,16 @@
     doi: 10.1210/jendso/bvae014
     year: '2024'
     roles: ''
+  - title: 'Legumes as a Substitute for Red and Processed Meat, Poultry or Fish, and the Risk of Non-Alcoholic Fatty Liver Disease in a Large Cohort'
+    doi: 
+      - 10.1111/jhn.70004
+      - 10.1101/2024.12.09.24315856v1
+      - 10.5281/zenodo.11670546
+      - 10.5281/zenodo.14598564
+    year: '2024'
+    roles: 
+      - "software"
+      - "project administration"
+      - "writing - review & editing"
+      - "data curation"
+      - "resources"
