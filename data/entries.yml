@@ -427,6 +427,16 @@
   description: "Activities involving some type of outreach to a diverse audience, including the general public."
   icon: bullhorn
   entries:
+    - title: "Redefining Success in Science: How Luke Johnston Went from Postdoc Problems to Pioneering Health Data Engineering"
+      start: "2024-09-24"
+      end: "2024-09-24"
+      description: |
+        Interviewed by the Danish Diabetes and Endocrinology Academy about my postdoctoral
+        fellowship, my career path, and how I ended up working on health data engineering
+        and software engineering.
+      href: "https://ddeacademy.dk/grant-recipients/redefining-success-in-science-how-luke-johnston-went-from-postdoc-problems-to-pioneering-health-data-engineering/"
+      organization: Danish Diabetes and Endocrinology Academy
+      location: Denmark
     - title: "Career panel: What Can I Be with a PhD?"
       start: "2024-11-21"
       end: "2024-11-21"
