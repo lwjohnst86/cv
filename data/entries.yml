@@ -619,8 +619,8 @@
       href: https://github.com/lwjohnst86/carpenter
       location: CRAN
 
-- section: Supervision
-  description: "Acting as a formal (co-)supervisor to students and their projects."
+- section: Supervision and mentoring
+  description: "Acting as a formal (co-)supervisor to students and their projects or as a mentor to others."
   icon: user-group
   entries:
     - title: Bachelor student Windy Wang
@@ -656,6 +656,26 @@
         data*.
       organization: Universitat Oberta de Catalunya
       location: Barcelona, Spain
+    - title: Pilot Mentor-Mentee Program
+      start: "2024-06-01"
+      end: "2025-05-31"
+      description: |
+        Acted as a mentor to a postdoctoral researcher working in Denmark.
+        Through the program, mentors and mentees are matched and guided through the 
+        year-long mentoring programme with support from an expert. The pilot program
+        was to test the feasibility and interest in a larger program that the Danish Diabetes
+        and Endocrinology Academy might run in the future.
+      organization: Danish Diabetes and Endocrinology Academy
+      location: Denmark
+    - title: Mentor-Mentee Program
+      start: "2025-06-01"
+      end: "2026-05-31"
+      description: |
+        Acted as a mentor to a postdoctoral researcher working in Denmark.
+        Through the program, mentors and mentees are matched and guided through the 
+        year-long mentoring programme with support from an expert.
+      organization: Danish Diabetes and Endocrinology Academy
+      location: Denmark
 
 - section: Teaching
   description: "Teaching activities, excluding curriculum development."
