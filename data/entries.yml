@@ -427,6 +427,14 @@
   description: "Activities involving some type of outreach to a diverse audience, including the general public."
   icon: bullhorn
   entries:
+    - title: "Career panel: What Can I Be with a PhD?"
+      start: "2024-11-21"
+      end: "2024-11-21"
+      description: |
+        Panel discussion many possible career paths of someone with a life science background.
+      href: "https://ddeacademy.dk/events/networking/what-can-i-be-with-a-phd/"
+      organization: Danish Diabetes and Endocrinology Academy
+      location: Copenhagen, Denmark
     - title: "The Future is Transparent: Moving Towards Open Science"
       start: "2022-10-27"
       end: "2022-10-27"
