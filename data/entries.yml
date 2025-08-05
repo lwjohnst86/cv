@@ -993,6 +993,13 @@
   description: Work that I have contributed to or that I've lead that was presented
     at conferences, seminars, and other events, either online or in-person.
   entries:
+  - title: "Reproducibility in the UK Biobank at Steno Diabetes Center Aarhus"
+    organization: Danish Digitalization, Data Science and AI
+    type: Oral
+    href: "https://www.youtube.com/watch?v=1-X7otXFosQ&list=PLJPfqQPI6i_AfAP4U6zMOSuM9X2GlsHyC&index=3"
+    location: Virtual
+    start: '2024-10-15'
+    end: '2024-10-15'
   - title: Study Groups - Crossing the Boundaries of Discipline
     organization: Mozilla Festival
     type: Contributed
