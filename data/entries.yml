@@ -435,9 +435,26 @@
       location: Gothenburg, Sweden
 
 - section: Package development
-  description: "Creation of or contribution to software packages."
+  description: "Creation of or contribution to software packages or software-related products."
   icon: box-open
   entries:
+    - title: "Template Data Package: An opinionated template for Data Packages built with Seedcase packages"
+      description: |
+        Co-creator. A template for making a Git repository that follows strongly opinionated practices for 
+        building and managing a data package. These practices include using Seedcase Python packages, 
+        such as Seedcase Sprout, and the Frictionless Data Package standard. 
+      start: "2025-07-28"
+      href: "https://template-data-package.seedcase-project.org/"
+      location: Zenodo/GitHub
+    - title: "seedcase-sprout: Grow structured, organised, and FAIR data"
+      description: |
+        Co-creator. Sprout is one component of the Seedcase Project framework that aims to 
+        take data created or collected for research studies and "grow" it in a structured way 
+        using modern data engineering best practices. Sprout is designed to organise, describe, 
+        and store data for effective discovery, management, and analysis.
+      start: "2025-07-03"
+      href: "https://sprout.seedcase-project.org/"
+      location: PyPI
     - title: "osdc: An Open-Source Diabetes Classifier for Danish Registers "
       description: |
         Co-creator. An R package that aims to make it easier and more explicit to classify 
