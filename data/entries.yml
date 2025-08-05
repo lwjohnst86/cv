@@ -215,6 +215,16 @@
   description: "Participation in committee, group, or council level activities."
   icon: users
   entries:
+    - title: Steering committee for the UK Biobank project at Steno Diabetes Center Aarhus
+      start: "2022-01-07"
+      end: ""
+      description: |
+        Contribute to managing the project applications, setting up new projects,
+        discussing and doing administrative tasks, managing the Research Analysis Platform (RAP),
+        maintaining the ukbAid package and website.
+      organization: Steno Diabetes Center Aarhus
+      location: Denmark
+      href: https://steno-aarhus.github.io/ukbAid
     - title: Scientific program organizing committee for the Danish Diabetes Academy Postdoctoral Winter School
       start: "2020-01-01"
       end: "2021-11-06"
