@@ -1457,6 +1457,10 @@
     Academic outputs that lead to an article published in a journal. Some entries
     were also published as preprints and so have a duplicate entry in the Preprints section.
   entries:
+  - title: "Longitudinal associations of serum fatty acids derived from dairy consumption with early prediabetes phenotypes: The PROspective Metabolism and ISlet cell Evaluation (PROMISE) cohort"
+    doi: "10.1016/j.clnu.2025.10.012"
+    year: '2025'
+    roles: ''
   - title: "Low-income countries' orthopaedic information needs: Challenges and opportunities"
     doi: 10.1007/s11999-010-1365-x
     year: '2010'
