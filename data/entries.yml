@@ -532,17 +532,6 @@
       start: "2022-11-20"
       href: https://github.com/steno-aarhus/osdc
       location: GitHub
-    - title: "seedcase-sprout: Upload your research data to formally structure it for better, more reliable, and easier research"
-      description: |
-        Co-creator. Sprout is a Python software package that is a component of
-        the Seedcase framework that aims to take data created or collected for
-        research studies and "grow" it in a structured way using modern data
-        engineering best practices. Sprout is the backbone of the Seedcase
-        family; this is where data is uploaded, described, and stored based on a
-        relational database design.
-      start: "2023-11-26"
-      href: https://github.com/seedcase-project/seedcase-sprout
-      location: GitHub
     - title: "ukbAid: Aid Steno Researchers Who Work on the UKB RAP"
       description:
         Creator. The goal of ukbAid is to help our research group at Steno
