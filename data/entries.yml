@@ -1024,6 +1024,17 @@
   icon: book-open-reader
   description: Educational resources that I've developed or contributed to.
   entries:
+  - title: "An introductory workshop on using GitHub for managing and working with files"
+    href: "https://github-intro.rostools.org/"
+    doi: "10.5281/zenodo.17019292"
+    description: |
+      GitHub is increasingly used as a platform for collaborating and sharing
+      research projects, not only for code but for documents. This workshop aims
+      to introduce learners to the basics of using GitHub for managing files and
+      tracking changes to those files (version control). The workshop is
+      designed for learner who have little to no experience with Git and GitHub.
+    start: '2025-09-01'
+    end: ''
   - title: "Reproducible Research in R: An advanced workshop on creating collaborative and automated analysis pipelines"
     href: "https://r-cubed-advanced.rostools.org/"
     doi: "10.5281/zenodo.17067883"
