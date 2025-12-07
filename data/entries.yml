@@ -485,6 +485,14 @@
   description: "Creation of or contribution to software packages or software-related products."
   icon: box-open
   entries:
+    - title: "check-datapackage: Ensure the compliance of your Data Package metadata"
+      description: |
+        Co-creator. A Python package that checks your Data Package's metadata
+        against the Data Package standard, to ensure that it's compliant with
+        the standard.
+      start: "2025-11-27"
+      href: "https://check-datapackage.seedcase-project.org/"
+      location: PyPI
     - title: "Template Python Package: An opinionated setup for making Python packages"
       description: |
         Co-creator. A template for making a Git repository that follows strongly
