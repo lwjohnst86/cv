@@ -485,6 +485,28 @@
   description: "Creation of or contribution to software packages or software-related products."
   icon: box-open
   entries:
+    - title: "Template Python Package: An opinionated setup for making Python packages"
+      description: |
+        Co-creator. A template for making a Git repository that follows strongly
+        opinionated practices for building and managing Python packages.
+      start: "2025-09-01"
+      href: "https://template-python-package.seedcase-project.org/"
+      location: Zenodo/GitHub
+    - title: "Template Website: An opinionated setup for building and developing Quarto-based websites"
+      description: |
+        Co-creator. A template for making a Git repository that follows strongly
+        opinionated practices for building, developing, and managing a
+        Quarto-based website.
+      start: "2025-08-07"
+      href: "https://template-website.seedcase-project.org/"
+      location: Zenodo/GitHub
+    - title: "Template Workshop: An opinionated setup for making workshops as open educational resources"
+      description: |
+        Creator. A template for making a Git repository that follows strongly opinionated practices for 
+        developing and running workshops that also act as open educational resources. 
+      start: "2025-08-28"
+      href: "https://template-workshop.rostools.org/"
+      location: Zenodo/GitHub
     - title: "Template Data Package: An opinionated template for Data Packages built with Seedcase packages"
       description: |
         Co-creator. A template for making a Git repository that follows strongly opinionated practices for 
