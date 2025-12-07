@@ -1024,6 +1024,16 @@
   icon: book-open-reader
   description: Educational resources that I've developed or contributed to.
   entries:
+  - title: "Reproducible Research in R: An advanced workshop on creating collaborative and automated analysis pipelines"
+    href: "https://r-cubed-advanced.rostools.org/"
+    doi: "10.5281/zenodo.17067883"
+    description: |
+      This contains the material for a 3-day advanced R workshop that is
+      designed to address train researchers on better collaborative practices
+      when working together on a data analysis project and to build those
+      projects in a fully reproducible way with the use of automated pipelines.
+    start: '2025-09-25'
+    end: ''
   - title: "r-cubed: Reproducible Research in R - An Intermediate Workshop on Modern Approaches and Workflows to Processing Data"
     href: "https://r-cubed-intermediate.rostools.org/"
     doi: "10.5281/zenodo.4061899"
